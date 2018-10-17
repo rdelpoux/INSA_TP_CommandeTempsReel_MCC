@@ -1,8 +1,0 @@
-
-
-
--- Type definitions for arrays
-typedef ExpeCommandeVitesseMCC_ArrayDT0_2 flt(64,IEEE)[2]
-typedef ExpeCommandeVitesseMCC_ArrayDT0_3 flt(64,IEEE)[3]
-
-
