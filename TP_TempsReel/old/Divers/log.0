@@ -1,0 +1,11 @@
+sept. 10, 2018 3:08:06 PM  
+STDERR: com.microchip.crownking.edc 2018-09-10T13:08Z INFO Cannot find an <edc:Oscillator> element.
+
+sept. 10, 2018 3:08:07 PM  
+STDERR: com.microchip.crownking.edc 2018-09-10T13:08Z INFO Has EDS, but no <edc:ExtendedDataSpace>
+
+sept. 10, 2018 3:08:07 PM java.util.prefs.WindowsPreferences <init>
+AVERTISSEMENT: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
+sept. 10, 2018 3:08:07 PM com.microchip.mplab.mdbcore.RealICETool.RIMessages OutputMessage
+INFOS: 
+

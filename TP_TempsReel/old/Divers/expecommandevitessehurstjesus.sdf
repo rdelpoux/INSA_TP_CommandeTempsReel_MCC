@@ -1,0 +1,15 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+Status=Start
+File=expecommandevitessehurstjesus.rta
+RTP=Master
+
+[Master]
+Type=DS1202
+State=Enabled
+ServiceID=1
+TraceFile=expecommandevitessehurstjesus.trc
+ID=FC3253FF-3E67-4602-8D0A-EF36C10A319A

@@ -1,0 +1,1395 @@
+-- ****************************************************************************
+--
+--  Trace file: ExpeCommandeVitesseHurstJesus.trc
+--
+--  RTI1202 7.8 (02-May-2017)
+--  Mon Sep 10 15:47:13 2018
+--
+--  Copyright 2018, dSPACE GmbH. All rights reserved.
+--
+-- ****************************************************************************
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 0
+--    TRCGenerateLabels             = 0
+--    TRCGenerateStates             = 0
+--    TRCGenerateDerivatives        = 0
+--    TRCGenerateParamValues        = 0
+--    TRCGenerateApplicationKeyword = 0
+--    TRCOnlyGlobals                = 0
+--    TRCIsOmitVdOn                 = 0
+--
+--  Trace file format: 3
+
+-- ******** Keywords **********************************************************
+-- _application "ExpeCommandeVitesseHurstJesus.map"
+
+_genname     "RTI"
+_genversion  "7.8"
+_gendate     "09/10/2018 15:47:18"
+_description ""
+_author      "RTI1202 7.8 (02-May-2017)"
+_model       "ExpeCommandeVitesseHurstJesus"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.0001
+  alias:       "HostService"
+  increment:   0.0001
+  unit:        "s"
+}
+
+
+
+
+-- Type definitions for arrays
+typedef ExpeCommandeVitesseHurstJesus_ArrayDT0_3 flt(64,IEEE)[3]
+
+
+-- ******** Simulation control variables **************************************
+
+finalTime
+{
+ type:  flt(64,IEEE)*
+ alias: "finalTime"
+ desc:  "Simulation stop time. When reached, simState switches to STOP."
+ flags:  READONLY
+ unit:  "s"
+ addr:    0x48046afc
+}
+
+currentTime
+{
+ type:  flt(64,IEEE)*
+ alias: "currentTime"
+ desc:  "Current simulation time. Increments with execution of Timer Task 1."
+ flags: READONLY
+ unit:  "s"
+ addr:    0x48046af8
+}
+
+modelStepSize
+{
+ type:  flt(64,IEEE)
+ alias: "modelStepSize"
+ desc:  "Fixed step size of the model, sample time of Timer Task 1."
+ flags: READONLY
+ unit:  "s"
+ addr:    0x48046b00
+}
+
+simState
+{
+ type:  int(32)
+ alias: "simState"
+ desc:  "Simulation state: STOP=0 RUN=2"
+ unit:  "-"
+ addr:    0x48046228
+}
+
+p_msg_last_error_no
+{
+ type:  uint(32)*
+ alias: "errorNumber"
+ desc:  "Error number of last error message (zero if no error)."
+ unit:  "-"
+ flags: READONLY
+ addr:    0x48045158
+}
+
+p_dsts_sum_of_reset_time
+{
+ type:  flt(64,IEEE)*
+ alias: "sumOfResetTime"
+ desc:  "Internal variable for summing up reset time."
+ unit:  "s"
+ flags: READONLY|HIDDEN
+ addr:    0x48045154
+}
+
+
+-- ******** Task Information variables ****************************************
+group "Task Info"
+{
+ flags: COLLAPSED
+}
+  group "Timer Task 1"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_TIMERA_STime
+  {
+   type:  flt(64,IEEE)*
+   alias: "sampleTime"
+   flags: READONLY
+		 addr:    0x48046b2c
+		}
+  pRti_TIMERA_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: READONLY
+		 addr:    0x48046b30
+		}
+  pRti_TIMERA_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: READONLY
+ addr:    0x48046b34
+}
+  pRti_TIMERA_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: READONLY
+ addr:    0x48046b38
+}
+  pRti_TIMERA_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: READONLY
+		 addr:    0x48046b3c
+		}
+  pRti_TIMERA_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: READONLY
+ addr:    0x48046b40
+}
+  pRti_TIMERA_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: READONLY
+ addr:    0x48046b44
+}
+  pRti_TIMERA_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: READONLY
+ addr:    0x48046b48
+}
+  pRti_TIMERA_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: READONLY
+ addr:    0x48046b4c
+}
+  endgroup
+
+  group "DIO_CLASS1_HWINT_BL1"
+  {
+   flags: COLLAPSED
+  }
+
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_TTime
+  {
+   type:  flt(64,IEEE)*
+   alias: "turnaroundTime"
+   flags: READONLY
+ addr:    0x48046b54
+}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_TState
+  {
+   type:  int(32)*
+   alias: "state"
+   flags: READONLY
+ addr:    0x48046b58
+}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_OType
+  {
+   type:  int(32)*
+   alias: "overrunCheckType"
+   flags: READONLY
+ addr:    0x48046b5c
+}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_OMax
+  {
+   type:  int(32)*
+   alias: "overrunQueueMax"
+   flags: READONLY
+		 addr:    0x48046b60
+		}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_ORpt
+  {
+   type:  int(32)*
+   alias: "overrunQueueCount"
+   flags: READONLY
+		 addr:    0x48046b64
+		}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_OCnt
+  {
+   type:  int(32)*
+   alias: "overrunCount"
+   flags: READONLY
+ addr:    0x48046b68
+}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_TCnt
+  {
+   type:  flt(64,IEEE)*
+   alias: "taskCallCount"
+   flags: READONLY
+ addr:    0x48046b6c
+}
+  pRti_120XDIOCL1MCPWM_BEGIN_OF_PERIODP3Ch1_Prio
+  {
+   type:  int(32)*
+   alias: "priority"
+   flags: READONLY
+		 addr:    0x48046b70
+		}
+  endgroup
+
+
+endgroup
+
+
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+	group "dSpace_muC" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_ExpeCommandeVitesseHurstJesus_boolean_T_3[0]
+		{
+		 type:    uint(8)*
+		 alias:   "Value"
+		 range:   < 0 ; 1 >
+		 bitmask: 0x01
+		 flags:   PARAM
+		 addr:    0x48046ab4
+		}
+
+
+	endgroup -- block-group "dSpace_muC"
+
+	group "init enc" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[20]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Value"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+	endgroup -- block-group "init enc"
+
+  
+  
+	group "DIO_CLASS1_BIT_OUT_BL1" -- subsystem-group
+
+
+	endgroup -- subsystem-group "DIO_CLASS1_BIT_OUT_BL1"
+  
+  
+	group "Moteur MicroLabBox" -- subsystem-group
+
+		-- Skipping output
+		p_0_ExpeCommandeVitesseHurstJesus_real_T_0[15]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "th"
+		 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+		p_0_ExpeCommandeVitesseHurstJesus_real_T_0[16]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "om"
+		 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+		p_0_ExpeCommandeVitesseHurstJesus_real_T_0[17]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "omf"
+		 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+		p_0_ExpeCommandeVitesseHurstJesus_uint16_T_1[1]
+		{
+		 type:    uint(16)*
+		 alias:   "positionelec"
+		 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa4
+		}
+		-- Skipping output omf16 (rad/s)
+
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[1]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "gain_ia"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[4]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "offset_ia"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "gain_ib"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[5]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "offset_ib"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[3]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "gain_ic"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[6]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "offset_ic"
+		 flags:   PARAM
+ addr:    0x48046ab0
+}
+		p_1_ExpeCommandeVitesseHurstJesus_real_T_2[0]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Precisioncodeur"
+		 flags:   PARAM
+		 addr:    0x48046ab0
+		}
+
+		group "Constant" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_ExpeCommandeVitesseHurstJesus_real_T_2[21]
+			{
+			 type:    ExpeCommandeVitesseHurstJesus_ArrayDT0_3*
+			 alias:   "Value"
+			 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+		endgroup -- block-group "Constant"
+
+		group "Constant1" -- block-group
+		{
+		 block: "Constant"
+		}
+			-- Skipping output Out1
+			p_1_ExpeCommandeVitesseHurstJesus_real_T_2[24]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "Value"
+			 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+		endgroup -- block-group "Constant1"
+
+  
+  
+		group "Moteur 1" -- subsystem-group
+
+			-- Skipping output
+			p_0_ExpeCommandeVitesseHurstJesus_real_T_0[15]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "th (rad)"
+			 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+			p_0_ExpeCommandeVitesseHurstJesus_real_T_0[16]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "om (rad/s)"
+			 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+			p_0_ExpeCommandeVitesseHurstJesus_real_T_0[17]
+			{
+			 type:    flt(64,IEEE)*
+			 alias:   "omf (rad/s)"
+			 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+			p_0_ExpeCommandeVitesseHurstJesus_uint16_T_1[1]
+			{
+			 type:    uint(16)*
+			 alias:   "positionelec"
+			 flags:   OUTPUT|READONLY
+			 addr:    0x48046aa4
+			}
+			-- Skipping output omf16 (rad/s)
+
+
+  
+  
+			group "mesures" -- subsystem-group
+
+				-- Skipping output
+				p_0_ExpeCommandeVitesseHurstJesus_real_T_0[15]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "th (rad)"
+				 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+				p_0_ExpeCommandeVitesseHurstJesus_real_T_0[16]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "om (rad/s)"
+				 flags:   OUTPUT|READONLY
+			 addr:    0x48046aa0
+			}
+				p_0_ExpeCommandeVitesseHurstJesus_real_T_0[17]
+				{
+				 type:    flt(64,IEEE)*
+				 alias:   "omf (rad/s)"
+				 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+				p_0_ExpeCommandeVitesseHurstJesus_uint16_T_1[1]
+				{
+				 type:    uint(16)*
+				 alias:   "positionelec"
+				 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa4
+		}
+
+
+				group "Constant1" -- block-group
+				{
+				 block: "Constant"
+				}
+					-- Skipping output Out1
+					trcref0_Ligneselec
+					{
+					 refgroup: "/Tunable Parameters"
+					 refvar:   "Ligneselec"
+					 alias:    "Ligneselec"
+		}
+					trcref0_Value
+					{
+					 refgroup: "/Tunable Parameters"
+					 refvar:   "Ligneselec"
+					 alias:    "Value"
+					 flags:    DEPRECATED|HIDDEN
+			}
+
+
+				endgroup -- block-group "Constant1"
+
+				group "pos1" -- block-group
+				{
+				 block: "Constant"
+				}
+					-- Skipping output Out1
+					p_1_ExpeCommandeVitesseHurstJesus_real_T_2[19]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Value"
+					 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+				endgroup -- block-group "pos1"
+
+				group "va1" -- block-group
+				{
+				 block: "Constant"
+				}
+					-- Skipping output Out1
+					p_1_ExpeCommandeVitesseHurstJesus_boolean_T_3[1]
+					{
+					 type:    uint(8)*
+					 alias:   "Value"
+					 range:   < 0 ; 1 >
+					 bitmask: 0x01
+					 flags:   PARAM
+		 addr:    0x48046ab4
+		}
+
+
+				endgroup -- block-group "va1"
+
+				group "va2" -- block-group
+				{
+				 block: "Constant"
+				}
+					-- Skipping output Out1
+					p_1_ExpeCommandeVitesseHurstJesus_boolean_T_3[2]
+					{
+					 type:    uint(8)*
+					 alias:   "Value"
+					 range:   < 0 ; 1 >
+					 bitmask: 0x01
+					 flags:   PARAM
+ addr:    0x48046ab4
+}
+
+
+				endgroup -- block-group "va2"
+
+				group "Data Type Conversion" -- block-group
+				{
+				 block: "DataTypeConversion"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_uint16_T_1[0]
+					{
+					 type:    uint(16)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa4
+}
+
+
+				endgroup -- block-group "Data Type Conversion"
+
+				group "Gain" -- block-group
+				{
+				 block: "Gain"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[15]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+					trcref0_Precisioncodeur
+					{
+					 refgroup: "../../.."
+					 refvar:   "Precisioncodeur"
+					 alias:    "Precisioncodeur"
+}
+					-- Skipping parameter "Gain"
+
+
+				endgroup -- block-group "Gain"
+
+				group "Gain2" -- block-group
+				{
+				 block: "Gain"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[16]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+					trcref0_Precisioncodeur
+					{
+					 refgroup: "../../.."
+					 refvar:   "Precisioncodeur"
+					 alias:    "Precisioncodeur"
+		}
+					-- Skipping parameter "Gain"
+
+
+				endgroup -- block-group "Gain2"
+
+				group "Gain3" -- block-group
+				{
+				 block: "Gain"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[14]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+					p_1_ExpeCommandeVitesseHurstJesus_real_T_2[16]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Gain"
+					 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+				endgroup -- block-group "Gain3"
+
+				group "Math\nFunction1" -- block-group
+				{
+				 block: "Math"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_uint16_T_1[1]
+					{
+					 type:    uint(16)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa4
+		}
+
+
+				endgroup -- block-group "Math\nFunction1"
+
+				group "Transfer Fcn1" -- block-group
+				{
+				 block: "TransferFcn"
+				}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[17]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Out1"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+					p_1_ExpeCommandeVitesseHurstJesus_real_T_2[17]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "A"
+					 flags:   PARAM
+			 addr:    0x48046ab0
+			}
+					p_1_ExpeCommandeVitesseHurstJesus_real_T_2[18]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "C"
+					 flags:   PARAM
+			 addr:    0x48046ab0
+			}
+
+
+				endgroup -- block-group "Transfer Fcn1"
+
+  
+  
+				group "Courants" -- subsystem-group
+
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[5]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "ia"
+					 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[8]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "ib"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[11]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "ic"
+					 flags:   OUTPUT|READONLY
+			 addr:    0x48046aa0
+			}
+
+
+  
+  
+					group "DIO_CLASS1_HWINT_BL1" -- subsystem-group
+
+						-- Skipping output Interrupt
+
+
+  
+  
+						group "Common Hardware\nInterrupt Interface" -- subsystem-group
+
+							-- Skipping output  
+
+						endgroup -- subsystem-group "Common Hardware\nInterrupt Interface"
+
+
+					endgroup -- subsystem-group "DIO_CLASS1_HWINT_BL1"
+  
+  
+					group "iabc" -- subsystem-group
+
+						p_0_ExpeCommandeVitesseHurstJesus_real_T_0[5]
+						{
+						 type:    flt(64,IEEE)*
+						 alias:   "ia"
+						 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+						p_0_ExpeCommandeVitesseHurstJesus_real_T_0[8]
+						{
+						 type:    flt(64,IEEE)*
+						 alias:   "ib"
+						 flags:   OUTPUT|READONLY
+		 addr:    0x48046aa0
+		}
+						p_0_ExpeCommandeVitesseHurstJesus_real_T_0[11]
+						{
+						 type:    flt(64,IEEE)*
+						 alias:   "ic"
+						 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+						group "Rate Transition" -- block-group
+						{
+						 block: "RateTransition"
+						}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[0]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "Out1"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_1_ExpeCommandeVitesseHurstJesus_real_T_2[10]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "X0"
+							 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+						endgroup -- block-group "Rate Transition"
+
+						group "Rate Transition1" -- block-group
+						{
+						 block: "RateTransition"
+						}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[1]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "Out1"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_1_ExpeCommandeVitesseHurstJesus_real_T_2[11]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "X0"
+							 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+						endgroup -- block-group "Rate Transition1"
+
+						group "Rate Transition2" -- block-group
+						{
+						 block: "RateTransition"
+						}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[2]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "Out1"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_1_ExpeCommandeVitesseHurstJesus_real_T_2[12]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "X0"
+							 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+						endgroup -- block-group "Rate Transition2"
+
+  
+  
+						group "ShuntCalibration" -- subsystem-group
+
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[5]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "ia"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[8]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "ib"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[11]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "ic"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+							group "Constant1" -- block-group
+							{
+							 block: "Constant"
+							}
+								-- Skipping output Out1
+								trcref0_offset_ia
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ia"
+								 alias:    "offset_ia"
+}
+								trcref0_Value
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ia"
+								 alias:    "Value"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Constant1"
+
+							group "Constant2" -- block-group
+							{
+							 block: "Constant"
+							}
+								-- Skipping output Out1
+								trcref0_offset_ib
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ib"
+								 alias:    "offset_ib"
+}
+								trcref0_Value
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ib"
+								 alias:    "Value"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Constant2"
+
+							group "Constant6" -- block-group
+							{
+							 block: "Constant"
+							}
+								-- Skipping output Out1
+								trcref0_offset_ic
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ic"
+								 alias:    "offset_ic"
+}
+								trcref0_Value
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "offset_ic"
+								 alias:    "Value"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Constant6"
+
+							group "Gain1" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[6]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								p_1_ExpeCommandeVitesseHurstJesus_real_T_2[14]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Gain"
+								 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+							endgroup -- block-group "Gain1"
+
+							group "Gain2" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[9]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								p_1_ExpeCommandeVitesseHurstJesus_real_T_2[15]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Gain"
+								 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+							endgroup -- block-group "Gain2"
+
+							group "Gain3" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[3]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								p_1_ExpeCommandeVitesseHurstJesus_real_T_2[13]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Gain"
+								 flags:   PARAM
+ addr:    0x48046ab0
+}
+
+
+							endgroup -- block-group "Gain3"
+
+							group "Gain_iaL" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[5]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								trcref0_gain_ia
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ia"
+								 alias:    "gain_ia"
+}
+								trcref0_Gain
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ia"
+								 alias:    "Gain"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Gain_iaL"
+
+							group "Gain_ibL" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[8]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								trcref0_gain_ib
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ib"
+								 alias:    "gain_ib"
+}
+								trcref0_Gain
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ib"
+								 alias:    "Gain"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Gain_ibL"
+
+							group "Gain_icL" -- block-group
+							{
+							 block: "Gain"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[11]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+								trcref0_gain_ic
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ic"
+								 alias:    "gain_ic"
+}
+								trcref0_Gain
+								{
+								 refgroup: "../../../../../.."
+								 refvar:   "gain_ic"
+								 alias:    "Gain"
+								 flags:    DEPRECATED|HIDDEN
+}
+
+
+							endgroup -- block-group "Gain_icL"
+
+							group "Add1" -- block-group
+							{
+							 block: "Sum"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[4]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+							endgroup -- block-group "Add1"
+
+							group "Add2" -- block-group
+							{
+							 block: "Sum"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[7]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+							endgroup -- block-group "Add2"
+
+							group "Add6" -- block-group
+							{
+							 block: "Sum"
+							}
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[10]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "Out1"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+							endgroup -- block-group "Add6"
+
+
+
+						endgroup -- subsystem-group "ShuntCalibration"
+  
+  
+						group "Triggered\nSubsystem" -- subsystem-group
+
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[18]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "adca1\n"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[19]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "adcb1"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+							p_0_ExpeCommandeVitesseHurstJesus_real_T_0[20]
+							{
+							 type:    flt(64,IEEE)*
+							 alias:   "adcc3"
+							 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+
+  
+  
+							group "ADC_CLASS1_BL2" -- subsystem-group
+
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[18]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "ADC"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+							endgroup -- subsystem-group "ADC_CLASS1_BL2"
+  
+  
+							group "ADC_CLASS1_BL3" -- subsystem-group
+
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[19]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "ADC"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+							endgroup -- subsystem-group "ADC_CLASS1_BL3"
+  
+  
+							group "ADC_CLASS1_BL4" -- subsystem-group
+
+								p_0_ExpeCommandeVitesseHurstJesus_real_T_0[20]
+								{
+								 type:    flt(64,IEEE)*
+								 alias:   "ADC"
+								 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+							endgroup -- subsystem-group "ADC_CLASS1_BL4"
+
+
+						endgroup -- subsystem-group "Triggered\nSubsystem"
+
+
+					endgroup -- subsystem-group "iabc"
+
+
+				endgroup -- subsystem-group "Courants"
+  
+  
+				group "DIO_CLASS1_BIT_OUT_BL1" -- subsystem-group
+
+
+				endgroup -- subsystem-group "DIO_CLASS1_BIT_OUT_BL1"
+  
+  
+				group "DIO_CLASS1_BIT_OUT_BL2" -- subsystem-group
+
+
+				endgroup -- subsystem-group "DIO_CLASS1_BIT_OUT_BL2"
+  
+  
+				group "EMC_ENCODER_BL2" -- subsystem-group
+
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[12]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Position"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+					p_0_ExpeCommandeVitesseHurstJesus_real_T_0[13]
+					{
+					 type:    flt(64,IEEE)*
+					 alias:   "Speed"
+					 flags:   OUTPUT|READONLY
+ addr:    0x48046aa0
+}
+
+				endgroup -- subsystem-group "EMC_ENCODER_BL2"
+  
+  
+				group "EMC_ENCODER_POS_SET_BL2" -- subsystem-group
+
+
+				endgroup -- subsystem-group "EMC_ENCODER_POS_SET_BL2"
+
+
+			endgroup -- subsystem-group "mesures"
+
+
+		endgroup -- subsystem-group "Moteur 1"
+  
+  
+		group "PWM" -- subsystem-group
+
+
+
+			group "tpwm" -- block-group
+			{
+			 block: "Constant"
+			}
+				-- Skipping output Out1
+				trcref0_TPWM
+				{
+				 refgroup: "/Tunable Parameters"
+				 refvar:   "TPWM"
+				 alias:    "TPWM"
+}
+				trcref0_Value
+				{
+				 refgroup: "/Tunable Parameters"
+				 refvar:   "TPWM"
+				 alias:    "Value"
+				 flags:    DEPRECATED|HIDDEN
+}
+
+
+			endgroup -- block-group "tpwm"
+
+  
+  
+			group "EMC_MC_PWM_BL1" -- subsystem-group
+
+
+			endgroup -- subsystem-group "EMC_MC_PWM_BL1"
+
+
+		endgroup -- subsystem-group "PWM"
+
+
+	endgroup -- subsystem-group "Moteur MicroLabBox"
+  
+  
+	group "RTI Data" -- subsystem-group
+
+
+	endgroup -- subsystem-group "RTI Data"
+
+
+
+endgroup -- "Model Root"
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+
+	p_1_ExpeCommandeVitesseHurstJesus_real_T_0[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "TPWM"
+	 flags:   PARAM
+ addr:    0x48046aa8
+}
+	p_1_ExpeCommandeVitesseHurstJesus_uint16_T_1[0]
+	{
+	 type:    uint(16)*
+	 alias:   "Ligneselec"
+	 flags:   PARAM
+	 addr:    0x48046aac
+	}
+
+endgroup
+
+-- ******** State Machine Data ************************************************
+
+-- No Stateflow chart within the model.
+
+
+-- ******** Labels ************************************************************
+
+-- Generation of labels turned off with TRCGenerateLabels option.
+
+-- ******** RTT Dynamic Variables *********************************************
+
+group "RTT Dynamic Variables"
+
+endgroup
+
+-- ******** User variables from model_usr.trc *********************************
+
+-- RTI_USR_TRC_BEGIN
+
+-- No user file ExpeCommandeVitesseHurstJesus_usr.trc found.
+
+-- RTI_USR_TRC_END
+
+-- ******** EESPort States Variables ******************************************
+group "XIL API"
+{ 
+  flags: COLLAPSED
+}
+
+  group "EESPort"
+  {  
+    flags: COLLAPSED
+  }
+
+    p_xilapi_eesport_activeerrorset_uint32_T
+    {
+      type:    uint(32)*
+      alias:   "Active ErrorSet"
+      desc:    "Index of active ErrorSet or 0 if no ErrorSet is active."
+      flags:   OUTPUT|READONLY
+      range:   < 0 ; 4294967295 >
+ addr:    0x48046244
+}
+
+    p_xilapi_eesport_erroractivated_uint32_T
+    {
+      type:    uint(32)*
+      alias:   "Error Activated"
+      desc:    "0 - no error is activated on hardware, 1 - at least one error is activated on hardware."  
+      flags:   OUTPUT|READONLY
+      range:   < 0 ; 1 >
+ addr:    0x48046240
+}
+
+    p_xilapi_eesport_errorswitching_uint32_T
+    {
+      type:    uint(32)*
+      alias:   "Error Switching"
+      desc:    "0 - no switching operation running on hardware, 1 -  switching operation running on hardware."
+      flags:   OUTPUT|READONLY
+      range:   < 0 ; 1 >
+ addr:    0x4804623c
+}
+
+    xilapi_eesport_flags_uint32_T
+    {
+      type:    uint(32)
+      alias:   "Flags"
+      flags:   OUTPUT|READONLY
+      range:   < 0 ; 4294967295 >
+ addr:    0x48046b80
+}
+
+    xilapi_eesport_trigger_uint32_T
+    {
+      type:    uint(32)
+      alias:   "Trigger"
+      flags:   OUTPUT|READONLY
+      range:   < 0 ; 4294967295 >
+ addr:    0x48046b7c
+}
+
+    endgroup -- "EESPort"
+
+endgroup -- "XILAPI"
+
+
+
+-- ******** [EOF] *************************************************************
+

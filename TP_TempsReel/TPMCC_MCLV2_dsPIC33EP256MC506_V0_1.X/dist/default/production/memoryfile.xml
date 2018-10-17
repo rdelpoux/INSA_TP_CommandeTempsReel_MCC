@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>32768</length>
+      <used>7810</used>
+      <free>24958</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>263394</length>
+      <used>18996</used>
+      <free>244398</free>
+    </memory>
+  </executable>
+</project>
