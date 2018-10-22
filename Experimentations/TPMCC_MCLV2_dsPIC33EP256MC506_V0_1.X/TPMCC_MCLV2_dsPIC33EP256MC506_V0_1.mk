@@ -34,7 +34,7 @@ MAKEFILE                = TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.mk
 MATLAB_ROOT             = C:/MATLAB/R2017a
 ALT_MATLAB_ROOT         = C:/MATLAB/R2017a
 MASTER_ANCHOR_DIR       = 
-START_DIR               = H:/Enseignement/Microchip/TP_TempsReel
+START_DIR               = H:/Enseignement/Microchip/INSA_TP_CommandeTempsReel_MCC/Experimentations
 S_FUNCTIONS             = 
 S_FUNCTIONS_LIB         = 
 NUMST                   = 2
@@ -203,6 +203,7 @@ ADD_INCLUDES = \
 	-I"$(START_DIR)" \
 	-I"$(MATLAB_ROOT)/simulink/include/sf_runtime" \
 	-I"$(START_DIR)/TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X" \
+	-I"H:/Enseignement/Microchip/TP_TempsReel" \
 
 
 
@@ -286,6 +287,7 @@ endif
 #ASM_OPTIM_SRCS += $(wildcard $(START_DIR)/*.s) 
 #ASM_OPTIM_SRCS += $(wildcard $(MATLAB_ROOT)/simulink/include/sf_runtime/*.s) 
 #ASM_OPTIM_SRCS += $(wildcard $(START_DIR)/TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X/*.s) 
+#ASM_OPTIM_SRCS += $(wildcard H:/Enseignement/Microchip/TP_TempsReel/*.s) 
 
 #ASM_OPTIM_SRCS = $(wildcard *.s)
 #    # for instrumented code
@@ -459,6 +461,10 @@ mem_mgr.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/mem_mgr.c
 	-@echo Compiling: $<
 	$(CC) -c -mcpu=$(PIC_REF) $< -Wa,-g $(CCOUTPUTFLAG) $@
 
+%$(OBJ_EXT) : H:/Enseignement/Microchip/TP_TempsReel/%.c
+	-@echo Compiling: $<
+	$(CC) -c $(CFLAGS) $< $(CCOUTPUTFLAG) $@
+
 %$(OBJ_EXT) : $(MATLAB_ROOT)/rtw/c/src/%.c
 	-@echo Compiling: $<
 	$(CC) -c $(CFLAGS) $< $(CCOUTPUTFLAG) $@
@@ -469,6 +475,10 @@ mem_mgr.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/mem_mgr.c
 
 
 
+%$(OBJ_EXT) : H:/Enseignement/Microchip/TP_TempsReel/%.cpp
+	-@echo Compiling: $<
+	$(CC) -c $(CPPFLAGS) $< $(CCOUTPUTFLAG) $@
+
 %$(OBJ_EXT) : $(MATLAB_ROOT)/rtw/c/src/%.cpp
 	-@echo Compiling: $<
 	$(CC) -c $(CPPFLAGS) $< $(CCOUTPUTFLAG) $@
@@ -478,6 +488,10 @@ mem_mgr.o : $(MATLAB_ROOT)/rtw/c/src/ext_mode/common/mem_mgr.c
 	$(CC) -c $(CPPFLAGS) $< $(CCOUTPUTFLAG) $@
 
 
+
+%$(OBJ_EXT) : H:/Enseignement/Microchip/TP_TempsReel/%.s
+	-@echo Compiling: $<
+	$(CC) -c -mcpu=$(PIC_REF) $< -Wa,-g $(CCOUTPUTFLAG) $@
 
 %$(OBJ_EXT) : $(MATLAB_ROOT)/rtw/c/src/%.s
 	-@echo Compiling: $<

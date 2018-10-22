@@ -14,9 +14,9 @@
  *
  * Code generated for Simulink model 'TPMCC_MCLV2_dsPIC33EP256MC506_V0_1'.
  *
- * Model version                  : 1.10
+ * Model version                  : 1.12
  * Simulink Coder version         : 8.12 (R2017a) 16-Feb-2017
- * C/C++ source code generated on : Thu Oct 04 15:29:59 2018
+ * C/C++ source code generated on : Mon Oct 22 11:17:48 2018
  */
 
 #ifndef RTW_HEADER_TPMCC_MCLV2_dsPIC33EP256MC506_V0_1_private_h_

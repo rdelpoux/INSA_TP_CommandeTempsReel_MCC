@@ -5,7 +5,7 @@
 # <install-dir> refers to Harmony installation-dir
 #
 # The following line should be added at the end your Harmony project root .hconfig file:
-# source "H:/Enseignement/Microchip/TP_TempsReel/TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X/simulink.hconfig"
+# source "H:/Enseignement/Microchip/INSA_TP_CommandeTempsReel_MCC/Experimentations/TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X/simulink.hconfig"
 #
 menu "Simulink Configuration"
 comment "This project supports Simulink Integration."

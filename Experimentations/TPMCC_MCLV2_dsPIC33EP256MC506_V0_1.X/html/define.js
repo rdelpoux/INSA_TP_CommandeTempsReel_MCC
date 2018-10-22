@@ -76,7 +76,7 @@ function Html2SrcLink() {
 	this.html2Root["MCHP_UART1_Interrupt_c.html"] = "MCHP_UART1_Interrupt_c.html";
 	this.html2SrcPath["MCHP_modelInclude_h.html"] = "../MCHP_modelInclude.h";
 	this.html2Root["MCHP_modelInclude_h.html"] = "MCHP_modelInclude_h.html";
-	this.html2SrcPath["code_c.html"] = "../../code.c";
+	this.html2SrcPath["code_c.html"] = "../../../../TP_TempsReel/code.c";
 	this.html2Root["code_c.html"] = "code_c.html";
 	this.getLink2Src = function (htmlFileName) {
 		 if (this.html2SrcPath[htmlFileName])

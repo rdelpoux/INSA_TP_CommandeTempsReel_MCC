@@ -598,13 +598,13 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000       0x3047
+.debug_info       0x000000       0x30f1
  *(.debug_info)
- .debug_info      0x000000        0x5e1 MCHP_UART1_Interrupt.o
- .debug_info      0x0005e1        0x2d7 TPMCC_MCLV2_dsPIC33EP256MC506_V0_1_data.o
- .debug_info      0x0008b8        0xcec TPMCC_MCLV2_dsPIC33EP256MC506_V0_1_main.o
- .debug_info      0x0015a4        0x3c3 code.o
- .debug_info      0x001967       0x16e0 TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.o
+ .debug_info      0x000000        0x603 MCHP_UART1_Interrupt.o
+ .debug_info      0x000603        0x2f9 TPMCC_MCLV2_dsPIC33EP256MC506_V0_1_data.o
+ .debug_info      0x0008fc        0xd0e TPMCC_MCLV2_dsPIC33EP256MC506_V0_1_main.o
+ .debug_info      0x00160a        0x3e5 code.o
+ .debug_info      0x0019ef       0x1702 TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000        0x64a

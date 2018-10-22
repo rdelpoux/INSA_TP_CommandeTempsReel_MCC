@@ -61,13 +61,13 @@
         </linkerTool>
       </compileType>
       <C30>
-        <property key="extra-include-directories" value=";TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X;.;..;C:/MATLAB/R2017a/simulink/include/sf_runtime;C:/MATLAB/R2017a/rtw/c/ert;C:/MATLAB/R2017a/extern/include;C:/MATLAB/R2017a/simulink/include;C:/MATLAB/R2017a/rtw/c/src;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
+        <property key="extra-include-directories" value=";TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X;.;..;C:/MATLAB/R2017a/simulink/include/sf_runtime;../../../TP_TempsReel;C:/MATLAB/R2017a/rtw/c/ert;C:/MATLAB/R2017a/extern/include;C:/MATLAB/R2017a/simulink/include;C:/MATLAB/R2017a/rtw/c/src;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
         <property key="optimization-level" value="3"/>
       </C30>
       <C30-AS>
       </C30-AS>
       <C30-LD>
-        <property key="extra-lib-directories" value=";TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X;.;..;C:/MATLAB/R2017a/simulink/include/sf_runtime;C:/MATLAB/R2017a/rtw/c/ert;C:/MATLAB/R2017a/extern/include;C:/MATLAB/R2017a/simulink/include;C:/MATLAB/R2017a/rtw/c/src;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
+        <property key="extra-lib-directories" value=";TPMCC_MCLV2_dsPIC33EP256MC506_V0_1.X;.;..;C:/MATLAB/R2017a/simulink/include/sf_runtime;../../../TP_TempsReel;C:/MATLAB/R2017a/rtw/c/ert;C:/MATLAB/R2017a/extern/include;C:/MATLAB/R2017a/simulink/include;C:/MATLAB/R2017a/rtw/c/src;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common;C:/MATLAB/R2017a/rtw/c/src/ext_mode/common"/>
       </C30-LD>
       <C30Global>
       </C30Global>
