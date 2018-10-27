@@ -1,12 +1,12 @@
 Model {
-  Name			  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b"
-  Version		  9.0
+  Name			  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
+  Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.32"
+    ComputedModelVersion    "1.31"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -14,113 +14,140 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
+    PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
     NumExternalFileReferences 16
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Configuration/Compiler Options"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Compiler Options"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Compiler Options"
       SID		      "201"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Counter\nFree-Running"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Counter Free-Running"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Counter Free-Running"
       SID		      "338"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Output"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/LED_D1 5Hz Blinking"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/LED_D1 5Hz Blinking"
       SID		      "334"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/ADC"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/MCLV2 with DC motor/ADC"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/ADC"
       SID		      "290"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/MCLV2 with DC motor/Comparator - OpAmps -"
-      " Volt Ref"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/Comparator - OpAmps - Volt R"
+      "ef"
       SID		      "315"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/PWM IO/PWM High Speed"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/MCLV2 with DC motor/PWM/PWM High Speed"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/PWM/PWM High Speed"
       SID		      "103"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/QEI/QEI"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/MCLV2 with DC motor/QEI1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/QEI1"
       SID		      "108"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Configuration/Microchip Master"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
       SID		      "202"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Model-Wide\nUtilities/Model Info"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Model Info"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Model Info"
       SID		      "341"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Info/Port Info"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Port Info"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Port Info"
       SID		      "203"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/S2"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/S2"
       SID		      "333"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/S3"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/S3"
       SID		      "336"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Info/Timer Info"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Timer Info"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Timer Info"
       SID		      "206"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/UART Configuration"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/UART Configuration1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/UART Configuration1"
       SID		      "207"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/UART Tx-Matlab"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/UART Tx-Matlab"
       SID		      "267"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/picgui\nGraphical interface"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/dbl-click to open Graphical interface"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/dbl-click to open Graphical interface"
       SID		      "337"
       Type		      "LIBRARY_BLOCK"
     }
     OrderedModelArguments   1
   }
   DiagnosticSuppressor	  "on"
-  SuppressorTable	  "22 serialization::archive 15 0 6 0 0 1 8 0 0 0 0 6 0 0 1 0 78 MCLV2_dsPIC33EP256MC506_externalOpA"
-  "mp_HardwareTest_R2017b/Counter Free-Running 0 6 0 0 2 8 0 0 0 0 6 40 SimulinkFixedPoint:util:Overflowoccurred 0 0 0 "
-  "6 0  0  0 0 0 0 8 20160523 0 0 0 10 57 55 0 1 41 Simulink:DataType:WarningOverFlowDetected 0 0 0  0  8 20160523 0 10"
-  " 57 55 0 1\n"
+  SuppressorTable	  "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n<!DOCTYPE boost_serialization>\n<"
+  "boost_serialization signature=\"serialization::archive\" version=\"15\">\n<DiagnosticSuppressor class_id=\"0\" track"
+  "ing_level=\"0\" version=\"6\">\n	<Table class_id=\"1\" tracking_level=\"0\" version=\"0\">\n		<count>1</count>\n		<b"
+  "ucket_count>8</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
+  "\"0\">\n			<first class_id=\"3\" tracking_level=\"0\" version=\"6\">\n				<Source class_id=\"4\" tracking_level=\"0\""
+  " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_exte"
+  "rnalOpAmp_HardwareTest/Counter Free-Running</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_l"
+  "evel=\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</co"
+  "unt>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_l"
+  "evel=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixed"
+  "Point:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_versio"
+  "n>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level="
+  "\"0\" version=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" trackin"
+  "g_level=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<dat"
+  "e>20160523</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version="
+  "\"0\">\n									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time_"
+  "duration_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<t"
+  "ime_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastM"
+  "odified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n		"
+  "					<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>"
+  "\n									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n					"
+  "		<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160523</d"
+  "ate>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_dura"
+  "tion_hours>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n									<time_dura"
+  "tion_seconds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seco"
+  "nds>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</s"
+  "econd>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_se"
+  "rialization>\n\n"
+  WebScopes_FoundationPlugin "on"
+  NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
   SLCCPlugin		  "on"
   Description		  "MCLV V2 board connected to DC motor through PWM [1 2]\nPIM 33EP256MC506 with internal Op-Amp (popula"
@@ -206,15 +233,16 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Oct 27 23:00:54 2018"
-  RTWModifiedTimeStamp	  462582054
-  ModelVersionFormat	  "1.%<AutoIncrement:32>"
+  LastModifiedDate	  "Sat Oct 27 23:00:26 2018"
+  RTWModifiedTimeStamp	  462581899
+  ModelVersionFormat	  "1.%<AutoIncrement:31>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
   WideLines		  off
   ShowLineDimensions	  off
   ShowPortDataTypes	  on
+  ShowAllPropagatedSignalLabels	off
   PortDataTypeDisplayFormat "AliasTypeOnly"
   ShowEditTimeErrors	  on
   ShowEditTimeWarnings	  on
@@ -229,6 +257,7 @@ Model {
   ShowViewerIcons	  on
   SortedOrder		  off
   VariantCondition	  off
+  ShowSubsystemDomainSpec off
   ExecutionContextIcon	  off
   ShowLinearizationAnnotations on
   ShowVisualizeInsertedRTB on
@@ -242,6 +271,7 @@ Model {
   BrowserShowLibraryLinks off
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  on
   SimulationMode	  "normal"
   VisualizeLoggedSignalsWhenLoggingToFile off
   PauseTimes		  "5"
@@ -249,6 +279,8 @@ Model {
   SnapshotBufferSize	  10
   SnapshotInterval	  10
   NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
   LinearizationMsg	  "none"
   Profile		  off
   ParamWorkspaceSource	  "MATLABWorkspace"
@@ -260,12 +292,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b"
+    model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b"
+      Cell		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -304,7 +336,7 @@ Model {
     Dimension		    1
     Simulink.ConfigSet {
       $ObjectID		      8
-      Version		      "1.17.1"
+      Version		      "1.18.1"
       DisabledProps	      []
       Description	      ""
       Array {
@@ -312,12 +344,13 @@ Model {
 	Dimension		9
 	Simulink.SolverCC {
 	  $ObjectID		  9
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  on
 	  FixedStep		  "Ts"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
@@ -348,10 +381,11 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	  SampleTimeProperty	  []
 	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
 	  $ObjectID		  10
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  Decimation		  "1"
@@ -392,7 +426,7 @@ Model {
 	}
 	Simulink.OptimizationCC {
 	  $ObjectID		  11
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  BlockReduction	  on
@@ -439,16 +473,22 @@ Model {
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
 	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
 	  $ObjectID		  12
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
 	  ArrayBoundsChecking	  "none"
 	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
 	  SignalRangeChecking	  "none"
 	  ReadBeforeWriteMsg	  "UseLocalSettings"
 	  WriteAfterWriteMsg	  "UseLocalSettings"
@@ -519,6 +559,8 @@ Model {
 	  SimStateInterfaceChecksumMismatchMsg "warning"
 	  SimStateOlderReleaseMsg "error"
 	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "warning"
+	  MatchCodeGenerationContextForUpdateDiagram "none"
 	  InitInArrayFormatMsg	  "warning"
 	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
@@ -549,10 +591,11 @@ Model {
 	  RCSCObservableMsg	  "warning"
 	  ForceCombineOutputUpdateInSim	off
 	  UnitDatabase		  ""
+	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
 	  $ObjectID		  13
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    15
@@ -619,7 +662,7 @@ Model {
 	}
 	Simulink.ModelReferenceCC {
 	  $ObjectID		  14
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
@@ -638,7 +681,7 @@ Model {
 	}
 	Simulink.SFSimCC {
 	  $ObjectID		  15
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
 	  SimCustomSourceCode	  ""
@@ -657,6 +700,7 @@ Model {
 	  SimIntegrity		  on
 	  SimUseLocalCustomCode	  off
 	  SimParseCustomCode	  on
+	  SimAnalyzeCustomCode	  off
 	  SimBuildMode		  "sf_incremental_build"
 	  SimGenImportedTypeDefs  off
 	  ModelFunctionsGlobalVisibility "on"
@@ -664,11 +708,13 @@ Model {
 	  EnableRuntimeRecursion  on
 	  MATLABDynamicMemAlloc	  off
 	  MATLABDynamicMemAllocThreshold 65536
+	  CustomCodeFunctionArrayLayout	[]
+	  DefaultCustomCodeFunctionArrayLayout "NotSpecified"
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
 	  $ObjectID		  16
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
 	    Dimension		    1
@@ -702,6 +748,7 @@ Model {
 	  CustomSource		  "\n"
 	  CustomLibrary		  ""
 	  CustomDefine		  ""
+	  CustomBLASCallback	  ""
 	  CustomLAPACKCallback	  ""
 	  CustomFFTCallback	  ""
 	  CustomInitializer	  ""
@@ -716,7 +763,7 @@ Model {
 	  CodeExecutionProfiling  off
 	  CodeExecutionProfileVariable "executionProfile"
 	  CodeProfilingSaveOptions "SummaryOnly"
-	  CodeProfilingInstrumentation off
+	  CodeProfilingInstrumentation "off"
 	  SILDebugging		  off
 	  TargetLang		  "C"
 	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
@@ -739,7 +786,7 @@ Model {
 	    Dimension		    2
 	    Simulink.CodeAppCC {
 	      $ObjectID		      17
-	      Version		      "1.17.1"
+	      Version		      "1.18.1"
 	      DisabledProps	      []
 	      Description	      ""
 	      Comment		      ""
@@ -781,6 +828,7 @@ Model {
 	      InsertBlockDesc	      on
 	      InsertPolySpaceComments off
 	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
 	      StateflowObjectComments on
 	      MATLABSourceComments    on
 	      EnableCustomComments    off
@@ -794,7 +842,7 @@ Model {
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
 	      $ObjectID		      18
-	      Version		      "1.17.1"
+	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
 		Dimension		10
@@ -820,6 +868,7 @@ Model {
 	      UtilityFuncGeneration   "Auto"
 	      MultiwordTypeDef	      "System defined"
 	      MultiwordLength	      256
+	      DynamicStringBufferSize 256
 	      GenerateFullHeader      on
 	      InferredTypesCompatibility off
 	      ExistingSharedCode      ""
@@ -833,6 +882,7 @@ Model {
 	      GeneratePreprocessorConditionals "Use local settings"
 	      CombineOutputUpdateFcns on
 	      CombineSignalStateStructs	on
+	      GroupInternalDataByFunction off
 	      SuppressErrorStatus     on
 	      IncludeFileDelimiter    "Auto"
 	      ERTCustomFileBanners    on
@@ -841,9 +891,9 @@ Model {
 	      MatFileLogging	      off
 	      MultiInstanceERTCode    off
 	      CodeInterfacePackaging  "Nonreusable function"
+	      PurelyIntegerCode	      off
 	      SupportNonFinite	      on
 	      SupportComplex	      on
-	      PurelyIntegerCode	      off
 	      SupportContinuousTime   off
 	      SupportNonInlinedSFcns  on
 	      RemoveDisableFunc	      off
@@ -851,6 +901,7 @@ Model {
 	      SupportVariableSizeSignals off
 	      ParenthesesLevel	      "Nominal"
 	      CastingMode	      "Nominal"
+	      PreserveStateflowLocalDataDimensions off
 	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
 	      ModelStepFunctionPrototypeControlCompliant off
 	      CPPClassGenCompliant    off
@@ -865,6 +916,11 @@ Model {
 	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
 	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
 	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      UnsupportedSFcnMsg      "error"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
 	      SystemTargetFile	      "MCHP_dsPIC_stf.tlc"
 	      DialogCategory	      0
 	      Array {
@@ -901,6 +957,7 @@ Model {
 		  UtilityFuncGeneration	  "Auto"
 		  MultiwordTypeDef	  "System defined"
 		  MultiwordLength	  256
+		  DynamicStringBufferSize 256
 		  GenerateFullHeader	  on
 		  InferredTypesCompatibility off
 		  ExistingSharedCode	  ""
@@ -914,6 +971,7 @@ Model {
 		  GeneratePreprocessorConditionals "Use local settings"
 		  CombineOutputUpdateFcns on
 		  CombineSignalStateStructs on
+		  GroupInternalDataByFunction off
 		  SuppressErrorStatus	  on
 		  IncludeFileDelimiter	  "Auto"
 		  ERTCustomFileBanners	  on
@@ -922,9 +980,9 @@ Model {
 		  MatFileLogging	  off
 		  MultiInstanceERTCode	  off
 		  CodeInterfacePackaging  "Nonreusable function"
+		  PurelyIntegerCode	  off
 		  SupportNonFinite	  on
 		  SupportComplex	  on
-		  PurelyIntegerCode	  off
 		  SupportContinuousTime	  off
 		  SupportNonInlinedSFcns  on
 		  RemoveDisableFunc	  off
@@ -932,6 +990,7 @@ Model {
 		  SupportVariableSizeSignals off
 		  ParenthesesLevel	  "Nominal"
 		  CastingMode		  "Nominal"
+		  PreserveStateflowLocalDataDimensions off
 		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
 		  ModelStepFunctionPrototypeControlCompliant off
 		  CPPClassGenCompliant	  off
@@ -946,7 +1005,13 @@ Model {
 		  LookupTableObjectStructAxisOrder "1,2,3,4,..."
 		  LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
 		  LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+		  ArrayLayout		  "Column-major"
+		  UnsupportedSFcnMsg	  "error"
+		  ERTHeaderFileRootName	  "$R$E"
+		  ERTSourceFileRootName	  "$R$E"
+		  ERTDataFileRootName	  "$R_data"
 		  GenerateASAP2		  off
+		  DSAsUniqueAccess	  off
 		  ExtMode		  off
 		  ExtModeTransport	  0
 		  ExtModeStaticAlloc	  off
@@ -975,6 +1040,7 @@ Model {
 		  DataDefinitionFile	  "global.c"
 		  GlobalDataReference	  "Auto"
 		  ERTFilePackagingFormat  "Modular"
+		  RateTransitionBlockCode "Inline"
 		  DataReferenceFile	  "global.h"
 		  PreserveExpressionOrder off
 		  PreserveIfCondition	  off
@@ -986,6 +1052,7 @@ Model {
 		  EnableSignedRightShifts on
 		  IndentStyle		  "K&R"
 		  IndentSize		  "2"
+		  NewlineStyle		  "Default"
 		  EnableUserReplacementTypes off
 		  Array {
 		    Type		    "Struct"
@@ -1003,9 +1070,14 @@ Model {
 		    int			    ""
 		    uint		    ""
 		    char		    ""
+		    uint64		    ""
+		    int64		    ""
 		    }
 		    PropName		    "ReplacementTypes"
 		  }
+		  MaxIdInt64		  "MAX_int64_T"
+		  MinIdInt64		  "MIN_int64_T"
+		  MaxIdUint64		  "MAX_uint64_T"
 		  MaxIdInt32		  "MAX_int32_T"
 		  MinIdInt32		  "MIN_int32_T"
 		  MaxIdUint32		  "MAX_uint32_T"
@@ -1166,54 +1238,54 @@ Model {
 	      CustomProperty {
 		DataType		"string"
 		Name			"RTWGenSettings_txt"
-		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master';s.ChipIdN='[33 "
-		" 256  506]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s"
-		".ChipRAM='32768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOC"
-		"K = OFF\\\\n#pragma config POSCMD = XT, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config JTAGEN = O"
-		"FF\\\\n';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='1';s.ANSEL_Exist='1';s.ANSEL='[6162    -1    -1    -"
-		"1    -1    -1    -1    -1    -1    -1    -1]';s.TRIS='[65535  65535  65535  65503  65535  65533  65535     -1     -1"
-		"     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1    "
+		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master';s.ChipIdN='[33  256  5"
+		"06]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRA"
+		"M='32768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF"
+		"\\\\n#pragma config POSCMD = XT, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config JTAGEN = OFF\\\\n"
+		"';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-1 -1 -1 -1 -1 -1 -1 -1 -1 -"
+		"1 -1]';s.TRIS='[65535  65535  65535  65439  65535  65533  65535     -1     -1     -1     -1     -1     -1     -1    "
 		" -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1 "
-		"    -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='["
-		"-1   -1   -1   -1   -1   -1   -1  256   -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     "
-		"-1     -1     -1     -1     -1     -1  13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1  "
-		"   -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -"
-		"1     -1     -1     -1     -1]';s.PortConfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s."
-		"MASTER_BusyFlag='53';s.POWERSAVE='0';s.MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg="
-		"'-1';s.DOS_00794='1';s.DOS_00931='1';s.DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1'"
-		";s.DOS_00998='1';s.DOS_00209='0';s.DOS_01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPO"
-		"Rx='1';s.DOS_01017_RPINRx='1';s.DOS_01555_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_P"
-		"MDx='0';s.DOS_01555_TLAK_INT_='0';s.DOS_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1"
-		"';s.DOS_01117_PORTx='1';s.DOS_00999='0';s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s."
-		"DOS_01287_TLAC_INT_='1';s.DOS_01424='1';s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_"
-		"02508c11='0';s.DOS_01468_PMBA_current_source='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0'"
-		";s.DOS_02316_nvm_ctrl_v1_16bit='0';s.DOS_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='"
-		"0';s.DOS_00958_pwm_TLAY='0';s.TLAY_IOPorts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DO"
-		"S_01497_TLAH_PMDx='0';s.DOS_02550_TLAL_INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s."
-		"DOS_01017_PMDx='0';s.DOS_00927='0';s.DOS_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s"
-		".DOS_01520_wdt_dmt_upb_v1_16bit='0';s.DOS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00"
-		"958_pwm_TLCD='0';s.DOS_02192_PORTx_TLCD='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02"
-		"481_WACJ_Config='0';s.DOS_02569_pfm_cache_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32"
-		"bit='0';s.DOS_01520_wdt_dmt_upb_v1='0';s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DO"
-		"S_01423_RPINRx='0';s.DOS_02481_RPORx='0';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS"
-		"_01500_dma_bvci_v2='0';s.DOS_02141_tmr_classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0'"
-		";s.DOS_00749_ocmp_pb_v1='0';s.DOS_01441_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_"
-		"32bit='0';s.DOS_02514_dfm_strl_sst_upb_v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control"
-		"_upb_v1_32bit='0';s.DOS_01461_afe_ctmu_con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1"
-		"='0';s.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s"
-		".DOS_01475_lpwr_deep_sleep_ctrl_v2='0';s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Confi"
-		"g='0';s.DOS_02823_WACN_clk_cru_upb_v2='0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';"
-		"s.DOS_01577_cla_clc_upb_v1_32bit='0';s.DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd"
-		"_upb_v2_pic32mk='0';s.DOS_02481_WACJ_MC_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0'"
-		";s.DOS_01459_ptg_pc_upb_v1_SIC='0';s.DOS_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC"
-		"_int_evic_v3='0';s.DOS_02787_WACD_Config='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DO"
-		"S_02823_clk_cru_upb_v2='0';s.DOS_01423_RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s."
-		"DOS_00687_tmr_classa_pb_v1='0';s.DOS_00745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_"
-		"control_pb_v2='0';s.DOS_01114_eth_bvci_v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_"
-		"EIP_00206r5_sqi_v2='0';s.DOS_EIP_00124_usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_eb"
-		"i_v1='0';s.DOS_EIP_00158_crypto_v1='0';s.UART_TX_IMPLEMENTATION='[2]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACH"
-		"ANNEL='[0]';s.UART_TX_THREAD_PROTECTION='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s."
-		"DOS_02907_WACK_MC_int_evic_v3='0';s.ADC_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
+		"    -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     "
+		"-1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='[-1   -1   -1   -1   -1   -1   -1  256  "
+		" -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1  "
+		"13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -"
+		"1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.PortC"
+		"onfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s.MASTER_BusyFlag='53';s.POWERSAVE='0';s."
+		"MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg='-1';s.DOS_00794='1';s.DOS_00931='1';s."
+		"DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1';s.DOS_00998='1';s.DOS_00209='0';s.DOS_"
+		"01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPORx='1';s.DOS_01017_RPINRx='1';s.DOS_015"
+		"55_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_PMDx='0';s.DOS_01555_TLAK_INT_='0';s.DOS"
+		"_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1';s.DOS_01117_PORTx='1';s.DOS_00999='0'"
+		";s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s.DOS_01287_TLAC_INT_='1';s.DOS_01424='1'"
+		";s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_02508c11='0';s.DOS_01468_PMBA_current_s"
+		"ource='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0';s.DOS_02316_nvm_ctrl_v1_16bit='0';s.DO"
+		"S_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='0';s.DOS_00958_pwm_TLAY='0';s.TLAY_IOPo"
+		"rts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DOS_01497_TLAH_PMDx='0';s.DOS_02550_TLAL_"
+		"INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s.DOS_01017_PMDx='0';s.DOS_00927='0';s.DO"
+		"S_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s.DOS_01520_wdt_dmt_upb_v1_16bit='0';s.D"
+		"OS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00958_pwm_TLCD='0';s.DOS_02192_PORTx_TLCD"
+		"='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02481_WACJ_Config='0';s.DOS_02569_pfm_cac"
+		"he_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32bit='0';s.DOS_01520_wdt_dmt_upb_v1='0';"
+		"s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DOS_01423_RPINRx='0';s.DOS_02481_RPORx='0"
+		"';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS_01500_dma_bvci_v2='0';s.DOS_02141_tmr_"
+		"classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0';s.DOS_00749_ocmp_pb_v1='0';s.DOS_01441"
+		"_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_32bit='0';s.DOS_02514_dfm_strl_sst_upb_"
+		"v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control_upb_v1_32bit='0';s.DOS_01461_afe_ctmu_"
+		"con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1_PI"
+		"C32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s.DOS_01475_lpwr_deep_sleep_ctrl_v2='0';"
+		"s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Config='0';s.DOS_02823_WACN_clk_cru_upb_v2='"
+		"0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';s.DOS_01577_cla_clc_upb_v1_32bit='0';s."
+		"DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd_upb_v2_pic32mk='0';s.DOS_02481_WACJ_MC"
+		"_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0';s.DOS_01459_ptg_pc_upb_v1_SIC='0';s.DO"
+		"S_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC_int_evic_v3='0';s.DOS_02787_WACD_Confi"
+		"g='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DOS_02823_clk_cru_upb_v2='0';s.DOS_01423_"
+		"RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s.DOS_00687_tmr_classa_pb_v1='0';s.DOS_00"
+		"745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_control_pb_v2='0';s.DOS_01114_eth_bvci_"
+		"v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_EIP_00206r5_sqi_v2='0';s.DOS_EIP_00124_"
+		"usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.DOS_EIP_00158_crypto_v1='0';"
+		"s.UART_TX_IMPLEMENTATION='[2]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACHANNEL='[0]';s.UART_TX_THREAD_PROTECTION"
+		"='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s.DOS_02907_WACK_MC_int_evic_v3='0';s.ADC"
+		"_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1231,7 +1303,7 @@ Model {
 	}
 	SlCovCC.ConfigComp {
 	  $ObjectID		  20
-	  Version		  "1.17.1"
+	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -1543,6 +1615,7 @@ Model {
       Opaque		      off
       MaskHideContents	      off
       SFBlockType	      "NONE"
+      VariantControlMode      "Expression"
       Variant		      off
       GeneratePreprocessorConditionals off
       AllowZeroVariantControls off
@@ -1550,6 +1623,10 @@ Model {
       TreatAsGroupedWhenPropagatingVariantConditions on
       ContentPreviewEnabled   off
       IsWebBlock	      off
+      IsObserver	      off
+      Latency		      "0"
+      AutoFrameSizeCalculation off
+      IsWebBlockPanel	      off
     }
     Block {
       BlockType		      Sum
@@ -1572,10 +1649,12 @@ Model {
     }
   }
   System {
-    Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b"
+    Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     Location		    [74, -4, 1742, 981]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
+    SetExecutionDomain	    off
+    ExecutionDomainType	    "Deduce"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1671,13 +1750,14 @@ Model {
       SourceBlock	      "MCHP_Blockset/System Configuration/Compiler Options"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      MultiThreadCoSim	      "auto"
       LATEST_CMPLR	      on
       COMP_LIST		      "Dynamic Options"
       COMP_LIST_TXT	      "xc16 - v1.35"
       USE_64BIT_DOUBLE	      off
       MCHP_MULTITHREAD_COMPILATION on
       UseCustom_LinkerScript  off
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
       OPTIMIZATION_LEVEL      "3"
       MPLAB_LINKLIB	      "default"
       MPLAB_LINKLIB1	      "default"
@@ -1783,7 +1863,7 @@ Model {
       READPREVIOUS	      off
       ORDERING		      "None"
       SampleTime	      "-1 "
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      SubSystem
@@ -1799,6 +1879,8 @@ Model {
 	Location		[74, -4, 1742, 981]
 	Open			off
 	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1830,6 +1912,7 @@ Model {
 	  SourceBlock		  "MCHP_Blockset/Analog IO/ADC"
 	  SourceType		  ""
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
+	  MultiThreadCoSim	  "auto"
 	  ADC_REF		  "1"
 	  Mode			  "10 bits (allows exact simultaneous sampling)"
 	  FORM			  "sddd dddd dddd 0000  ==> Signed fractional"
@@ -1856,7 +1939,7 @@ Model {
 	  Info			  "Total Time for Sample & Conversion : 4.4571e-06s including 3.4286e-07s (x 1) sample time."
 	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 3}{AN3}15:2:B1;{Analog Input 6}{AN6}15:2:C0;{Analog Input "
 	  "13}{AN13}15:2:E13;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
 	  ADC_TIMING		  "[4.4571428571428571832e-06]"
 	  Port {
 	    PortNumber		    2
@@ -1884,6 +1967,7 @@ Model {
 	  SourceBlock		  "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
 	  SourceType		  "Comparator / Op amp (DS70357 & DS70648)"
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
+	  MultiThreadCoSim	  "auto"
 	  MCHP_params		  "s.CVR1OE=0;s.CVR2OE=0;s.VREFSEL=0;s.RLaddle=reshape([1 1],1,2);s.AVdd=reshape({ '3.3','3.3'},1,2);s"
 	  ".AVss=reshape({ '0','0'},1,2);s.CVRSS=reshape([0 0],1,2);s.CON_OPMODE_CPOL=reshape([3 3 3 0 0],1,5);s.OutputPort_CO"
 	  "E_RP=reshape({ 'B1 / Pin[16] / OA1OUT / AN3 / OA1OUT','A0 / Pin[13] / OA2OUT / AN0 / OA2OUT','C0 / Pin[21] / OA3OUT"
@@ -1903,7 +1987,7 @@ Model {
 	  S_INPUT_Size		  "[2  2]"
 	  S_OUTPUT_Size		  "[4]"
 	  SampleTime		  "-1"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
 	  MCHP_PORT		  "{Op-Amp Output 1}{OA1(out)}14:2:B1;{Op-Amp1 V+}{OA1 V+}14:2:B2;{Op-Amp1 V-}{OA1 V-}14:2:B3;{Op-Amp Ou"
 	  "tput 2}{OA2(out)}14:2:A0;{Op-Amp2 V+}{OA2 V+}14:2:A1;{Op-Amp2 V-}{OA2 V-}14:2:B0;{Op-Amp Output 3}{OA3(out)}14:2:C0"
 	  ";{Op-Amp3 V+}{OA3 V+}14:2:C2;{Op-Amp3 V-}{OA3 V-}14:2:C1;"
@@ -1984,6 +2068,8 @@ Model {
 	    Location		    [79, 1, 1738, 977]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2322,6 +2408,8 @@ Model {
 	    Location		    [100, 100, 900, 600]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2393,6 +2481,7 @@ Model {
 	      SourceBlock	      "MCHP_Blockset/PWM IO/PWM High Speed"
 	      SourceType	      ""
 	      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+	      MultiThreadCoSim	      "auto"
 	      pop1		      "[1]"
 	      chk1		      "[1  1  1  0  0]"
 	      chkHL1		      "[1  1  0  1  1  1  1 ; 1  1  0  1  1  1  1]"
@@ -2562,6 +2651,7 @@ Model {
 	  SourceBlock		  "MCHP_Blockset/QEI/QEI"
 	  SourceType		  "Output Driver for Quadrature Encoder Interface (QEI) peripheral "
 	  SourceProductName	  "MPLAB® Device Blocks for Simulink®"
+	  MultiThreadCoSim	  "auto"
 	  QEI_REF		  "1"
 	  QEI_MODE		  "Quadrature Encoder"
 	  QEI_x2mode		  off
@@ -2601,7 +2691,7 @@ Model {
 	  PIN_CCMP		  "Dynamic Options"
 	  PIN_CCMP_TXT		  "A4 / P20 / Pin[33]"
 	  MCHP_PORT		  "{QEI1 A}{QEA1}5:0:P24;{QEI1 B}{QEB1}5:0:P54;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
 	  QEI_IntPri		  "5"
 	  Port {
 	    PortNumber		    1
@@ -2829,6 +2919,7 @@ Model {
       SourceBlock	      "MCHP_Blockset/System Configuration/Microchip Master"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      MultiThreadCoSim	      "auto"
       PICREF		      "33EP256MC506"
       TIMESTEP_REF	      "ADC"
       BUSYFLAG		      "Dynamic Options"
@@ -3154,10 +3245,10 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
       "tModificationDate>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b v1.31 - R.Delpoux & L.Kerhuel"
-      "\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated w"
-      "ith resistances)\\n\\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\\nLED D2 blin"
-      "k at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Sat Oct 27 23:00:49 2018"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.30 - R.Delpoux & L.Kerhuel\\n\\nM"
+      "CLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with res"
+      "istances)\\n\\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\\nLED D2 blink at 5H"
+      "z. LED D1 is the CPU busy flag\\n\\nLost modified on: Sat Oct 27 22:54:27 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
@@ -3173,7 +3264,8 @@ Model {
       SourceBlock	      "MCHP_Blockset/System Info/Port Info"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MultiThreadCoSim	      "auto"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      RateTransition
@@ -3222,6 +3314,7 @@ Model {
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
       SourceType	      "Input driver for Digital Input Pins"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
       PORT		      "Dynamic Options"
       PORT_TXT		      "G   [ 6 : 9 ]"
       PIN		      "7"
@@ -3230,7 +3323,7 @@ Model {
       ORDERING		      "None"
       SampleTime	      "-1"
       MCHP_PORT		      "{Digital In}{DIN}2:0:G7;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      Reference
@@ -3243,6 +3336,7 @@ Model {
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
       SourceType	      "Input driver for Digital Input Pins"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
       PORT		      "Dynamic Options"
       PORT_TXT		      "G   [ 6 : 9 ]"
       PIN		      "6"
@@ -3251,7 +3345,7 @@ Model {
       ORDERING		      "None"
       SampleTime	      "-1"
       MCHP_PORT		      "{Digital In}{DIN}2:0:G6;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      Sum
@@ -3278,7 +3372,8 @@ Model {
       SourceBlock	      "MCHP_Blockset/System Info/Timer Info"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MultiThreadCoSim	      "auto"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      Reference
@@ -3291,6 +3386,7 @@ Model {
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Configuration"
       SourceType	      "Configuration for UART peripheral"
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      MultiThreadCoSim	      "auto"
       UART_REF		      "1"
       BAUD_Choice	      "Dynamic Options"
       BAUD_Choice_TXT	      "  115200         [-0.06%]"
@@ -3303,7 +3399,7 @@ Model {
       PIN_TX		      "Dynamic Options"
       PIN_TX_TXT	      "F1 / P97 / Pin[59]"
       MCHP_PORT		      "{UART1  Rx}{U1RX}3:0:P53;{UART1  Tx}{U1TX}3:1:P97;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
       MCHP_COM_ExtPil	      off
       TX_IMPLEMENTATION	      "Circular Buffer"
       TX_IMPLEMENTATION_default	"Circular Buffer"
@@ -3351,11 +3447,12 @@ Model {
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
       SourceType	      "Higl Level UART protocol"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
       UART_REF		      "1"
       CHANNELS		      "[1 2 3 4 ]"
       AllOrNothing	      off
       SampleTime	      "-1 "
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest_R2017b/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
       MCHP_COMPILED_INFO      "CompiledSampleTime= [0.010000000000000000208   0 ];CompiledInportDataTypes=[  1   1   1"
       "   1 ];CompiledInportDataWidth=[1  1  1  1];"
     }
@@ -3371,6 +3468,7 @@ Model {
       SourceBlock	      "MCHP_Blockset/BUS UART/picgui\nGraphical interface"
       SourceType	      ""
       SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
       Nothing		      "0"
     }
     Line {
