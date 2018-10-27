@@ -37,12 +37,16 @@ Data Visualisation with picgui:
 ![Data Visualisation][fig:DataVisu]
 
 
+[Back to project presentation][MainProjectPage]
+
 
 <!---  math test not working on GitHub: $\sqrt(2) + \frac{1}{2^5}$
 comment  -->
 
 [fig:Model_Hardware_Test_withSampleTime]: ./Fig/Model_Hardware_Test_withSampleTime.png "Simulink Model Model_Hardware_Test_withSampleTime.slx from this repository set-up the dsPIC 33EP256MC506 PIM daughter board used on a MCLV v2 microchip motor control board. Two PWM signals drives a DC motor. One QEI peripheral provides position and speed from an optical encoder. 3 ADC channels provides board potentiometer position and current measurement from two shunt resistors. Peripheral QEI and ADC output values are sent through the UART to the microchip picgui interface for visualisation and data logging."
 [fig:DataVisu]: ./Fig/DataVisu.png "picgui, custom script and figure that present in real-time potentiometer, motor speed and current measured"
+
+[MainProjectPage]: ./../../readme.md 
 
 [blockset]: https://www.microchip.com/SimulinkBlocks "Blockset for dsPIC and PIC32 (free)"
 [MPLABX]: https://www.microchip.com/MPLABX "Microchip developpment environment (free)"
