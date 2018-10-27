@@ -21,7 +21,7 @@ TsQEI = Tsmeca/5;   % QEI sampled 5 time faster than Tsmeca for filtering
 
 %% Paramètres Banc
 Vdc = 24;
-Lignes = 500*4;
+Lignes = 250*4;
 
 
 
