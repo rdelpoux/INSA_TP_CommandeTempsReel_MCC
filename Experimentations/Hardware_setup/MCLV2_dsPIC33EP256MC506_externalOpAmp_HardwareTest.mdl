@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.35"
+    ComputedModelVersion    "1.38"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -184,20 +184,41 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[0]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1236.0, 892.0]
-	ZoomFactor		[1.1253233140025591]
-	Offset			[310.63350430659045, -18.4408690602923]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		3
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1236.0, 889.0]
+	  ZoomFactor		  [1.1253233140025591]
+	  Offset		  [310.63350430659045, -18.4408690602923]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "351"
+	  Extents		  [1236.0, 889.0]
+	  ZoomFactor		  [1.07]
+	  Offset		  [-43.902661292100106, -52.999559160641809]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "358"
+	  Extents		  [1236.0, 889.0]
+	  ZoomFactor		  [1.03]
+	  Offset		  [-290.8962264150955, -324.65973621542418]
+	}
+	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		6
+	$ObjectID		8
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -227,9 +248,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Oct 28 21:27:19 2018"
-  RTWModifiedTimeStamp	  462662631
-  ModelVersionFormat	  "1.%<AutoIncrement:35>"
+  LastModifiedDate	  "Mon Oct 29 00:32:54 2018"
+  RTWModifiedTimeStamp	  462673859
+  ModelVersionFormat	  "1.%<AutoIncrement:38>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -284,7 +305,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     overrideMode_	    [0.0]
@@ -329,7 +350,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      10
       Version		      "1.18.1"
       DisabledProps	      []
       Description	      ""
@@ -337,7 +358,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  11
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -378,7 +399,7 @@ Model {
 	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  12
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -419,7 +440,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  13
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -474,7 +495,7 @@ Model {
 	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  14
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -588,7 +609,7 @@ Model {
 	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  15
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -655,7 +676,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  16
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -674,7 +695,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  17
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -707,7 +728,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  18
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -779,7 +800,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      19
 	      Version		      "1.18.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -835,7 +856,7 @@ Model {
 	    }
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      20
 	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
@@ -922,7 +943,7 @@ Model {
 		Dimension		1
 		Simulink.ERTTargetCC {
 		  $BackupClass		  "Simulink.TargetCC"
-		  $ObjectID		  19
+		  $ObjectID		  21
 		  Version		  "1.18.1"
 		  Array {
 		    Type		    "Cell"
@@ -1296,7 +1317,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  22
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1346,11 +1367,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    10
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    23
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1661,7 +1682,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "113"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "363"
+    SIDHighWatermark	    "367"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
@@ -1842,7 +1863,7 @@ Model {
       System {
 	Name			"MCLV2\nwith DC motor"
 	Location		[-1163, 47, 3, 982]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1930,8 +1951,8 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Average\ntwo shunt resistors"
-	    Location		    [-1161, 134, 4, 965]
-	    Open		    off
+	    Location		    [-1163, 47, 3, 982]
+	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
@@ -1984,6 +2005,18 @@ Model {
 	      OutDataTypeStr	      "fixdt(1,16)"
 	    }
 	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain2"
+	      SID		      "365"
+	      Position		      [280, 5, 310, 35]
+	      ZOrder		      3566
+	      Gain		      "-1"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutMin		      "[-4.4]"
+	      OutMax		      "[4.4]"
+	      OutDataTypeStr	      "fixdt(1,16)"
+	    }
+	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
 	      SID		      "330"
@@ -1997,10 +2030,17 @@ Model {
 	      OutDataTypeStr	      "Inherit: Same as accumulator"
 	    }
 	    Block {
+	      BlockType		      Terminator
+	      Name		      "Terminator"
+	      SID		      "367"
+	      Position		      [370, 60, 390, 80]
+	      ZOrder		      3567
+	    }
+	    Block {
 	      BlockType		      Outport
 	      Name		      "Out1"
 	      SID		      "360"
-	      Position		      [455, 63, 485, 77]
+	      Position		      [410, 13, 440, 27]
 	      ZOrder		      3564
 	      IconDisplay	      "Port number"
 	    }
@@ -2025,8 +2065,18 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Demux"
 	      SrcPort		      1
-	      DstBlock		      "Sum"
-	      DstPort		      1
+	      Points		      [50, 0]
+	      Branch {
+		ZOrder			11
+		Points			[0, -25]
+		DstBlock		"Gain2"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			6
+		DstBlock		"Sum"
+		DstPort			1
+	      }
 	    }
 	    Line {
 	      ZOrder		      4
@@ -2036,11 +2086,26 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Gain1"
+	      ZOrder		      9
+	      SrcBlock		      "Gain2"
 	      SrcPort		      1
 	      DstBlock		      "Out1"
 	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      DstBlock		      "Terminator"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      SID		      "366"
+	      Name		      "2nd shunt seems not properly connected\ngenerate lots of noise"
+	      Position		      [164, -56, 346, -30]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
 	    }
 	  }
 	}
@@ -2993,6 +3058,7 @@ Model {
 	  InternalMargins	  [0, 0, 0, 0]
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
+	  ZOrder		  -1
 	}
 	Annotation {
 	  SID			  "347"
@@ -3282,7 +3348,7 @@ Model {
       "OS_01114_eth_bvci_v1=0;MCHP.modsrc.DOS_02831_usb_clk_rst_v2=0;MCHP.modsrc.DOS_01643_pfm_cache_ahb_v2=0;MCHP.mods"
       "rc.DOS_EIP_00206r5_sqi_v2=0;MCHP.modsrc.DOS_EIP_00124_usb_hs_otgcore_v1=0;MCHP.modsrc.DOS_EIP_00218_math_rng_ahb"
       "s_v2=0;MCHP.modsrc.DOS_EIP_00109_ebi_v1=0;MCHP.modsrc.DOS_EIP_00158_crypto_v1=0;MCHP.clock.PBxDIV=-1;"
-      MCHP_CRC		      "5737193"
+      MCHP_CRC		      "5736882"
       BTMODE		      "Not used"
       RES1		      "Not used"
       PLLSS		      "Not used"
@@ -3351,10 +3417,10 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
       "tModificationDate>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.34 - R.Delpoux & L.Kerhuel\\n\\nM"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.37 - R.Delpoux & L.Kerhuel\\n\\nM"
       "CLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with res"
       "istances)\\n\\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\\nLED D2 blink at 5H"
-      "z. LED D1 is the CPU busy flag\\n\\nLost modified on: Sun Oct 28 21:13:41 2018"
+      "z. LED D1 is the CPU busy flag\\n\\nLost modified on: Mon Oct 29 00:30:47 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
