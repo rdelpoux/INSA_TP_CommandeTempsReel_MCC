@@ -102,7 +102,7 @@ R23 = 1e3; %(en Ohm)
 nbpts = 1000;
 Lignes = nbpts;
 
-% Precision PWM
+% Pr�cision PWM
 PWMmax = 3199;
 f_PWM = 20e3; %(en Hz) 
 
@@ -115,28 +115,25 @@ Cl = 0;
 %% Parametre de simulation
 
 Ts_elec = 1e-4; % en s
-Ts_meca = 100*Ts_elec; % en s
+Ts_meca = 100*Ts; % en s
 TsQEI = Tsmeca/5;
 Tf = 5; % en s
 
 %% Simulation, float vs fixed point multirate
-omref = 200;
-
 sim('SimulationEchantillinnesClampingMCC')
 %sim('SimuMCCEchant_V02');
 
 %%
 figure(1)
 subplot(3,1,1)
-plot(v_o.Time,v_o.Data)
+plot(v.Time,v.Data)
 ylabel('Tension v (V)')
 subplot(3,1,2)
-plot(iref_o.Time,iref_o.data,'--',i_o.Time,i_o.Data)
+plot(iref.Time,iref.data,'--',i.Time,i.Data)
 legend('i_r_e_f','i','location','best')
 ylabel('Courants i (A)')
 subplot(3,1,3)
-plot(omref_o.Time, omref_o.Data,'--',omega_o.Time,omega_o.Data)
+plot(omref.Time, omref.Data,'--',omega.Time,omega.Data)
 legend('\omega_r_e_f','\omega','location','best')
 ylabel('Vitesse \omega(rad/s)')
 xlabel('Temps (s)')
-    
