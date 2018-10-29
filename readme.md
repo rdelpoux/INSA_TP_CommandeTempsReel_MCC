@@ -1,7 +1,7 @@
 # INSA_TP_CommandeTempsReel_MCC
 
 Auteurs : 
-- Romain DELPOUX (Romain.Delpoux@insa-lyon.fr), INSA de Lyon, Laboratoire Ampere UMR CNRS 5005.
+- Romain DELPOUX (Romain.Delpoux at insa-lyon.fr), INSA de Lyon, Laboratoire Ampere UMR CNRS 5005.
 - Lubin KERHUEL (Lubin.Kerhuel at microchip.com), Microchip Technology Inc.
 
 ## Introduction
