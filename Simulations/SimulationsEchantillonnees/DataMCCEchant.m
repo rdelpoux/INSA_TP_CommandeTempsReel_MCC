@@ -116,13 +116,14 @@ Cl = 0;
 
 Ts_elec = 1e-4; % en s
 Ts_meca = 100*Ts_elec; % en s
-TsQEI = Tsmeca/5;
+TsQEI = Ts_meca/5;
 Tf = 5; % en s
 
 %% Simulation, float vs fixed point multirate
 omref = 200;
 
 sim('SimulationEchantillinnesClampingMCC')
+%sim('SimulationEchantillinnesClampingMCC_FixedPt')
 %sim('SimuMCCEchant_V02');
 
 %%
