@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.38"
+    ComputedModelVersion    "1.43"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -14,7 +14,7 @@ Model {
     NumResetEvents	    0
     HasInitializeEvent	    0
     HasTerminateEvent	    0
-    PreCompExecutionDomainType "Unset"
+    PreCompExecutionDomainType "Discrete"
     IsExportFunctionModel   0
     NumParameterArguments   0
     NumExternalFileReferences 15
@@ -147,7 +147,6 @@ Model {
   Description		  "MCLV V2 board connected to DC motor through PWM [1 2]\nPIM 33EP256MC506 with internal Op-Amp (popula"
   "ted with resistances)\n\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\nLED D2 blink "
   "at 5Hz. LED D1 is the CPU busy flag"
-  PreLoadFcn		  "InitTPV0;"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -167,7 +166,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-1163.0, 47.0, 1166.0, 935.0]
+      Location		      [1858.0, 30.0, 963.0, 861.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -184,41 +183,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[0]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		3
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1236.0, 889.0]
-	  ZoomFactor		  [1.1253233140025591]
-	  Offset		  [310.63350430659045, -18.4408690602923]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "351"
-	  Extents		  [1236.0, 889.0]
-	  ZoomFactor		  [1.07]
-	  Offset		  [-43.902661292100106, -52.999559160641809]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "358"
-	  Extents		  [1236.0, 889.0]
-	  ZoomFactor		  [1.03]
-	  Offset		  [-290.8962264150955, -324.65973621542418]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1011.0, 811.0]
+	ZoomFactor		[1.0]
+	Offset			[342.35555794254026, -18.696237776686132]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		8
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -230,11 +208,11 @@ Model {
 	Width			[579]
 	Height			[434]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADmvwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA5oAAABhAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAPgD///8AAAUAAAADmgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAQfAAADSQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
@@ -248,9 +226,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Oct 29 00:32:54 2018"
-  RTWModifiedTimeStamp	  462673859
-  ModelVersionFormat	  "1.%<AutoIncrement:38>"
+  LastModifiedDate	  "Fri Nov 09 23:30:43 2018"
+  RTWModifiedTimeStamp	  463705817
+  ModelVersionFormat	  "1.%<AutoIncrement:43>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -305,7 +283,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    9
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     overrideMode_	    [0.0]
@@ -350,7 +328,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      10
+      $ObjectID		      8
       Version		      "1.18.1"
       DisabledProps	      []
       Description	      ""
@@ -358,7 +336,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  11
+	  $ObjectID		  9
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -366,7 +344,7 @@ Model {
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
-	  FixedStep		  "Ts"
+	  FixedStep		  "50e-6"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -399,7 +377,7 @@ Model {
 	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  12
+	  $ObjectID		  10
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -440,7 +418,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  13
+	  $ObjectID		  11
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -495,7 +473,7 @@ Model {
 	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  14
+	  $ObjectID		  12
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -609,7 +587,7 @@ Model {
 	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  15
+	  $ObjectID		  13
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -676,7 +654,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  16
+	  $ObjectID		  14
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -695,7 +673,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  17
+	  $ObjectID		  15
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -728,7 +706,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  18
+	  $ObjectID		  16
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -800,7 +778,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      19
+	      $ObjectID		      17
 	      Version		      "1.18.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -856,7 +834,7 @@ Model {
 	    }
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      20
+	      $ObjectID		      18
 	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
@@ -943,7 +921,7 @@ Model {
 		Dimension		1
 		Simulink.ERTTargetCC {
 		  $BackupClass		  "Simulink.TargetCC"
-		  $ObjectID		  21
+		  $ObjectID		  19
 		  Version		  "1.18.1"
 		  Array {
 		    Type		    "Cell"
@@ -1317,7 +1295,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  22
+	  $ObjectID		  20
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1360,18 +1338,18 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
-      CurrentDlgPage	      "Code Generation/Custom Code"
+      CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition    [ 678, 127, 1668, 797 ]
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    10
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    23
+    $ObjectID		    21
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1483,12 +1461,6 @@ Model {
       SampleTime	      "-1"
       StateMustResolveToSignalObject off
       CodeGenStateStorageClass "Auto"
-    }
-    Block {
-      BlockType		      Demux
-      Outputs		      "4"
-      DisplayOption	      "none"
-      BusSelectionMode	      off
     }
     Block {
       BlockType		      From
@@ -1605,6 +1577,13 @@ Model {
       RndMeth		      "Floor"
     }
     Block {
+      BlockType		      Selector
+      NumberOfDimensions      "1"
+      IndexMode		      "One-based"
+      InputPortWidth	      "-1"
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      SubSystem
       ShowPortLabels	      "FromPortIcon"
       Permissions	      "ReadWrite"
@@ -1665,11 +1644,11 @@ Model {
   }
   System {
     Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
-    Location		    [-1163, 47, 3, 982]
+    Location		    [1858, 30, 2821, 891]
     Open		    on
     PortBlocksUseCompactNotation off
-    SetExecutionDomain	    off
-    ExecutionDomainType	    "Deduce"
+    SetExecutionDomain	    on
+    ExecutionDomainType	    "Discrete"
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1680,70 +1659,56 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "113"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "367"
+    SIDHighWatermark	    "370"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
       SID		      "268"
-      Position		      [965, 418, 1040, 452]
+      Position		      [950, 418, 1025, 452]
       ZOrder		      3515
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
-	Name			"U1 CH1"
+	Name			"Potentiometer"
       }
     }
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast1"
       SID		      "269"
-      Position		      [965, 483, 1040, 517]
+      Position		      [950, 483, 1025, 517]
       ZOrder		      3516
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
-	Name			"U1 CH2"
+	Name			"Position"
       }
     }
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast2"
       SID		      "321"
-      Position		      [965, 548, 1040, 582]
+      Position		      [950, 548, 1025, 582]
       ZOrder		      3553
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
       Port {
 	PortNumber		1
-	Name			"U1 CH3"
-      }
-    }
-    Block {
-      BlockType		      DataTypeConversion
-      Name		      "Cast4"
-      SID		      "331"
-      Position		      [965, 613, 1040, 647]
-      ZOrder		      3561
-      OutDataTypeStr	      "single"
-      RndMeth		      "Floor"
-      SaturateOnIntegerOverflow	off
-      Port {
-	PortNumber		1
-	Name			"U1 CH4"
+	Name			"Speed"
       }
     }
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast5"
       SID		      "339"
-      Position		      [520, 308, 595, 342]
+      Position		      [515, 293, 590, 327]
       ZOrder		      3569
       OutDataTypeStr	      "boolean"
       RndMeth		      "Floor"
@@ -1794,7 +1759,7 @@ Model {
       Name		      "Counter\nFree-Running"
       SID		      "338"
       Ports		      [0, 1]
-      Position		      [425, 310, 455, 340]
+      Position		      [420, 295, 450, 325]
       ZOrder		      3568
       LibraryVersion	      "1.444"
       SourceBlock	      "simulink/Sources/Counter\nFree-Running"
@@ -1820,6 +1785,25 @@ Model {
       Position		      [440, 520, 470, 550]
       ZOrder		      3550
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      Port {
+	PortNumber		1
+	Name			"PWM\nDuty-cycle"
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain\nFollow Pot sign"
+      SID		      "369"
+      Position		      [990, 615, 1020, 645]
+      ZOrder		      3575
+      Gain		      "-1"
+      ParamDataTypeStr	      "single"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Name			"Current"
+      }
     }
     Block {
       BlockType		      Goto
@@ -1834,7 +1818,7 @@ Model {
       Name		      "LED_D1\n5Hz Blinking"
       SID		      "334"
       Ports		      [1]
-      Position		      [660, 308, 745, 342]
+      Position		      [655, 293, 740, 327]
       ZOrder		      3564
       LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Output"
@@ -1860,10 +1844,26 @@ Model {
       ZOrder		      3573
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
+      Port {
+	PortNumber		1
+	Name			"Potentiometer"
+      }
+      Port {
+	PortNumber		2
+	Name			"Position"
+      }
+      Port {
+	PortNumber		3
+	Name			"Speed"
+      }
+      Port {
+	PortNumber		4
+	Name			"Current"
+      }
       System {
 	Name			"MCLV2\nwith DC motor"
-	Location		[-1163, 47, 3, 982]
-	Open			on
+	Location		[195, 58, 1198, 919]
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1882,7 +1882,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "PWM\n[-1 1]"
 	  SID			  "352"
-	  Position		  [20, 248, 50, 262]
+	  Position		  [80, 253, 110, 267]
 	  ZOrder		  3564
 	  IconDisplay		  "Port number"
 	}
@@ -1938,175 +1938,6 @@ Model {
 	  Port {
 	    PortNumber		    4
 	    Name		    "Ib"
-	  }
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Average\ntwo shunt resistors"
-	  SID			  "358"
-	  Ports			  [1, 1]
-	  Position		  [750, 545, 815, 595]
-	  ZOrder		  3576
-	  RequestExecContextInheritance	off
-	  ContentPreviewEnabled	  on
-	  System {
-	    Name		    "Average\ntwo shunt resistors"
-	    Location		    [-1163, 47, 3, 982]
-	    Open		    on
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "103"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "In1"
-	      SID		      "359"
-	      Position		      [20, 63, 50, 77]
-	      ZOrder		      3563
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Demux
-	      Name		      "Demux"
-	      SID		      "320"
-	      Ports		      [1, 2]
-	      Position		      [100, 21, 105, 114]
-	      ZOrder		      3552
-	      ShowName		      off
-	      Outputs		      "2"
-	      DisplayOption	      "bar"
-	      Port {
-		PortNumber		1
-		Name			"U1 CH3"
-	      }
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain1"
-	      SID		      "332"
-	      Position		      [280, 55, 310, 85]
-	      ZOrder		      3562
-	      Gain		      "0.5"
-	      ParamMin		      "[0.5]"
-	      ParamMax		      "[0.5]"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutMin		      "[-4.4]"
-	      OutMax		      "[4.4]"
-	      OutDataTypeStr	      "fixdt(1,16)"
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain2"
-	      SID		      "365"
-	      Position		      [280, 5, 310, 35]
-	      ZOrder		      3566
-	      Gain		      "-1"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutMin		      "[-4.4]"
-	      OutMax		      "[4.4]"
-	      OutDataTypeStr	      "fixdt(1,16)"
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum"
-	      SID		      "330"
-	      Ports		      [2, 1]
-	      Position		      [150, 60, 170, 80]
-	      ZOrder		      3560
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "-+"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Same as accumulator"
-	    }
-	    Block {
-	      BlockType		      Terminator
-	      Name		      "Terminator"
-	      SID		      "367"
-	      Position		      [370, 60, 390, 80]
-	      ZOrder		      3567
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Out1"
-	      SID		      "360"
-	      Position		      [410, 13, 440, 27]
-	      ZOrder		      3564
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "Demux"
-	      SrcPort		      2
-	      Points		      [50, 0]
-	      DstBlock		      "Sum"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Sum"
-	      SrcPort		      1
-	      DstBlock		      "Gain1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "U1 CH3"
-	      ZOrder		      3
-	      Labels		      [0, 0]
-	      SrcBlock		      "Demux"
-	      SrcPort		      1
-	      Points		      [50, 0]
-	      Branch {
-		ZOrder			11
-		Points			[0, -25]
-		DstBlock		"Gain2"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			6
-		DstBlock		"Sum"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      4
-	      SrcBlock		      "In1"
-	      SrcPort		      1
-	      DstBlock		      "Demux"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      9
-	      SrcBlock		      "Gain2"
-	      SrcPort		      1
-	      DstBlock		      "Out1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "Gain1"
-	      SrcPort		      1
-	      DstBlock		      "Terminator"
-	      DstPort		      1
-	    }
-	    Annotation {
-	      SID		      "366"
-	      Name		      "2nd shunt seems not properly connected\ngenerate lots of noise"
-	      Position		      [164, -56, 346, -30]
-	      InternalMargins	      [0, 0, 0, 0]
-	      HorizontalAlignment     "left"
-	      VerticalAlignment	      "top"
-	    }
 	  }
 	}
 	Block {
@@ -2178,7 +2009,7 @@ Model {
 	  Position		  [550, 83, 615, 147]
 	  ZOrder		  3499
 	  NumberOfTableDimensions "1"
-	  Table			  "[0:(Lignes-1)]*2*pi/Lignes"
+	  Table			  "[0:(1000-1)]*2*pi/1000"
 	  TableDataTypeStr	  "fixdt(1,16,5)"
 	  LockScale		  on
 	}
@@ -2188,7 +2019,7 @@ Model {
 	  SID			  "118"
 	  Position		  [525, 199, 650, 251]
 	  ZOrder		  3489
-	  Gain			  "2*pi/Lignes"
+	  Gain			  "2*pi/1000"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "fixdt(1,16,5)"
 	  SaturateOnIntegerOverflow off
@@ -2197,10 +2028,10 @@ Model {
 	  BlockType		  Gain
 	  Name			  "Gain2"
 	  SID			  "289"
-	  Position		  [525, 266, 680, 314]
+	  Position		  [525, 261, 685, 309]
 	  ZOrder		  3549
 	  ForegroundColor	  "red"
-	  Gain			  "(1/2)*(2*pi)/Lignes/TsQEI"
+	  Gain			  "(1/2)*(2*pi) / 1000 / 0.002"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "fixdt(1,16,5)"
 	  LockScale		  on
@@ -2554,13 +2385,13 @@ Model {
 	  Name			  "PWM"
 	  SID			  "345"
 	  Ports			  [1]
-	  Position		  [190, 210, 290, 300]
+	  Position		  [200, 214, 300, 306]
 	  ZOrder		  3562
 	  RequestExecContextInheritance	off
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "PWM"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [195, 58, 1198, 919]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -2628,7 +2459,7 @@ Model {
 	      Name		      "PWM High Speed"
 	      SID		      "103"
 	      Ports		      [2]
-	      Position		      [810, 20, 975, 155]
+	      Position		      [810, 20, 970, 155]
 	      ZOrder		      3488
 	      LibraryVersion	      "3.43"
 	      UserDataPersistent      on
@@ -2640,10 +2471,10 @@ Model {
 	      pop1		      "[1]"
 	      chk1		      "[1  1  1  0  0]"
 	      chkHL1		      "[1  1  0  1  1  1  1 ; 1  1  0  1  1  1  1]"
-	      maxP1		      "{ 'TPWM','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001','0.001',"
-	      "'0.001','0.001'}"
-	      InitP2		      "{ 'TPWM','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001','0.001'"
+	      maxP1		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001','0.001'"
 	      ",'0.001','0.001'}"
+	      InitP2		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001','0.001"
+	      "','0.001','0.001'}"
 	      chkP2		      "[0  1  0  1  1  1  1 ; 1  0  0  1  1  1  1]"
 	      InitDC		      "{ '50','50','50','50','50','50','50';'0.001','0.001','0.001','50','50','50','50'}"
 	      chkDC		      "[1  1  1  1  1  1  1 ; 0  0  0  1  1  1  1]"
@@ -2675,7 +2506,7 @@ Model {
 	      edLEB		      "{ '100e-9','50e-9','150e-9','50e-9','50e-9','50e-9','50e-9'}"
 	      popDT		      "[1  1  1  3  3  3  3]"
 	      edDTRx		      "{ '0.02','1e-05','0.001','1e-05','1e-05','1e-05','1e-05'}"
-	      edAltDTRx		      "{ 'Tm','Tm','Tm','1e-05','1e-05','1e-05','1e-05'}"
+	      edAltDTRx		      "{ '0.5e-6','0.5e-6','Tm','1e-05','1e-05','1e-05','1e-05'}"
 	      S_INPUT		      "[5  5  5]"
 	      S_INPUT_Size	      "[1  1  1]"
 	      S_OUTPUT		      "[]"
@@ -2699,18 +2530,18 @@ Model {
 	      ZOrder		      3489
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax"
-	      LowerLimit	      "round( (Tm/TPWM) *PWMmax )"
+	      LowerLimit	      "round( (0.5e-6/50e-6) *PWMmax )"
 	    }
 	    Block {
 	      BlockType		      Saturate
-	      Name		      "Saturation2"
-	      SID		      "258"
+	      Name		      "Saturation1"
+	      SID		      "370"
 	      Ports		      [1, 1]
 	      Position		      [680, 105, 705, 135]
-	      ZOrder		      3492
+	      ZOrder		      3501
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax"
-	      LowerLimit	      "round( (Tm/TPWM) *PWMmax )"
+	      LowerLimit	      "round( (0.5e-6/50e-6) *PWMmax )"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -2757,10 +2588,10 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      6
+	      ZOrder		      11
 	      SrcBlock		      "Sum"
 	      SrcPort		      1
-	      DstBlock		      "Saturation2"
+	      DstBlock		      "Saturation1"
 	      DstPort		      1
 	    }
 	    Line {
@@ -2771,8 +2602,8 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      8
-	      SrcBlock		      "Saturation2"
+	      ZOrder		      12
+	      SrcBlock		      "Saturation1"
 	      SrcPort		      1
 	      DstBlock		      "PWM High Speed"
 	      DstPort		      2
@@ -2798,7 +2629,7 @@ Model {
 	  Name			  "QEI1"
 	  SID			  "108"
 	  Ports			  [0, 2]
-	  Position		  [310, 212, 410, 303]
+	  Position		  [310, 217, 410, 308]
 	  ZOrder		  3479
 	  LibraryVersion	  "3.43"
 	  UserDataPersistent	  on
@@ -2818,7 +2649,7 @@ Model {
 	  SWPAB			  off
 	  QEAPOL		  off
 	  QEBPOL		  off
-	  SampleTime		  "TsQEI"
+	  SampleTime		  ".002"
 	  INDXxCNT_Output	  "is not an output"
 	  POSxCNT_Output	  "is a 16 bits unsigned block output"
 	  RESET_Input		  off
@@ -2831,7 +2662,7 @@ Model {
 	  IMV_x2		  "QEA = 1"
 	  PIN_HOME		  "Dynamic Options"
 	  PIN_HOME_TXT		  "A4 / P20 / Pin[33]"
-	  QEIxLEC_GEC		  "[0 (Lignes-1)]   "
+	  QEIxLEC_GEC		  "[0 999]   "
 	  QEIxIC		  "0"
 	  PCIIRQ		  off
 	  IDXPOL		  off
@@ -2858,10 +2689,22 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Selector
+	  Name			  "Selector"
+	  SID			  "368"
+	  Ports			  [1, 1]
+	  Position		  [730, 551, 770, 589]
+	  ZOrder		  3577
+	  InputPortWidth	  "2"
+	  IndexOptions		  "Index vector (dialog)"
+	  Indices		  "1"
+	  OutputSizes		  "1"
+	}
+	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
 	  SID			  "328"
-	  Position		  [795, 475, 815, 495]
+	  Position		  [740, 475, 760, 495]
 	  ZOrder		  3560
 	}
 	Block {
@@ -2873,7 +2716,7 @@ Model {
 	}
 	Block {
 	  BlockType		  DataTypeConversion
-	  Name			  "fract1"
+	  Name			  "fract"
 	  SID			  "291"
 	  Position		  [540, 415, 610, 445]
 	  ZOrder		  3551
@@ -2886,7 +2729,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Pot [-1 1]"
 	  SID			  "355"
-	  Position		  [885, 423, 915, 437]
+	  Position		  [765, 423, 795, 437]
 	  ZOrder		  3567
 	  IconDisplay		  "Port number"
 	}
@@ -2910,7 +2753,7 @@ Model {
 	}
 	Block {
 	  BlockType		  Outport
-	  Name			  "Iab (A)"
+	  Name			  "I (A)"
 	  SID			  "356"
 	  Position		  [885, 563, 915, 577]
 	  ZOrder		  3568
@@ -2918,10 +2761,10 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Line {
-	  ZOrder		  1
+	  ZOrder		  19
 	  SrcBlock		  "Convert to A"
 	  SrcPort		  1
-	  DstBlock		  "Average\ntwo shunt resistors"
+	  DstBlock		  "Selector"
 	  DstPort		  1
 	}
 	Line {
@@ -2937,7 +2780,6 @@ Model {
 	  Labels		  [0, 0]
 	  SrcBlock		  "QEI1"
 	  SrcPort		  2
-	  Points		  [53, 0; 0, 10]
 	  DstBlock		  "Gain2"
 	  DstPort		  1
 	}
@@ -2945,7 +2787,7 @@ Model {
 	  ZOrder		  4
 	  SrcBlock		  "ADC"
 	  SrcPort		  1
-	  DstBlock		  "fract1"
+	  DstBlock		  "fract"
 	  DstPort		  1
 	}
 	Line {
@@ -2979,7 +2821,7 @@ Model {
 	  Labels		  [0, 0; 1, 1]
 	  SrcBlock		  "QEI1"
 	  SrcPort		  1
-	  Points		  [69, 0; 0, -10]
+	  Points		  [69, 0; 0, -15]
 	  Branch {
 	    ZOrder		    9
 	    Points		    [0, -110]
@@ -3008,7 +2850,7 @@ Model {
 	}
 	Line {
 	  ZOrder		  13
-	  SrcBlock		  "fract1"
+	  SrcBlock		  "fract"
 	  SrcPort		  1
 	  DstBlock		  "Pot [-1 1]"
 	  DstPort		  1
@@ -3033,7 +2875,6 @@ Model {
 	  ZOrder		  16
 	  SrcBlock		  "Gain2"
 	  SrcPort		  1
-	  Points		  [13, 0; 0, -5]
 	  DstBlock		  "LPF 16bit \n"
 	  DstPort		  1
 	}
@@ -3045,19 +2886,24 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  18
-	  SrcBlock		  "Average\ntwo shunt resistors"
+	  ZOrder		  20
+	  SrcBlock		  "Selector"
 	  SrcPort		  1
-	  DstBlock		  "Iab (A)"
+	  DstBlock		  "I (A)"
 	  DstPort		  1
 	}
 	Annotation {
 	  SID			  "363"
-	  Name			  "There is a factor 2 on the QEI speed measurement ?\nto check the QEI peripheral documentation"
-	  Position		  [235, 160, 469, 186]
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
+	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+	  " style=\" font-size:14px;\">Optical Encoder: set with 1000 lines.</span></p></body></html>"
+	  Position		  [200, 164, 428, 182]
 	  InternalMargins	  [0, 0, 0, 0]
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
 	  ZOrder		  -1
 	}
 	Annotation {
@@ -3401,7 +3247,7 @@ Model {
       Name		      "Model Info"
       SID		      "341"
       Ports		      []
-      Position		      [380, -6, 788, 113]
+      Position		      [380, -6, 818, 108]
       ZOrder		      3570
       ForegroundColor	      "[1.000000, 0.000000, 0.015686]"
       BackgroundColor	      "[0.898039, 0.956863, 0.988235]"
@@ -3415,12 +3261,12 @@ Model {
       SourceProductBaseCode   "SL"
       ContentPreviewEnabled   on
       Frame		      "on"
-      DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
-      "tModificationDate>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.37 - R.Delpoux & L.Kerhuel\\n\\nM"
-      "CLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with res"
-      "istances)\\n\\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\\nLED D2 blink at 5H"
-      "z. LED D1 is the CPU busy flag\\n\\nLost modified on: Mon Oct 29 00:30:47 2018"
+      DisplayStringWithTags   "%<ModelName> v%<ModelVersion>\nLost modified on: %<LastModificationDate>\n%<Creator>\n\n"
+      "%<Description>"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.42\\nLost modified on: Fri Nov 09"
+      " 23:06:10 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
+      "C506 with internal Op-Amp (populated with resistances)\\n\\nPotentiometer set PWM duty cycle and rotates motor i"
+      "n one side or the other.\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
@@ -3429,7 +3275,7 @@ Model {
       Name		      "Port Info"
       SID		      "203"
       Ports		      []
-      Position		      [807, -4, 1001, 256]
+      Position		      [832, -4, 1026, 256]
       ZOrder		      3508
       DropShadow	      on
       LibraryVersion	      "3.43"
@@ -3480,7 +3326,7 @@ Model {
       Name		      "S2"
       SID		      "333"
       Ports		      [0, 1]
-      Position		      [490, 211, 545, 249]
+      Position		      [495, 211, 560, 249]
       ZOrder		      3563
       LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
@@ -3502,7 +3348,7 @@ Model {
       Name		      "S3"
       SID		      "336"
       Ports		      [0, 1]
-      Position		      [400, 211, 460, 249]
+      Position		      [400, 211, 470, 249]
       ZOrder		      3566
       LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
@@ -3585,7 +3431,7 @@ Model {
       Name		      "UART Tx-Matlab"
       SID		      "267"
       Ports		      [4]
-      Position		      [1125, 399, 1250, 666]
+      Position		      [1105, 399, 1230, 666]
       ZOrder		      3514
       LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
@@ -3605,7 +3451,7 @@ Model {
       Name		      "dbl-click to open\nGraphical interface"
       SID		      "337"
       Ports		      []
-      Position		      [1126, 302, 1261, 356]
+      Position		      [1096, 297, 1231, 351]
       ZOrder		      3567
       DropShadow	      on
       LibraryVersion	      "3.43"
@@ -3616,21 +3462,25 @@ Model {
       Nothing		      "0"
     }
     Line {
+      Name		      "Position"
       ZOrder		      132
+      Labels		      [1, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      2
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
     Line {
+      Name		      "Speed"
       ZOrder		      134
+      Labels		      [1, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      3
       DstBlock		      "Rate Transition2"
       DstPort		      1
     }
     Line {
-      Name		      "U1 CH1"
+      Name		      "Potentiometer"
       ZOrder		      80
       Labels		      [0, 0]
       SrcBlock		      "Cast"
@@ -3639,7 +3489,7 @@ Model {
       DstPort		      1
     }
     Line {
-      Name		      "U1 CH2"
+      Name		      "Position"
       ZOrder		      81
       Labels		      [0, 0]
       SrcBlock		      "Cast1"
@@ -3662,21 +3512,25 @@ Model {
       DstPort		      1
     }
     Line {
+      Name		      "PWM\nDuty-cycle"
       ZOrder		      131
+      Labels		      [1, 1]
       SrcBlock		      "Gain"
       SrcPort		      1
       DstBlock		      "MCLV2\nwith DC motor"
       DstPort		      1
     }
     Line {
+      Name		      "Current"
       ZOrder		      135
+      Labels		      [1, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      4
       DstBlock		      "Rate Transition5"
       DstPort		      1
     }
     Line {
-      Name		      "U1 CH3"
+      Name		      "Speed"
       ZOrder		      90
       Labels		      [0, 0]
       SrcBlock		      "Cast2"
@@ -3685,10 +3539,10 @@ Model {
       DstPort		      3
     }
     Line {
-      Name		      "U1 CH4"
-      ZOrder		      143
+      Name		      "Current"
+      ZOrder		      159
       Labels		      [0, 0]
-      SrcBlock		      "Cast4"
+      SrcBlock		      "Gain\nFollow Pot sign"
       SrcPort		      1
       DstBlock		      "UART Tx-Matlab"
       DstPort		      4
@@ -3710,12 +3564,14 @@ Model {
       DstPort		      1
     }
     Line {
+      Name		      "Potentiometer"
       ZOrder		      133
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      1
       Points		      [40, 0]
       Branch {
 	ZOrder			142
+	Labels			[1, 1]
 	DstBlock		"Rate Transition3"
 	DstPort			1
       }
@@ -3741,10 +3597,10 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      157
+      ZOrder		      158
       SrcBlock		      "Rate Transition5"
       SrcPort		      1
-      DstBlock		      "Cast4"
+      DstBlock		      "Gain\nFollow Pot sign"
       DstPort		      1
     }
     Annotation {
@@ -3754,7 +3610,7 @@ Model {
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-b"
       "lock-indent:0; text-indent:0px;\"><br /></p></body></html>"
-      Position		      [590, 323, 592, 337]
+      Position		      [585, 308, 587, 322]
       InternalMargins	      [0, 0, 0, 0]
       HorizontalAlignment     "left"
       VerticalAlignment	      "top"
