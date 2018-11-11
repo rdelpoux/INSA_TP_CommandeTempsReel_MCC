@@ -13,4 +13,4 @@ pour des applications temps réel sur cible microntroleurs Microchip dsPic.
   - (En) [MCLV V2 board setup with Simulink for DC motor][Hardware_setup]
 
 
-[Hardware_setup]: ./Experimentations/Hardware_setup/readme.md "Simulink Model, picgui script to visualise data"
+[Hardware_setup]: ./Experimentations/Hardware_setup/ "Simulink Model, picgui script to visualise data"
