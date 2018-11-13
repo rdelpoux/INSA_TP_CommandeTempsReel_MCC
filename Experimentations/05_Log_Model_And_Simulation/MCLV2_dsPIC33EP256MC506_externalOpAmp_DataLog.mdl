@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.49"
+    ComputedModelVersion    "1.55"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -69,32 +69,32 @@ Model {
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/ADC"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/ADC"
-      SID		      "290"
+      SID		      "600"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Signal\nAttributes/Data Type\nPropagation"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/Average two shunt resistors/Data "
       "Type Propagation"
-      SID		      "364"
+      SID		      "603"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/Comparator - OpAmps - Volt Ref"
-      SID		      "315"
+      SID		      "608"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/PWM IO/PWM High Speed"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/PWM/PWM High Speed"
-      SID		      "103"
+      SID		      "618"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/QEI/QEI"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/QEI1"
-      SID		      "108"
+      SID		      "623"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -204,93 +204,74 @@ Model {
   DiagnosticSuppressor	  "on"
   SuppressorTable	  "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n<!DOCTYPE boost_serialization>\n<"
   "boost_serialization signature=\"serialization::archive\" version=\"15\">\n<DiagnosticSuppressor class_id=\"0\" track"
-  "ing_level=\"0\" version=\"6\">\n	<Table class_id=\"1\" tracking_level=\"0\" version=\"0\">\n		<count>4</count>\n		<b"
+  "ing_level=\"0\" version=\"6\">\n	<Table class_id=\"1\" tracking_level=\"0\" version=\"0\">\n		<count>3</count>\n		<b"
   "ucket_count>8</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
   "\"0\">\n			<first class_id=\"3\" tracking_level=\"0\" version=\"6\">\n				<Source class_id=\"4\" tracking_level=\"0\""
-  " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>Steps Small/Counter Limited "
-  "0-1 @ 1Hz</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_level=\"0\" version=\"6\">\n				<Su"
-  "ppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</count>\n					<bucket_count>8</bucket"
-  "_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_level=\"0\" version=\"0\">\n						<"
-  "first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n"
-  "							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Sour"
-  "ce>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level=\"0\" version=\"6\">\n							<Comm"
-  "ent></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" tracking_level=\"0\" version=\"0\">\n				"
-  "				<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<date>20160608</date>\n								</ptime"
-  "_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version=\"0\">\n									<is_special>0</is"
-  "_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</time_duration"
-  "_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fractional_seconds>0<"
-  "/time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>"
-  "1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:Warning"
-  "OverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_v"
-  "ersion>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n							<Use"
-  "r></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n					"
-  "			<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_duration_hours"
-  ">\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_duration_sec"
-  "onds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duratio"
-  "n>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n				</Suppre"
-  "ssedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Source>\n					<count>1</count>\n					<item_version>0<"
-  "/item_version>\n					<item>MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Counter Free-Running</item>\n				</Source>\n"
-  "			</first>\n			<second>\n				<SuppressedData>\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<it"
-  "em_version>0</item_version>\n					<item>\n						<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n	"
-  "						<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Sourc"
-  "e>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastM"
-  "odified>\n								<ptime_date>\n									<date>20160523</date>\n								</ptime_date>\n								<ptime_time_duration>"
-  "\n									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time_durati"
-  "on_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<time_du"
-  "ration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModifie"
-  "d>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<"
-  "ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n				"
-  "					<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Com"
-  "ment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160523</date>\n"
-  "								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_h"
-  "ours>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n									<time_duration_s"
-  "econds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n"
-  "								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>"
-  "\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Source>\n					<count>1</c"
-  "ount>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Steps Large/Cou"
-  "nter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<second>\n				<SuppressedData>\n					<count>2</coun"
-  "t>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item>\n						<first>\n							<ID"
-  ">SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n							"
-  "		<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Commen"
-  "t></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n			"
-  "					</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hour"
-  "s>15</time_duration_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seco"
-  "nds>17</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n			"
-  "					</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n	"
-  "				</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n"
-  "								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Ca"
-  "use>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n					"
-  "			<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_"
-  "special>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</"
-  "time_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fraction"
-  "al_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<Sup"
-  "pressionType>1</SuppressionType>\n						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<"
-  "item>\n			<first>\n				<Source>\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC3"
-  "3EP256MC506_externalOpAmp_DataLog/Steps Large1/Counter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<"
-  "second>\n				<SuppressedData>\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</ite"
-  "m_version>\n					<item>\n						<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n		"
+  " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_exte"
+  "rnalOpAmp_DataLog/Counter Free-Running</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_level="
+  "\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</count>\n"
+  "					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_level=\""
+  "0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixedPoint:u"
+  "til:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</it"
+  "em_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level=\"0\" v"
+  "ersion=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" tracking_level"
+  "=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<date>20160"
+  "523</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version=\"0\">\n"
+  "									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time_duration"
+  "_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<time_dura"
+  "tion_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>"
+  "\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID"
+  ">Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n						"
+  "			<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comme"
+  "nt></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160523</date>\n		"
+  "						</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hou"
+  "rs>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n									<time_duration_sec"
+  "onds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n		"
+  "						</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n"
+  "					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Source>\n					<count>1</cou"
+  "nt>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Steps Large/Count"
+  "er Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<second>\n				<SuppressedData>\n					<count>2</count>"
+  "\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item>\n						<first>\n							<ID>S"
+  "imulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									"
+  "<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment>"
+  "</Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n					"
+  "			</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>"
+  "15</time_duration_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_second"
+  "s>17</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n					"
+  "			</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n			"
+  "		</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n		"
   "						<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Caus"
   "e>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n							"
   "	<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_sp"
   "ecial>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</ti"
   "me_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fractional"
   "_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<Suppr"
-  "essionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataT"
-  "ype:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_versio"
-  "n>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n"
-  "							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_d"
-  "ate>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_dur"
-  "ation_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_d"
-  "uration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_t"
-  "ime_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n	"
-  "			</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_serialization>\n\n"
+  "essionType>1</SuppressionType>\n						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<it"
+  "em>\n			<first>\n				<Source>\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33E"
+  "P256MC506_externalOpAmp_DataLog/Steps Large1/Counter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<se"
+  "cond>\n				<SuppressedData>\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_"
+  "version>\n					<item>\n						<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n				"
+  "				<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Cause>"
+  "\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<"
+  "ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_spec"
+  "ial>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</time"
+  "_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fractional_s"
+  "econds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<Suppres"
+  "sionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataTyp"
+  "e:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>"
+  "0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n		"
+  "					<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_dat"
+  "e>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_durat"
+  "ion_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_dur"
+  "ation_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_tim"
+  "e_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n			"
+  "	</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_serialization>\n\n"
   WebScopes_FoundationPlugin "on"
   NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
   SLCCPlugin		  "on"
   Description		  "MCLV V2 board connected to DC motor through PWM [1 2]\nPIM 33EP256MC506 with internal Op-Amp (popula"
   "ted with resistances)\n\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag"
-  PreLoadFcn		  "InitTPV0;"
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
   DisableAllScopes	  off
@@ -370,9 +351,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 07 18:37:28 2018"
-  RTWModifiedTimeStamp	  463516589
-  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  LastModifiedDate	  "Tue Nov 13 22:35:32 2018"
+  RTWModifiedTimeStamp	  464049321
+  ModelVersionFormat	  "1.%<AutoIncrement:55>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -488,7 +469,7 @@ Model {
 	  StopTime		  "inf"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  on
-	  FixedStep		  "Ts"
+	  FixedStep		  ".00005"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -1484,7 +1465,7 @@ Model {
       }
       Name		      "Configuration"
       ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
-      CurrentDlgPage	      "Code Generation/Custom Code"
+      CurrentDlgPage	      "Solver"
       ConfigPrmDlgPosition    [ 678, 127, 1668, 797 ]
     }
     PropName		    "ConfigurationSets"
@@ -1876,7 +1857,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "597"
+    SIDHighWatermark	    "632"
     Block {
       BlockType		      Reference
       Name		      "Bitwise Operator1"
@@ -2178,7 +2159,7 @@ Model {
       BlockType		      Goto
       Name		      "Goto"
       SID		      "350"
-      Position		      [1035, 426, 1075, 454]
+      Position		      [1045, 431, 1085, 459]
       ZOrder		      3572
       GotoTag		      "Pot"
     }
@@ -2207,10 +2188,10 @@ Model {
     Block {
       BlockType		      SubSystem
       Name		      "MCLV2\nwith DC motor"
-      SID		      "351"
+      SID		      "598"
       Ports		      [1, 4]
       Position		      [840, 415, 990, 670]
-      ZOrder		      3573
+      ZOrder		      3634
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       Port {
@@ -2239,11 +2220,11 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"107"
+	ZoomFactor		"113"
 	Block {
 	  BlockType		  Inport
 	  Name			  "PWM\n[-1 1]"
-	  SID			  "352"
+	  SID			  "599"
 	  Position		  [20, 248, 50, 262]
 	  ZOrder		  3564
 	  IconDisplay		  "Port number"
@@ -2251,7 +2232,7 @@ Model {
 	Block {
 	  BlockType		  Reference
 	  Name			  "ADC"
-	  SID			  "290"
+	  SID			  "600"
 	  Ports			  [0, 4]
 	  Position		  [300, 404, 415, 621]
 	  ZOrder		  3550
@@ -2305,7 +2286,7 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Average\ntwo shunt resistors"
-	  SID			  "358"
+	  SID			  "601"
 	  Ports			  [1, 1]
 	  Position		  [710, 635, 775, 685]
 	  ZOrder		  3576
@@ -2332,7 +2313,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "In1"
-	      SID		      "359"
+	      SID		      "602"
 	      Position		      [20, 63, 50, 77]
 	      ZOrder		      3563
 	      IconDisplay	      "Port number"
@@ -2340,7 +2321,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Data Type\nPropagation"
-	      SID		      "364"
+	      SID		      "603"
 	      Ports		      [3]
 	      Position		      [365, -58, 420, -2]
 	      ZOrder		      3565
@@ -2372,7 +2353,7 @@ Model {
 	    Block {
 	      BlockType		      Demux
 	      Name		      "Demux"
-	      SID		      "320"
+	      SID		      "604"
 	      Ports		      [1, 2]
 	      Position		      [100, 21, 105, 114]
 	      ZOrder		      3552
@@ -2387,7 +2368,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain1"
-	      SID		      "332"
+	      SID		      "605"
 	      Position		      [280, 55, 310, 85]
 	      ZOrder		      3562
 	      Gain		      "0.5"
@@ -2399,7 +2380,7 @@ Model {
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "330"
+	      SID		      "606"
 	      Ports		      [2, 1]
 	      Position		      [150, 60, 170, 80]
 	      ZOrder		      3560
@@ -2412,52 +2393,26 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Out1"
-	      SID		      "360"
+	      SID		      "607"
 	      Position		      [455, 63, 485, 77]
 	      ZOrder		      3564
 	      IconDisplay	      "Port number"
 	    }
 	    Line {
 	      ZOrder		      1
-	      SrcBlock		      "Demux"
-	      SrcPort		      2
-	      Points		      [50, 0]
-	      DstBlock		      "Sum"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Sum"
+	      SrcBlock		      "Gain1"
 	      SrcPort		      1
-	      DstBlock		      "Gain1"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "U1 CH3"
-	      ZOrder		      3
-	      Labels		      [0, 0]
-	      SrcBlock		      "Demux"
-	      SrcPort		      1
-	      Points		      [50, 0]
+	      Points		      [28, 0]
 	      Branch {
-		ZOrder			7
-		Points			[0, -75]
-		Branch {
-		  ZOrder		  9
-		  DstBlock		  "Data Type\nPropagation"
-		  DstPort		  2
-		}
-		Branch {
-		  ZOrder		  8
-		  Points		  [0, -20]
-		  DstBlock		  "Data Type\nPropagation"
-		  DstPort		  1
-		}
+		ZOrder			2
+		DstBlock		"Out1"
+		DstPort			1
 	      }
 	      Branch {
-		ZOrder			6
-		DstBlock		"Sum"
-		DstPort			1
+		ZOrder			3
+		Points			[0, -80]
+		DstBlock		"Data Type\nPropagation"
+		DstPort			3
 	      }
 	    }
 	    Line {
@@ -2468,28 +2423,54 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
+	      Name		      "U1 CH3"
 	      ZOrder		      5
-	      SrcBlock		      "Gain1"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
 	      SrcPort		      1
-	      Points		      [28, 0]
+	      Points		      [50, 0]
 	      Branch {
-		ZOrder			11
-		Points			[0, -80]
-		DstBlock		"Data Type\nPropagation"
-		DstPort			3
-	      }
-	      Branch {
-		ZOrder			10
-		DstBlock		"Out1"
+		ZOrder			6
+		DstBlock		"Sum"
 		DstPort			1
 	      }
+	      Branch {
+		ZOrder			7
+		Points			[0, -75]
+		Branch {
+		  ZOrder		  8
+		  Points		  [0, -20]
+		  DstBlock		  "Data Type\nPropagation"
+		  DstPort		  1
+		}
+		Branch {
+		  ZOrder		  9
+		  DstBlock		  "Data Type\nPropagation"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      11
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [50, 0]
+	      DstBlock		      "Sum"
+	      DstPort		      2
 	    }
 	  }
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "Comparator - OpAmps - Volt Ref"
-	  SID			  "315"
+	  SID			  "608"
 	  Ports			  []
 	  Position		  [110, 407, 260, 463]
 	  ZOrder		  3561
@@ -2528,7 +2509,7 @@ Model {
 	Block {
 	  BlockType		  DataTypeConversion
 	  Name			  "Convert to A"
-	  SID			  "317"
+	  SID			  "609"
 	  Position		  [535, 553, 610, 587]
 	  ZOrder		  3556
 	  OutDataTypeStr	  "fixdt(1,16,4.4/32768,0)"
@@ -2539,7 +2520,7 @@ Model {
 	Block {
 	  BlockType		  DataTypeConversion
 	  Name			  "Convert to A1"
-	  SID			  "327"
+	  SID			  "610"
 	  Position		  [535, 468, 610, 502]
 	  ZOrder		  3559
 	  OutDataTypeStr	  "fixdt(1,16,4.4/32768,0)"
@@ -2550,7 +2531,7 @@ Model {
 	Block {
 	  BlockType		  Mux
 	  Name			  "Mux1"
-	  SID			  "316"
+	  SID			  "611"
 	  Ports			  [2, 1]
 	  Position		  [465, 510, 470, 625]
 	  ZOrder		  3555
@@ -2561,7 +2542,7 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "PWM"
-	  SID			  "345"
+	  SID			  "612"
 	  Ports			  [1]
 	  Position		  [190, 210, 290, 300]
 	  ZOrder		  3562
@@ -2588,7 +2569,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Vdc\n[-1 1]"
-	      SID		      "346"
+	      SID		      "613"
 	      Position		      [20, 48, 50, 62]
 	      ZOrder		      3500
 	      IconDisplay	      "Port number"
@@ -2596,7 +2577,7 @@ Model {
 	    Block {
 	      BlockType		      Bias
 	      Name		      "Bias"
-	      SID		      "255"
+	      SID		      "614"
 	      Position		      [270, 40, 360, 70]
 	      ZOrder		      3498
 	      Bias		      "PWMmax/2"
@@ -2605,7 +2586,7 @@ Model {
 	    Block {
 	      BlockType		      DataTypeConversion
 	      Name		      "Cast"
-	      SID		      "314"
+	      SID		      "615"
 	      Position		      [445, 38, 520, 72]
 	      ZOrder		      3499
 	      OutDataTypeStr	      "uint16"
@@ -2615,7 +2596,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "260"
+	      SID		      "616"
 	      Position		      [460, 107, 520, 143]
 	      ZOrder		      3494
 	      Value		      "PWMmax"
@@ -2624,7 +2605,7 @@ Model {
 	    Block {
 	      BlockType		      Gain
 	      Name		      "Gain"
-	      SID		      "90"
+	      SID		      "617"
 	      Position		      [95, 25, 190, 85]
 	      ZOrder		      3497
 	      Gain		      "PWMmax/2"
@@ -2635,7 +2616,7 @@ Model {
 	    Block {
 	      BlockType		      Reference
 	      Name		      "PWM High Speed"
-	      SID		      "103"
+	      SID		      "618"
 	      Ports		      [2]
 	      Position		      [810, 20, 975, 155]
 	      ZOrder		      3488
@@ -2649,10 +2630,10 @@ Model {
 	      pop1		      "[1]"
 	      chk1		      "[1  1  1  0  0]"
 	      chkHL1		      "[1  1  0  1  1  1  1 ; 1  1  0  1  1  1  1]"
-	      maxP1		      "{ 'TPWM','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001','0.001',"
-	      "'0.001','0.001'}"
-	      InitP2		      "{ 'TPWM','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001','0.001'"
+	      maxP1		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001','0.001'"
 	      ",'0.001','0.001'}"
+	      InitP2		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001','0.001"
+	      "','0.001','0.001'}"
 	      chkP2		      "[0  1  0  1  1  1  1 ; 1  0  0  1  1  1  1]"
 	      InitDC		      "{ '50','50','50','50','50','50','50';'0.001','0.001','0.001','50','50','50','50'}"
 	      chkDC		      "[1  1  1  1  1  1  1 ; 0  0  0  1  1  1  1]"
@@ -2684,7 +2665,7 @@ Model {
 	      edLEB		      "{ '100e-9','50e-9','150e-9','50e-9','50e-9','50e-9','50e-9'}"
 	      popDT		      "[1  1  1  3  3  3  3]"
 	      edDTRx		      "{ '0.02','1e-05','0.001','1e-05','1e-05','1e-05','1e-05'}"
-	      edAltDTRx		      "{ 'Tm','Tm','Tm','1e-05','1e-05','1e-05','1e-05'}"
+	      edAltDTRx		      "{ '1e-6','1e-6','Tm','1e-05','1e-05','1e-05','1e-05'}"
 	      S_INPUT		      "[5  5  5]"
 	      S_INPUT_Size	      "[1  1  1]"
 	      S_OUTPUT		      "[]"
@@ -2702,29 +2683,29 @@ Model {
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation"
-	      SID		      "104"
+	      SID		      "619"
 	      Ports		      [1, 1]
 	      Position		      [680, 40, 705, 70]
 	      ZOrder		      3489
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax"
-	      LowerLimit	      "round( (Tm/TPWM) *PWMmax )"
+	      LowerLimit	      "round( (1/50) * PWMmax )"
 	    }
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "Saturation2"
-	      SID		      "258"
+	      SID		      "620"
 	      Ports		      [1, 1]
 	      Position		      [680, 105, 705, 135]
 	      ZOrder		      3492
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax"
-	      LowerLimit	      "round( (Tm/TPWM) *PWMmax )"
+	      LowerLimit	      "round( (1/50) * PWMmax )"
 	    }
 	    Block {
 	      BlockType		      Sum
 	      Name		      "Sum"
-	      SID		      "261"
+	      SID		      "621"
 	      Ports		      [2, 1]
 	      Position		      [580, 100, 605, 135]
 	      ZOrder		      3495
@@ -2736,76 +2717,93 @@ Model {
 	    }
 	    Line {
 	      ZOrder		      1
-	      SrcBlock		      "Gain"
+	      SrcBlock		      "Constant"
 	      SrcPort		      1
-	      DstBlock		      "Bias"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Cast"
-	      SrcPort		      1
-	      Points		      [36, 0]
-	      Branch {
-		ZOrder			3
-		Points			[0, 55]
-		DstBlock		"Sum"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			4
-		DstBlock		"Saturation"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Saturation"
-	      SrcPort		      1
-	      DstBlock		      "PWM High Speed"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Sum"
-	      SrcPort		      1
-	      DstBlock		      "Saturation2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      7
-	      SrcBlock		      "Bias"
-	      SrcPort		      1
-	      DstBlock		      "Cast"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      8
-	      SrcBlock		      "Saturation2"
-	      SrcPort		      1
-	      DstBlock		      "PWM High Speed"
+	      DstBlock		      "Sum"
 	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      9
+	      ZOrder		      2
 	      SrcBlock		      "Vdc\n[-1 1]"
 	      SrcPort		      1
 	      DstBlock		      "Gain"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      10
-	      SrcBlock		      "Constant"
+	      ZOrder		      3
+	      SrcBlock		      "Saturation2"
 	      SrcPort		      1
-	      DstBlock		      "Sum"
+	      DstBlock		      "PWM High Speed"
 	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Bias"
+	      SrcPort		      1
+	      DstBlock		      "Cast"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Saturation2"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "Saturation"
+	      SrcPort		      1
+	      DstBlock		      "PWM High Speed"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "Cast"
+	      SrcPort		      1
+	      Points		      [36, 0]
+	      Branch {
+		ZOrder			8
+		DstBlock		"Saturation"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			9
+		Points			[0, 55]
+		DstBlock		"Sum"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      10
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "Bias"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      SID		      "622"
+	      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">"
+	      "\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap"
+	      "; }\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;"
+	      "\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
+	      "-indent:0px;\"><span style=\" font-size:14px;\">Saturation takes into account the dead time. Duty cycle must be"
+	      " above deadTime.</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; "
+	      "-qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14px;\">here dead time is 1us, thus 1/50 of the"
+	      " PWM max period (which is 50us)</span></p></body></html>"
+	      Position		      [338, -51, 846, -17]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	      Interpreter	      "rich"
+	      ZOrder		      -1
 	    }
 	  }
 	}
 	Block {
 	  BlockType		  Reference
 	  Name			  "QEI1"
-	  SID			  "108"
+	  SID			  "623"
 	  Ports			  [0, 2]
 	  Position		  [310, 212, 410, 303]
 	  ZOrder		  3479
@@ -2827,7 +2825,7 @@ Model {
 	  SWPAB			  off
 	  QEAPOL		  off
 	  QEBPOL		  off
-	  SampleTime		  "TsQEI"
+	  SampleTime		  ".002"
 	  INDXxCNT_Output	  "is not an output"
 	  POSxCNT_Output	  "is a 16 bits unsigned block output"
 	  RESET_Input		  off
@@ -2840,7 +2838,7 @@ Model {
 	  IMV_x2		  "QEA = 1"
 	  PIN_HOME		  "Dynamic Options"
 	  PIN_HOME_TXT		  "A4 / P20 / Pin[33]"
-	  QEIxLEC_GEC		  "[0 (Lignes-1)]   "
+	  QEIxLEC_GEC		  "[0 (1000-1)]   "
 	  QEIxIC		  "0"
 	  PCIIRQ		  off
 	  IDXPOL		  off
@@ -2869,7 +2867,7 @@ Model {
 	Block {
 	  BlockType		  Selector
 	  Name			  "Selector"
-	  SID			  "542"
+	  SID			  "624"
 	  Ports			  [1, 1]
 	  Position		  [775, 531, 815, 569]
 	  ZOrder		  3581
@@ -2881,21 +2879,21 @@ Model {
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
-	  SID			  "328"
+	  SID			  "625"
 	  Position		  [795, 475, 815, 495]
 	  ZOrder		  3560
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
-	  SID			  "538"
+	  SID			  "626"
 	  Position		  [890, 650, 910, 670]
 	  ZOrder		  3577
 	}
 	Block {
 	  BlockType		  DataTypeConversion
 	  Name			  "fract1"
-	  SID			  "291"
+	  SID			  "627"
 	  Position		  [540, 415, 610, 445]
 	  ZOrder		  3551
 	  OutDataTypeStr	  "fixdt(1,16,15)"
@@ -2906,7 +2904,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Pot [-1 1]"
-	  SID			  "355"
+	  SID			  "628"
 	  Position		  [885, 423, 915, 437]
 	  ZOrder		  3567
 	  IconDisplay		  "Port number"
@@ -2914,8 +2912,8 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Position (RAW)"
-	  SID			  "353"
-	  Position		  [885, 218, 915, 232]
+	  SID			  "629"
+	  Position		  [885, 228, 915, 242]
 	  ZOrder		  3565
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -2923,8 +2921,8 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Vitesse (RAW)"
-	  SID			  "354"
-	  Position		  [885, 278, 915, 292]
+	  SID			  "630"
+	  Position		  [885, 273, 915, 287]
 	  ZOrder		  3566
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -2932,7 +2930,7 @@ Model {
 	Block {
 	  BlockType		  Outport
 	  Name			  "Ia (A)"
-	  SID			  "356"
+	  SID			  "631"
 	  Position		  [885, 543, 915, 557]
 	  ZOrder		  3568
 	  Port			  "4"
@@ -2940,91 +2938,28 @@ Model {
 	}
 	Line {
 	  ZOrder		  1
-	  SrcBlock		  "Convert to A"
+	  SrcBlock		  "Selector"
 	  SrcPort		  1
-	  Points		  [60, 0]
-	  Branch {
-	    ZOrder		    31
-	    Points		    [0, -20]
-	    DstBlock		    "Selector"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    24
-	    Points		    [0, 90]
-	    DstBlock		    "Average\ntwo shunt resistors"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  Name			  "Speed"
-	  ZOrder		  19
-	  Labels		  [0, 0]
-	  SrcBlock		  "QEI1"
-	  SrcPort		  2
-	  Points		  [228, 0; 0, 5]
-	  DstBlock		  "Vitesse (RAW)"
+	  DstBlock		  "Ia (A)"
 	  DstPort		  1
 	}
 	Line {
+	  ZOrder		  2
+	  SrcBlock		  "fract1"
+	  SrcPort		  1
+	  DstBlock		  "Pot [-1 1]"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Average\ntwo shunt resistors"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ia"
 	  ZOrder		  4
-	  SrcBlock		  "ADC"
-	  SrcPort		  1
-	  DstBlock		  "fract1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Ib"
-	  ZOrder		  5
-	  Labels		  [1, 1]
-	  SrcBlock		  "ADC"
-	  SrcPort		  4
-	  DstBlock		  "Mux1"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  6
-	  SrcBlock		  "Mux1"
-	  SrcPort		  1
-	  DstBlock		  "Convert to A"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Ia"
-	  ZOrder		  7
-	  Labels		  [0, 0]
-	  SrcBlock		  "ADC"
-	  SrcPort		  3
-	  DstBlock		  "Mux1"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Pos"
-	  ZOrder		  8
-	  Labels		  [0, 0; 1, 1]
-	  SrcBlock		  "QEI1"
-	  SrcPort		  1
-	  Points		  [69, 0; 0, -10]
-	  DstBlock		  "Position (RAW)"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  11
-	  SrcBlock		  "Convert to A1"
-	  SrcPort		  1
-	  DstBlock		  "Terminator"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  12
-	  SrcBlock		  "PWM\n[-1 1]"
-	  SrcPort		  1
-	  DstBlock		  "PWM"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Ia"
-	  ZOrder		  14
 	  Labels		  [0, 0]
 	  SrcBlock		  "ADC"
 	  SrcPort		  2
@@ -3032,37 +2967,89 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  23
-	  SrcBlock		  "Average\ntwo shunt resistors"
+	  ZOrder		  5
+	  SrcBlock		  "PWM\n[-1 1]"
 	  SrcPort		  1
-	  DstBlock		  "Terminator1"
+	  DstBlock		  "PWM"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  29
-	  SrcBlock		  "fract1"
+	  ZOrder		  6
+	  SrcBlock		  "Convert to A1"
 	  SrcPort		  1
-	  DstBlock		  "Pot [-1 1]"
+	  DstBlock		  "Terminator"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  32
-	  SrcBlock		  "Selector"
+	  Name			  "Pos"
+	  ZOrder		  7
+	  Labels		  [0, 0; 1, 1]
+	  SrcBlock		  "QEI1"
 	  SrcPort		  1
-	  DstBlock		  "Ia (A)"
+	  DstBlock		  "Position (RAW)"
 	  DstPort		  1
 	}
-	Annotation {
-	  SID			  "363"
-	  Name			  "There is a factor 2 on the QEI speed measurement ?\nto check the QEI peripheral documentation"
-	  Position		  [235, 160, 469, 186]
-	  InternalMargins	  [0, 0, 0, 0]
-	  HorizontalAlignment	  "left"
-	  VerticalAlignment	  "top"
-	  ZOrder		  -1
+	Line {
+	  Name			  "Ia"
+	  ZOrder		  8
+	  Labels		  [0, 0]
+	  SrcBlock		  "ADC"
+	  SrcPort		  3
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  DstBlock		  "Convert to A"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ib"
+	  ZOrder		  10
+	  Labels		  [1, 1]
+	  SrcBlock		  "ADC"
+	  SrcPort		  4
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  11
+	  SrcBlock		  "ADC"
+	  SrcPort		  1
+	  DstBlock		  "fract1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Speed"
+	  ZOrder		  12
+	  Labels		  [0, 0]
+	  SrcBlock		  "QEI1"
+	  SrcPort		  2
+	  DstBlock		  "Vitesse (RAW)"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Convert to A"
+	  SrcPort		  1
+	  Points		  [60, 0]
+	  Branch {
+	    ZOrder		    14
+	    Points		    [0, 90]
+	    DstBlock		    "Average\ntwo shunt resistors"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    15
+	    Points		    [0, -20]
+	    DstBlock		    "Selector"
+	    DstPort		    1
+	  }
 	}
 	Annotation {
-	  SID			  "347"
+	  SID			  "632"
 	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
 	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
 	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
@@ -3429,9 +3416,9 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
       "tModificationDate>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog v1.48 - R.Delpoux & L.Kerhuel\\n\\nMCLV V"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog v1.54 - R.Delpoux & L.Kerhuel\\n\\nMCLV V"
       "2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with resistan"
-      "ces)\\n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Wed Nov 07 18:34:49 2018"
+      "ces)\\n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Tue Nov 13 22:35:16 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
@@ -4840,15 +4827,15 @@ Model {
       SrcPort		      1
       Points		      [27, 0]
       Branch {
+	ZOrder			251
+	DstBlock		"MCLV2\nwith DC motor"
+	DstPort			1
+      }
+      Branch {
 	ZOrder			209
 	Labels			[0, 0]
 	Points			[0, 175]
 	DstBlock		"Cast"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			184
-	DstBlock		"MCLV2\nwith DC motor"
 	DstPort			1
       }
     }
@@ -4869,10 +4856,9 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      133
+      ZOrder		      253
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      1
-      Points		      [13, 0; 0, -5]
       DstBlock		      "Goto"
       DstPort		      1
     }
@@ -4885,7 +4871,7 @@ Model {
     }
     Line {
       Name		      "U1 CH2"
-      ZOrder		      208
+      ZOrder		      252
       Labels		      [0, 0]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      4
@@ -5010,7 +4996,7 @@ Model {
     }
     Line {
       Name		      "U1 CH3"
-      ZOrder		      210
+      ZOrder		      254
       Labels		      [0, 0]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      3
