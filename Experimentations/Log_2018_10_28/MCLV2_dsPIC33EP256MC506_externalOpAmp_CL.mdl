@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.53"
+    ComputedModelVersion    "1.54"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -198,8 +198,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1790.0, 945.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-412.64360931910812, -48.044671291169053]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-229.47379799835358, 199.4376394558908]
 	}
 	Object {
 	  $ObjectID		  6
@@ -208,14 +208,14 @@ Model {
 	  LoadSaveID		  "613"
 	  Extents		  [1790.0, 945.0]
 	  ZoomFactor		  [1.2900000000000003]
-	  Offset		  [89.1542343132952, 85.1265906099166]
+	  Offset		  [89.154234313295092, 85.126590609916491]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "600"
-	  Extents		  [1790.0, 945.0]
+	  Extents		  [1976.0, 1043.0]
 	  ZoomFactor		  [1.2955223880597015]
 	  Offset		  [-90.667333275367582, 344.039127032432]
 	}
@@ -253,9 +253,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Nov 08 16:37:52 2018"
-  RTWModifiedTimeStamp	  463595749
-  ModelVersionFormat	  "1.%<AutoIncrement:53>"
+  LastModifiedDate	  "Tue Nov 13 18:04:22 2018"
+  RTWModifiedTimeStamp	  464032923
+  ModelVersionFormat	  "1.%<AutoIncrement:54>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1564,6 +1564,12 @@ Model {
       Interpolate	      on
     }
     Block {
+      BlockType		      ManualSwitch
+      CurrentSetting	      "1"
+      varsize		      off
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      Mux
       Inputs		      "4"
       DisplayOption	      "none"
@@ -1701,14 +1707,14 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "650"
+    SIDHighWatermark	    "663"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
       SID		      "629"
-      Position		      [1250, 693, 1325, 727]
+      Position		      [1310, 613, 1385, 647]
       ZOrder		      3642
       OutDataTypeStr	      "int16"
       ConvertRealWorld	      "Stored Integer (SI)"
@@ -1723,7 +1729,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast1"
       SID		      "630"
-      Position		      [1250, 728, 1325, 762]
+      Position		      [1310, 648, 1385, 682]
       ZOrder		      3643
       OutDataTypeStr	      "int16"
       ConvertRealWorld	      "Stored Integer (SI)"
@@ -1738,7 +1744,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast2"
       SID		      "648"
-      Position		      [635, 878, 710, 912]
+      Position		      [635, 928, 710, 962]
       ZOrder		      3647
       ForegroundColor	      "green"
       OutDataTypeStr	      "int16"
@@ -1754,7 +1760,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast3"
       SID		      "649"
-      Position		      [635, 933, 710, 967]
+      Position		      [635, 983, 710, 1017]
       ZOrder		      3648
       ForegroundColor	      "green"
       OutDataTypeStr	      "int16"
@@ -2383,6 +2389,233 @@ Model {
       tsamp		      ".1"
     }
     Block {
+      BlockType		      SubSystem
+      Name		      "DC motor\nElectrical subsystem\nDiscrete"
+      SID		      "651"
+      Ports		      [2, 1]
+      Position		      [445, 649, 570, 716]
+      ZOrder		      3676
+      BlockMirror	      on
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"DC motor\nElectrical subsystem\nDiscrete"
+	Location		[74, -4, 1742, 981]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vin"
+	  SID			  "652"
+	  Position		  [-55, -27, -25, -13]
+	  ZOrder		  3671
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "w_in"
+	  SID			  "653"
+	  Position		  [-55, 18, -25, 32]
+	  ZOrder		  3672
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Delay
+	  Name			  "Delay"
+	  SID			  "654"
+	  Ports			  [1, 1]
+	  Position		  [365, 138, 400, 172]
+	  ZOrder		  3664
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  InputPortMap		  "u0"
+	  DelayLength		  "1"
+	  InitialCondition	  "0"
+	  SampleTime		  "50e-6"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  SID			  "655"
+	  Position		  [225, 132, 295, 178]
+	  ZOrder		  3663
+	  BlockMirror		  on
+	  Gain			  "-0.977"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "fixdt(1,32,9)"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain3"
+	  SID			  "656"
+	  Position		  [490, 2, 560, 48]
+	  ZOrder		  3666
+	  NamePlacement		  "alternate"
+	  Gain			  "0.0183"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutMin		  "[-8.8]"
+	  OutMax		  "8.8"
+	  OutDataTypeStr	  "fixdt(1,16)"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  SID			  "657"
+	  Position		  [175, 5, 250, 45]
+	  ZOrder		  3668
+	  BackgroundColor	  "[0.811765, 0.811765, 0.811765]"
+	  Gain			  "Kphi"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "Inherit: Inherit via back propagation"
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "Rate Transition1"
+	  SID			  "658"
+	  Position		  [75, 4, 115, 46]
+	  ZOrder		  3670
+	  Deterministic		  off
+	  OutPortSampleTime	  "50e-6"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "659"
+	  Ports			  [3, 1]
+	  Position		  [350, -43, 400, 93]
+	  ZOrder		  3665
+	  ShowName		  off
+	  Inputs		  "+--"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I_est"
+	  SID			  "660"
+	  Position		  [660, 18, 690, 32]
+	  ZOrder		  3673
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Gain3"
+	  SrcPort		  1
+	  DstBlock		  "I_est"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "w_in"
+	  SrcPort		  1
+	  DstBlock		  "Rate Transition1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [39, 0]
+	  Branch {
+	    ZOrder		    4
+	    Points		    [0, 130]
+	    DstBlock		    "Delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    5
+	    DstBlock		    "Gain3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  Points		  [-9, 0; 0, -85]
+	  DstBlock		  "Sum2"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Rate Transition1"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Vin"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Delay"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Annotation {
+	  SID			  "661"
+	  Name			  "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html"
+	  "><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</styl"
+	  "e></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p style=\""
+	  " margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+	  " style=\" font-size:16px;\">Discrete model of Electrical system:</span></p>\n<p style=\" margin-top:0px; margin-bot"
+	  "tom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16px;\""
+	  ">sys_elec = tf(1/R,[L/R 1]);</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-rig"
+	  "ht:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16px;\">sys_elecz = c2d(sys_elec,50e-6,'zoh"
+	  "')</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-righ"
+	  "t:0px; -qt-block-indent:0; text-indent:0px; font-size:16px;\"><br /></p>\n<p style=\" margin-top:0px; margin-bottom"
+	  ":0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16px;\">To"
+	  " be used as internal model</span></p></body></html>"
+	  Position		  [93, -171, 423, -65]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  on
+	  FixedWidth		  on
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  Interpreter		  "rich"
+	  ZOrder		  -1
+	}
+      }
+    }
+    Block {
+      BlockType		      Delay
+      Name		      "Delay"
+      SID		      "663"
+      Ports		      [1, 1]
+      Position		      [365, 668, 400, 702]
+      ZOrder		      3679
+      BlockMirror	      on
+      InputPortMap	      "u0"
+      DelayLength	      "1"
+      InitialCondition	      "0"
+    }
+    Block {
       BlockType		      From
       Name		      "From"
       SID		      "626"
@@ -2437,7 +2670,7 @@ Model {
       SID		      "631"
       Tag		      "FilterWizardSubSystem"
       Ports		      [1, 1]
-      Position		      [445, 770, 515, 810]
+      Position		      [445, 820, 515, 860]
       ZOrder		      3644
       BlockMirror	      on
       UserDataPersistent      on
@@ -3641,6 +3874,14 @@ Model {
       }
     }
     Block {
+      BlockType		      ManualSwitch
+      Name		      "Manual Switch"
+      SID		      "662"
+      Position		      [400, 552, 430, 588]
+      ZOrder		      3677
+      CurrentSetting	      "0"
+    }
+    Block {
       BlockType		      Reference
       Name		      "Microchip Master"
       SID		      "202"
@@ -3982,7 +4223,7 @@ Model {
       "tModificationDate>"
       MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CL v1.53 - R.Delpoux & L.Kerhuel\\n\\nMCLV V2 boa"
       "rd connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with resistances)\\"
-      "n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Thu Nov 08 16:37:25 2018"
+      "n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Thu Nov 08 16:37:52 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
@@ -4120,7 +4361,7 @@ Model {
       Name		      "UART Tx-Matlab"
       SID		      "267"
       Ports		      [2]
-      Position		      [1380, 692, 1495, 763]
+      Position		      [1440, 612, 1555, 683]
       ZOrder		      3514
       LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
@@ -4140,7 +4381,7 @@ Model {
       Name		      "UART Tx-Matlab1"
       SID		      "647"
       Ports		      [2]
-      Position		      [790, 876, 905, 949]
+      Position		      [775, 915, 905, 1030]
       ZOrder		      3646
       ForegroundColor	      "green"
       LibraryVersion	      "3.43"
@@ -4176,7 +4417,7 @@ Model {
       Name		      "extra\nprotection\n(can be removed)"
       SID		      "646"
       Ports		      [1, 1]
-      Position		      [400, 532, 430, 568]
+      Position		      [400, 397, 430, 433]
       ZOrder		      3645
       ForegroundColor	      "red"
       InputPortMap	      "u0"
@@ -4218,7 +4459,7 @@ Model {
       Points		      [52, 0]
       Branch {
 	ZOrder			264
-	Points			[0, 210]
+	Points			[0, -142; 534, 0; 0, 272]
 	DstBlock		"Cast1"
 	DstPort			1
       }
@@ -4277,48 +4518,48 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      255
-      SrcBlock		      "fit with\nmotor model"
-      SrcPort		      1
-      Points		      [51, 0; 0, 78; -44, 0]
-      Branch {
-	ZOrder			262
-	Points			[0, 2]
-	DstBlock		"Cast"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			261
-	Points			[-620, 0; 0, -138]
-	DstBlock		"Commande Courant"
-	DstPort			2
-      }
-    }
-    Line {
       Name		      "U1 CH3"
       ZOrder		      256
       Labels		      [0, 0]
       SrcBlock		      "to rad/s"
       SrcPort		      1
-      Points		      [9, 0; 0, 225; -637, 0]
+      Points		      [9, 0; 0, 135]
       Branch {
-	ZOrder			283
-	Points			[0, 160]
-	DstBlock		"Cast3"
-	DstPort			1
+	ZOrder			312
+	Points			[0, 140; -637, 0]
+	Branch {
+	  ZOrder		  283
+	  Points		  [0, 160]
+	  DstBlock		  "Cast3"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  282
+	  DstBlock		  "LPF 16bit \n"
+	  DstPort		  1
+	}
       }
       Branch {
-	ZOrder			282
-	DstBlock		"LPF 16bit \n"
-	DstPort			1
+	ZOrder			309
+	DstBlock		"DC motor\nElectrical subsystem\nDiscrete"
+	DstPort			2
       }
     }
     Line {
       ZOrder		      257
       SrcBlock		      "Commande Courant"
       SrcPort		      1
-      DstBlock		      "Normalized PWM"
-      DstPort		      1
+      Points		      [25, 0]
+      Branch {
+	ZOrder			303
+	DstBlock		"DC motor\nElectrical subsystem\nDiscrete"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			302
+	DstBlock		"Normalized PWM"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      258
@@ -4334,7 +4575,7 @@ Model {
       Points		      [73, 0]
       Branch {
 	ZOrder			278
-	Points			[0, 430]
+	Points			[0, 480]
 	DstBlock		"Cast2"
 	DstPort			1
       }
@@ -4373,7 +4614,7 @@ Model {
       ZOrder		      267
       SrcBlock		      "LPF 16bit \n"
       SrcPort		      1
-      Points		      [-322, 0; 0, -255]
+      Points		      [-322, 0; 0, -305]
       DstBlock		      "Commande Vitesse"
       DstPort		      2
     }
@@ -4386,10 +4627,6 @@ Model {
     }
     Line {
       Name		      "U1 CH3"
-      FontName		      "Helvetica"
-      FontSize		      9
-      FontWeight	      "normal"
-      FontAngle		      "normal"
       ZOrder		      271
       Labels		      [0, 0]
       SrcBlock		      "Cast2"
@@ -4403,8 +4640,46 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "Cast3"
       SrcPort		      1
-      Points		      [36, 0; 0, -20]
       DstBlock		      "UART Tx-Matlab1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      306
+      SrcBlock		      "DC motor\nElectrical subsystem\nDiscrete"
+      SrcPort		      1
+      DstBlock		      "Delay"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      300
+      SrcBlock		      "Manual Switch"
+      SrcPort		      1
+      DstBlock		      "Commande Courant"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      255
+      SrcBlock		      "fit with\nmotor model"
+      SrcPort		      1
+      Points		      [9, 0]
+      Branch {
+	ZOrder			314
+	Points			[0, 135; -810, 0; 0, -205]
+	DstBlock		"Manual Switch"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			304
+	DstBlock		"Cast"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      315
+      SrcBlock		      "Delay"
+      SrcPort		      1
+      Points		      [-46, 0; 0, -105]
+      DstBlock		      "Manual Switch"
       DstPort		      2
     }
     Annotation {

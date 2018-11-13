@@ -122,6 +122,14 @@ Tf = 5; % en s
 %% Simulation, float vs fixed point multirate
 omref = 200;
 
+
+sys_elec = tf(1/R,[L/R 1]);
+sys_elecz = c2d(sys_elec,50e-6,'zoh')
+
+step(sys_elec,sys_elecz);
+
+if 0
+
 sim('SimulationEchantillinnesClampingMCC')
 %sim('SimulationEchantillinnesClampingMCC_FixedPt')
 %sim('SimuMCCEchant_V02');
@@ -141,3 +149,4 @@ legend('\omega_r_e_f','\omega','location','best')
 ylabel('Vitesse \omega(rad/s)')
 xlabel('Temps (s)')
     
+end
