@@ -12,7 +12,7 @@ The model [MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl] ([fig][fig:Mo
 Open the Simulink model and push the build button on the top right, below the Simulink windows menu bar.
 
 [![Simulink Model][fig:Model_Hardware_Test_withSampleTime]][fig:Model_Hardware_Test_withSampleTime]
-*fig: Model [MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl] set-up the dsPIC 33EP256MC506 peripherals with internal op-amps for the MCLV-v2 board. Two PWM signals updated **at 20kHz** drives a DC motor through a H mosfet structure. One QEI peripheral sampled **at 500Hz** provides shaft position and speed from an optical encoder. Two ADC channels provides respectively the board potentiometer position and the current measurement from a shunt resistor. These four measurements are under-sampled **at 100Hz** and sent through the 115200 UART connexion to the computer and decoded with the picgui graphical interface.*
+*fig: Model [MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl] set-up the dsPIC 33EP256MC506 peripherals with internal op-amps for the MCLV-v2 board. Two PWM signals updated **at 20kHz** drives a DC motor through a H mosfet structure. One QEI peripheral sampled **at 500Hz** provides shaft position and speed from an optical encoder. Two ADC channels provides respectively the board potentiometer position and the current measurement from a shunt resistor. These four measurements are under-sampled **at 100Hz** and sent through the 115200 UART connection to the computer and decoded with the picgui graphical interface.*
 
 
 ### Hardware requirements:
@@ -39,14 +39,14 @@ Experiment
 
 ### Generate code and compile:
 
-The build icon on top right of simulink model, (see [fig][fig:Model_Hardware_Test_withSampleTime] above) do:
+The build icon on top right of Simulink model, (see [fig][fig:Model_Hardware_Test_withSampleTime] above) do:
 1. generates c source code,
 2. compiles c code and
 3. flash the resulting binary to the MCLV targeted board.
 
 
 > If programming the board fails (not powered, not connected,...),
-> use the **Microchip -> Flash** within the simulink model menu.
+> use the **Microchip -> Flash** within the Simulink model menu.
 
 ### Run the DC motor:
 
@@ -55,7 +55,7 @@ With the MCLV2 board powered and programmed, rotate the potentiometer to acceler
 
 ### Data Visualization with picgui:
 
-Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab prompt or double click on the **Interface Tx-Maltab block** in the model)
+Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab prompt or double click on the **Interface Tx-Matlab block** in the model)
 1. Select host UART port and connect at 115200 bauds 
 1. Replace the default script within the picgui interface to a call the customized matlab script [DataVisu.m] (see figure below)
 1. Push the  **start** button to visualize runtime curves showing potentiometer, motor position, motor speed and current measured on shunt resistors
@@ -75,7 +75,7 @@ comment  -->
 [MainProjectPage]: ./../../README.md
 
 [blockset]: https://www.microchip.com/SimulinkBlocks "Blockset for dsPIC and PIC32"
-[MPLABX]: https://www.microchip.com/MPLABX "Microchip developpment environment"
+[MPLABX]: https://www.microchip.com/MPLABX "Microchip development environment"
 [XC16]: https://www.microchip.com/XC16 "Microchip Compiler for dsPIC familly"
 
 [MCLV-V2]: https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866 "Motor Control Board"
