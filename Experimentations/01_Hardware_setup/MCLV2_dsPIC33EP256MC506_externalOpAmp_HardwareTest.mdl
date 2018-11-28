@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.43"
+    ComputedModelVersion    "1.45"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -161,62 +161,120 @@ Model {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
     $ClassName		    "Simulink.BDWindowsInfo"
-    Object {
-      $PropName		      "WindowsInfo"
-      $ObjectID		      2
-      $ClassName	      "Simulink.WindowInfo"
-      IsActive		      [1]
-      Location		      [1858.0, 30.0, 963.0, 861.0]
+    Array {
+      Type		      "Simulink.WindowInfo"
+      Dimension		      2
       Object {
-	$PropName		"ModelBrowserInfo"
-	$ObjectID		3
-	$ClassName		"Simulink.ModelBrowserInfo"
-	Visible			[1]
-	DockPosition		"Left"
-	Width			[50]
-	Height			[50]
-	Filter			[9]
-      }
-      Object {
-	$PropName		"ExplorerBarInfo"
-	$ObjectID		4
-	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[0]
-      }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
+	$ObjectID		2
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1011.0, 811.0]
-	ZoomFactor		[1.0]
-	Offset			[342.35555794254026, -18.696237776686132]
+	Location		[1735.0, -4.0, 1746.0, 985.0]
+	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  3
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [1]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  4
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [0]
+	}
+	Object {
+	  $PropName		  "EditorsInfo"
+	  $ObjectID		  5
+	  $ClassName		  "Simulink.EditorInfo"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "351"
+	  Extents		  [1876.0, 948.0]
+	  ZoomFactor		  [1.07]
+	  Offset		  [68.199260767501343, -18.296684888026789]
+	}
+	Object {
+	  $PropName		  "DockComponentsInfo"
+	  $ObjectID		  6
+	  $ClassName		  "Simulink.DockComponentInfo"
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [579]
+	  Height		  [434]
+	}
+	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
+	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCAAAAAfsAAABUAEcATABVA"
+	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAD0AAANJAA"
+	"AAPgD///8AAAeAAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/////wEAAAAA/////wAAAAAAAAAA///"
+	"//wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACE/////wAAAAAAAAAA/////wEA"
+	"AADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/"
+	"////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////w"
+	"AAAAAAAAAA"
       }
       Object {
-	$PropName		"DockComponentsInfo"
-	$ObjectID		6
-	$ClassName		"Simulink.DockComponentInfo"
-	Type			"GLUE2:PropertyInspector"
-	ID			"Property Inspector"
-	Visible			[0]
-	CreateCallback		""
-	UserData		""
-	Floating		[0]
-	DockPosition		"Right"
-	Width			[579]
-	Height			[434]
+	$ObjectID		7
+	IsActive		[0]
+	Location		[52.0, -4.0, 1691.0, 985.0]
+	Object {
+	  $PropName		  "ModelBrowserInfo"
+	  $ObjectID		  8
+	  $ClassName		  "Simulink.ModelBrowserInfo"
+	  Visible		  [0]
+	  DockPosition		  "Left"
+	  Width			  [50]
+	  Height		  [50]
+	  Filter		  [9]
+	}
+	Object {
+	  $PropName		  "ExplorerBarInfo"
+	  $ObjectID		  9
+	  $ClassName		  "Simulink.ExplorerBarInfo"
+	  Visible		  [0]
+	}
+	Object {
+	  $PropName		  "EditorsInfo"
+	  $ObjectID		  10
+	  $ClassName		  "Simulink.EditorInfo"
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "351"
+	  Extents		  [1815.0, 948.0]
+	  ZoomFactor		  [1.07]
+	  Offset		  [-258.515604335655, -77.699083054135031]
+	}
+	Object {
+	  $PropName		  "DockComponentsInfo"
+	  $ObjectID		  11
+	  $ClassName		  "Simulink.DockComponentInfo"
+	  Type			  "GLUE2:PropertyInspector"
+	  ID			  "Property Inspector"
+	  Visible		  [0]
+	  CreateCallback	  ""
+	  UserData		  ""
+	  Floating		  [0]
+	  DockPosition		  "Right"
+	  Width			  [579]
+	  Height		  [434]
+	}
+	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
+	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
+	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCAAAAAfsAAABUAEcATABVA"
+	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAD0AAANJAA"
+	"AAPgD///8AAAdDAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/////wEAAAAA/////wAAAAAAAAAA///"
+	"//wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACE/////wAAAAAAAAAA/////wEA"
+	"AADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/"
+	"////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////w"
+	"AAAAAAAAAA"
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
-      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCA"
-      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAQfAAADSQAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
-      "////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      PropName		      "WindowsInfo"
     }
   }
   HideAutomaticNames	  on
@@ -226,9 +284,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 09 23:30:43 2018"
-  RTWModifiedTimeStamp	  463705817
-  ModelVersionFormat	  "1.%<AutoIncrement:43>"
+  LastModifiedDate	  "Fri Nov 23 23:06:56 2018"
+  RTWModifiedTimeStamp	  464914831
+  ModelVersionFormat	  "1.%<AutoIncrement:45>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -283,7 +341,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    12
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     overrideMode_	    [0.0]
@@ -328,7 +386,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      13
       Version		      "1.18.1"
       DisabledProps	      []
       Description	      ""
@@ -336,7 +394,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  14
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -377,7 +435,7 @@ Model {
 	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  15
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -418,7 +476,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  16
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -473,7 +531,7 @@ Model {
 	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  17
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -587,7 +645,7 @@ Model {
 	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  18
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -654,7 +712,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  19
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -673,7 +731,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  20
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -706,7 +764,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  21
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -778,7 +836,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      22
 	      Version		      "1.18.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -834,7 +892,7 @@ Model {
 	    }
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      23
 	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
@@ -921,7 +979,7 @@ Model {
 		Dimension		1
 		Simulink.ERTTargetCC {
 		  $BackupClass		  "Simulink.TargetCC"
-		  $ObjectID		  19
+		  $ObjectID		  24
 		  Version		  "1.18.1"
 		  Array {
 		    Type		    "Cell"
@@ -1232,7 +1290,7 @@ Model {
 		DataType		"string"
 		Name			"RTWGenSettings_txt"
 		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master';s.ChipIdN='[33  256  5"
-		"06]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRA"
+		"06]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='5';s.ChipRA"
 		"M='32768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF"
 		"\\\\n#pragma config POSCMD = XT, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config JTAGEN = OFF\\\\n"
 		"';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-1 -1 -1 -1 -1 -1 -1 -1 -1 -"
@@ -1278,7 +1336,14 @@ Model {
 		"usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.DOS_EIP_00158_crypto_v1='0';"
 		"s.UART_TX_IMPLEMENTATION='[2]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACHANNEL='[0]';s.UART_TX_THREAD_PROTECTION"
 		"='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s.DOS_02907_WACK_MC_int_evic_v3='0';s.ADC"
-		"_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
+		"_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';s.DOS_02551_cpu_16bit_v7='0';s.DOS_02672_math_progcrc_upb_v1"
+		"_16bit='0';s.DOS_02915_ecc_v2='0';s.DOS_02673_tmr_classa_upb_v1_16bit='0';s.DOS_01494_qei_32b_upb_v1_16bit='0';s.DOS"
+		"_02472_ppi_pmp16_upb_v1_16bit='0';s.DOS_03076_uart_protocol_upb_v1_16bit='0';s.DOS_01483_pwm_16bit='0';s.DOS_03247_C"
+		"AN_FD_UPB_V2_16_bit='0';s.DOS_02949_WACG='0';s.DOS_03349_amp_pad_opamp_ctrl_upb_v1='0';s.DOS_02653_afe_current_bias_"
+		"ctrl_upb_v1_16bit='0';s.DOS_01459_ptg_pc_upb_v1_16bit='0';s.DOS_01512_ccp_mccp_upb_v1_16bit='0';s.DOS_02519_dma_sfr_"
+		"16bit_v2='0';s.DOS_02475_dac_pdm_nbit_upb_v1_16bit='0';s.DOS_02467_gpio_upb_v1_16bit='0';s.DOS_00805_rst_integration"
+		"_v4='0';s.DOS_02659_clk_sib_v12='0';s.DOS_02237_osc_dco_ctrl_upb_v1_16bit='0';s.DOS_02674_wdt_upb_v1_16bit='0';s.DOS"
+		"_01407='0';s.DOS_03662_WACU='0';"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1295,7 +1360,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  20
+	  $ObjectID		  25
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1345,11 +1410,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    13
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    21
+    $ObjectID		    26
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1522,14 +1587,6 @@ Model {
       LockScale		      off
     }
     Block {
-      BlockType		      Mux
-      Inputs		      "4"
-      DisplayOption	      "none"
-      UseBusObject	      off
-      BusObject		      "BusObject"
-      NonVirtualBus	      off
-    }
-    Block {
       BlockType		      Outport
       Port		      "1"
       OutMin		      "[]"
@@ -1575,13 +1632,6 @@ Model {
       OutDataTypeStr	      "Inherit: Same as input"
       LockScale		      off
       RndMeth		      "Floor"
-    }
-    Block {
-      BlockType		      Selector
-      NumberOfDimensions      "1"
-      IndexMode		      "One-based"
-      InputPortWidth	      "-1"
-      SampleTime	      "-1"
     }
     Block {
       BlockType		      SubSystem
@@ -1644,8 +1694,8 @@ Model {
   }
   System {
     Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
-    Location		    [1858, 30, 2821, 891]
-    Open		    on
+    Location		    [1735, -4, 3481, 981]
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    on
     ExecutionDomainType	    "Discrete"
@@ -1659,14 +1709,14 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "370"
+    SIDHighWatermark	    "378"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
       SID		      "268"
-      Position		      [950, 418, 1025, 452]
+      Position		      [945, 433, 1020, 467]
       ZOrder		      3515
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
@@ -1680,7 +1730,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast1"
       SID		      "269"
-      Position		      [950, 483, 1025, 517]
+      Position		      [945, 498, 1020, 532]
       ZOrder		      3516
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
@@ -1694,7 +1744,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast2"
       SID		      "321"
-      Position		      [950, 548, 1025, 582]
+      Position		      [945, 563, 1020, 597]
       ZOrder		      3553
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
@@ -1726,7 +1776,7 @@ Model {
       Position		      [524, 139, 619, 194]
       ZOrder		      3510
       Priority		      "1"
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/System Configuration/Compiler Options"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
@@ -1774,7 +1824,7 @@ Model {
       BlockType		      From
       Name		      "From"
       SID		      "349"
-      Position		      [355, 521, 395, 549]
+      Position		      [350, 536, 390, 564]
       ZOrder		      3571
       GotoTag		      "Pot"
     }
@@ -1782,7 +1832,7 @@ Model {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "312"
-      Position		      [440, 520, 470, 550]
+      Position		      [435, 535, 465, 565]
       ZOrder		      3550
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       Port {
@@ -1794,7 +1844,7 @@ Model {
       BlockType		      Gain
       Name		      "Gain\nFollow Pot sign"
       SID		      "369"
-      Position		      [990, 615, 1020, 645]
+      Position		      [985, 630, 1015, 660]
       ZOrder		      3575
       Gain		      "-1"
       ParamDataTypeStr	      "single"
@@ -1820,7 +1870,7 @@ Model {
       Ports		      [1]
       Position		      [655, 293, 740, 327]
       ZOrder		      3564
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Output"
       SourceType	      ""
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -1840,7 +1890,7 @@ Model {
       Name		      "MCLV2\nwith DC motor"
       SID		      "351"
       Ports		      [1, 4]
-      Position		      [540, 406, 690, 659]
+      Position		      [535, 421, 685, 674]
       ZOrder		      3573
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
@@ -1862,8 +1912,8 @@ Model {
       }
       System {
 	Name			"MCLV2\nwith DC motor"
-	Location		[195, 58, 1198, 919]
-	Open			off
+	Location		[1735, -4, 3481, 981]
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
@@ -1890,11 +1940,11 @@ Model {
 	  BlockType		  Reference
 	  Name			  "ADC"
 	  SID			  "290"
-	  Ports			  [0, 4]
-	  Position		  [295, 405, 410, 620]
+	  Ports			  [0, 2]
+	  Position		  [275, 407, 390, 623]
 	  ZOrder		  3550
 	  Priority		  "5"
-	  LibraryVersion	  "3.43"
+	  LibraryVersion	  "3.4x"
 	  SourceBlock		  "MCHP_Blockset/Analog IO/ADC"
 	  SourceType		  ""
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
@@ -1903,13 +1953,13 @@ Model {
 	  Mode			  "10 bits (allows exact simultaneous sampling)"
 	  FORM			  "sddd dddd dddd 0000  ==> Signed fractional"
 	  ADC_R			  "< 5    kOhm"
-	  nSAMPLECHANNELS	  "CH0 : CH1 : CH2 : CH3"
+	  nSAMPLECHANNELS	  "CH0 : CH1"
 	  nSAMPLECHANNELS_12bits  "CH0 only"
 	  SIMULTANEOUS		  "Simultaneously on all Channels"
 	  ADxCSS		  "[13]"
 	  MUXA_CH0N		  off
 	  MUXA_CH123		  "Dynamic Options"
-	  MUXA_CH123_TXT	  "OA1 : OA2 : OA3"
+	  MUXA_CH123_TXT	  "OA2 : AN1 : AN2"
 	  MUXB_CH0		  "AN1"
 	  MUXB_CH0N		  on
 	  MUXB_CH123		  "Dynamic Options"
@@ -1918,26 +1968,17 @@ Model {
 	  SequenceTiming	  "are done as fast as possible ; triggered by user define source"
 	  SSRC_SSRCG		  "Dynamic Options"
 	  SSRC_SSRCG_TXT	  "6"
-	  Update_BlockOutput	  "After all trig and conversion sequence"
+	  Update_BlockOutput	  "After each trig and conversion sequence"
 	  Trig_TimeStep		  "with each update of the ADC block output"
 	  ADC_DMA_CHANNEL	  "Use Interrupt instead of DMA"
 	  SampleTime		  "5e-05"
-	  Info			  "Total Time for Sample & Conversion : 4.4571e-06s including 3.4286e-07s (x 1) sample time."
-	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 3}{AN3}15:2:B1;{Analog Input 6}{AN6}15:2:C0;{Analog Input "
-	  "13}{AN13}15:2:E13;"
+	  Info			  "Total Time for Sample & Conversion : 2.4e-06s including 3.4286e-07s (x 1) sample time."
+	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 13}{AN13}15:2:E13;"
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
-	  ADC_TIMING		  "[4.4571428571428571832e-06]"
+	  ADC_TIMING		  "[2.4000000000000003149e-06]"
 	  Port {
 	    PortNumber		    2
 	    Name		    "Ia"
-	  }
-	  Port {
-	    PortNumber		    3
-	    Name		    "Ia"
-	  }
-	  Port {
-	    PortNumber		    4
-	    Name		    "Ib"
 	  }
 	}
 	Block {
@@ -1947,7 +1988,7 @@ Model {
 	  Ports			  []
 	  Position		  [110, 407, 260, 463]
 	  ZOrder		  3561
-	  LibraryVersion	  "3.43"
+	  LibraryVersion	  "3.4x"
 	  UserDataPersistent	  on
 	  UserData		  "DataTag0"
 	  SourceBlock		  "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
@@ -1955,7 +1996,7 @@ Model {
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
 	  MultiThreadCoSim	  "auto"
 	  MCHP_params		  "s.CVR1OE=0;s.CVR2OE=0;s.VREFSEL=0;s.RLaddle=reshape([1 1],1,2);s.AVdd=reshape({ '3.3','3.3'},1,2);s"
-	  ".AVss=reshape({ '0','0'},1,2);s.CVRSS=reshape([0 0],1,2);s.CON_OPMODE_CPOL=reshape([3 3 3 0 0],1,5);s.OutputPort_CO"
+	  ".AVss=reshape({ '0','0'},1,2);s.CVRSS=reshape([0 0],1,2);s.CON_OPMODE_CPOL=reshape([0 3 0 0 0],1,5);s.OutputPort_CO"
 	  "E_RP=reshape({ 'B1 / Pin[16] / OA1OUT / AN3 / OA1OUT','A0 / Pin[13] / OA2OUT / AN0 / OA2OUT','C0 / Pin[21] / OA3OUT"
 	  " / AN6 / OA3OUT','None','None'},1,5);s.InputP_CREF=reshape([0 0 0 0 0],1,5);s.InputN_CCH=reshape([0 0 0 0 0],1,5);s"
 	  ".Trigger_EventInterrupt_EVPOL=reshape([0 0 0 0 0],1,5);s.BlockOutputEvent=reshape([0 0 0 0 0],1,5);s.BlockOutputSta"
@@ -1974,28 +2015,15 @@ Model {
 	  S_OUTPUT_Size		  "[4]"
 	  SampleTime		  "-1"
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
-	  MCHP_PORT		  "{Op-Amp Output 1}{OA1(out)}14:2:B1;{Op-Amp1 V+}{OA1 V+}14:2:B2;{Op-Amp1 V-}{OA1 V-}14:2:B3;{Op-Amp Ou"
-	  "tput 2}{OA2(out)}14:2:A0;{Op-Amp2 V+}{OA2 V+}14:2:A1;{Op-Amp2 V-}{OA2 V-}14:2:B0;{Op-Amp Output 3}{OA3(out)}14:2:C0"
-	  ";{Op-Amp3 V+}{OA3 V+}14:2:C2;{Op-Amp3 V-}{OA3 V-}14:2:C1;"
+	  MCHP_PORT		  "{Op-Amp Output 2}{OA2(out)}14:2:A0;{Op-Amp2 V+}{OA2 V+}14:2:A1;{Op-Amp2 V-}{OA2 V-}14:2:B0;"
 	  ORDERING		  "0"
 	}
 	Block {
 	  BlockType		  DataTypeConversion
 	  Name			  "Convert to A"
 	  SID			  "317"
-	  Position		  [535, 553, 610, 587]
+	  Position		  [555, 553, 630, 587]
 	  ZOrder		  3556
-	  OutDataTypeStr	  "fixdt(1,16,4.4/32768,0)"
-	  ConvertRealWorld	  "Stored Integer (SI)"
-	  RndMeth		  "Floor"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  DataTypeConversion
-	  Name			  "Convert to A1"
-	  SID			  "327"
-	  Position		  [535, 468, 610, 502]
-	  ZOrder		  3559
 	  OutDataTypeStr	  "fixdt(1,16,4.4/32768,0)"
 	  ConvertRealWorld	  "Stored Integer (SI)"
 	  RndMeth		  "Floor"
@@ -2370,17 +2398,6 @@ Model {
 	  }
 	}
 	Block {
-	  BlockType		  Mux
-	  Name			  "Mux1"
-	  SID			  "316"
-	  Ports			  [2, 1]
-	  Position		  [465, 510, 470, 625]
-	  ZOrder		  3555
-	  ShowName		  off
-	  Inputs		  "2"
-	  DisplayOption		  "bar"
-	}
-	Block {
 	  BlockType		  SubSystem
 	  Name			  "PWM"
 	  SID			  "345"
@@ -2391,7 +2408,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "PWM"
-	    Location		    [195, 58, 1198, 919]
+	    Location		    [52, -4, 1743, 981]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -2461,7 +2478,7 @@ Model {
 	      Ports		      [2]
 	      Position		      [810, 20, 970, 155]
 	      ZOrder		      3488
-	      LibraryVersion	      "3.43"
+	      LibraryVersion	      "3.4x"
 	      UserDataPersistent      on
 	      UserData		      "DataTag2"
 	      SourceBlock	      "MCHP_Blockset/PWM IO/PWM High Speed"
@@ -2495,8 +2512,8 @@ Model {
 	      popCurActiveH	      "[1  1  1  1  1  1  1]"
 	      popCurForceH	      "[2  1  2  1  1  1  1]"
 	      popCurForceL	      "[2  1  2  1  1  1  1]"
-	      ChkCurBlkOut	      "[1  0  0  0  0  0  0]"
-	      ChkCurBlkOutTime	      "[1  0  1  0  0  0  0]"
+	      ChkCurBlkOut	      "[0  0  0  0  0  0  0]"
+	      ChkCurBlkOutTime	      "[0  0  1  0  0  0  0]"
 	      popBLANKSEL	      "[1  1  1  1  1  1  1]"
 	      popBPHHBPHL	      "[1  1  1  1  1  1  1]"
 	      popBPLHBPLL	      "[1  1  1  1  1  1  1]"
@@ -2631,7 +2648,7 @@ Model {
 	  Ports			  [0, 2]
 	  Position		  [310, 217, 410, 308]
 	  ZOrder		  3479
-	  LibraryVersion	  "3.43"
+	  LibraryVersion	  "3.4x"
 	  UserDataPersistent	  on
 	  UserData		  "DataTag3"
 	  SourceBlock		  "MCHP_Blockset/QEI/QEI"
@@ -2689,25 +2706,6 @@ Model {
 	  }
 	}
 	Block {
-	  BlockType		  Selector
-	  Name			  "Selector"
-	  SID			  "368"
-	  Ports			  [1, 1]
-	  Position		  [730, 551, 770, 589]
-	  ZOrder		  3577
-	  InputPortWidth	  "2"
-	  IndexOptions		  "Index vector (dialog)"
-	  Indices		  "1"
-	  OutputSizes		  "1"
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "Terminator"
-	  SID			  "328"
-	  Position		  [740, 475, 760, 495]
-	  ZOrder		  3560
-	}
-	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
 	  SID			  "348"
@@ -2718,7 +2716,7 @@ Model {
 	  BlockType		  DataTypeConversion
 	  Name			  "fract"
 	  SID			  "291"
-	  Position		  [540, 415, 610, 445]
+	  Position		  [560, 445, 630, 475]
 	  ZOrder		  3551
 	  OutDataTypeStr	  "fixdt(1,16,15)"
 	  ConvertRealWorld	  "Stored Integer (SI)"
@@ -2729,7 +2727,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Pot [-1 1]"
 	  SID			  "355"
-	  Position		  [765, 423, 795, 437]
+	  Position		  [885, 453, 915, 467]
 	  ZOrder		  3567
 	  IconDisplay		  "Port number"
 	}
@@ -2755,17 +2753,10 @@ Model {
 	  BlockType		  Outport
 	  Name			  "I (A)"
 	  SID			  "356"
-	  Position		  [885, 563, 915, 577]
+	  Position		  [890, 563, 920, 577]
 	  ZOrder		  3568
 	  Port			  "4"
 	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  19
-	  SrcBlock		  "Convert to A"
-	  SrcPort		  1
-	  DstBlock		  "Selector"
-	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  2
@@ -2791,31 +2782,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  Name			  "Ib"
-	  ZOrder		  5
-	  Labels		  [1, 1]
-	  SrcBlock		  "ADC"
-	  SrcPort		  4
-	  DstBlock		  "Mux1"
-	  DstPort		  2
-	}
-	Line {
-	  ZOrder		  6
-	  SrcBlock		  "Mux1"
-	  SrcPort		  1
-	  DstBlock		  "Convert to A"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Ia"
-	  ZOrder		  7
-	  Labels		  [0, 0]
-	  SrcBlock		  "ADC"
-	  SrcPort		  3
-	  DstBlock		  "Mux1"
-	  DstPort		  1
-	}
-	Line {
 	  Name			  "Pos"
 	  ZOrder		  8
 	  Labels		  [0, 0; 1, 1]
@@ -2835,13 +2801,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  11
-	  SrcBlock		  "Convert to A1"
-	  SrcPort		  1
-	  DstBlock		  "Terminator"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  12
 	  SrcBlock		  "PWM\n[-1 1]"
 	  SrcPort		  1
@@ -2853,15 +2812,6 @@ Model {
 	  SrcBlock		  "fract"
 	  SrcPort		  1
 	  DstBlock		  "Pot [-1 1]"
-	  DstPort		  1
-	}
-	Line {
-	  Name			  "Ia"
-	  ZOrder		  14
-	  Labels		  [0, 0]
-	  SrcBlock		  "ADC"
-	  SrcPort		  2
-	  DstBlock		  "Convert to A1"
 	  DstPort		  1
 	}
 	Line {
@@ -2886,10 +2836,19 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  20
-	  SrcBlock		  "Selector"
+	  ZOrder		  45
+	  SrcBlock		  "Convert to A"
 	  SrcPort		  1
 	  DstBlock		  "I (A)"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Ia"
+	  ZOrder		  42
+	  Labels		  [0, 0]
+	  SrcBlock		  "ADC"
+	  SrcPort		  2
+	  DstBlock		  "Convert to A"
 	  DstPort		  1
 	}
 	Annotation {
@@ -2933,7 +2892,7 @@ Model {
       Position		      [400, 137, 500, 193]
       ZOrder		      3511
       Priority		      "1"
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/System Configuration/Microchip Master"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
@@ -3079,6 +3038,7 @@ Model {
       ALTADREF		      "Not used"
       ALTCVREF		      "Not used"
       PWMLOCK		      "PWM registers may be written without key sequence"
+      INT_PRIORITY_DMA	      "0"
       MCHP_TIMER_RESULT	      "[ ]"
       MCHP_PORT		      "{Busy Flag}{Busy}0:1:D5;"
       MCHP_PLLRegisters	      "[5    243  16385     -1]"
@@ -3151,50 +3111,57 @@ Model {
       "RT.port_Rx=reshape([32767 32767 -1 -1 -1 -1],1,6);MCHP.UART.port_Tx=reshape([32767 32767 -1 -1 -1 -1],1,6);MCHP."
       "UART.port_ARx=reshape([-1 -1],1,2);MCHP.UART.port_ATx=reshape([-1 -1],1,2);MCHP.UART.port_RTS=reshape([34 76 -1 "
       "-1 -1 -1],1,6);MCHP.UART.port_CTS=reshape([43 77 -1 -1 -1 -1],1,6);MCHP.UART.reg_UxMODE=reshape([48127 48127 -1 "
-      "-1 -1 -1],1,6);MCHP.UART.reg_UxSTA=reshape([61439 61439 -1 -1 -1 -1],1,6);MCHP.modsrc.DOS_00794=1;MCHP.modsrc.DO"
-      "S_00931=1;MCHP.modsrc.DOS_00932=1;MCHP.modsrc.DOS_00942=1;MCHP.modsrc.DOS_00938=1;MCHP.modsrc.DOS_00996=1;MCHP.m"
-      "odsrc.DOS_00997=1;MCHP.modsrc.DOS_00998=1;MCHP.modsrc.DOS_00209=0;MCHP.modsrc.DOS_01555_adc=0;MCHP.modsrc.DOS_01"
-      "293=1;MCHP.modsrc.DOS_00828=0;MCHP.modsrc.DOS_01116=1;MCHP.modsrc.DOS_01017_RPORx=1;MCHP.modsrc.DOS_01017_RPINRx"
-      "=1;MCHP.modsrc.DOS_01555_nvm_tsmc18_v2_16bit=0;MCHP.modsrc.DOS_00804=1;MCHP.modsrc.DOS_00826=1;MCHP.modsrc.DOS_0"
-      "1555_TLAK_PMDx=0;MCHP.modsrc.DOS_01555_TLAK_INT_=0;MCHP.modsrc.DOS_00933=1;MCHP.modsrc.DOS_01555=0;MCHP.modsrc.D"
-      "OS_01555_ptg=0;MCHP.modsrc.DOS_00929=1;MCHP.modsrc.DOS_00958=1;MCHP.modsrc.DOS_01117_PORTx=1;MCHP.modsrc.DOS_009"
-      "99=0;MCHP.modsrc.DOS_01198=1;MCHP.modsrc.DOS_01041=1;MCHP.modsrc.DOS_00892=1;MCHP.modsrc.DOS_01287_TLAC_PMDx=1;M"
-      "CHP.modsrc.DOS_01287_TLAC_INT_=1;MCHP.modsrc.DOS_01424=1;MCHP.modsrc.DOS_01332=1;MCHP.modsrc.DOS_01441_i2c_upb_v"
-      "1_16bit_TLAH=0;MCHP.modsrc.DOS_01482=0;MCHP.modsrc.DOS_02508c11=0;MCHP.modsrc.DOS_01468_PMBA_current_source=0;MC"
-      "HP.modsrc.DOS_02291_PGA=0;MCHP.modsrc.DOS_01467_Comparator=0;MCHP.modsrc.DOS_01498_TLAY=0;MCHP.modsrc.DOS_02316_"
-      "nvm_ctrl_v1_16bit=0;MCHP.modsrc.DOS_00993_PLL_120MHz=0;MCHP.modsrc.DOS_01577_cla_clc_upb_v1=0;MCHP.modsrc.DOS_01"
-      "332_ptg_pc_v1=0;MCHP.modsrc.DOS_00958_pwm_TLAY=0;MCHP.modsrc.TLAY_IOPorts=0;MCHP.modsrc.DOS_00929q=0;MCHP.modsrc"
-      ".DOS_02415_spi_v5=0;MCHP.modsrc.DOS_RPINRx_16bit_2=0;MCHP.modsrc.DOS_01497_TLAH_PMDx=0;MCHP.modsrc.DOS_02550_TLA"
-      "L_INT=0;MCHP.modsrc.DOS_00958_pwm_TLAH=0;MCHP.modsrc.DOS_01287_TLAH_INT_=0;MCHP.modsrc.DOS_01113=0;MCHP.modsrc.D"
-      "OS_01017_PMDx=0;MCHP.modsrc.DOS_00927=0;MCHP.modsrc.DOS_01080=0;MCHP.modsrc.DOS_00794_cpu_16bit_v3=0;MCHP.modsrc"
-      ".DOS_02359a_sent_j2716_upb_v1=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1_16bit=0;MCHP.modsrc.DOS_02192_TLCD_PMDx=0;M"
-      "CHP.modsrc.DOS_02192_TLCD_INT_=0;MCHP.modsrc.DOS_02192_cmp=0;MCHP.modsrc.DOS_00958_pwm_TLCD=0;MCHP.modsrc.DOS_02"
-      "192_PORTx_TLCD=0;MCHP.modsrc.DOS_00936=0;MCHP.modsrc.DOS_00995=0;MCHP.modsrc.DOS_00546=0;MCHP.modsrc.DOS_00474=0"
-      ";MCHP.modsrc.DOS_02481_WACJ_Config=0;MCHP.modsrc.DOS_02569_pfm_cache_ocp_v1=0;MCHP.modsrc.DOS_02819_pfm_ctrl_32b"
-      "it_upb_v2=0;MCHP.modsrc.DOS_02674_wdt_upb_v1_32bit=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1=0;MCHP.modsrc.DOS_0286"
-      "9_icd_jtag_bvci_upb_v2=0;MCHP.modsrc.DOS_02823_WACJ_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPINRx=0;MCHP.modsrc."
-      "DOS_02481_RPORx=0;MCHP.modsrc.DOS_02511_pwr_sib_upb_v1_32bit=0;MCHP.modsrc.DOS_02481_WACJ_int_evic_v3=0;MCHP.mod"
-      "src.DOS_01500_dma_bvci_v2=0;MCHP.modsrc.DOS_02141_tmr_classa_pb_v2=0;MCHP.modsrc.DOS_02815_tmr_classb_upb_v1=0;M"
-      "CHP.modsrc.DOS_00740_icap_pb_v1=0;MCHP.modsrc.DOS_00749_ocmp_pb_v1=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_32bit=0;MC"
-      "HP.modsrc.DOS_01329_spi_pb_v2=0;MCHP.modsrc.DOS_02478_uart_irda_upb_v1_32bit=0;MCHP.modsrc.DOS_02514_dfm_strl_ss"
-      "t_upb_v1=0;MCHP.modsrc.DOS_01427_cmp_control_upb_v1_32bit=0;MCHP.modsrc.DOS_01445_dac_nbit__control_upb_v1_32bit"
-      "=0;MCHP.modsrc.DOS_01461_afe_ctmu_con_upb_v1=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_v1=0;MCHP.modsrc.DOS_02467_gp"
-      "io_ports_upb_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK=0;MCHP.modsrc.DOS_02813a_usb_otgcore_pb_v3=0"
-      ";MCHP.modsrc.DOS_01261_tmr_rtcc_pb_v2=0;MCHP.modsrc.DOS_01475_lpwr_deep_sleep_ctrl_v2=0;MCHP.modsrc.DOS_EIP_0013"
-      "6_ssx_v1=0;MCHP.modsrc.DOS_01152_can_bvci_v1=0;MCHP.modsrc.DOS_02481_WACN_Config=0;MCHP.modsrc.DOS_02823_WACN_cl"
-      "k_cru_upb_v2=0;MCHP.modsrc.DOS_02481_WACN_int_evic_v3=0;MCHP.modsrc.DOS_03554_cmp_control_upb_v2_32bit=0;MCHP.mo"
-      "dsrc.DOS_01577_cla_clc_upb_v1_32bit=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2=0;MCHP.modsrc.DOS_02481_WACK_MC_Config"
-      "=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2_pic32mk=0;MCHP.modsrc.DOS_02481_WACJ_MC_Config=0;MCHP.modsrc.DOS_02481_WA"
-      "CJ_MC_int_evic_v3=0;MCHP.modsrc.DOS_01477_pwm_mc_upb_v1=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_SIC=0;MCHP.modsrc."
-      "DOS_01494_qei_32b_upb_v1=0;MCHP.modsrc.DOS_02481_WACN_MC_Config=0;MCHP.modsrc.DOS_02481_WACN_MC_int_evic_v3=0;MC"
-      "HP.modsrc.DOS_02787_WACD_Config=0;MCHP.modsrc.DOS_00800_dac_4bit_ctrl_pb_v1=0;MCHP.modsrc.DOS_01539_icd_jtag_pb_"
-      "v2=0;MCHP.modsrc.DOS_02823_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPORx=0;MCHP.modsrc.DOS_02907_WACD_int_evic_v3"
-      "=0;MCHP.modsrc.DOS_00734_uart_irda_pb_v1=0;MCHP.modsrc.DOS_00687_tmr_classa_pb_v1=0;MCHP.modsrc.DOS_00745_tmr_cl"
-      "assb_pb_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1=0;MCHP.modsrc.DOS_00866_cmp_control_pb_v2=0;MCHP.modsrc.D"
-      "OS_01114_eth_bvci_v1=0;MCHP.modsrc.DOS_02831_usb_clk_rst_v2=0;MCHP.modsrc.DOS_01643_pfm_cache_ahb_v2=0;MCHP.mods"
-      "rc.DOS_EIP_00206r5_sqi_v2=0;MCHP.modsrc.DOS_EIP_00124_usb_hs_otgcore_v1=0;MCHP.modsrc.DOS_EIP_00218_math_rng_ahb"
-      "s_v2=0;MCHP.modsrc.DOS_EIP_00109_ebi_v1=0;MCHP.modsrc.DOS_EIP_00158_crypto_v1=0;MCHP.clock.PBxDIV=-1;"
-      MCHP_CRC		      "5736882"
+      "-1 -1 -1],1,6);MCHP.UART.reg_UxSTA=reshape([61439 61439 -1 -1 -1 -1],1,6);MCHP.modsrc.DOS_02551_cpu_16bit_v7=0;M"
+      "CHP.modsrc.DOS_01520_wdt_dmt_upb_v1_16bit=0;MCHP.modsrc.DOS_02359a_sent_j2716_upb_v1=0;MCHP.modsrc.DOS_02672_mat"
+      "h_progcrc_upb_v1_16bit=0;MCHP.modsrc.DOS_01577_cla_clc_upb_v1=0;MCHP.modsrc.DOS_02915_ecc_v2=0;MCHP.modsrc.DOS_0"
+      "2673_tmr_classa_upb_v1_16bit=0;MCHP.modsrc.DOS_01494_qei_32b_upb_v1_16bit=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_"
+      "v1_16bit=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_16bit_TLAH=0;MCHP.modsrc.DOS_03076_uart_protocol_upb_v1_16bit=0;MCHP"
+      ".modsrc.DOS_01482=0;MCHP.modsrc.DOS_01483_pwm_16bit=0;MCHP.modsrc.DOS_03247_CAN_FD_UPB_V2_16_bit=0;MCHP.modsrc.D"
+      "OS_02949_WACG=0;MCHP.modsrc.DOS_02316_nvm_ctrl_v1_16bit=0;MCHP.modsrc.DOS_03349_amp_pad_opamp_ctrl_upb_v1=0;MCHP"
+      ".modsrc.DOS_02653_afe_current_bias_ctrl_upb_v1_16bit=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_16bit=0;MCHP.modsrc.D"
+      "OS_01512_ccp_mccp_upb_v1_16bit=0;MCHP.modsrc.DOS_02519_dma_sfr_16bit_v2=0;MCHP.modsrc.DOS_02508c11=0;MCHP.modsrc"
+      ".DOS_02475_dac_pdm_nbit_upb_v1_16bit=0;MCHP.modsrc.DOS_02467_gpio_upb_v1_16bit=0;MCHP.modsrc.DOS_00805_rst_integ"
+      "ration_v4=0;MCHP.modsrc.DOS_02659_clk_sib_v12=0;MCHP.modsrc.DOS_02237_osc_dco_ctrl_upb_v1_16bit=0;MCHP.modsrc.DO"
+      "S_02674_wdt_upb_v1_16bit=0;MCHP.modsrc.DOS_01407=0;MCHP.modsrc.DOS_03662_WACU=0;MCHP.modsrc.DOS_00794=1;MCHP.mod"
+      "src.DOS_00931=1;MCHP.modsrc.DOS_00932=1;MCHP.modsrc.DOS_00942=1;MCHP.modsrc.DOS_00938=1;MCHP.modsrc.DOS_00996=1;"
+      "MCHP.modsrc.DOS_00997=1;MCHP.modsrc.DOS_00998=1;MCHP.modsrc.DOS_00209=0;MCHP.modsrc.DOS_01555_adc=0;MCHP.modsrc."
+      "DOS_01293=1;MCHP.modsrc.DOS_00828=0;MCHP.modsrc.DOS_01116=1;MCHP.modsrc.DOS_01017_RPORx=1;MCHP.modsrc.DOS_01017_"
+      "RPINRx=1;MCHP.modsrc.DOS_01555_nvm_tsmc18_v2_16bit=0;MCHP.modsrc.DOS_00804=1;MCHP.modsrc.DOS_00826=1;MCHP.modsrc"
+      ".DOS_01555_TLAK_PMDx=0;MCHP.modsrc.DOS_01555_TLAK_INT_=0;MCHP.modsrc.DOS_00933=1;MCHP.modsrc.DOS_01555=0;MCHP.mo"
+      "dsrc.DOS_01555_ptg=0;MCHP.modsrc.DOS_00929=1;MCHP.modsrc.DOS_00958=1;MCHP.modsrc.DOS_01117_PORTx=1;MCHP.modsrc.D"
+      "OS_00999=0;MCHP.modsrc.DOS_01198=1;MCHP.modsrc.DOS_01041=1;MCHP.modsrc.DOS_00892=1;MCHP.modsrc.DOS_01287_TLAC_PM"
+      "Dx=1;MCHP.modsrc.DOS_01287_TLAC_INT_=1;MCHP.modsrc.DOS_01424=1;MCHP.modsrc.DOS_01332=1;MCHP.modsrc.DOS_01468_PMB"
+      "A_current_source=0;MCHP.modsrc.DOS_02291_PGA=0;MCHP.modsrc.DOS_01467_Comparator=0;MCHP.modsrc.DOS_01498_TLAY=0;M"
+      "CHP.modsrc.DOS_00993_PLL_120MHz=0;MCHP.modsrc.DOS_01332_ptg_pc_v1=0;MCHP.modsrc.DOS_00958_pwm_TLAY=0;MCHP.modsrc"
+      ".TLAY_IOPorts=0;MCHP.modsrc.DOS_00929q=0;MCHP.modsrc.DOS_02415_spi_v5=0;MCHP.modsrc.DOS_RPINRx_16bit_2=0;MCHP.mo"
+      "dsrc.DOS_01497_TLAH_PMDx=0;MCHP.modsrc.DOS_02550_TLAL_INT=0;MCHP.modsrc.DOS_00958_pwm_TLAH=0;MCHP.modsrc.DOS_012"
+      "87_TLAH_INT_=0;MCHP.modsrc.DOS_01113=0;MCHP.modsrc.DOS_01017_PMDx=0;MCHP.modsrc.DOS_00927=0;MCHP.modsrc.DOS_0108"
+      "0=0;MCHP.modsrc.DOS_00794_cpu_16bit_v3=0;MCHP.modsrc.DOS_02192_TLCD_PMDx=0;MCHP.modsrc.DOS_02192_TLCD_INT_=0;MCH"
+      "P.modsrc.DOS_02192_cmp=0;MCHP.modsrc.DOS_00958_pwm_TLCD=0;MCHP.modsrc.DOS_02192_PORTx_TLCD=0;MCHP.modsrc.DOS_009"
+      "36=0;MCHP.modsrc.DOS_00995=0;MCHP.modsrc.DOS_00546=0;MCHP.modsrc.DOS_00474=0;MCHP.modsrc.DOS_02481_WACJ_MC_Confi"
+      "g=0;MCHP.modsrc.DOS_02569_pfm_cache_ocp_v1=0;MCHP.modsrc.DOS_02819_pfm_ctrl_32bit_upb_v2=0;MCHP.modsrc.DOS_02674"
+      "_wdt_upb_v1_32bit=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1=0;MCHP.modsrc.DOS_02869_icd_jtag_bvci_upb_v2=0;MCHP.mod"
+      "src.DOS_02823_WACJ_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPINRx=0;MCHP.modsrc.DOS_02481_RPORx=0;MCHP.modsrc.DOS"
+      "_02511_pwr_sib_upb_v1_32bit=0;MCHP.modsrc.DOS_02481_WACJ_MC_int_evic_v3=0;MCHP.modsrc.DOS_01500_dma_bvci_v2=0;MC"
+      "HP.modsrc.DOS_02141_tmr_classa_pb_v2=0;MCHP.modsrc.DOS_02815_tmr_classb_upb_v1=0;MCHP.modsrc.DOS_00740_icap_pb_v"
+      "1=0;MCHP.modsrc.DOS_00749_ocmp_pb_v1=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_32bit=0;MCHP.modsrc.DOS_01329_spi_pb_v2="
+      "0;MCHP.modsrc.DOS_02478_uart_irda_upb_v1_32bit=0;MCHP.modsrc.DOS_02514_dfm_strl_sst_upb_v1=0;MCHP.modsrc.DOS_014"
+      "77_pwm_mc_upb_v1=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_SIC=0;MCHP.modsrc.DOS_01494_qei_32b_upb_v1=0;MCHP.modsrc."
+      "DOS_01427_cmp_control_upb_v1_32bit=0;MCHP.modsrc.DOS_01445_dac_nbit__control_upb_v1_32bit=0;MCHP.modsrc.DOS_0146"
+      "1_afe_ctmu_con_upb_v1=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_v1=0;MCHP.modsrc.DOS_02467_gpio_ports_upb_v1=0;MCHP."
+      "modsrc.DOS_01152_can_bvci_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK=0;MCHP.modsrc.DOS_02813a_usb_ot"
+      "gcore_pb_v3=0;MCHP.modsrc.DOS_01261_tmr_rtcc_pb_v2=0;MCHP.modsrc.DOS_01475_lpwr_deep_sleep_ctrl_v2=0;MCHP.modsrc"
+      ".DOS_EIP_00136_ssx_v1=0;MCHP.modsrc.DOS_02481_WACK_MC_Config=0;MCHP.modsrc.DOS_03088_pfm_cache_ocp_v2_WACK=0;MCH"
+      "P.modsrc.DOS_02823_WACN_clk_cru_upb_v2=0;MCHP.modsrc.DOS_02907_WACK_MC_int_evic_v3=0;MCHP.modsrc.DOS_03554_cmp_c"
+      "ontrol_upb_v2_32bit=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2_pic32mk=0;MCHP.modsrc.DOS_02787_WACD_Config=0;MCHP.mod"
+      "src.DOS_00800_dac_4bit_ctrl_pb_v1=0;MCHP.modsrc.DOS_01539_icd_jtag_pb_v2=0;MCHP.modsrc.DOS_02823_clk_cru_upb_v2="
+      "0;MCHP.modsrc.DOS_01423_RPORx=0;MCHP.modsrc.DOS_02907_WACD_int_evic_v3=0;MCHP.modsrc.DOS_00734_uart_irda_pb_v1=0"
+      ";MCHP.modsrc.DOS_00687_tmr_classa_pb_v1=0;MCHP.modsrc.DOS_00745_tmr_classb_pb_v1=0;MCHP.modsrc.DOS_02508_adc_sar"
+      "_ctrl_upb_v1=0;MCHP.modsrc.DOS_00866_cmp_control_pb_v2=0;MCHP.modsrc.DOS_01114_eth_bvci_v1=0;MCHP.modsrc.DOS_028"
+      "31_usb_clk_rst_v2=0;MCHP.modsrc.DOS_01643_pfm_cache_ahb_v2=0;MCHP.modsrc.DOS_EIP_00206r5_sqi_v2=0;MCHP.modsrc.DO"
+      "S_EIP_00124_usb_hs_otgcore_v1=0;MCHP.modsrc.DOS_EIP_00218_math_rng_ahbs_v2=0;MCHP.modsrc.DOS_EIP_00109_ebi_v1=0;"
+      "MCHP.modsrc.DOS_EIP_00158_crypto_v1=0;MCHP.PortBase=16;MCHP.PortPrefixe='P';MCHP.clock.PBxDIV=-1;"
+      MCHP_CRC		      "6568785"
       BTMODE		      "Not used"
       RES1		      "Not used"
       PLLSS		      "Not used"
@@ -3263,8 +3230,8 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion>\nLost modified on: %<LastModificationDate>\n%<Creator>\n\n"
       "%<Description>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.42\\nLost modified on: Fri Nov 09"
-      " 23:06:10 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.44\\nLost modified on: Fri Nov 23"
+      " 19:17:14 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
       "C506 with internal Op-Amp (populated with resistances)\\n\\nPotentiometer set PWM duty cycle and rotates motor i"
       "n one side or the other.\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag"
       HorizontalTextAlignment "Center"
@@ -3275,10 +3242,10 @@ Model {
       Name		      "Port Info"
       SID		      "203"
       Ports		      []
-      Position		      [832, -4, 1026, 256]
+      Position		      [832, -4, 981, 256]
       ZOrder		      3508
       DropShadow	      on
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/System Info/Port Info"
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
@@ -3289,7 +3256,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "271"
-      Position		      [805, 479, 845, 521]
+      Position		      [800, 494, 840, 536]
       ZOrder		      3518
       Deterministic	      off
       OutPortSampleTime	      ".01"
@@ -3298,7 +3265,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition2"
       SID		      "272"
-      Position		      [805, 544, 845, 586]
+      Position		      [800, 559, 840, 601]
       ZOrder		      3519
       Deterministic	      off
       OutPortSampleTime	      ".01"
@@ -3307,7 +3274,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition3"
       SID		      "357"
-      Position		      [805, 414, 845, 456]
+      Position		      [800, 429, 840, 471]
       ZOrder		      3574
       Deterministic	      off
       OutPortSampleTime	      ".01"
@@ -3316,7 +3283,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition5"
       SID		      "329"
-      Position		      [805, 609, 845, 651]
+      Position		      [800, 624, 840, 666]
       ZOrder		      3559
       Deterministic	      off
       OutPortSampleTime	      ".01"
@@ -3328,7 +3295,7 @@ Model {
       Ports		      [0, 1]
       Position		      [495, 211, 560, 249]
       ZOrder		      3563
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
       SourceType	      "Input driver for Digital Input Pins"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3350,7 +3317,7 @@ Model {
       Ports		      [0, 1]
       Position		      [400, 211, 470, 249]
       ZOrder		      3566
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
       SourceType	      "Input driver for Digital Input Pins"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3372,7 +3339,7 @@ Model {
       Ports		      []
       Position		      [645, 142, 745, 198]
       ZOrder		      3512
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Configuration"
       SourceType	      "Configuration for UART peripheral"
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
@@ -3383,6 +3350,7 @@ Model {
       BAUD_Choice_IR	      "Dynamic Options"
       BAUD_Choice_IR_TXT      "[]"
       BAUD_Custom	      "115200"
+      INT_PRIORITY	      "0"
       ALT_IO		      on
       PIN_RX		      "Dynamic Options"
       PIN_RX_TXT	      "C5 / P53 / Pin[37]"
@@ -3407,9 +3375,12 @@ Model {
       RX_INT_PRIORITY	      "1"
       RX_INT_WHEN	      "receive 1 character"
       RX_CIRCULAR_SIZE	      "2048"
+      RX_DMA_CHANNEL	      "0"
+      RX_DMA_SIZE	      "0"
       DuplexMode	      "Full duplex (default)"
       PIN_RX_Inv	      off
       PIN_TX_Inv	      off
+      PIN_RXTX_Inv	      off
       ParityBit		      "No parity (default)"
       StopBit		      "1 stop bit (default)"
       IRDA		      off
@@ -3431,9 +3402,9 @@ Model {
       Name		      "UART Tx-Matlab"
       SID		      "267"
       Ports		      [4]
-      Position		      [1105, 399, 1230, 666]
+      Position		      [1100, 414, 1225, 681]
       ZOrder		      3514
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
       SourceType	      "Higl Level UART protocol"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3451,10 +3422,10 @@ Model {
       Name		      "dbl-click to open\nGraphical interface"
       SID		      "337"
       Ports		      []
-      Position		      [1096, 297, 1231, 351]
+      Position		      [1016, 332, 1146, 376]
       ZOrder		      3567
       DropShadow	      on
-      LibraryVersion	      "3.43"
+      LibraryVersion	      "3.4x"
       SourceBlock	      "MCHP_Blockset/BUS UART/picgui\nGraphical interface"
       SourceType	      ""
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3577,7 +3548,7 @@ Model {
       }
       Branch {
 	ZOrder			141
-	Points			[0, -65]
+	Points			[0, -80]
 	DstBlock		"Goto"
 	DstPort			1
       }
@@ -3616,6 +3587,84 @@ Model {
       VerticalAlignment	      "top"
       Interpreter	      "rich"
       ZOrder		      1
+    }
+    Annotation {
+      SID		      "374"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-family:'Courier New'; font-size:8px; font-weight:600;\">MCLV2-dsPIC33EPxMC506 PIM ("
+      "ext OA)</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; mar"
+      "gin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:8px;\"><br /></p>\n<p s"
+      "tyle=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0p"
+      "x;\"><span style=\" font-family:'Courier New'; font-size:8px;\">MCLV Board  |   PIN </span></p>\n<p style=\" mar"
+      "gin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+      "style=\" font-family:'Courier New'; font-size:8px;\">================================</span></p>\n<p style=\" ma"
+      "rgin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+      " style=\" font-family:'Courier New'; font-size:8px;\">LED1        |   RD6 </span></p>\n<p style=\" margin-top:0p"
+      "x; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" f"
+      "ont-family:'Courier New'; font-size:8px;\">LED2        |   RD5 </span></p>\n<p style=\" margin-top:0px; margin-b"
+      "ottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:"
+      "'Courier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-"
+      "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family"
+      ":'Courier New'; font-size:8px;\">SW1         |   RG6</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; "
+      "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier Ne"
+      "w'; font-size:8px;\">SW2         |   RC7</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:"
+      "0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-siz"
+      "e:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left"
+      ":0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-si"
+      "ze:8px;\">UART_Rx     |   RC5</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin"
+      "-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">UA"
+      "RT_Tx     |   RF1</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; "
+      "-qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|-"
+      "------------------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"
+      " -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM1 (L/H)  |"
+      "   RB15 - RB14</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt"
+      "-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM2 (L/H)  |   R"
+      "B13 - RB12</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-blo"
+      "ck-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM3 (L/H)  |   RB11 "
+      "- RB10</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-i"
+      "ndent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|------------"
+      "-------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+      "indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">MC_FAULT    |   RB4  (FL"
+      "T32)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-ind"
+      "ent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|--------------"
+      "-----</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-in"
+      "dent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLA / QEA |   RA8</span>"
+      "</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
+      "-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLB / QEB |   RC6</span></p>\n<p sty"
+      "le=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+      "\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLC/INDX  |   RF0</span></p>\n<p style=\" margin"
+      "-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span sty"
+      "le=\" font-family:'Courier New'; font-size:8px;\">HOME        |   RC10</span></p>\n<p style=\" margin-top:0px; m"
+      "argin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+      "family:'Courier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; "
+      "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font"
+      "-family:'Courier New'; font-size:8px;\">Pot         |   RE13  (AN13)</span></p>\n<p style=\" margin-top:0px; mar"
+      "gin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-fa"
+      "mily:'Courier New'; font-size:8px;\">VBUS        |   RA12  (AN10)</span></p>\n<p style=\" margin-top:0px; margin"
+      "-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-famil"
+      "y:'Courier New'; font-size:8px;\">Ia          |   RB2   (C2IN1+)</span></p>\n<p style=\" margin-top:0px; margin-"
+      "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family"
+      ":'Courier New'; font-size:8px;\">Ib          |   RC2   (C3IN1+)</span></p>\n<p style=\" margin-top:0px; margin-b"
+      "ottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:"
+      "'Courier New'; font-size:8px;\">Ibus/Vbus   |   RB7   (AN14)</span></p>\n<p style=\" margin-top:0px; margin-bott"
+      "om:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Co"
+      "urier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-bot"
+      "tom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'C"
+      "ourier New'; font-size:8px;\">PGC         |   RB6 (PGC2)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0"
+      "px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courie"
+      "r New'; font-size:8px;\">PGD         |   RB5 (PGD2)</span></p></body></html>"
+      Position		      [998, -4, 1164, 324]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      on
+      FixedWidth	      on
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      BackgroundColor	      "[0.784314, 0.874510, 0.988235]"
+      Interpreter	      "rich"
+      ZOrder		      -2
     }
   }
 }
