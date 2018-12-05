@@ -11,7 +11,7 @@ This project is offered to the 5th year students in the [electrical engineering 
 
 The project details the following points 
 1. Getting started with the programming environment and harware setup until the openl-loop control of the DC motor which means : 
- - eeee
+	- rzerze
 1. aaa
 
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
