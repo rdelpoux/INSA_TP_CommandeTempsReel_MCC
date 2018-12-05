@@ -5,12 +5,14 @@
 - Lubin KERHUEL (Lubin.Kerhuel at microchip.com), Software Engineer, Microchip Technology Inc.
 
 ## Introduction
-This project is offered to the 5th year students in the [electrical engineering departement][GE] of [INSA Lyon][INSA] for the [CCSA][CCSA] option. This project details the steps for the real time implementation of a velocity DC motor control on Microchip dsPIC microcontroller target. The programming environment for this project is Matlab/Simulink, using the toolbox [MPLAB Device Blocks for Simulink][SimulinkMicrochip]
+This project is offered to the 5th year students in the [electrical engineering departement][GE] of [INSA Lyon][INSA] for the [CCSA][CCSA] option. This project details the steps for the real time implementation of a velocity DC motor control on Microchip dsPIC microcontroller target. The programming environment for this project is the rapid protoype Matlab/Simulink toolbox [MPLAB Device Blocks for Simulink][SimulinkMicrochip].
 
 ![fig:MotorPravalux] 
 
 The project details the following points 
-1. 
+1. Getting started with the programming environment and harware setup until the openl-loop control of the DC motor which means
+- 
+1. aaa
 
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
 pour des applications temps réel sur cible microntroleurs Microchip dsPIC.  
