@@ -5,10 +5,13 @@
 - Lubin KERHUEL (Lubin.Kerhuel at microchip.com), Software Engineer, Microchip Technology Inc.
 
 ## Introduction
-This project is offered to the 5th year students in the [electrical engineering departement][GE] of [INSA Lyon][INSA] for the  students  developped as an 
+This project is offered to the 5th year students in the [electrical engineering departement][GE] of [INSA Lyon][INSA] for the [CCSA][CCSA] option. This project details the steps for the real time implementation of a velocity DC motor control on Microchip dsPIC microcontroller target.
+![fig:MotorPravalux] 
+The project details 
+
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
 pour des applications temps réel sur cible microntroleurs Microchip dsPIC.  
-![fig:MotorPravalux]
+
 
 
 Etapes avec l'outil de prototypage rapide Matlab-Simulink:
@@ -36,7 +39,7 @@ Etapes avec l'outil de prototypage rapide Matlab-Simulink:
 
 [GE]: http://ge.insa-lyon.fr
 [INSA]: http://www.insa-lyon.fr
-
+[CCSA]: http://ge-option5a.insa-lyon.fr/content/ccsa-commande-de-convertisseurs-et-de-systemes-dactionnement
 [Hardware_setup]: ./Experimentations/01_Hardware_setup/ "Simulink Model, picgui script to visualise data"
 [DataLog_And_Simulation]: ./Experimentations/05_Log_Model_And_Simulation/ "Log data and reuse in simulation"
 [Control_Loop]: ./Experimentations/10_Control_Loop/ "Control loop"
