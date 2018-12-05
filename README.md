@@ -11,8 +11,14 @@ This project is offered to the 5th year students in the [electrical engineering 
 
 The project details the following points 
 1. Getting started with the programming environment and harware setup until the openl-loop control of the DC motor which means : 
-	- rzerze
-1. aaa
+	- Two PWM signals to control the motor DC voltage through a H bridge structure using MOSFET.
+	- Two ADC channels providing the respectively the board potentiometer positon to impose a reference and the current measurement from a shunt resistor. 
+	- QEI peripheral to provide shaft position and speed
+	- UART connection to the computer for the data analysis. 
+1. Modelling and simulation of the DC motor.
+	- A recall on the motor modelling and a basic simulation model of the motor is given. 
+1. Control synthesis and simulation
+	- 
 
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
 pour des applications temps réel sur cible microntroleurs Microchip dsPIC.  
