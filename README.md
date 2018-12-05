@@ -34,7 +34,7 @@ Etapes avec l'outil de prototypage rapide Matlab-Simulink:
 
 
 
-[GE]: www.insa-lyon.fr
+[GE]: http://www.insa-lyon.fr
 [INSA]:
 
 [Hardware_setup]: ./Experimentations/01_Hardware_setup/ "Simulink Model, picgui script to visualise data"
