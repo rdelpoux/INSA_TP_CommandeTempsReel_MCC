@@ -6,7 +6,9 @@
 
 ## Introduction
 This project is offered to the 5th year students in the [electrical engineering departement][GE] of [INSA Lyon][INSA] for the [CCSA][CCSA] option. This project details the steps for the real time implementation of a velocity DC motor control on Microchip dsPIC microcontroller target.
+
 ![fig:MotorPravalux] 
+
 The project details 
 
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 

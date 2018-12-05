@@ -57,7 +57,8 @@ Be = [
         0;
     ];
 
-Kelec = -place(Ae,Be,Pole_elec_desiree);
+Kelec = -place(Ae,Be,Pole_elec_desiree)
+
 
 %% Boucle de vitesse
 % polynome caracteristique desiree
