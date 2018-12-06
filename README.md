@@ -24,9 +24,10 @@ Note that the modeling and the control of the DC motor are supposed as prerequis
 1. Simulation of the DC motor
 	- A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.  
 	- Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
-	- Comparison between the idéal and the implementation case. 
+	- Comparison between the ideal and the real implementation cases. 
 
 2. Experimental validation
+	- Real-time implementation of the sampled fixed point control and comparison with the theory. 
 	- 
 
 Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
