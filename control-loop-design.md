@@ -44,4 +44,4 @@ The mechanical power produced by the DC motor is $$c_m\omega = K_Ti\omega$$. The
 
 
 
-[Chiasson2005]:Chiasson
+[Chiasson2005]:"Chiasson"
