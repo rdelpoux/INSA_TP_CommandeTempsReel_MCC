@@ -1,7 +1,7 @@
 # DC motor modeling and control loop design
 
 ## Motor description
-[MotorScheme][MotorScheme]
+![fig:MotorScheme]
  
 ## System modeling
 
@@ -45,4 +45,5 @@ The mechanical power produced by the DC motor is $$c_m\omega = K_Ti\omega$$. The
 (Chiasson2005) Chiasson, J.-N. (2005). Modeling and High-Performance Control of Electric Machines (IEEE Press).
 
 
-[MotorScheme]:/Figures/MCC.png
+[fig:MotorScheme]: /Figures/MCC.png "Motor Scheme"
+
