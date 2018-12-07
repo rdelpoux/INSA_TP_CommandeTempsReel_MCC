@@ -15,8 +15,8 @@ The project details the following points
 	- Two ADC channels providing the respectively the board potentiometer positon to impose a reference and the current measurement from a shunt resistor. 
 	- QEI peripheral to provide shaft position and speed
 	- UART connection to the computer for the data analysis. 
-1. Modelling and control loop design of the DC motor.
-	- A recall on the motor modelling will be exposed.
+1. Modeling and control loop design of the DC motor.
+	- A recall on the motor modeling will be exposed.
 	- A basic control strategy based on state space representation will be proposed.
 
 	Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
@@ -38,7 +38,7 @@ The project details the following points
 
 [MCLV V2 board setup with Simulink for DC motor][Hardware_setup]
 
-## Modelling and control loop degign of the DC motor
+## Modeling and control loop degign of the DC motor
 
 [Control Loop design][Control_Loop]
 
