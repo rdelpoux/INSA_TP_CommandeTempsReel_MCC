@@ -42,15 +42,17 @@ The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The
 
 
 
-## References
-
-(Chiasson2005) Chiasson, J.-N. (2005). Modeling and High-Performance Control of Electric Machines (IEEE Press).
-
 
 
 
 ## Motor Bloc Diagram
 ![fig:BlocDiag]
+
+## References
+
+(Chiasson2005) Chiasson, J.-N. (2005). Modeling and High-Performance Control of Electric Machines (IEEE Press).
+
+
 
 ## References
 [fig:MotorScheme]: /Figures/MCC.png "Motor Scheme"
