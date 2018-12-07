@@ -41,9 +41,6 @@ The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The
 
 
 
-salut laurent 
-
-
 
 
 ## Motor Bloc Diagram
