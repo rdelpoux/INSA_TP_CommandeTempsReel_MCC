@@ -36,9 +36,9 @@ The project details the following points 1. Getting started with the programming
 
 [MCLV V2 board setup with Simulink for DC motor](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/e5152949a3f60ba1e0c75a98ebc9fb2c29007742/Experimentations/01_Hardware_setup/README.md)
 
-## Modeling and control loop degign of the DC motor
+## Modeling and control loop design of the DC motor
 
-[Control Loop design](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/e5152949a3f60ba1e0c75a98ebc9fb2c29007742/Experimentations/10_Control_Loop/README.md)
+[Modeling and control loop design](https://hosting.gitbook.com/dc-motor-rt/~/edit/drafts/-LT8YA7SRKcVsaTasnDc/control-loop-design)
 
 ## Simulation of the DC motor
 
