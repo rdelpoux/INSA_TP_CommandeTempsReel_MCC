@@ -15,14 +15,14 @@ The project details the following points
 	- Two ADC channels providing the respectively the board potentiometer positon to impose a reference and the current measurement from a shunt resistor. 
 	- QEI peripheral to provide shaft position and speed
 	- UART connection to the computer for the data analysis. 
-1. Modelling and Control of the DC motor.
+1. Modelling and control loop design of the DC motor.
 	- A recall on the motor modelling will be exposed.
 	- A basic control strategy based on state space representation will be proposed.
 
 	Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
 
 1. Simulation of the DC motor
-	- A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.  
+	- A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.
 	- Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
 	- Comparison between the ideal and the real implementation cases. 
 
@@ -38,7 +38,7 @@ The project details the following points
 
 [MCLV V2 board setup with Simulink for DC motor][Hardware_setup]
 
-## Modelling and Control of the DC motor
+## Modelling and control loop degign of the DC motor
 
 [Control Loop design][Control_Loop]
 
