@@ -19,7 +19,7 @@ The project details the following points
 	- A recall on the motor modelling will be exposed.
 	- A basic control strategy based on state space representation will be proposed.
 
-Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
+	Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
 
 1. Simulation of the DC motor
 	- A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.  
