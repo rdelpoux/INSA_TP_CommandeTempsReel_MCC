@@ -45,5 +45,6 @@ The mechanical power produced by the DC motor is $$c_m\omega = K_Ti\omega$$. The
 (Chiasson2005) Chiasson, J.-N. (2005). Modeling and High-Performance Control of Electric Machines (IEEE Press).
 
 
+
 [fig:MotorScheme]: /Figures/MCC.png "Motor Scheme"
 
