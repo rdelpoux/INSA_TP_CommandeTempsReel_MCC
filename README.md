@@ -26,20 +26,28 @@ The project details the following points
 	- Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
 	- Comparison between the ideal and the real implementation cases. 
 
-2. Experimental validation
+1. Experimental validation
 	- Real-time implementation of the sampled fixed point control and comparison with the theory. 
-	- 
-
-Ce projet détaille la modélisation et la commande d'un moteur à courant continu 
-pour des applications temps réel sur cible microntroleurs Microchip dsPIC.  
+	- Back to modeling with the analysis of experimental results.
+	- Updating models, commands and experimentation.
 
 
 
-Etapes avec l'outil de prototypage rapide Matlab-Simulink:
 
-1. (En) [MCLV V2 board setup with Simulink for DC motor][Hardware_setup]
-1. (En) [Data recording, Simulation and Validation][DataLog_And_Simulation]
+## Getting started
+
+[MCLV V2 board setup with Simulink for DC motor][Hardware_setup]
+
+## Modelling and Control of the DC motor
+
 1. (En) [Control Loop design][Control_Loop]
+
+## Simulation of the DC motor
+
+1. (En) [Data recording, Simulation and Validation][DataLog_And_Simulation]
+
+## Experimental validation
+
 
 
 
