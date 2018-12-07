@@ -40,11 +40,11 @@ The project details the following points
 
 ## Modelling and Control of the DC motor
 
-1. (En) [Control Loop design][Control_Loop]
+[Control Loop design][Control_Loop]
 
 ## Simulation of the DC motor
 
-1. (En) [Data recording, Simulation and Validation][DataLog_And_Simulation]
+[Data recording, Simulation and Validation][DataLog_And_Simulation]
 
 ## Experimental validation
 
