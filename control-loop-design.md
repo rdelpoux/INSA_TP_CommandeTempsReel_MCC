@@ -1,3 +1,6 @@
+% DC motor modeling and control loop design
+% R. Delpoux, L. Kerhuel
+% 2018/12/07
 # DC motor modeling and control loop design
 
 ## Motor description
