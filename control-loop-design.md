@@ -2,6 +2,8 @@
 
 ## Motor description
 ![fig:MotorScheme]
+
+![fig:VariablesTable]
  
 ## System modeling
 
@@ -47,4 +49,4 @@ The mechanical power produced by the DC motor is $$c_m\omega = K_Ti\omega$$. The
 
 
 [fig:MotorScheme]: /Figures/MCC.png "Motor Scheme"
-
+[fig:VariablesTable]: /Figures/Table_Variables.png "Variables and parameters table"
