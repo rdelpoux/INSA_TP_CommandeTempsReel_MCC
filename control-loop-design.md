@@ -1,16 +1,16 @@
-# Control loop design
-\subsection{System modeling}
-\paragraph{Electric equation :}
+# DC motor modeling and control loop design
+
+## Motor description
+ 
+## System modeling
+
+**Electric equation:**
 From kirchhoff's voltage law :
-\begin{equation}
-L\frac{di(t)}{dt} =v(t) - Ri(t) - e(t)
-\label{eq:elec}
-\end{equation}
-\paragraph{Mechanical equation:}
+$$ L\frac{di(t)}{dt} =v(t) - Ri(t) - e(t) $$
+
+**Mechanical equation:**
 By Newton's law:
-\begin{equation}
-J\frac{d\omega(t)}{dt} = \sum c(t) = c_m(t)-f\omega(t)
-\end{equation}
+$$J\frac{d\omega(t)}{dt} = \sum c(t) = c_m(t)-f\omega(t)$$
 where $c(t)$ is the total torque applied on the rotor
 
 
