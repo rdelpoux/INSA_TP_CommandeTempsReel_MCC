@@ -26,13 +26,13 @@ The project details the following points
   Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
 
 3. Simulation of the DC motor
-   * A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.
-   * Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
-   * Comparison between the ideal and the real implementation cases. 
+  * A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.
+  * Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
+  * Comparison between the ideal and the real implementation cases. 
 4. Experimental validation
-   * Real-time implementation of the sampled fixed point control and comparison with the theory. 
-   * Back to modeling with the analysis of experimental results.
-   * Updating models, commands and experimentation.
+ * Real-time implementation of the sampled fixed point control and comparison with the theory. 
+ * Back to modeling with the analysis of experimental results.
+ * Updating models, commands and experimentation.
 
 ## Getting started
 
