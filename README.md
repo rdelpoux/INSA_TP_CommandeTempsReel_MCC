@@ -11,28 +11,28 @@ This project is offered to the 5th year students in the [electrical engineering 
 
 ![Motor Pravalux](.gitbook/assets/motorpravalux.png)
 
-The project details the following points 
+The project details the following points
 
 1. Getting started with the programming environment and harware setup until the openl-loop control of the DC motor which means :
-  * Two PWM signals to control the motor DC voltage through a H bridge structure using MOSFET.
-  * Two ADC channels providing the respectively the board potentiometer positon to impose a reference and the current measurement from a shunt resistor. 
-  * QEI peripheral to provide shaft position and speed
-  * UART connection to the computer for the data analysis. 
-
+   * Two PWM signals to control the motor DC voltage through a H bridge structure using MOSFET.
+   * Two ADC channels providing the respectively the board potentiometer positon to impose a reference and the current measurement from a shunt resistor. 
+   * QEI peripheral to provide shaft position and speed
+   * UART connection to the computer for the data analysis. 
 2. Modeling and control loop design of the DC motor.
-  * A recall on the motor modeling will be exposed.
-  * A basic control strategy based on state space representation will be proposed.
 
-  Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
+   * A recall on the motor modeling will be exposed.
+   * A basic control strategy based on state space representation will be proposed.
+
+   Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developped here.
 
 3. Simulation of the DC motor
-  * A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.
-  * Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
-  * Comparison between the ideal and the real implementation cases. 
+   * A control strategy for the speed control of the DC motor is proposed. The simulation file is implemented using double data types variables and variaible-step solver to simulate and ideal continuous DC motor closed loop control.
+   * Degradation of the control to adapt to the real-time implementation on dsPIC. It means constant sampled control and 16-bits fixed point variables. 
+   * Comparison between the ideal and the real implementation cases. 
 4. Experimental validation
- * Real-time implementation of the sampled fixed point control and comparison with the theory. 
- * Back to modeling with the analysis of experimental results.
- * Updating models, commands and experimentation.
+   * Real-time implementation of the sampled fixed point control and comparison with the theory. 
+   * Back to modeling with the analysis of experimental results.
+   * Updating models, commands and experimentation.
 
 ## Getting started
 
@@ -40,7 +40,7 @@ The project details the following points
 
 ## Modeling and control loop design of the DC motor
 
-[Modeling and control loop design](https://rtdc.ctrl-elec.fr/~/edit/drafts/-LTDx4gYKCVpGsxT83x1/control-loop-design)
+[Modeling and control loop design](https://rtdc.ctrl-elec.fr/~/edit/drafts/-LTDzJkAUVTNIM_caikI/control-loop-design)
 
 ## Simulation of the DC motor
 
