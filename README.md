@@ -38,7 +38,7 @@ The project details the following points 1. Getting started with the programming
 
 ## Modeling and control loop design of the DC motor
 
-[Modeling and control loop design](https://hosting.gitbook.com/dc-motor-rt/~/edit/drafts/-LT8YA7SRKcVsaTasnDc/control-loop-design)
+[Modeling and control loop design](https://rtdc.ctrl-elec.fr/~/edit/drafts/-LTDx4gYKCVpGsxT83x1/control-loop-design)
 
 ## Simulation of the DC motor
 
