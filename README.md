@@ -40,7 +40,7 @@ The project details the following points
 
 ## Modeling and control loop design of the DC motor
 
-[Modeling and control loop design](https://rtdc.ctrl-elec.fr/~/edit/drafts/-LTDzJkAUVTNIM_caikI/control-loop-design)
+[Modeling and control loop design](https://rtdc.ctrl-elec.fr/control-loop-design)
 
 ## Simulation of the DC motor
 
