@@ -89,7 +89,6 @@ Inline math: $$\int_{-\infty}^\infty g(x) dx$$
 Block math:
  
 $$
-\def\arraystretch{1.5}
 \begin{array}{lcl}
    \dot{i}  & = & -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w \\
    d & e & f \\
