@@ -90,8 +90,8 @@ Block math:
  
 $$
 \def\arraystretch{1.5}
-\begin{array}{c|c:c}
-   a & b & c \\ \hline
+\begin{array}{lcl}
+   \dot{i}  & = & -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w \\
    d & e & f \\
    \hdashline
    g & h & i
