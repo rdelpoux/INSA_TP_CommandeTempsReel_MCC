@@ -70,7 +70,7 @@ zetaclm = 0.7;
 Trclm = Tr_m/20;
 wnclm = 3/Trclm;
 Desired_mecha_pole = roots([1/wnclm^2 2*zetaclm/wnclm 1]);
-%% Retour d'etat de la dynamique mecanique
+% Mechanical state feedback
 Am = [
         -F/J 0;
         -1 0;
@@ -85,31 +85,8 @@ Bm = [
 Km = place(Am,Bm,Desired_mecha_pole);
 
 %% Simulation
-% Reference
-omref = 200; % in rad/s
-
-
-% Load
-Cl = .0;
-
 % Simulation parameters
 Ts = 1e-4; % in s
 Tf = 10; % in s
 
 
-sim('ContinuousDCMotorSimulation')
-
-%%
-figure(1)
-subplot(3,1,1)
-plot(v_o.Time,v_o.Data)
-ylabel('Tension v (V)')
-subplot(3,1,2)
-plot(iref_o.Time,iref_o.data,'--',i_o.Time,i_o.Data)
-legend('i_r_e_f','i','location','best')
-ylabel('Courants i (A)')
-subplot(3,1,3)
-plot(omref_o.Time, omref_o.Data,'--',omega_o.Time,omega_o.Data)
-legend('\omega_r_e_f','\omega','location','best')
-ylabel('Vitesse \omega (rad/s)')
-xlabel('Temps (s)')
