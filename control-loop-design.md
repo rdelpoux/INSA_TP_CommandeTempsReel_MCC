@@ -80,6 +80,10 @@ with $$\varepsilon$$ the output of the integrator.
 
 
 \[Test\]
+
+$$\begin{matrix}\dot{i}  &=& -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w\end{bmatrix}$$
+
+
 ![fig:ElecSFB]
 
 ## References
