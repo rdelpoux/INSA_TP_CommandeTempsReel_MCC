@@ -141,7 +141,6 @@ $$
 \begin{bmatrix}
 0\\1
 \end{bmatrix}i_{\rm ref}
-\label{eq:BFsselec}
 $$
 
 The closed loop dynamics depends on the eigenvalues of the matrix :
