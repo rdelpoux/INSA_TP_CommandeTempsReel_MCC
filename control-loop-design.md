@@ -125,6 +125,66 @@ $$
 v  =  -Ki-K_I\varepsilon
 $$
 
+The closed loop system leads to :
+$$
+\begin{bmatrix}
+\dot{i}\\\dot{\xi}
+\end{bmatrix} = 
+\left(\begin{bmatrix}
+-\frac{R}{L} & 0\\-1 &0
+\end{bmatrix} -
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix} \begin{bmatrix}K&K_I\end{bmatrix}\begin{bmatrix}i\\\varepsilon\end{bmatrix}\right)+
+\begin{bmatrix}
+\frac{K_\phi}{L}\\0
+\end{bmatrix}\omega+
+\begin{bmatrix}
+0\\1
+\end{bmatrix}i_{\rm ref}
+\label{eq:BFsselec}
+$$
+
+The closed loop dynamics depends on the eigenvalues of the matrix : 
+$$
+\left(\begin{bmatrix}
+-\frac{R}{L} & 0\\-1 &0
+\end{bmatrix} -
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix} \begin{bmatrix}K&K_I\end{bmatrix}\right)= 
+\begin{bmatrix}
+-\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
+\end{bmatrix} 
+$$
+
+One has
+
+$$
+{\rm eig}\left(
+\begin{bmatrix}
+-\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
+\end{bmatrix}\right) = {\rm det}\left(sI-\begin{bmatrix}
+-\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
+\end{bmatrix}\right)
+$$
+
+It leads to a characteristic equation 
+
+$$
+P(s) = s^2+\frac{K+R}{L}s -K_I 
+$$
+
+to be identified with the classical second order characteristic equation
+
+$$
+P(s) = p^2+2\zeta\omega_n s +\omega_n^2 
+$$
+
+where $$\omega_n$$ is the desired closed loop natural frequency and $$\zeta$$ the damping coefficient.
+
+
+
 ## References
 
 \(Chiasson2005\) Chiasson, J.-N. \(2005\). Modeling and High-Performance Control of Electric Machines \(IEEE Press\).
