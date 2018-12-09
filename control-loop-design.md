@@ -24,7 +24,7 @@ $$
 J\frac{d\omega(t)}{dt} = \sum T(t) = T_m(t)-f\omega(t)
 $$
 
-where $$c(t)$$ is the total torque applied on the rotor
+where $$T(t)$$ is the total torque applied on the rotor.
 
 **Electro-mechanical coupling:**
 
@@ -44,7 +44,7 @@ $$
 
 $$K_T$$ : Torque constant $$(N.m.A^{-1})$$
 
-The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The electric power $$P_e = vi$$ delivered by the source goes into heat loss in the resistance $$R$$, into stored magnetic energy in the inductance $$L$$ and the remaining quantity $$iK_e\omega$$ is converted in mechanical energy $$T_m\omega$$. It leads to $$T_m\omega = K_ci\omega = K_ei\omega$$ whether $$K_c = K_e = K_\phi$$ \(Chiasson2005\).
+The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The electric power $$P_e = vi$$ delivered by the source goes into heat loss in the resistance $$R$$, into stored magnetic energy in the inductance $$L$$ and the remaining quantity $$iK_e\omega$$ is converted in mechanical energy $$T_m\omega$$. It leads to $$T_m\omega = K_Ti\omega = K_ei\omega$$ whether $$K_T = K_e = K_\phi$$ \(Chiasson2005\).
 
 ## Motor Bloc Diagram
 
