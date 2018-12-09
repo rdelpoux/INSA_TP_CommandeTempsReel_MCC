@@ -54,7 +54,9 @@ The objective is to control the motor torque $$T_m(t)$$. Indeed $$T_m(t) = K_\ph
 
 With the assumption that the mechanical dynamic is slower the the electrical one, one has :
 
-$$\tau_{\rm elec} = \frac{L}{R}<<\tau_{\rm meca} = \frac{J}{f}$$
+$$
+\tau_{\rm elec} = \frac{L}{R}<<\tau_{\rm meca} = \frac{J}{f}
+$$
 
 The velocity $$\omega$$ can then be considered as constant from the point of view of the electrical dynamics.
 
@@ -62,9 +64,13 @@ The velocity $$\omega$$ can then be considered as constant from the point of vie
 
 The electrical dynamics is given by
 
-$$\dot{i}  = -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w$$
+$$
+\begin{array}{lcl}
+\dot{i}  &=& -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w\\
+	 &=& -\frac{1}{\tau_e} i + \frac{K_e}{\tau_e}v -\frac{K_\phi}{L}w
+\end{array}
+$$
 
-$$\dot{i}  =  -\frac{1}{\tau_e} i + \frac{K_e}{\tau_e}v -\frac{K_\phi}{L}w$$
 
 The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ is the current steady state and $$i_{\rm ref}$$ is the current reference. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action the the feed-forward loop between the error compactor and the process \(Ogata2010\). 
 
