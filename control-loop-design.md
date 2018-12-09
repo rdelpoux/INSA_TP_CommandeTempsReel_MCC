@@ -122,7 +122,7 @@ $$
 with the control  
 
 $$
-v  =  -Ki+K_I\varepsilon
+v  =  -Ki-K_I\varepsilon
 $$
 
 ## References

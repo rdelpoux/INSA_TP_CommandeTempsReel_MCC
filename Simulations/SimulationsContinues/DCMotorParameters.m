@@ -1,52 +1,52 @@
-%% MCC pravalux
-%Parametre electriques
-R = 1.22; % en Ohm
-L = 2.7e-3; % en H
-Kphi = 0.061; % en V/(ras/s)
+%% parvalux DC motor
+% Electrical parameters
+R = 1.22; % in Ohm
+L = 2.7e-3; % in H
+Kphi = 0.061; % in V/(rad/s)
 
-% Dynamique electrique :
+% Electrical dynamics :
 K_e = 1/R;
 tau_e = L/R;
 Tr_e = 3*tau_e;
 
-%Parametre mecaniques
-J = 2.20e-4; % en kgm^2
-F = 0.0001; % en Nm/(rad/s);
-C0 = 0.0; % en Nm
+% Mechanical Parameters
+J = 2.20e-4; % in kgm^2
+F = 0.0001; % in Nm/(rad/s);
+C0 = 0.0; % in Nm
 
 
-% Dynamique mecanique :
+% Mechanical dynamics :
 K_m = Kphi/F;
 tau_m = J/F;
 Tr_m = 3*tau_m;
-%% Limites physiques (un seul bras, vitesse courant positif)
-Vdc = 24; % en V
+%% Physical limits
+Vdc = 24; % in V
 Vmax = Vdc;
 Vmin = -Vdc;
 
-Inom = 5; % en A
+Inom = 5; % in A
 Imax = Inom;
 Imin = -Inom;
 
-Omnom = 350; % en rad/s
+Omnom = 350; % in rad/s
 Ommax = Omnom;
 Ommin = -Omnom;
 
 
-%% Synthese de commande
+%% Control synthesis
 
-%% Boucle de courant
-% polynome caracteristique desiree
-%  1         2zeta
+%%% Electrical control
+% Desired polynomial equation
+%  1         2 zeta
 % ---- p^2+ ------- p + 1
 % wn^2        wn
-% Depassement 5%, Trbf x wnbf = 3
-zetabfe = 0.7;
-Trbfe = Tr_e/3;
-wnbfe = 3/Trbfe;
-Pole_elec_desiree = roots([1/wnbfe^2 2*zetabfe/wnbfe 1]);
+% Overshoot 5%, Trcl x wncl = 3
+zetacle = 0.7;
+Trcle = Tr_e/3;
+wncle = 3/Trcle;
+Elec_desired_poles = roots([1/wncle^2 2*zetacle/wncle 1]);
 
-%% Retour d'etat de la dynamique electrique
+%%% Retour d'etat de la dynamique electrique
 Ae = [
         -R/L 0;
         -1 0;
@@ -57,9 +57,9 @@ Be = [
         0;
     ];
 
-Kelec = -place(Ae,Be,Pole_elec_desiree)
+Kelec = place(Ae,Be,Elec_desired_poles)
 
-
+eig(Ae-Be*Kelec)
 %% Boucle de vitesse
 % polynome caracteristique desiree
 %  1         2zeta
@@ -99,7 +99,7 @@ Tf = 10; % en s
 
 
 %sim('SimulationContinueMCC')
-sim('SimulationContinueClampingMCC')
+sim('SimulationContinueMCC')
 
 %%
 figure(1)
