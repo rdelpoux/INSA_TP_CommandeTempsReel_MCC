@@ -84,6 +84,28 @@ with $$\varepsilon$$ the output of the integrator.
 $$\begin{matrix}\dot{i}  &=& -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w\end{bmatrix}$$
 
 
+Inline math: $$\int_{-\infty}^\infty g(x) dx$$
+ 
+Block math:
+ 
+$$
+\def\arraystretch{1.5}
+\begin{array}{c|c:c}
+   a & b & c \\ \hline
+   d & e & f \\
+   \hdashline
+   g & h & i
+\end{array}
+$$
+ 
+$$\fcolorbox{red}{aqua}{A}$$
+ 
+$$\textcolor{#228B22}{F=ma}$$
+ 
+Or using the templating syntax:
+ 
+{% math %}\int_{-\infty}^\infty g(x) dx{% endblock %}
+
 ![fig:ElecSFB]
 
 ## References
