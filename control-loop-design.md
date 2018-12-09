@@ -120,10 +120,10 @@ $$
 $$
 
 with the control  
-\begin{equation}
- v  =  -Ki+K_I\varepsilon
-\end{equation}
 
+$$
+v  =  -Ki+K_I\varepsilon
+$$
 
 ## References
 
