@@ -50,15 +50,15 @@ The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The
 
 ![DC Motor Bloc Diagram](.gitbook/assets/dcmotordiagram.png)
 
-
 ## Motor control : cascaded strategy
 
-The control synthesis is inspired by Permanent Magnet Synchronous Motor control synthesis based on cascaded control synthesis. Due to frequency separation the control can be divided into two control loops. The inner loop control the electrical  dynamic while the outer loop treats the mechanical dynamic. Generally the the electrical dynamics is neglected and the mechanical dynamics is considered only. However in the case where motor resistance is low,  this strategy can damage the motor.
+The control synthesis is inspired by Permanent Magnet Synchronous Motor control synthesis based on cascaded control synthesis. Due to frequency separation the control can be divided into two control loops. The inner loop control the electrical dynamic while the outer loop treats the mechanical dynamic. Generally the the electrical dynamics is neglected and the mechanical dynamics is considered only. However in the case where motor resistance is low, this strategy can damage the motor.
 
-### Electrical dynamics control 
-The objective is to control the motor torque $$T_m(t)$$. Indeed $$T_m(t) = K_\phi i(t)$$ the motor torque is imposed by the current. 
+### Electrical dynamics control
 
-![fig:Elecdyn]
+The objective is to control the motor torque $$T_m(t)$$. Indeed $$T_m(t) = K_\phi i(t)$$ the motor torque is imposed by the current.
+
+![Closed loop electrical dynamics](.gitbook/assets/clelecdyn.png)
 
 With the assumption that the mechanical dynamic is slower the the electrical one, one has :
 
@@ -75,12 +75,11 @@ The electrical dynamics is given by
 $$
 \begin{array}{lcl}
 \dot{i}  &=& -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w\\
-	 &=& -\frac{1}{\tau_e} i + \frac{K_e}{\tau_e}v -\frac{K_\phi}{L}w
+     &=& -\frac{1}{\tau_e} i + \frac{K_e}{\tau_e}v -\frac{K_\phi}{L}w
 \end{array}
 $$
 
-
-The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ is the current steady state and $$i_{\rm ref}$$ is the current reference. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action the the feed-forward loop between the error compactor and the process \(Ogata2010\). 
+The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ is the current steady state and $$i_{\rm ref}$$ is the current reference. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action the the feed-forward loop between the error compactor and the process \(Ogata2010\).
 
 We obtain :
 
@@ -92,12 +91,11 @@ $$
 \end{array}
 $$
 
-with $$\varepsilon$$ the output of the integrator. 
- 
-![fig:ElecSFB]
+with $$\varepsilon$$ the output of the integrator.
 
+![Electrical dynamics state feedback](.gitbook/assets/elecsfb.png)
 
-The system dynamics can be described by 
+The system dynamics can be described by
 
 $$
 \begin{bmatrix}
@@ -119,13 +117,14 @@ $$
 \end{bmatrix}i_{\rm ref}
 $$
 
-with the control  
+with the control
 
 $$
 v  =  -Ki-K_I\varepsilon
 $$
 
 The closed loop system leads to :
+
 $$
 \begin{bmatrix}
 \dot{i}\\\dot{\xi}
@@ -145,7 +144,8 @@ $$
 \label{eq:BFsselec}
 $$
 
-The closed loop dynamics depends on the eigenvalues of the matrix : 
+The closed loop dynamics depends on the eigenvalues of the matrix :
+
 $$
 \left(\begin{bmatrix}
 -\frac{R}{L} & 0\\-1 &0
@@ -155,7 +155,7 @@ $$
 \end{bmatrix} \begin{bmatrix}K&K_I\end{bmatrix}\right)= 
 \begin{bmatrix}
 -\frac{R+K}{L} & -\frac{K_I}{L}\\-1 &0
-\end{bmatrix} 
+\end{bmatrix}
 $$
 
 One has
@@ -169,32 +169,23 @@ $$
 \end{bmatrix}\right)
 $$
 
-It leads to a characteristic equation 
+It leads to a characteristic equation
 
 $$
-P(s) = s^2+\frac{K+R}{L}s -K_I 
+P(s) = s^2+\frac{K+R}{L}s -K_I
 $$
 
 to be identified with the classical second order characteristic equation
 
 $$
-P(s) = p^2+2\zeta\omega_n s +\omega_n^2 
+P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 $$
 
 where $$\omega_n$$ is the desired closed loop natural frequency and $$\zeta$$ the damping coefficient.
-
-
 
 ## References
 
 \(Chiasson2005\) Chiasson, J.-N. \(2005\). Modeling and High-Performance Control of Electric Machines \(IEEE Press\).
 
-\(Ogata2010\) Ogata, K. (2010). Modern Control Engineering. Prentice Hall.
-
-
-
-
-[fig:Elecdyn]: /Figures/CLElecDyn.png "Closed loop electrical dynamics"
-[fig:ElecSFB]: /Figures/ElecSFB.png "Electrical dynamics state feedback"
-
+\(Ogata2010\) Ogata, K. \(2010\). Modern Control Engineering. Prentice Hall.
 
