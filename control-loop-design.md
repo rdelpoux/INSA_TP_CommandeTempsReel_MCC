@@ -58,7 +58,7 @@ The control synthesis is inspired by Permanent Magnet Synchronous Motor control 
 
 The objective is to control the motor torque $$T_m(t)$$. Indeed $$T_m(t) = K_\phi i(t)$$ the motor torque is imposed by the current.
 
-![Closed loop electrical dynamics](.gitbook/assets/clelecdyn.png)
+![Closed loop electrical system](.gitbook/assets/clelecdyn.png)
 
 With the assumption that the mechanical dynamic is slower the the electrical one, one has :
 
@@ -80,8 +80,10 @@ $$
 $$
 
 The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ is the current steady state and $$i_{\rm ref}$$ is the current reference. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action the the feed-forward loop between the error compactor and the process \(Ogata2010\).
+The control scheme is given by :
+![Electrical dynamics state feedback](.gitbook/assets/elecsfb.png)
 
-We obtain :
+From the figure one gets :
 
 $$
 \begin{array}{lcl}
@@ -93,7 +95,6 @@ $$
 
 with $$\varepsilon$$ the output of the integrator.
 
-![Electrical dynamics state feedback](.gitbook/assets/elecsfb.png)
 
 The system dynamics can be described by
 
@@ -113,7 +114,7 @@ $$
 \frac{K_\phi}{L}\\0
 \end{bmatrix}\omega+
 \begin{bmatrix}
-0\\-1
+0\\1
 \end{bmatrix}i_{\rm ref}
 $$
 
@@ -181,6 +182,61 @@ P(s) = p^2+2\zeta\omega_n s +\omega_n^2
 $$
 
 where $$\omega_n$$ is the desired closed loop natural frequency and $$\zeta$$ the damping coefficient.
+
+
+### Mechanical dynamics control
+![Closed loop cascaded system](.gitbook/assets/clmecadyn.png)
+
+Assuming the electrical control has been correctly synthesized with respect to frequency separation principle, which means that the closed loop electrical dynamics is faster than the mechanical desired dynamics, then the mechanical dynamics control synthesis can be designed without considering the closed loop electrical system. The control scheme can be simplified as :
+
+![Closed loop mechanical system](.gitbook/assets/clmecadyn2.png)
+
+The mechanical dynamics is 
+
+$$
+\begin{array}{lcl}
+\dot{\omega} &=&  \frac{1}{J}T_m-\frac{f}{J}\omega\\
+	&=&  \frac{K_\phi}{J}i-\frac{f}{J}\omega
+\end{array}
+$$
+
+where $$T_m = K_\phi i$$
+
+The control synthesis is similar than the one proposed for the electrical dynamics
+with $$\dot\varepsilon_\omega = \omega_{\rm ref}-\omega$$ leading to 
+$$
+\begin{bmatrix}
+\dot{\omega}\\\dot{\varepsilon_\omega}
+\end{bmatrix} = 
+\begin{bmatrix}
+-\frac{f}{J} & 0\\-1 &0
+\end{bmatrix} \begin{bmatrix}
+{\omega}\\{\varepsilon_\omega}
+\end{bmatrix}+
+\begin{bmatrix}
+\frac{K_\phi}{J}\\0
+\end{bmatrix}i+
+\begin{bmatrix}
+0\\1
+\end{bmatrix}\omega_{\rm ref}
+$$
+with the control  
+$$
+ i  =  -K_\omega \omega-K_{\omega,I}\varepsilon_\omega
+$$
+
+
+By analogy, it leads to a characteristic equation 
+
+$$
+P(s) = s^2+\frac{K_\phi K_\omega+f}{L}s -K\phi K_{\omega,I} 
+$$
+
+to be identified with the classical second order characteristic equation
+
+$$
+P(s) = p^2+2\zeta\omega_n s +\omega_n^2 .
+$$
 
 ## References
 
