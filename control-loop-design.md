@@ -81,6 +81,7 @@ $$
 
 The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ is the current steady state and $$i_{\rm ref}$$ is the current reference. To ensure zero steady state error, an integral action is necessary. The principle is to insert an integral action the the feed-forward loop between the error compactor and the process \(Ogata2010\).
 The control scheme is given by :
+
 ![Electrical dynamics state feedback](.gitbook/assets/elecsfb.png)
 
 From the figure one gets :
