@@ -70,41 +70,16 @@ The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ i
 
 We obtain :
 
-$$\dot{i}  = -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w$$
-
-$$\dot{\varepsilon}(t) =i_{\rm ref} - i$$
-
-$$v=-Ki+K_I\varepsilon$$
-
-with $$\varepsilon$$ the output of the integrator. 
-
-
-\[Test\]
-
-$$\begin{matrix}\dot{i}  &=& -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w\end{bmatrix}$$
-
-
-Inline math: $$\int_{-\infty}^\infty g(x) dx$$
- 
-Block math:
- 
 $$
 \begin{array}{lcl}
    \dot{i}  & = & -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w \\
-   d & e & f \\
-   \hdashline
-   g & h & i
+   \dot{\varepsilon} & = & i_{\rm ref} - i \\
+   v & = & -Ki+K_I\varepsilon
 \end{array}
 $$
- 
-$$\fcolorbox{red}{aqua}{A}$$
- 
-$$\textcolor{#228B22}{F=ma}$$
- 
-Or using the templating syntax:
- 
-{% math %}\int_{-\infty}^\infty g(x) dx{% endblock %}
 
+with $$\varepsilon$$ the output of the integrator. 
+ 
 ![fig:ElecSFB]
 
 ## References
