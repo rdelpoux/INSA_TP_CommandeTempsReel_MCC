@@ -51,7 +51,7 @@ The mechanical power produced by the DC motor is $$T_m\omega = K_Ti\omega$$. The
 ![DC Motor Bloc Diagram](.gitbook/assets/dcmotordiagram.png)
 
 
-## Motor contrl : cascaded strategy
+## Motor control : cascaded strategy
 
 The control synthesis is inspired by Permanent Magnet Synchronous Motor control synthesis based on cascaded control synthesis. Due to frequency separation the control can be divided into two control loops. The inner loop control the electrical  dynamic while the outer loop treats the mechanical dynamic. Generally the the electrical dynamics is neglected and the mechanical dynamics is considered only. However in the case where motor resistance is low,  this strategy can damage the motor.
 
@@ -95,6 +95,33 @@ $$
 with $$\varepsilon$$ the output of the integrator. 
  
 ![fig:ElecSFB]
+
+
+The system dynamics can be described by %La dynamique du système peut être décrite par une combinaison des équations \eqref{eq:elec2} et \eqref{eq:actIntElec}
+\begin{equation}
+\begin{bmatrix}
+\dot{i}\\\dot{\varepsilon}
+\end{bmatrix} = 
+\begin{bmatrix}
+-\frac{R}{L} & 0\\-1 &0
+\end{bmatrix} \begin{bmatrix}
+{i}\\{\varepsilon}
+\end{bmatrix}+
+\begin{bmatrix}
+\frac{1}{L}\\0
+\end{bmatrix}v+
+\begin{bmatrix}
+\frac{K_\phi}{L}\\0
+\end{bmatrix}\omega+
+\begin{bmatrix}
+0\\-1
+\end{bmatrix}i_{\rm ref}
+\end{equation}
+with the control  
+\begin{equation}
+ v  =  -Ki+K_I\varepsilon
+\end{equation}
+
 
 ## References
 
