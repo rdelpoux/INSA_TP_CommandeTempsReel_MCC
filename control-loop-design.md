@@ -71,10 +71,15 @@ The control objective is to ensure $$i^\star =i_{\rm ref}$$, where $$i^\star$$ i
 We obtain :
 
 $$\dot{i}  = -\frac{R}{L} i + \frac{1}{L}v -\frac{K_\phi}{L}w$$
-$$\dot{\varepsilon}(t) =i_{\rm ref} - i$$
-$$v=-Ki+K_I\varepsilon$$
-with $\varepsilon $ the output of the integrator. 
 
+$$\dot{\varepsilon}(t) =i_{\rm ref} - i$$
+
+$$v=-Ki+K_I\varepsilon$$
+
+with $$\varepsilon$$ the output of the integrator. 
+
+
+\[Test\]
 ![fig:ElecSFB]
 
 ## References
