@@ -97,8 +97,9 @@ with $$\varepsilon$$ the output of the integrator.
 ![fig:ElecSFB]
 
 
-The system dynamics can be described by %La dynamique du système peut être décrite par une combinaison des équations \eqref{eq:elec2} et \eqref{eq:actIntElec}
-\begin{equation}
+The system dynamics can be described by 
+
+$$
 \begin{bmatrix}
 \dot{i}\\\dot{\varepsilon}
 \end{bmatrix} = 
@@ -116,7 +117,8 @@ The system dynamics can be described by %La dynamique du système peut être dé
 \begin{bmatrix}
 0\\-1
 \end{bmatrix}i_{\rm ref}
-\end{equation}
+$$
+
 with the control  
 \begin{equation}
  v  =  -Ki+K_I\varepsilon
