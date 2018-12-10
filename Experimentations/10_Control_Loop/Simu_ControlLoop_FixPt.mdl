@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.57"
+    ComputedModelVersion    "1.58"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -87,8 +87,8 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "148"
 	  Extents		  [1630.0, 798.0]
-	  ZoomFactor		  [1.2955223880597015]
-	  Offset		  [14.892618033208919, 338.44519476594115]
+	  ZoomFactor		  [1.2955223880597013]
+	  Offset		  [14.892618033208805, 338.4451947659411]
 	}
 	Object {
 	  $ObjectID		  7
@@ -133,9 +133,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rdelpoux"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 10 01:49:08 2018"
-  RTWModifiedTimeStamp	  466307234
-  ModelVersionFormat	  "1.%<AutoIncrement:57>"
+  LastModifiedDate	  "Mon Dec 10 02:28:27 2018"
+  RTWModifiedTimeStamp	  466308949
+  ModelVersionFormat	  "1.%<AutoIncrement:58>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -4187,7 +4187,7 @@ Model {
       "03921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0."
       "650980392156863]),'DisplayLayoutDimensions',[2 1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot N"
       "avigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'V"
-      "ersion','2018b')),'Version','2018b','Position',[380 109 1149 860],'VisibleAtModelOpen','on')"
+      "ersion','2018b')),'Version','2018b','Position',[380 109 1139 860],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -5033,7 +5033,7 @@ Model {
       "7647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Sign"
       "alLabel>'),'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'Pre"
       "viousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Po"
-      "sition',[375 105 1169 860],'VisibleAtModelOpen','on')"
+      "sition',[370 100 1179 860],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }

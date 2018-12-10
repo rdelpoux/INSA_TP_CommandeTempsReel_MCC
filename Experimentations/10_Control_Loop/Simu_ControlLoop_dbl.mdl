@@ -1,12 +1,12 @@
 Model {
   Name			  "Simu_ControlLoop_dbl"
   Version		  9.2
-  SavedCharacterEncoding  "windows-1252"
+  SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.59"
+    ComputedModelVersion    "1.60"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -26,10 +26,10 @@ Model {
     }
     OrderedModelArguments   1
   }
-  DiagnosticSuppressor	  "on"
   WebScopes_FoundationPlugin "on"
-  NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
+  DiagnosticSuppressor	  "on"
+  NotesPlugin		  "on"
   SLCCPlugin		  "on"
   PreLoadFcn		  "InitTPV0;"
   ScopeRefreshTime	  0.035000
@@ -42,7 +42,7 @@ Model {
   FPTRunName		  "Run 1"
   FPTShortcutValueString  "'{{}}'"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "win64"
+  LastSavedArchitecture	  "glnxa64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -52,7 +52,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [74.0, -4.0, 1668.0, 985.0]
+      Location		      [111.0, 95.0, 1668.0, 985.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -67,7 +67,7 @@ Model {
 	$PropName		"ExplorerBarInfo"
 	$ObjectID		4
 	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[0]
+	Visible			[1]
       }
       Object {
 	$PropName		"EditorsInfo"
@@ -76,9 +76,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1790.0, 948.0]
+	Extents			[1630.0, 803.0]
 	ZoomFactor		[1.0]
-	Offset			[111.73346774396282, 163.39477687465876]
+	Offset			[109.6058680277763, 163.39477687465876]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -91,18 +91,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[579]
-	Height			[434]
+	Width			[640]
+	Height			[480]
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABhAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAPgD///8AAAcqAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAaEAAADYgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
-      "////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAOH/////wAAAAAAAAAA/"
+      "////wEAAAO5/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -110,11 +110,11 @@ Model {
   Creator		  "romaindelpoux"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Lubin Kerhuel"
+  LastModifiedBy	  "rdelpoux"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 13 23:41:04 2018"
-  RTWModifiedTimeStamp	  464053250
-  ModelVersionFormat	  "1.%<AutoIncrement:59>"
+  LastModifiedDate	  "Mon Dec 10 02:28:38 2018"
+  RTWModifiedTimeStamp	  466307642
+  ModelVersionFormat	  "1.%<AutoIncrement:60>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -172,7 +172,7 @@ Model {
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Simu_ControlLoop_dbl"
-    overrideMode_	    [0U]
+    overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
@@ -1272,7 +1272,7 @@ Model {
   }
   System {
     Name		    "Simu_ControlLoop_dbl"
-    Location		    [74, -4, 1742, 981]
+    Location		    [111, 95, 1779, 1080]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1641,7 +1641,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"Commande Vitesse"
-	Location		[74, -4, 1742, 981]
+	Location		[111, 95, 1779, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -2012,7 +2012,7 @@ Model {
 	    $ObjectID		    25
 	    Type		    "edit"
 	    Name		    "J"
-	    Prompt		    "J in kgm²"
+	    Prompt		    "J in kgmÂ²"
 	    Value		    "0.22e-3"
 	  }
 	  Object {
@@ -2742,7 +2742,7 @@ Model {
       }
       System {
 	Name			"Quantized\nSensors"
-	Location		[74, -4, 1742, 981]
+	Location		[111, 95, 1779, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -2823,7 +2823,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Encoder raw output"
-	    Location		    [74, -4, 1742, 981]
+	    Location		    [111, 95, 1779, 1080]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -3084,6 +3084,7 @@ Model {
 	  Position		  [-375, -184, 293, -54]
 	  InternalMargins	  [0, 0, 0, 0]
 	  Interpreter		  "rich"
+	  ZOrder		  -1
 	}
       }
     }
@@ -3419,6 +3420,7 @@ Model {
       Position		      [371, 182, 1501, 280]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
+      ZOrder		      -1
     }
   }
 }
