@@ -24,7 +24,7 @@ Vdc = 24; % in V
 Vmax = Vdc;
 Vmin = -Vdc;
 
-Inom = 5; % in A
+Inom = 4.3; % in A
 Imax = Inom;
 Imin = -Inom;
 
@@ -86,7 +86,7 @@ Km = place(Am,Bm,Desired_mecha_pole);
 
 %% Simulation
 % Simulation parameters
-Ts = 1e-4; % in s
+Ts = 0.5e-4; % in s
 Tf = 10; % in s
 
 

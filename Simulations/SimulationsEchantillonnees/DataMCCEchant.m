@@ -24,7 +24,7 @@ Vdc = 24; % en V
 Vmax = Vdc;
 Vmin = 0;
 
-Inom = 4.4; % en A
+Inom = 4.3; % en A
 Imax = Inom;
 Imin = 0;
 

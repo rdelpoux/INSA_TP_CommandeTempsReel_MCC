@@ -1,12 +1,12 @@
 Model {
   Name			  "Simu_ControlLoop_FixPt"
   Version		  9.2
-  SavedCharacterEncoding  "windows-1252"
+  SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.56"
+    ComputedModelVersion    "1.57"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -26,10 +26,10 @@ Model {
     }
     OrderedModelArguments   1
   }
-  DiagnosticSuppressor	  "on"
   WebScopes_FoundationPlugin "on"
-  NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
+  DiagnosticSuppressor	  "on"
+  NotesPlugin		  "on"
   SLCCPlugin		  "on"
   PreLoadFcn		  "InitTPV0;"
   ScopeRefreshTime	  0.035000
@@ -42,7 +42,7 @@ Model {
   FPTRunName		  "Run 1"
   FPTShortcutValueString  "'{{}}'"
   MaxMDLFileLineLength	  120
-  LastSavedArchitecture	  "win64"
+  LastSavedArchitecture	  "glnxa64"
   Object {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
@@ -52,7 +52,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [74.0, -4.0, 1668.0, 985.0]
+      Location		      [211.0, 95.0, 1668.0, 985.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -67,7 +67,7 @@ Model {
 	$PropName		"ExplorerBarInfo"
 	$ObjectID		4
 	$ClassName		"Simulink.ExplorerBarInfo"
-	Visible			[0]
+	Visible			[1]
       }
       Array {
 	Type			"Simulink.EditorInfo"
@@ -77,25 +77,25 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1790.0, 945.0]
-	  ZoomFactor		  [1.0044968950010706]
-	  Offset		  [131.06267468852138, 432.01081484015128]
+	  Extents		  [1630.0, 798.0]
+	  ZoomFactor		  [1.0100911235428998]
+	  Offset		  [131.13986434125377, 444.98776905807273]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "148"
-	  Extents		  [2182.0, 1080.0]
+	  Extents		  [1630.0, 798.0]
 	  ZoomFactor		  [1.2955223880597015]
-	  Offset		  [14.892618033208919, 338.4451947659411]
+	  Offset		  [14.892618033208919, 338.44519476594115]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "63"
-	  Extents		  [2660.0, 1080.0]
+	  Extents		  [1630.0, 798.0]
 	  ZoomFactor		  [1.2900000000000003]
 	  Offset		  [247.13580517770743, 82.626590609915525]
 	}
@@ -112,18 +112,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[579]
-	Height			[434]
+	Width			[640]
+	Height			[480]
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABhAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAPgD///8AAAcqAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAOQD///8AAAaEAAADYgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
-      "////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAACA/////wAAAAAAAAAA/////wEAAADo/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFo/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAOH/////wAAAAAAAAAA/"
+      "////wEAAAO5/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -131,11 +131,11 @@ Model {
   Creator		  "romaindelpoux"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Lubin Kerhuel"
+  LastModifiedBy	  "rdelpoux"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Nov 14 00:11:39 2018"
-  RTWModifiedTimeStamp	  464055084
-  ModelVersionFormat	  "1.%<AutoIncrement:56>"
+  LastModifiedDate	  "Mon Dec 10 01:49:08 2018"
+  RTWModifiedTimeStamp	  466307234
+  ModelVersionFormat	  "1.%<AutoIncrement:57>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -193,7 +193,7 @@ Model {
     $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Simu_ControlLoop_FixPt"
-    overrideMode_	    [0U]
+    overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
@@ -1299,7 +1299,7 @@ Model {
   }
   System {
     Name		    "Simu_ControlLoop_FixPt"
-    Location		    [74, -4, 1742, 981]
+    Location		    [211, 95, 1879, 1080]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1314,7 +1314,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "101"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "995"
     Block {
@@ -1412,7 +1412,7 @@ Model {
       }
       System {
 	Name			"Commande Courant"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -1725,7 +1725,7 @@ Model {
       }
       System {
 	Name			"Commande Courant1"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -2024,7 +2024,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"Commande Vitesse"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -2361,7 +2361,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"Commande Vitesse1"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -2376,7 +2376,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"130"
+	ZoomFactor		"204"
 	Block {
 	  BlockType		  Inport
 	  Name			  "omref"
@@ -2732,7 +2732,7 @@ Model {
 	    $ObjectID		    27
 	    Type		    "edit"
 	    Name		    "J"
-	    Prompt		    "J in kgm²"
+	    Prompt		    "J in kgmÂ²"
 	    Value		    "0.22e-3"
 	  }
 	  Object {
@@ -3469,7 +3469,7 @@ Model {
 	    $ObjectID		    50
 	    Type		    "edit"
 	    Name		    "J"
-	    Prompt		    "J in kgm²"
+	    Prompt		    "J in kgmÂ²"
 	    Value		    "0.22e-3"
 	  }
 	  Object {
@@ -4187,8 +4187,7 @@ Model {
       "03921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0."
       "650980392156863]),'DisplayLayoutDimensions',[2 1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot N"
       "avigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'V"
-      "ersion','2018b')),'Version','2018b','Position',[-1158.24528301887 1 1159.24528301887 860.377358490566],'VisibleA"
-      "tModelOpen','on')"
+      "ersion','2018b')),'Version','2018b','Position',[380 109 1149 860],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -4234,7 +4233,7 @@ Model {
       }
       System {
 	Name			"Quantized\nSensors"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -4598,7 +4597,7 @@ Model {
       }
       System {
 	Name			"Quantized\nSensors1"
-	Location		[74, -4, 1742, 981]
+	Location		[211, 95, 1879, 1080]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -4613,7 +4612,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"80"
 	Block {
 	  BlockType		  Inport
 	  Name			  "i(t)"
@@ -4679,7 +4678,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Encoder raw output"
-	    Location		    [74, -4, 1742, 981]
+	    Location		    [211, 95, 1879, 1080]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -5009,7 +5008,6 @@ Model {
       SID		      "962"
       Position		      [330, 552, 360, 588]
       ZOrder		      3693
-      CurrentSetting	      "0"
     }
     Block {
       BlockType		      Scope
@@ -5027,7 +5025,7 @@ Model {
       "6666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83"
       "1372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980392156"
       "86 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLin"
-      "es',2,'LineNames',{{'Cmd dbl','cmd fxpt'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('"
+      "es',2,'LineNames',{{'cmd dbl','cmd fxpt'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('"
       "MinYLimReal','-13.47824','MaxYLimReal','21.79657','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','21.79657'"
       ",'LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6"
       "86274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.62"
@@ -5035,7 +5033,7 @@ Model {
       "7647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Sign"
       "alLabel>'),'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'Pre"
       "viousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Po"
-      "sition',[-1158.24528301887 1 1159.24528301887 860.377358490566],'VisibleAtModelOpen','on')"
+      "sition',[375 105 1169 860],'VisibleAtModelOpen','on')"
       NumInputPorts	      "2"
       Floating		      off
     }
@@ -5348,6 +5346,7 @@ Model {
       Position		      [471, 468, 745, 486]
       InternalMargins	      [0, 0, 0, 0]
       Interpreter	      "rich"
+      ZOrder		      -1
     }
   }
 }
