@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.45"
+    ComputedModelVersion    "1.57"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -17,7 +17,7 @@ Model {
     PreCompExecutionDomainType "Discrete"
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 15
+    NumExternalFileReferences 22
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Configuration/Compiler Options"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Compiler Options"
@@ -28,6 +28,12 @@ Model {
       Reference		      "simulink/Sources/Counter\nFree-Running"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Counter Free-Running"
       SID		      "338"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "MCHP_Blockset/System Info/Data Sheet"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Data Sheet"
+      SID		      "387"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -50,6 +56,12 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/Compare To Constant"
+      SID		      "422"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
       Reference		      "MCHP_Blockset/PWM IO/PWM High Speed"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/PWM/PWM High Speed"
       SID		      "103"
@@ -59,6 +71,12 @@ Model {
       Reference		      "MCHP_Blockset/QEI/QEI"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/QEI1"
       SID		      "108"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/MCLV2 with DC motor/Wait  1s with zero speed/1s "
+      SID		      "409"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -80,6 +98,12 @@ Model {
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
+      Reference		      "MCHP_Blockset/System Functions/Reset"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Reset"
+      SID		      "423"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/S2"
       SID		      "333"
@@ -89,6 +113,24 @@ Model {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
       Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/S3"
       SID		      "336"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "MCHP_Blockset/Profiling/MCU Load"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Timing Analysis/MCU Load"
+      SID		      "381"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "MCHP_Blockset/Profiling/MCU Overload"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Timing Analysis/MCU Overload"
+      SID		      "379"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
+      Reference		      "MCHP_Blockset/Profiling/Tasks State"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Timing Analysis/Tasks State"
+      SID		      "380"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
@@ -161,120 +203,74 @@ Model {
     $PropName		    "BdWindowsInfo"
     $ObjectID		    1
     $ClassName		    "Simulink.BDWindowsInfo"
-    Array {
-      Type		      "Simulink.WindowInfo"
-      Dimension		      2
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [67.0, -4.0, 1675.0, 985.0]
       Object {
-	$ObjectID		2
-	IsActive		[1]
-	Location		[1735.0, -4.0, 1746.0, 985.0]
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		2
 	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  3
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [1]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  4
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [0]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
 	  $ObjectID		  5
-	  $ClassName		  "Simulink.EditorInfo"
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "351"
-	  Extents		  [1876.0, 948.0]
-	  ZoomFactor		  [1.07]
-	  Offset		  [68.199260767501343, -18.296684888026789]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1798.0, 945.0]
+	  ZoomFactor		  [1.1731158725082613]
+	  Offset		  [101.17767646014624, -17.934029986369808]
 	}
 	Object {
-	  $PropName		  "DockComponentsInfo"
 	  $ObjectID		  6
-	  $ClassName		  "Simulink.DockComponentInfo"
-	  Type			  "GLUE2:PropertyInspector"
-	  ID			  "Property Inspector"
-	  Visible		  [0]
-	  CreateCallback	  ""
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [579]
-	  Height		  [434]
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "351"
+	  Extents		  [1798.0, 945.0]
+	  ZoomFactor		  [1.07]
+	  Offset		  [23.33944768338916, -18.296684888026789]
 	}
-	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
-	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
-	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCAAAAAfsAAABUAEcATABVA"
-	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAD0AAANJAA"
-	"AAPgD///8AAAeAAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/////wEAAAAA/////wAAAAAAAAAA///"
-	"//wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACE/////wAAAAAAAAAA/////wEA"
-	"AADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/"
-	"////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////w"
-	"AAAAAAAAAA"
+	PropName		"EditorsInfo"
       }
       Object {
+	$PropName		"DockComponentsInfo"
 	$ObjectID		7
-	IsActive		[0]
-	Location		[52.0, -4.0, 1691.0, 985.0]
-	Object {
-	  $PropName		  "ModelBrowserInfo"
-	  $ObjectID		  8
-	  $ClassName		  "Simulink.ModelBrowserInfo"
-	  Visible		  [0]
-	  DockPosition		  "Left"
-	  Width			  [50]
-	  Height		  [50]
-	  Filter		  [9]
-	}
-	Object {
-	  $PropName		  "ExplorerBarInfo"
-	  $ObjectID		  9
-	  $ClassName		  "Simulink.ExplorerBarInfo"
-	  Visible		  [0]
-	}
-	Object {
-	  $PropName		  "EditorsInfo"
-	  $ObjectID		  10
-	  $ClassName		  "Simulink.EditorInfo"
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "351"
-	  Extents		  [1815.0, 948.0]
-	  ZoomFactor		  [1.07]
-	  Offset		  [-258.515604335655, -77.699083054135031]
-	}
-	Object {
-	  $PropName		  "DockComponentsInfo"
-	  $ObjectID		  11
-	  $ClassName		  "Simulink.DockComponentInfo"
-	  Type			  "GLUE2:PropertyInspector"
-	  ID			  "Property Inspector"
-	  Visible		  [0]
-	  CreateCallback	  ""
-	  UserData		  ""
-	  Floating		  [0]
-	  DockPosition		  "Right"
-	  Width			  [579]
-	  Height		  [434]
-	}
-	WindowState		"AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wA"
-	"AABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQA"
-	"LwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCAAAAAfsAAABUAEcATABVA"
-	"EUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZQBjAHQAbwByAAAAAD0AAANJAA"
-	"AAPgD///8AAAdDAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/////wEAAAAA/////wAAAAAAAAAA///"
-	"//wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAACE/////wAAAAAAAAAA/////wEA"
-	"AADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/"
-	"////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////w"
-	"AAAAAAAAAA"
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[579]
+	Height			[434]
       }
-      PropName		      "WindowsInfo"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAcyAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
+      "////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -284,9 +280,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Nov 23 23:06:56 2018"
-  RTWModifiedTimeStamp	  464914831
-  ModelVersionFormat	  "1.%<AutoIncrement:45>"
+  LastModifiedDate	  "Tue Dec 11 10:49:29 2018"
+  RTWModifiedTimeStamp	  466426167
+  ModelVersionFormat	  "1.%<AutoIncrement:57>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -341,7 +337,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    12
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
     overrideMode_	    [0.0]
@@ -386,7 +382,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      13
+      $ObjectID		      9
       Version		      "1.18.1"
       DisabledProps	      []
       Description	      ""
@@ -394,7 +390,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  14
+	  $ObjectID		  10
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -435,7 +431,7 @@ Model {
 	  MinimalZcImpactIntegration off
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  15
+	  $ObjectID		  11
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -476,7 +472,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  16
+	  $ObjectID		  12
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -494,7 +490,7 @@ Model {
 	  EnhancedBackFolding	  off
 	  CachingGlobalReferences off
 	  GlobalBufferReuse	  on
-	  StrengthReduction	  off
+	  StrengthReduction	  on
 	  AdvancedOptControl	  ""
 	  ExpressionFolding	  on
 	  BooleansAsBitfields	  on
@@ -511,7 +507,7 @@ Model {
 	  ActiveStateOutputEnumStorageType "Native Integer"
 	  ZeroExternalMemoryAtStartup on
 	  ZeroInternalMemoryAtStartup on
-	  InitFltsAndDblsToZero	  off
+	  InitFltsAndDblsToZero	  on
 	  NoFixptDivByZeroProtection off
 	  EfficientFloat2IntCast  off
 	  EfficientMapNaN2IntZero on
@@ -520,10 +516,10 @@ Model {
 	  BufferReusableBoundary  on
 	  SimCompilerOptimization "off"
 	  AccelVerboseBuild	  off
-	  OptimizeBlockOrder	  "off"
+	  OptimizeBlockOrder	  "speed"
 	  OptimizeDataStoreBuffers on
 	  BusAssignmentInplaceUpdate on
-	  DifferentSizesBufferReuse off
+	  DifferentSizesBufferReuse on
 	  OptimizationLevel	  "level2"
 	  OptimizationPriority	  "Balanced"
 	  OptimizationCustomize	  on
@@ -531,7 +527,7 @@ Model {
 	  LabelGuidedReuse	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  17
+	  $ObjectID		  13
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -645,7 +641,7 @@ Model {
 	  UnderSpecifiedDimensionMsg "none"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  18
+	  $ObjectID		  14
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -712,7 +708,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  19
+	  $ObjectID		  15
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -731,7 +727,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  20
+	  $ObjectID		  16
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  ""
@@ -764,7 +760,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  21
+	  $ObjectID		  17
 	  Version		  "1.18.1"
 	  Array {
 	    Type		    "Cell"
@@ -836,7 +832,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      22
+	      $ObjectID		      18
 	      Version		      "1.18.1"
 	      DisabledProps	      []
 	      Description	      ""
@@ -892,7 +888,7 @@ Model {
 	    }
 	    Simulink.STFCustomTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      23
+	      $ObjectID		      19
 	      Version		      "1.18.1"
 	      Array {
 		Type			"Cell"
@@ -979,7 +975,7 @@ Model {
 		Dimension		1
 		Simulink.ERTTargetCC {
 		  $BackupClass		  "Simulink.TargetCC"
-		  $ObjectID		  24
+		  $ObjectID		  20
 		  Version		  "1.18.1"
 		  Array {
 		    Type		    "Cell"
@@ -1174,7 +1170,7 @@ Model {
 	      CustomProperty {
 		DataType		"string"
 		Name			"OPTIM_GCC"
-		Value			" -g -O3"
+		Value			" -g -O1 -funroll-loops"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1195,12 +1191,12 @@ Model {
 	      CustomProperty {
 		DataType		"slbool"
 		Name			"ProduceHexOutput"
-		Value			on
+		Value			off
 	      }
 	      CustomProperty {
 		DataType		"slbool"
 		Name			"AssemblyListing"
-		Value			off
+		Value			on
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1260,17 +1256,17 @@ Model {
 	      CustomProperty {
 		DataType		"string"
 		Name			"TIMER_PRESCALER"
-		Value			"[]"
+		Value			"[0 -1 -1 -1 -1]"
 	      }
 	      CustomProperty {
 		DataType		"string"
 		Name			"TIMER_PERIOD"
-		Value			"[]"
+		Value			"[65535]"
 	      }
 	      CustomProperty {
 		DataType		"string"
 		Name			"TIMER_START"
-		Value			"[]"
+		Value			"[0]"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1290,60 +1286,60 @@ Model {
 		DataType		"string"
 		Name			"RTWGenSettings_txt"
 		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master';s.ChipIdN='[33  256  5"
-		"06]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='5';s.ChipRA"
+		"06]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRA"
 		"M='32768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF"
-		"\\\\n#pragma config POSCMD = XT, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config JTAGEN = OFF\\\\n"
-		"';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-1 -1 -1 -1 -1 -1 -1 -1 -1 -"
-		"1 -1]';s.TRIS='[65535  65535  65535  65439  65535  65533  65535     -1     -1     -1     -1     -1     -1     -1    "
-		" -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1 "
-		"    -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     "
-		"-1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='[-1   -1   -1   -1   -1   -1   -1  256  "
-		" -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1  "
-		"13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -"
-		"1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.PortC"
-		"onfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s.MASTER_BusyFlag='53';s.POWERSAVE='0';s."
-		"MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg='-1';s.DOS_00794='1';s.DOS_00931='1';s."
-		"DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1';s.DOS_00998='1';s.DOS_00209='0';s.DOS_"
-		"01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPORx='1';s.DOS_01017_RPINRx='1';s.DOS_015"
-		"55_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_PMDx='0';s.DOS_01555_TLAK_INT_='0';s.DOS"
-		"_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1';s.DOS_01117_PORTx='1';s.DOS_00999='0'"
-		";s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s.DOS_01287_TLAC_INT_='1';s.DOS_01424='1'"
-		";s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_02508c11='0';s.DOS_01468_PMBA_current_s"
-		"ource='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0';s.DOS_02316_nvm_ctrl_v1_16bit='0';s.DO"
-		"S_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='0';s.DOS_00958_pwm_TLAY='0';s.TLAY_IOPo"
-		"rts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DOS_01497_TLAH_PMDx='0';s.DOS_02550_TLAL_"
-		"INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s.DOS_01017_PMDx='0';s.DOS_00927='0';s.DO"
-		"S_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s.DOS_01520_wdt_dmt_upb_v1_16bit='0';s.D"
-		"OS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00958_pwm_TLCD='0';s.DOS_02192_PORTx_TLCD"
-		"='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02481_WACJ_Config='0';s.DOS_02569_pfm_cac"
-		"he_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32bit='0';s.DOS_01520_wdt_dmt_upb_v1='0';"
-		"s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DOS_01423_RPINRx='0';s.DOS_02481_RPORx='0"
-		"';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS_01500_dma_bvci_v2='0';s.DOS_02141_tmr_"
-		"classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0';s.DOS_00749_ocmp_pb_v1='0';s.DOS_01441"
-		"_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_32bit='0';s.DOS_02514_dfm_strl_sst_upb_"
-		"v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control_upb_v1_32bit='0';s.DOS_01461_afe_ctmu_"
-		"con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1_PI"
-		"C32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s.DOS_01475_lpwr_deep_sleep_ctrl_v2='0';"
-		"s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Config='0';s.DOS_02823_WACN_clk_cru_upb_v2='"
-		"0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';s.DOS_01577_cla_clc_upb_v1_32bit='0';s."
-		"DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd_upb_v2_pic32mk='0';s.DOS_02481_WACJ_MC"
-		"_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0';s.DOS_01459_ptg_pc_upb_v1_SIC='0';s.DO"
-		"S_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC_int_evic_v3='0';s.DOS_02787_WACD_Confi"
-		"g='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DOS_02823_clk_cru_upb_v2='0';s.DOS_01423_"
-		"RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s.DOS_00687_tmr_classa_pb_v1='0';s.DOS_00"
-		"745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_control_pb_v2='0';s.DOS_01114_eth_bvci_"
-		"v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_EIP_00206r5_sqi_v2='0';s.DOS_EIP_00124_"
-		"usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.DOS_EIP_00158_crypto_v1='0';"
-		"s.UART_TX_IMPLEMENTATION='[2]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACHANNEL='[0]';s.UART_TX_THREAD_PROTECTION"
-		"='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s.DOS_02907_WACK_MC_int_evic_v3='0';s.ADC"
-		"_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';s.DOS_02551_cpu_16bit_v7='0';s.DOS_02672_math_progcrc_upb_v1"
-		"_16bit='0';s.DOS_02915_ecc_v2='0';s.DOS_02673_tmr_classa_upb_v1_16bit='0';s.DOS_01494_qei_32b_upb_v1_16bit='0';s.DOS"
-		"_02472_ppi_pmp16_upb_v1_16bit='0';s.DOS_03076_uart_protocol_upb_v1_16bit='0';s.DOS_01483_pwm_16bit='0';s.DOS_03247_C"
-		"AN_FD_UPB_V2_16_bit='0';s.DOS_02949_WACG='0';s.DOS_03349_amp_pad_opamp_ctrl_upb_v1='0';s.DOS_02653_afe_current_bias_"
-		"ctrl_upb_v1_16bit='0';s.DOS_01459_ptg_pc_upb_v1_16bit='0';s.DOS_01512_ccp_mccp_upb_v1_16bit='0';s.DOS_02519_dma_sfr_"
-		"16bit_v2='0';s.DOS_02475_dac_pdm_nbit_upb_v1_16bit='0';s.DOS_02467_gpio_upb_v1_16bit='0';s.DOS_00805_rst_integration"
-		"_v4='0';s.DOS_02659_clk_sib_v12='0';s.DOS_02237_osc_dco_ctrl_upb_v1_16bit='0';s.DOS_02674_wdt_upb_v1_16bit='0';s.DOS"
-		"_01407='0';s.DOS_03662_WACU='0';"
+		"\\\\n#pragma config POSCMD = XT, OSCIOFNC = ON, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config IC"
+		"S = PGD2, JTAGEN = OFF\\\\n';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-"
+		"1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1]';s.TRIS='[65535  65439  64511  65439  65535  65532  65535     -1     -1     -1     "
+		"-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1  "
+		"   -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -"
+		"1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='[-1   -1   -1"
+		"   -1   -1   -1   -1  256   -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     -1     -1   "
+		"  -1     -1     -1     -1  13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1     -1     -1"
+		"     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1    "
+		" -1     -1     -1]';s.PortConfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s.MASTER_BusyF"
+		"lag='-1';s.POWERSAVE='0';s.MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg='-1';s.DOS_0"
+		"0794='1';s.DOS_00931='1';s.DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1';s.DOS_00998"
+		"='1';s.DOS_00209='0';s.DOS_01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPORx='1';s.DOS"
+		"_01017_RPINRx='1';s.DOS_01555_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_PMDx='0';s.DO"
+		"S_01555_TLAK_INT_='0';s.DOS_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1';s.DOS_0111"
+		"7_PORTx='1';s.DOS_00999='0';s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s.DOS_01287_TL"
+		"AC_INT_='1';s.DOS_01424='1';s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_02508c11='0'"
+		";s.DOS_01468_PMBA_current_source='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0';s.DOS_02316"
+		"_nvm_ctrl_v1_16bit='0';s.DOS_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='0';s.DOS_009"
+		"58_pwm_TLAY='0';s.TLAY_IOPorts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DOS_01497_TLAH"
+		"_PMDx='0';s.DOS_02550_TLAL_INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s.DOS_01017_PM"
+		"Dx='0';s.DOS_00927='0';s.DOS_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s.DOS_01520_w"
+		"dt_dmt_upb_v1_16bit='0';s.DOS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00958_pwm_TLCD"
+		"='0';s.DOS_02192_PORTx_TLCD='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02481_WACJ_Con"
+		"fig='0';s.DOS_02569_pfm_cache_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32bit='0';s.DO"
+		"S_01520_wdt_dmt_upb_v1='0';s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DOS_01423_RPIN"
+		"Rx='0';s.DOS_02481_RPORx='0';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS_01500_dma_b"
+		"vci_v2='0';s.DOS_02141_tmr_classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0';s.DOS_00749"
+		"_ocmp_pb_v1='0';s.DOS_01441_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_32bit='0';s."
+		"DOS_02514_dfm_strl_sst_upb_v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control_upb_v1_32bi"
+		"t='0';s.DOS_01461_afe_ctmu_con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1='0';s.DOS_0"
+		"2508_adc_sar_ctrl_upb_v1_PIC32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s.DOS_01475_l"
+		"pwr_deep_sleep_ctrl_v2='0';s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Config='0';s.DOS_"
+		"02823_WACN_clk_cru_upb_v2='0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';s.DOS_01577_"
+		"cla_clc_upb_v1_32bit='0';s.DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd_upb_v2_pic3"
+		"2mk='0';s.DOS_02481_WACJ_MC_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0';s.DOS_01459"
+		"_ptg_pc_upb_v1_SIC='0';s.DOS_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC_int_evic_v3"
+		"='0';s.DOS_02787_WACD_Config='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DOS_02823_clk_"
+		"cru_upb_v2='0';s.DOS_01423_RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s.DOS_00687_tm"
+		"r_classa_pb_v1='0';s.DOS_00745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_control_pb_v"
+		"2='0';s.DOS_01114_eth_bvci_v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_EIP_00206r5_"
+		"sqi_v2='0';s.DOS_EIP_00124_usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.D"
+		"OS_EIP_00158_crypto_v1='0';s.UART_TX_IMPLEMENTATION='[2  2]';s.UART_RX_IMPLEMENTATION='[1  2]';s.UART_TX_DMACHANNEL="
+		"'[0  0]';s.UART_TX_THREAD_PROTECTION='[9  9]';s.UART_HALF_DUPLEX_MODE='[0  1]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0'"
+		";s.DOS_02907_WACK_MC_int_evic_v3='0';s.ADC_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';s.DOS_02551_cpu_16"
+		"bit_v7='0';s.DOS_02672_math_progcrc_upb_v1_16bit='0';s.DOS_02915_ecc_v2='0';s.DOS_02673_tmr_classa_upb_v1_16bit='0';"
+		"s.DOS_01494_qei_32b_upb_v1_16bit='0';s.DOS_02472_ppi_pmp16_upb_v1_16bit='0';s.DOS_03076_uart_protocol_upb_v1_16bit='"
+		"0';s.DOS_01483_pwm_16bit='0';s.DOS_03247_CAN_FD_UPB_V2_16_bit='0';s.DOS_02949_WACG='0';s.DOS_03349_amp_pad_opamp_ctr"
+		"l_upb_v1='0';s.DOS_02653_afe_current_bias_ctrl_upb_v1_16bit='0';s.DOS_01459_ptg_pc_upb_v1_16bit='0';s.DOS_01512_ccp_"
+		"mccp_upb_v1_16bit='0';s.DOS_02519_dma_sfr_16bit_v2='0';s.DOS_02475_dac_pdm_nbit_upb_v1_16bit='0';s.DOS_02467_gpio_up"
+		"b_v1_16bit='0';s.DOS_00805_rst_integration_v4='0';s.DOS_02659_clk_sib_v12='0';s.DOS_02237_osc_dco_ctrl_upb_v1_16bit="
+		"'0';s.DOS_02674_wdt_upb_v1_16bit='0';s.DOS_01407='0';s.DOS_03662_WACU='0';"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1360,7 +1356,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  25
+	  $ObjectID		  21
 	  Version		  "1.18.1"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -1404,17 +1400,17 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 678, 127, 1668, 797 ]
+      ConfigPrmDlgPosition    [ 475, 127, 1465, 797 ]
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    13
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    26
+    $ObjectID		    22
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1481,6 +1477,17 @@ Model {
   }
   BlockParameterDefaults {
     Block {
+      BlockType		      Abs
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
       BlockType		      Bias
       Bias		      "0"
       SaturateOnIntegerOverflow	on
@@ -1528,6 +1535,44 @@ Model {
       CodeGenStateStorageClass "Auto"
     }
     Block {
+      BlockType		      DiscreteIntegrator
+      IntegratorMethod	      "Integration: Forward Euler"
+      gainval		      "1.0"
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      InitialConditionSetting "Output"
+      SampleTime	      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      IgnoreLimit	      off
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      EnablePort
+      StatesWhenEnabling      "held"
+      PropagateVarSize	      "Only when enabling"
+      ShowOutputPort	      off
+      ZeroCross		      on
+      DisallowConstTsAndPrmTs off
+      PortDimensions	      "1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "double"
+      Interpolate	      on
+    }
+    Block {
       BlockType		      From
       GotoTag		      "A"
       IconDisplay	      "Tag"
@@ -1572,6 +1617,15 @@ Model {
       LatchByDelayingOutsideSignal off
       LatchInputForFeedbackSignals off
       Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
     }
     Block {
       BlockType		      LookupNDDirect
@@ -1694,8 +1748,8 @@ Model {
   }
   System {
     Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest"
-    Location		    [1735, -4, 3481, 981]
-    Open		    off
+    Location		    [67, -4, 1742, 981]
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    on
     ExecutionDomainType	    "Discrete"
@@ -1709,9 +1763,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "117"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "378"
+    SIDHighWatermark	    "450"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
@@ -1756,9 +1810,23 @@ Model {
     }
     Block {
       BlockType		      DataTypeConversion
+      Name		      "Cast3"
+      SID		      "425"
+      Position		      [945, 628, 1020, 662]
+      ZOrder		      3586
+      OutDataTypeStr	      "single"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Name			"I"
+      }
+    }
+    Block {
+      BlockType		      DataTypeConversion
       Name		      "Cast5"
       SID		      "339"
-      Position		      [515, 293, 590, 327]
+      Position		      [460, 353, 535, 387]
       ZOrder		      3569
       OutDataTypeStr	      "boolean"
       RndMeth		      "Floor"
@@ -1775,11 +1843,12 @@ Model {
       Ports		      []
       Position		      [524, 139, 619, 194]
       ZOrder		      3510
+      ForegroundColor	      "red"
       Priority		      "1"
-      LibraryVersion	      "3.4x"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/System Configuration/Compiler Options"
       SourceType	      ""
-      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
       MultiThreadCoSim	      "auto"
       LATEST_CMPLR	      on
       COMP_LIST		      "Dynamic Options"
@@ -1788,10 +1857,10 @@ Model {
       MCHP_MULTITHREAD_COMPILATION on
       UseCustom_LinkerScript  off
       MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
-      OPTIMIZATION_LEVEL      "3"
+      OPTIMIZATION_LEVEL      "1"
       MPLAB_LINKLIB	      "default"
       MPLAB_LINKLIB1	      "default"
-      UNROLL_LOOPS	      off
+      UNROLL_LOOPS	      on
       OMIT_FRAME_POINTER      off
       PROCEDURAL_ABSTRACTION  off
       MCONST		      "in code memory"
@@ -1801,15 +1870,15 @@ Model {
       HEAP_SIZE		      "0"
       OMF		      "elf"
       DEBUG_INFO	      on
-      AssemblyListing	      off
-      ProduceHexOutput	      on
+      AssemblyListing	      on
+      ProduceHexOutput	      off
     }
     Block {
       BlockType		      Reference
       Name		      "Counter\nFree-Running"
       SID		      "338"
       Ports		      [0, 1]
-      Position		      [420, 295, 450, 325]
+      Position		      [390, 355, 420, 385]
       ZOrder		      3568
       LibraryVersion	      "1.444"
       SourceBlock	      "simulink/Sources/Counter\nFree-Running"
@@ -1819,6 +1888,26 @@ Model {
       ContentPreviewEnabled   on
       NumBits		      "1"
       tsamp		      ".1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Data Sheet"
+      SID		      "387"
+      Ports		      []
+      Position		      [770, 144, 817, 189]
+      ZOrder		      3583
+      ForegroundColor	      "red"
+      AttributesFormatString  "%<cpy_MCHP_Id>"
+      LibraryVersion	      "3.43"
+      SourceBlock	      "MCHP_Blockset/System Info/Data Sheet"
+      SourceType	      ""
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
+      DOC_Type		      "datasheet"
+      DOC_MCHP_Id	      "33FJ64MC802"
+      DOC_FileLastCheckTime   "[0 0 0 0 0 0]"
+      cpy_MCHP_Id	      "33EP256MC506"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
       BlockType		      From
@@ -1841,25 +1930,10 @@ Model {
       }
     }
     Block {
-      BlockType		      Gain
-      Name		      "Gain\nFollow Pot sign"
-      SID		      "369"
-      Position		      [985, 630, 1015, 660]
-      ZOrder		      3575
-      Gain		      "-1"
-      ParamDataTypeStr	      "single"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-      Port {
-	PortNumber		1
-	Name			"Current"
-      }
-    }
-    Block {
       BlockType		      Goto
       Name		      "Goto"
       SID		      "350"
-      Position		      [805, 356, 845, 384]
+      Position		      [865, 356, 905, 384]
       ZOrder		      3572
       GotoTag		      "Pot"
     }
@@ -1868,9 +1942,10 @@ Model {
       Name		      "LED_D1\n5Hz Blinking"
       SID		      "334"
       Ports		      [1]
-      Position		      [655, 293, 740, 327]
+      Position		      [600, 353, 685, 387]
       ZOrder		      3564
-      LibraryVersion	      "3.4x"
+      ForegroundColor	      "lightBlue"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Output"
       SourceType	      ""
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -1890,7 +1965,7 @@ Model {
       Name		      "MCLV2\nwith DC motor"
       SID		      "351"
       Ports		      [1, 4]
-      Position		      [535, 421, 685, 674]
+      Position		      [535, 425, 685, 680]
       ZOrder		      3573
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
@@ -1912,7 +1987,7 @@ Model {
       }
       System {
 	Name			"MCLV2\nwith DC motor"
-	Location		[1735, -4, 3481, 981]
+	Location		[67, -4, 1742, 981]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
@@ -1932,7 +2007,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "PWM\n[-1 1]"
 	  SID			  "352"
-	  Position		  [80, 253, 110, 267]
+	  Position		  [35, 253, 65, 267]
 	  ZOrder		  3564
 	  IconDisplay		  "Port number"
 	}
@@ -1943,8 +2018,9 @@ Model {
 	  Ports			  [0, 2]
 	  Position		  [275, 407, 390, 623]
 	  ZOrder		  3550
+	  ForegroundColor	  "red"
 	  Priority		  "5"
-	  LibraryVersion	  "3.4x"
+	  LibraryVersion	  "3.43"
 	  SourceBlock		  "MCHP_Blockset/Analog IO/ADC"
 	  SourceType		  ""
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
@@ -1972,13 +2048,281 @@ Model {
 	  Trig_TimeStep		  "with each update of the ADC block output"
 	  ADC_DMA_CHANNEL	  "Use Interrupt instead of DMA"
 	  SampleTime		  "5e-05"
-	  Info			  "Total Time for Sample & Conversion : 2.4e-06s including 3.4286e-07s (x 1) sample time."
+	  Info			  "Total Time for Sample & Conversion : 2.7e-06s including 3e-07s (x 1) sample time."
 	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 13}{AN13}15:2:E13;"
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
-	  ADC_TIMING		  "[2.4000000000000003149e-06]"
+	  ADC_TIMING		  "[2.6999999999999999837e-06]"
 	  Port {
 	    PortNumber		    2
 	    Name		    "Ia"
+	  }
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  SID			  "449"
+	  Position		  [860, 305, 890, 335]
+	  ZOrder		  3595
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Bias at rest"
+	  SID			  "392"
+	  Ports			  [1, 1, 1]
+	  Position		  [1000, 506, 1055, 544]
+	  ZOrder		  3573
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Bias at rest"
+	    Location		    [67, -4, 1742, 981]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "393"
+	      Position		      [110, 103, 140, 117]
+	      ZOrder		      -1
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "394"
+	      Ports		      []
+	      Position		      [235, 20, 255, 40]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LPF_3Hz"
+	      SID		      "436"
+	      Tag		      "FilterWizardSubSystem"
+	      Ports		      [1, 1]
+	      Position		      [210, 90, 285, 130]
+	      ZOrder		      3591
+	      UserDataPersistent      on
+	      UserData		      "DataTag0"
+	      ErrorFcn		      "dspFilterRealizedInBasicElemsAlgLoopErrFcnCallback"
+	      RequestExecContextInheritance off
+	      System {
+		Name			"LPF_3Hz"
+		Location		[67, -4, 1742, 981]
+		Open			off
+		PortBlocksUseCompactNotation off
+		SetExecutionDomain	off
+		ExecutionDomainType	"Deduce"
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "Input"
+		  SID			  "437"
+		  Position		  [135, 192, 165, 208]
+		  ZOrder		  1
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  DataTypeConversion
+		  Name			  "Cast"
+		  SID			  "448"
+		  Position		  [1130, 183, 1205, 217]
+		  ZOrder		  258
+		  RndMeth		  "Floor"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Delay
+		  Name			  "Delay11"
+		  SID			  "444"
+		  Ports			  [1, 1]
+		  Position		  [810, 225, 840, 255]
+		  ZOrder		  8
+		  BlockRotation		  270
+		  BlockMirror		  on
+		  ShowName		  off
+		  InputPortMap		  "u0"
+		  DelayLength		  "1"
+		  InitialCondition	  "0"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "SumA21"
+		  SID			  "439"
+		  Ports			  [2, 1]
+		  Position		  [435, 185, 465, 215]
+		  ZOrder		  3
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|+-"
+		  InputSameDT		  off
+		  AccumDataTypeStr	  "Inherit: Same as first input"
+		  RndMeth		  "Convergent"
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "SumB21"
+		  SID			  "441"
+		  Ports			  [2, 1]
+		  Position		  [1035, 185, 1065, 215]
+		  ZOrder		  5
+		  ShowName		  off
+		  IconShape		  "round"
+		  Inputs		  "|++"
+		  InputSameDT		  off
+		  AccumDataTypeStr	  "Inherit: Same as first input"
+		  RndMeth		  "Simplest"
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "a(2)(1)"
+		  SID			  "443"
+		  Position		  [705, 265, 735, 295]
+		  ZOrder		  7
+		  BlockMirror		  on
+		  Gain			  "-0.962994050950215286"
+		  ParamDataTypeStr	  "fixdt(1,16,14)"
+		  RndMeth		  "Simplest"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Gain
+		  Name			  "s(1)"
+		  SID			  "438"
+		  Position		  [285, 185, 315, 215]
+		  ZOrder		  2
+		  Gain			  "0.0185029745248923086"
+		  ParamDataTypeStr	  "fixdt(1,16,20)"
+		  OutDataTypeStr	  "fixdt(1,16,16)"
+		  RndMeth		  "Convergent"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Output"
+		  SID			  "442"
+		  Position		  [1295, 192, 1325, 208]
+		  ZOrder		  6
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "s(1)"
+		  SrcPort		  1
+		  DstBlock		  "SumA21"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  13
+		  SrcBlock		  "SumA21"
+		  SrcPort		  1
+		  Points		  [355, 0]
+		  Branch {
+		    ZOrder		    4
+		    DstBlock		    "SumB21"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    5
+		    DstBlock		    "Delay11"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  "a(2)(1)"
+		  SrcPort		  1
+		  Points		  [-250, 0]
+		  DstBlock		  "SumA21"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  "Delay11"
+		  SrcPort		  1
+		  Points		  [0, 20]
+		  Branch {
+		    ZOrder		    9
+		    DstBlock		    "a(2)(1)"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    10
+		    Points		    [225, 0]
+		    DstBlock		    "SumB21"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  ZOrder		  15
+		  SrcBlock		  "SumB21"
+		  SrcPort		  1
+		  DstBlock		  "Cast"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  12
+		  SrcBlock		  "Input"
+		  SrcPort		  1
+		  DstBlock		  "s(1)"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  16
+		  SrcBlock		  "Cast"
+		  SrcPort		  1
+		  DstBlock		  "Output"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "395"
+	      Position		      [360, 103, 390, 117]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "LPF_3Hz"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "LPF_3Hz"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Block {
@@ -1988,9 +2332,10 @@ Model {
 	  Ports			  []
 	  Position		  [110, 407, 260, 463]
 	  ZOrder		  3561
-	  LibraryVersion	  "3.4x"
+	  ForegroundColor	  "red"
+	  LibraryVersion	  "3.43"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag0"
+	  UserData		  "DataTag1"
 	  SourceBlock		  "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
 	  SourceType		  "Comparator / Op amp (DS70357 & DS70648)"
 	  SourceProductName	  "MPLAB Device Blocks for Simulink"
@@ -2017,6 +2362,24 @@ Model {
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
 	  MCHP_PORT		  "{Op-Amp Output 2}{OA2(out)}14:2:A0;{Op-Amp2 V+}{OA2 V+}14:2:A1;{Op-Amp2 V-}{OA2 V-}14:2:B0;"
 	  ORDERING		  "0"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Constant"
+	  SID			  "422"
+	  Ports			  [1, 1]
+	  Position		  [915, 305, 945, 335]
+	  ZOrder		  3594
+	  LibraryVersion	  "1.444"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	  SourceType		  "Compare To Constant"
+	  SourceProductName	  "Simulink"
+	  SourceProductBaseCode	  "SL"
+	  ContentPreviewEnabled	  on
+	  relop			  "<="
+	  const			  "0.5"
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
 	}
 	Block {
 	  BlockType		  DataTypeConversion
@@ -2071,15 +2434,15 @@ Model {
 	  SID			  "273"
 	  Tag			  "FilterWizardSubSystem"
 	  Ports			  [1, 1]
-	  Position		  [745, 265, 815, 305]
+	  Position		  [735, 265, 805, 305]
 	  ZOrder		  3548
 	  UserDataPersistent	  on
-	  UserData		  "DataTag1"
+	  UserData		  "DataTag2"
 	  ErrorFcn		  "dspFilterRealizedInBasicElemsAlgLoopErrFcnCallback"
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "LPF 16bit \n"
-	    Location		    [-1163, 47, 3, 982]
+	    Location		    [67, -4, 1742, 981]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -2398,17 +2761,33 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Logic
+	  Name			  "NOT"
+	  SID			  "410"
+	  Ports			  [1, 1]
+	  Position		  [1009, 420, 1041, 450]
+	  ZOrder		  3583
+	  BlockRotation		  270
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Operator		  "NOT"
+	  IconShape		  "distinctive"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "PWM"
 	  SID			  "345"
-	  Ports			  [1]
+	  Ports			  [1, 0, 1]
 	  Position		  [200, 214, 300, 306]
 	  ZOrder		  3562
+	  NamePlacement		  "alternate"
 	  RequestExecContextInheritance	off
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "PWM"
-	    Location		    [52, -4, 1743, 981]
+	    Location		    [67, -4, 1742, 981]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
@@ -2431,6 +2810,14 @@ Model {
 	      Position		      [20, 48, 50, 62]
 	      ZOrder		      3500
 	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "412"
+	      Ports		      []
+	      Position		      [410, -145, 430, -125]
+	      ZOrder		      3502
 	    }
 	    Block {
 	      BlockType		      Bias
@@ -2478,52 +2865,54 @@ Model {
 	      Ports		      [2]
 	      Position		      [810, 20, 970, 155]
 	      ZOrder		      3488
-	      LibraryVersion	      "3.4x"
+	      ForegroundColor	      "red"
+	      LibraryVersion	      "3.43"
 	      UserDataPersistent      on
-	      UserData		      "DataTag2"
+	      UserData		      "DataTag3"
 	      SourceBlock	      "MCHP_Blockset/PWM IO/PWM High Speed"
 	      SourceType	      ""
-	      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+	      SourceProductName	      "MPLAB Device Blocks for Simulink"
 	      MultiThreadCoSim	      "auto"
 	      pop1		      "[1]"
 	      chk1		      "[1  1  1  0  0]"
-	      chkHL1		      "[1  1  0  1  1  1  1 ; 1  1  0  1  1  1  1]"
-	      maxP1		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001','0.001'"
-	      ",'0.001','0.001'}"
-	      InitP2		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001','0.001"
-	      "','0.001','0.001'}"
-	      chkP2		      "[0  1  0  1  1  1  1 ; 1  0  0  1  1  1  1]"
-	      InitDC		      "{ '50','50','50','50','50','50','50';'0.001','0.001','0.001','50','50','50','50'}"
-	      chkDC		      "[1  1  1  1  1  1  1 ; 0  0  0  1  1  1  1]"
-	      InitPh		      "{ '0','0','0','0.001','0.001','0.001','0.001';'0','0','0','0.001','0.001','0.001','0.001'}"
-	      chkPh		      "[0  0  0  1  1  1  1 ; 0  0  0  1  1  1  1]"
-	      edSEvTrigx	      "{ '0','-1','-1','-1','-1','-1','-1'}"
-	      chkSEvTrigx	      "[0  1  1  1  1  1  1]"
-	      popFlt		      "[2  2  1  1  1  1  1]"
-	      popFltPin		      "[20  20  20   4   4   4   4]"
+	      chkHL1		      "[1  1  0  1  1  1  1  1 ; 1  1  0  1  1  1  1  1]"
+	      maxP1		      "{ '50e-6','0.001','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','1e-06','0.001'"
+	      ",'0.001','0.001','0.001','0.001'}"
+	      InitP2		      "{ '50e-6','.001','0.001','0.001','0.001','0.001','0.001','0.001';'0.001','0.001','0.001','0.001'"
+	      ",'0.001','0.001','0.001','0.001'}"
+	      chkP2		      "[0  1  0  1  1  1  1  1 ; 1  0  0  1  1  1  1  1]"
+	      InitDC		      "{ '50','50','50','50','50','50','50','50';'0.001','0.001','0.001','50','50','50','50','50'}"
+	      chkDC		      "[1  1  1  1  1  1  1  1 ; 0  0  0  1  1  1  1  1]"
+	      InitPh		      "{ '0','0','0','0.001','0.001','0.001','0.001','0.001';'0','0','0','0.001','0.001','0.001','0.001"
+	      "','0.001'}"
+	      chkPh		      "[0  0  0  1  1  1  1  1 ; 0  0  0  1  1  1  1  1]"
+	      edSEvTrigx	      "{ '120e-9','-1','-1','-1','-1','-1','-1','-1'}"
+	      chkSEvTrigx	      "[0  1  1  1  1  1  1  1]"
+	      popFlt		      "[2  2  1  1  1  1  1  1]"
+	      popFltPin		      "[20  20  20   4   4   4   4   4]"
 	      popFltPinRp	      "[1  1  1  1  1  1  1]"
-	      popFltActivH	      "[2  2  1  1  1  1  1]"
-	      popFltForceH	      "[2  2  2  2  2  2  2]"
-	      popFltForceL	      "[1  1  1  1  1  1  1]"
-	      chkFltBlkOut	      "[0  0  0  0  0  0  0]"
-	      popIndepFaultMode	      "[1  1  1  1  1  1  1]"
-	      popCurEnabled	      "[1  1  1  1  1  1  1]"
-	      popCurPin		      "[4  31   4   4   4   4   4]"
-	      popCurActiveH	      "[1  1  1  1  1  1  1]"
-	      popCurForceH	      "[2  1  2  1  1  1  1]"
-	      popCurForceL	      "[2  1  2  1  1  1  1]"
-	      ChkCurBlkOut	      "[0  0  0  0  0  0  0]"
-	      ChkCurBlkOutTime	      "[0  0  1  0  0  0  0]"
-	      popBLANKSEL	      "[1  1  1  1  1  1  1]"
-	      popBPHHBPHL	      "[1  1  1  1  1  1  1]"
-	      popBPLHBPLL	      "[1  1  1  1  1  1  1]"
-	      popFLTLEBEN_CLLEBEN     "[1  1  1  1  1  1  1]"
-	      popPHR_PHF	      "[2  1  1  1  1  1  1]"
-	      popPLR_PLF	      "[3  1  1  1  1  1  1]"
-	      edLEB		      "{ '100e-9','50e-9','150e-9','50e-9','50e-9','50e-9','50e-9'}"
-	      popDT		      "[1  1  1  3  3  3  3]"
-	      edDTRx		      "{ '0.02','1e-05','0.001','1e-05','1e-05','1e-05','1e-05'}"
-	      edAltDTRx		      "{ '0.5e-6','0.5e-6','Tm','1e-05','1e-05','1e-05','1e-05'}"
+	      popFltActivH	      "[2  2  1  1  1  1  1  1]"
+	      popFltForceH	      "[2  2  2  2  2  2  2  2]"
+	      popFltForceL	      "[1  1  1  1  1  1  1  1]"
+	      chkFltBlkOut	      "[0  0  0  0  0  0  0  0]"
+	      popIndepFaultMode	      "[1  1  1  1  1  1  1  1]"
+	      popCurEnabled	      "[1  1  1  1  1  1  1  1]"
+	      popCurPin		      "[4  31   4   4   4   4   4   4]"
+	      popCurActiveH	      "[1  1  1  1  1  1  1  1]"
+	      popCurForceH	      "[2  1  2  1  1  1  1  1]"
+	      popCurForceL	      "[2  1  2  1  1  1  1  1]"
+	      ChkCurBlkOut	      "[0  0  0  0  0  0  0  0]"
+	      ChkCurBlkOutTime	      "[0  0  1  0  0  0  0  0]"
+	      popBLANKSEL	      "[1  1  1  1  1  1  1  1]"
+	      popBPHHBPHL	      "[1  1  1  1  1  1  1  1]"
+	      popBPLHBPLL	      "[1  1  1  1  1  1  1  1]"
+	      popFLTLEBEN_CLLEBEN     "[1  1  1  1  1  1  1  1]"
+	      popPHR_PHF	      "[2  1  1  1  1  1  1  1]"
+	      popPLR_PLF	      "[3  1  1  1  1  1  1  1]"
+	      edLEB		      "{ '100e-9','50e-9','150e-9','50e-9','50e-9','50e-9','50e-9','50e-9'}"
+	      popDT		      "[1  1  1  3  3  3  3  3]"
+	      edDTRx		      "{ '0.02','1e-05','0.001','1e-05','1e-05','1e-05','1e-05','1e-05'}"
+	      edAltDTRx		      "{ '0.5e-6','0.5e-6','Tm','1e-05','1e-05','1e-05','1e-05','1e-05'}"
 	      S_INPUT		      "[5  5  5]"
 	      S_INPUT_Size	      "[1  1  1]"
 	      S_OUTPUT		      "[]"
@@ -2546,7 +2935,7 @@ Model {
 	      Position		      [680, 40, 705, 70]
 	      ZOrder		      3489
 	      InputPortMap	      "u0"
-	      UpperLimit	      "PWMmax"
+	      UpperLimit	      "PWMmax - (1e-6/50e-6)*PWMmax"
 	      LowerLimit	      "round( (0.5e-6/50e-6) *PWMmax )"
 	    }
 	    Block {
@@ -2648,12 +3037,13 @@ Model {
 	  Ports			  [0, 2]
 	  Position		  [310, 217, 410, 308]
 	  ZOrder		  3479
-	  LibraryVersion	  "3.4x"
+	  ForegroundColor	  "green"
+	  LibraryVersion	  "3.43"
 	  UserDataPersistent	  on
-	  UserData		  "DataTag3"
+	  UserData		  "DataTag4"
 	  SourceBlock		  "MCHP_Blockset/QEI/QEI"
 	  SourceType		  "Output Driver for Quadrature Encoder Interface (QEI) peripheral "
-	  SourceProductName	  "MPLAB® Device Blocks for Simulink®"
+	  SourceProductName	  "MPLAB Device Blocks for Simulink"
 	  MultiThreadCoSim	  "auto"
 	  QEI_REF		  "1"
 	  QEI_MODE		  "Quadrature Encoder"
@@ -2689,7 +3079,7 @@ Model {
 	  MaxPeriod		  "1e-3"
 	  FILTREN		  on
 	  QFDIV_popup		  "Dynamic Options"
-	  QFDIV_popup_TXT	  "729.17 kHz"
+	  QFDIV_popup_TXT	  "833.33 kHz"
 	  FILTER_CutOffFreq	  "100e3 "
 	  PIN_CCMP		  "Dynamic Options"
 	  PIN_CCMP_TXT		  "A4 / P20 / Pin[33]"
@@ -2706,11 +3096,159 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  RateTransition
+	  Name			  "Rate Transition1"
+	  SID			  "396"
+	  Position		  [855, 514, 875, 536]
+	  ZOrder		  3574
+	  Deterministic		  off
+	  OutPortSampleTime	  ".002"
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "Rate Transition2"
+	  SID			  "397"
+	  Position		  [1105, 514, 1125, 536]
+	  ZOrder		  3575
+	  Deterministic		  off
+	}
+	Block {
+	  BlockType		  RateTransition
+	  Name			  "Rate Transition3"
+	  SID			  "421"
+	  Position		  [840, 389, 860, 411]
+	  ZOrder		  3593
+	  BlockMirror		  on
+	  Deterministic		  off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "391"
+	  Ports			  [2, 1]
+	  Position		  [1155, 560, 1175, 580]
+	  ZOrder		  3572
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+|"
+	  OutDataTypeStr	  "Inherit: Inherit via back propagation"
+	}
+	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
 	  SID			  "348"
 	  Position		  [665, 105, 685, 125]
 	  ZOrder		  3563
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Wait \n1s with zero speed"
+	  SID			  "402"
+	  Ports			  [0, 1, 1]
+	  Position		  [955, 331, 1010, 369]
+	  ZOrder		  3589
+	  TreatAsAtomicUnit	  on
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Wait \n1s with zero speed"
+	    Location		    [67, -4, 1742, 981]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "404"
+	      Ports		      []
+	      Position		      [295, 40, 315, 60]
+	      ZOrder		      -2
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "1s\n"
+	      SID		      "409"
+	      Ports		      [1, 1]
+	      Position		      [330, 160, 380, 190]
+	      ZOrder		      2
+	      LibraryVersion	      "1.444"
+	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
+	      SourceType	      "Compare To Constant"
+	      SourceProductName	      "Simulink"
+	      SourceProductBaseCode   "SL"
+	      ContentPreviewEnabled   on
+	      relop		      ">="
+	      const		      "500"
+	      OutDataTypeStr	      "boolean"
+	      ZeroCross		      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "420"
+	      Position		      [165, 160, 195, 190]
+	      ZOrder		      4
+	      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+	    }
+	    Block {
+	      BlockType		      DiscreteIntegrator
+	      Name		      "Discrete-Time\nIntegrator"
+	      SID		      "419"
+	      Ports		      [1, 1]
+	      Position		      [250, 157, 285, 193]
+	      ZOrder		      3
+	      IntegratorMethod	      "Accumulation: Forward Euler"
+	      gainval		      "1"
+	      InitialConditionSetting "Auto"
+	      SampleTime	      "-1"
+	      OutDataTypeStr	      "uint16"
+	      SaturateOnIntegerOverflow	on
+	      ICPrevOutput	      "DiscIntNeverNeededParam"
+	      ICPrevScaledInput	      "DiscIntNeverNeededParam"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Go"
+	      SID		      "405"
+	      Position		      [440, 168, 470, 182]
+	      ZOrder		      -3
+	      IconDisplay	      "Port number"
+	      InitialOutput	      "0"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "1s\n"
+	      SrcPort		      1
+	      DstBlock		      "Go"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Discrete-Time\nIntegrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Discrete-Time\nIntegrator"
+	      SrcPort		      1
+	      DstBlock		      "1s\n"
+	      DstPort		      1
+	    }
+	  }
 	}
 	Block {
 	  BlockType		  DataTypeConversion
@@ -2727,7 +3265,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Pot [-1 1]"
 	  SID			  "355"
-	  Position		  [885, 453, 915, 467]
+	  Position		  [735, 453, 765, 467]
 	  ZOrder		  3567
 	  IconDisplay		  "Port number"
 	}
@@ -2753,7 +3291,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "I (A)"
 	  SID			  "356"
-	  Position		  [890, 563, 920, 577]
+	  Position		  [1335, 563, 1365, 577]
 	  ZOrder		  3568
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -2801,13 +3339,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  12
-	  SrcBlock		  "PWM\n[-1 1]"
-	  SrcPort		  1
-	  DstBlock		  "PWM"
-	  DstPort		  1
-	}
-	Line {
 	  ZOrder		  13
 	  SrcBlock		  "fract"
 	  SrcPort		  1
@@ -2832,15 +3363,35 @@ Model {
 	  ZOrder		  17
 	  SrcBlock		  "LPF 16bit \n"
 	  SrcPort		  1
-	  DstBlock		  "Vitesse (rad/sec)"
-	  DstPort		  1
+	  Points		  [21, 0]
+	  Branch {
+	    ZOrder		    126
+	    DstBlock		    "Vitesse (rad/sec)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    109
+	    Points		    [0, 35]
+	    DstBlock		    "Abs"
+	    DstPort		    1
+	  }
 	}
 	Line {
-	  ZOrder		  45
+	  ZOrder		  54
 	  SrcBlock		  "Convert to A"
 	  SrcPort		  1
-	  DstBlock		  "I (A)"
-	  DstPort		  1
+	  Points		  [187, 0]
+	  Branch {
+	    ZOrder		    72
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    59
+	    Points		    [0, -45]
+	    DstBlock		    "Rate Transition1"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  Name			  "Ia"
@@ -2849,6 +3400,88 @@ Model {
 	  SrcBlock		  "ADC"
 	  SrcPort		  2
 	  DstBlock		  "Convert to A"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  55
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "I (A)"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  60
+	  SrcBlock		  "Bias at rest"
+	  SrcPort		  1
+	  DstBlock		  "Rate Transition2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  63
+	  SrcBlock		  "Rate Transition1"
+	  SrcPort		  1
+	  DstBlock		  "Bias at rest"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  64
+	  SrcBlock		  "Rate Transition2"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  82
+	  SrcBlock		  "NOT"
+	  SrcPort		  1
+	  DstBlock		  "Bias at rest"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  85
+	  SrcBlock		  "PWM\n[-1 1]"
+	  SrcPort		  1
+	  DstBlock		  "PWM"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  106
+	  SrcBlock		  "Wait \n1s with zero speed"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 50]
+	  Branch {
+	    ZOrder		    99
+	    DstBlock		    "Rate Transition3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    96
+	    DstBlock		    "NOT"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  110
+	  SrcBlock		  "Compare\nTo Constant"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Wait \n1s with zero speed"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  107
+	  SrcBlock		  "Rate Transition3"
+	  SrcPort		  1
+	  Points		  [-240, 0; 0, -42; -345, 0]
+	  DstBlock		  "PWM"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  127
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Constant"
 	  DstPort		  1
 	}
 	Annotation {
@@ -2891,16 +3524,17 @@ Model {
       Ports		      []
       Position		      [400, 137, 500, 193]
       ZOrder		      3511
+      ForegroundColor	      "red"
       Priority		      "1"
-      LibraryVersion	      "3.4x"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/System Configuration/Microchip Master"
       SourceType	      ""
-      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
       MultiThreadCoSim	      "auto"
       PICREF		      "33EP256MC506"
       TIMESTEP_REF	      "ADC"
       BUSYFLAG		      "Dynamic Options"
-      BUSYFLAG_TXT	      "D5 / Pin[53]"
+      BUSYFLAG_TXT	      "None"
       PWRTEN		      "Not used"
       BOREN		      "Disable"
       BODENV		      "2.7V"
@@ -2971,7 +3605,7 @@ Model {
       FSOSCEN		      "Enable SOSC"
       LPRCSEL		      "Not used"
       OSCIOFCN		      "Not used"
-      OSCIOFNC		      "OSC2 is clock output"
+      OSCIOFNC		      "general purpose digital I/O pin"
       LVRCFG		      "Not used"
       PLL_96MHZ		      "Not used"
       PLL96MHZ		      "Not used"
@@ -3003,7 +3637,7 @@ Model {
       WPEND		      "Not used"
       WPFP		      "Not used"
       ICESEL		      "Communicate on PGEC1/PGED1"
-      ICS		      "Communicate on PGEC1 and PGED1"
+      ICS		      "Communicate on PGEC2 and PGED2"
       JTAGEN		      "Disable"
       COE		      "Not used"
       RES		      "Not used"
@@ -3038,9 +3672,7 @@ Model {
       ALTADREF		      "Not used"
       ALTCVREF		      "Not used"
       PWMLOCK		      "PWM registers may be written without key sequence"
-      INT_PRIORITY_DMA	      "0"
       MCHP_TIMER_RESULT	      "[ ]"
-      MCHP_PORT		      "{Busy Flag}{Busy}0:1:D5;"
       MCHP_PLLRegisters	      "[5    243  16385     -1]"
       MCHPVAR		      "MCHP.fcy.MIPS=70000000;MCHP.fcy.SYSCLK=70000000;MCHP.fcy.ADC=70000000;MCHP.fcy.Comparator=700000"
       "00;MCHP.fcy.I2C=70000000;MCHP.fcy.SPI=70000000;MCHP.fcy.UART=70000000;MCHP.fcy.Timers=70000000;MCHP.fcy.OC=70000"
@@ -3111,57 +3743,50 @@ Model {
       "RT.port_Rx=reshape([32767 32767 -1 -1 -1 -1],1,6);MCHP.UART.port_Tx=reshape([32767 32767 -1 -1 -1 -1],1,6);MCHP."
       "UART.port_ARx=reshape([-1 -1],1,2);MCHP.UART.port_ATx=reshape([-1 -1],1,2);MCHP.UART.port_RTS=reshape([34 76 -1 "
       "-1 -1 -1],1,6);MCHP.UART.port_CTS=reshape([43 77 -1 -1 -1 -1],1,6);MCHP.UART.reg_UxMODE=reshape([48127 48127 -1 "
-      "-1 -1 -1],1,6);MCHP.UART.reg_UxSTA=reshape([61439 61439 -1 -1 -1 -1],1,6);MCHP.modsrc.DOS_02551_cpu_16bit_v7=0;M"
-      "CHP.modsrc.DOS_01520_wdt_dmt_upb_v1_16bit=0;MCHP.modsrc.DOS_02359a_sent_j2716_upb_v1=0;MCHP.modsrc.DOS_02672_mat"
-      "h_progcrc_upb_v1_16bit=0;MCHP.modsrc.DOS_01577_cla_clc_upb_v1=0;MCHP.modsrc.DOS_02915_ecc_v2=0;MCHP.modsrc.DOS_0"
-      "2673_tmr_classa_upb_v1_16bit=0;MCHP.modsrc.DOS_01494_qei_32b_upb_v1_16bit=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_"
-      "v1_16bit=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_16bit_TLAH=0;MCHP.modsrc.DOS_03076_uart_protocol_upb_v1_16bit=0;MCHP"
-      ".modsrc.DOS_01482=0;MCHP.modsrc.DOS_01483_pwm_16bit=0;MCHP.modsrc.DOS_03247_CAN_FD_UPB_V2_16_bit=0;MCHP.modsrc.D"
-      "OS_02949_WACG=0;MCHP.modsrc.DOS_02316_nvm_ctrl_v1_16bit=0;MCHP.modsrc.DOS_03349_amp_pad_opamp_ctrl_upb_v1=0;MCHP"
-      ".modsrc.DOS_02653_afe_current_bias_ctrl_upb_v1_16bit=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_16bit=0;MCHP.modsrc.D"
-      "OS_01512_ccp_mccp_upb_v1_16bit=0;MCHP.modsrc.DOS_02519_dma_sfr_16bit_v2=0;MCHP.modsrc.DOS_02508c11=0;MCHP.modsrc"
-      ".DOS_02475_dac_pdm_nbit_upb_v1_16bit=0;MCHP.modsrc.DOS_02467_gpio_upb_v1_16bit=0;MCHP.modsrc.DOS_00805_rst_integ"
-      "ration_v4=0;MCHP.modsrc.DOS_02659_clk_sib_v12=0;MCHP.modsrc.DOS_02237_osc_dco_ctrl_upb_v1_16bit=0;MCHP.modsrc.DO"
-      "S_02674_wdt_upb_v1_16bit=0;MCHP.modsrc.DOS_01407=0;MCHP.modsrc.DOS_03662_WACU=0;MCHP.modsrc.DOS_00794=1;MCHP.mod"
-      "src.DOS_00931=1;MCHP.modsrc.DOS_00932=1;MCHP.modsrc.DOS_00942=1;MCHP.modsrc.DOS_00938=1;MCHP.modsrc.DOS_00996=1;"
-      "MCHP.modsrc.DOS_00997=1;MCHP.modsrc.DOS_00998=1;MCHP.modsrc.DOS_00209=0;MCHP.modsrc.DOS_01555_adc=0;MCHP.modsrc."
-      "DOS_01293=1;MCHP.modsrc.DOS_00828=0;MCHP.modsrc.DOS_01116=1;MCHP.modsrc.DOS_01017_RPORx=1;MCHP.modsrc.DOS_01017_"
-      "RPINRx=1;MCHP.modsrc.DOS_01555_nvm_tsmc18_v2_16bit=0;MCHP.modsrc.DOS_00804=1;MCHP.modsrc.DOS_00826=1;MCHP.modsrc"
-      ".DOS_01555_TLAK_PMDx=0;MCHP.modsrc.DOS_01555_TLAK_INT_=0;MCHP.modsrc.DOS_00933=1;MCHP.modsrc.DOS_01555=0;MCHP.mo"
-      "dsrc.DOS_01555_ptg=0;MCHP.modsrc.DOS_00929=1;MCHP.modsrc.DOS_00958=1;MCHP.modsrc.DOS_01117_PORTx=1;MCHP.modsrc.D"
-      "OS_00999=0;MCHP.modsrc.DOS_01198=1;MCHP.modsrc.DOS_01041=1;MCHP.modsrc.DOS_00892=1;MCHP.modsrc.DOS_01287_TLAC_PM"
-      "Dx=1;MCHP.modsrc.DOS_01287_TLAC_INT_=1;MCHP.modsrc.DOS_01424=1;MCHP.modsrc.DOS_01332=1;MCHP.modsrc.DOS_01468_PMB"
-      "A_current_source=0;MCHP.modsrc.DOS_02291_PGA=0;MCHP.modsrc.DOS_01467_Comparator=0;MCHP.modsrc.DOS_01498_TLAY=0;M"
-      "CHP.modsrc.DOS_00993_PLL_120MHz=0;MCHP.modsrc.DOS_01332_ptg_pc_v1=0;MCHP.modsrc.DOS_00958_pwm_TLAY=0;MCHP.modsrc"
-      ".TLAY_IOPorts=0;MCHP.modsrc.DOS_00929q=0;MCHP.modsrc.DOS_02415_spi_v5=0;MCHP.modsrc.DOS_RPINRx_16bit_2=0;MCHP.mo"
-      "dsrc.DOS_01497_TLAH_PMDx=0;MCHP.modsrc.DOS_02550_TLAL_INT=0;MCHP.modsrc.DOS_00958_pwm_TLAH=0;MCHP.modsrc.DOS_012"
-      "87_TLAH_INT_=0;MCHP.modsrc.DOS_01113=0;MCHP.modsrc.DOS_01017_PMDx=0;MCHP.modsrc.DOS_00927=0;MCHP.modsrc.DOS_0108"
-      "0=0;MCHP.modsrc.DOS_00794_cpu_16bit_v3=0;MCHP.modsrc.DOS_02192_TLCD_PMDx=0;MCHP.modsrc.DOS_02192_TLCD_INT_=0;MCH"
-      "P.modsrc.DOS_02192_cmp=0;MCHP.modsrc.DOS_00958_pwm_TLCD=0;MCHP.modsrc.DOS_02192_PORTx_TLCD=0;MCHP.modsrc.DOS_009"
-      "36=0;MCHP.modsrc.DOS_00995=0;MCHP.modsrc.DOS_00546=0;MCHP.modsrc.DOS_00474=0;MCHP.modsrc.DOS_02481_WACJ_MC_Confi"
-      "g=0;MCHP.modsrc.DOS_02569_pfm_cache_ocp_v1=0;MCHP.modsrc.DOS_02819_pfm_ctrl_32bit_upb_v2=0;MCHP.modsrc.DOS_02674"
-      "_wdt_upb_v1_32bit=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1=0;MCHP.modsrc.DOS_02869_icd_jtag_bvci_upb_v2=0;MCHP.mod"
-      "src.DOS_02823_WACJ_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPINRx=0;MCHP.modsrc.DOS_02481_RPORx=0;MCHP.modsrc.DOS"
-      "_02511_pwr_sib_upb_v1_32bit=0;MCHP.modsrc.DOS_02481_WACJ_MC_int_evic_v3=0;MCHP.modsrc.DOS_01500_dma_bvci_v2=0;MC"
-      "HP.modsrc.DOS_02141_tmr_classa_pb_v2=0;MCHP.modsrc.DOS_02815_tmr_classb_upb_v1=0;MCHP.modsrc.DOS_00740_icap_pb_v"
-      "1=0;MCHP.modsrc.DOS_00749_ocmp_pb_v1=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_32bit=0;MCHP.modsrc.DOS_01329_spi_pb_v2="
-      "0;MCHP.modsrc.DOS_02478_uart_irda_upb_v1_32bit=0;MCHP.modsrc.DOS_02514_dfm_strl_sst_upb_v1=0;MCHP.modsrc.DOS_014"
-      "77_pwm_mc_upb_v1=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_SIC=0;MCHP.modsrc.DOS_01494_qei_32b_upb_v1=0;MCHP.modsrc."
-      "DOS_01427_cmp_control_upb_v1_32bit=0;MCHP.modsrc.DOS_01445_dac_nbit__control_upb_v1_32bit=0;MCHP.modsrc.DOS_0146"
-      "1_afe_ctmu_con_upb_v1=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_v1=0;MCHP.modsrc.DOS_02467_gpio_ports_upb_v1=0;MCHP."
-      "modsrc.DOS_01152_can_bvci_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK=0;MCHP.modsrc.DOS_02813a_usb_ot"
-      "gcore_pb_v3=0;MCHP.modsrc.DOS_01261_tmr_rtcc_pb_v2=0;MCHP.modsrc.DOS_01475_lpwr_deep_sleep_ctrl_v2=0;MCHP.modsrc"
-      ".DOS_EIP_00136_ssx_v1=0;MCHP.modsrc.DOS_02481_WACK_MC_Config=0;MCHP.modsrc.DOS_03088_pfm_cache_ocp_v2_WACK=0;MCH"
-      "P.modsrc.DOS_02823_WACN_clk_cru_upb_v2=0;MCHP.modsrc.DOS_02907_WACK_MC_int_evic_v3=0;MCHP.modsrc.DOS_03554_cmp_c"
-      "ontrol_upb_v2_32bit=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2_pic32mk=0;MCHP.modsrc.DOS_02787_WACD_Config=0;MCHP.mod"
-      "src.DOS_00800_dac_4bit_ctrl_pb_v1=0;MCHP.modsrc.DOS_01539_icd_jtag_pb_v2=0;MCHP.modsrc.DOS_02823_clk_cru_upb_v2="
-      "0;MCHP.modsrc.DOS_01423_RPORx=0;MCHP.modsrc.DOS_02907_WACD_int_evic_v3=0;MCHP.modsrc.DOS_00734_uart_irda_pb_v1=0"
-      ";MCHP.modsrc.DOS_00687_tmr_classa_pb_v1=0;MCHP.modsrc.DOS_00745_tmr_classb_pb_v1=0;MCHP.modsrc.DOS_02508_adc_sar"
-      "_ctrl_upb_v1=0;MCHP.modsrc.DOS_00866_cmp_control_pb_v2=0;MCHP.modsrc.DOS_01114_eth_bvci_v1=0;MCHP.modsrc.DOS_028"
-      "31_usb_clk_rst_v2=0;MCHP.modsrc.DOS_01643_pfm_cache_ahb_v2=0;MCHP.modsrc.DOS_EIP_00206r5_sqi_v2=0;MCHP.modsrc.DO"
-      "S_EIP_00124_usb_hs_otgcore_v1=0;MCHP.modsrc.DOS_EIP_00218_math_rng_ahbs_v2=0;MCHP.modsrc.DOS_EIP_00109_ebi_v1=0;"
-      "MCHP.modsrc.DOS_EIP_00158_crypto_v1=0;MCHP.PortBase=16;MCHP.PortPrefixe='P';MCHP.clock.PBxDIV=-1;"
-      MCHP_CRC		      "6568785"
+      "-1 -1 -1],1,6);MCHP.UART.reg_UxSTA=reshape([61439 61439 -1 -1 -1 -1],1,6);MCHP.modsrc.DOS_00794=1;MCHP.modsrc.DO"
+      "S_00931=1;MCHP.modsrc.DOS_00932=1;MCHP.modsrc.DOS_00942=1;MCHP.modsrc.DOS_00938=1;MCHP.modsrc.DOS_00996=1;MCHP.m"
+      "odsrc.DOS_00997=1;MCHP.modsrc.DOS_00998=1;MCHP.modsrc.DOS_00209=0;MCHP.modsrc.DOS_01555_adc=0;MCHP.modsrc.DOS_01"
+      "293=1;MCHP.modsrc.DOS_00828=0;MCHP.modsrc.DOS_01116=1;MCHP.modsrc.DOS_01017_RPORx=1;MCHP.modsrc.DOS_01017_RPINRx"
+      "=1;MCHP.modsrc.DOS_01555_nvm_tsmc18_v2_16bit=0;MCHP.modsrc.DOS_00804=1;MCHP.modsrc.DOS_00826=1;MCHP.modsrc.DOS_0"
+      "1555_TLAK_PMDx=0;MCHP.modsrc.DOS_01555_TLAK_INT_=0;MCHP.modsrc.DOS_00933=1;MCHP.modsrc.DOS_01555=0;MCHP.modsrc.D"
+      "OS_01555_ptg=0;MCHP.modsrc.DOS_00929=1;MCHP.modsrc.DOS_00958=1;MCHP.modsrc.DOS_01117_PORTx=1;MCHP.modsrc.DOS_009"
+      "99=0;MCHP.modsrc.DOS_01198=1;MCHP.modsrc.DOS_01041=1;MCHP.modsrc.DOS_00892=1;MCHP.modsrc.DOS_01287_TLAC_PMDx=1;M"
+      "CHP.modsrc.DOS_01287_TLAC_INT_=1;MCHP.modsrc.DOS_01424=1;MCHP.modsrc.DOS_01332=1;MCHP.modsrc.DOS_01441_i2c_upb_v"
+      "1_16bit_TLAH=0;MCHP.modsrc.DOS_01482=0;MCHP.modsrc.DOS_02508c11=0;MCHP.modsrc.DOS_01468_PMBA_current_source=0;MC"
+      "HP.modsrc.DOS_02291_PGA=0;MCHP.modsrc.DOS_01467_Comparator=0;MCHP.modsrc.DOS_01498_TLAY=0;MCHP.modsrc.DOS_02316_"
+      "nvm_ctrl_v1_16bit=0;MCHP.modsrc.DOS_00993_PLL_120MHz=0;MCHP.modsrc.DOS_01577_cla_clc_upb_v1=0;MCHP.modsrc.DOS_01"
+      "332_ptg_pc_v1=0;MCHP.modsrc.DOS_00958_pwm_TLAY=0;MCHP.modsrc.TLAY_IOPorts=0;MCHP.modsrc.DOS_00929q=0;MCHP.modsrc"
+      ".DOS_02415_spi_v5=0;MCHP.modsrc.DOS_RPINRx_16bit_2=0;MCHP.modsrc.DOS_01497_TLAH_PMDx=0;MCHP.modsrc.DOS_02550_TLA"
+      "L_INT=0;MCHP.modsrc.DOS_00958_pwm_TLAH=0;MCHP.modsrc.DOS_01287_TLAH_INT_=0;MCHP.modsrc.DOS_01113=0;MCHP.modsrc.D"
+      "OS_01017_PMDx=0;MCHP.modsrc.DOS_00927=0;MCHP.modsrc.DOS_01080=0;MCHP.modsrc.DOS_00794_cpu_16bit_v3=0;MCHP.modsrc"
+      ".DOS_02359a_sent_j2716_upb_v1=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1_16bit=0;MCHP.modsrc.DOS_02192_TLCD_PMDx=0;M"
+      "CHP.modsrc.DOS_02192_TLCD_INT_=0;MCHP.modsrc.DOS_02192_cmp=0;MCHP.modsrc.DOS_00958_pwm_TLCD=0;MCHP.modsrc.DOS_02"
+      "192_PORTx_TLCD=0;MCHP.modsrc.DOS_00936=0;MCHP.modsrc.DOS_00995=0;MCHP.modsrc.DOS_00546=0;MCHP.modsrc.DOS_00474=0"
+      ";MCHP.modsrc.DOS_02481_WACJ_Config=0;MCHP.modsrc.DOS_02569_pfm_cache_ocp_v1=0;MCHP.modsrc.DOS_02819_pfm_ctrl_32b"
+      "it_upb_v2=0;MCHP.modsrc.DOS_02674_wdt_upb_v1_32bit=0;MCHP.modsrc.DOS_01520_wdt_dmt_upb_v1=0;MCHP.modsrc.DOS_0286"
+      "9_icd_jtag_bvci_upb_v2=0;MCHP.modsrc.DOS_02823_WACJ_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPINRx=0;MCHP.modsrc."
+      "DOS_02481_RPORx=0;MCHP.modsrc.DOS_02511_pwr_sib_upb_v1_32bit=0;MCHP.modsrc.DOS_02481_WACJ_int_evic_v3=0;MCHP.mod"
+      "src.DOS_01500_dma_bvci_v2=0;MCHP.modsrc.DOS_02141_tmr_classa_pb_v2=0;MCHP.modsrc.DOS_02815_tmr_classb_upb_v1=0;M"
+      "CHP.modsrc.DOS_00740_icap_pb_v1=0;MCHP.modsrc.DOS_00749_ocmp_pb_v1=0;MCHP.modsrc.DOS_01441_i2c_upb_v1_32bit=0;MC"
+      "HP.modsrc.DOS_01329_spi_pb_v2=0;MCHP.modsrc.DOS_02478_uart_irda_upb_v1_32bit=0;MCHP.modsrc.DOS_02514_dfm_strl_ss"
+      "t_upb_v1=0;MCHP.modsrc.DOS_01427_cmp_control_upb_v1_32bit=0;MCHP.modsrc.DOS_01445_dac_nbit__control_upb_v1_32bit"
+      "=0;MCHP.modsrc.DOS_01461_afe_ctmu_con_upb_v1=0;MCHP.modsrc.DOS_02472_ppi_pmp16_upb_v1=0;MCHP.modsrc.DOS_02467_gp"
+      "io_ports_upb_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK=0;MCHP.modsrc.DOS_02813a_usb_otgcore_pb_v3=0"
+      ";MCHP.modsrc.DOS_01261_tmr_rtcc_pb_v2=0;MCHP.modsrc.DOS_01475_lpwr_deep_sleep_ctrl_v2=0;MCHP.modsrc.DOS_EIP_0013"
+      "6_ssx_v1=0;MCHP.modsrc.DOS_01152_can_bvci_v1=0;MCHP.modsrc.DOS_02481_WACN_Config=0;MCHP.modsrc.DOS_02823_WACN_cl"
+      "k_cru_upb_v2=0;MCHP.modsrc.DOS_02481_WACN_int_evic_v3=0;MCHP.modsrc.DOS_03554_cmp_control_upb_v2_32bit=0;MCHP.mo"
+      "dsrc.DOS_01577_cla_clc_upb_v1_32bit=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2=0;MCHP.modsrc.DOS_02481_WACK_MC_Config"
+      "=0;MCHP.modsrc.DOS_03247_can_fd_upb_v2_pic32mk=0;MCHP.modsrc.DOS_02481_WACJ_MC_Config=0;MCHP.modsrc.DOS_02481_WA"
+      "CJ_MC_int_evic_v3=0;MCHP.modsrc.DOS_01477_pwm_mc_upb_v1=0;MCHP.modsrc.DOS_01459_ptg_pc_upb_v1_SIC=0;MCHP.modsrc."
+      "DOS_01494_qei_32b_upb_v1=0;MCHP.modsrc.DOS_02481_WACN_MC_Config=0;MCHP.modsrc.DOS_02481_WACN_MC_int_evic_v3=0;MC"
+      "HP.modsrc.DOS_02787_WACD_Config=0;MCHP.modsrc.DOS_00800_dac_4bit_ctrl_pb_v1=0;MCHP.modsrc.DOS_01539_icd_jtag_pb_"
+      "v2=0;MCHP.modsrc.DOS_02823_clk_cru_upb_v2=0;MCHP.modsrc.DOS_01423_RPORx=0;MCHP.modsrc.DOS_02907_WACD_int_evic_v3"
+      "=0;MCHP.modsrc.DOS_00734_uart_irda_pb_v1=0;MCHP.modsrc.DOS_00687_tmr_classa_pb_v1=0;MCHP.modsrc.DOS_00745_tmr_cl"
+      "assb_pb_v1=0;MCHP.modsrc.DOS_02508_adc_sar_ctrl_upb_v1=0;MCHP.modsrc.DOS_00866_cmp_control_pb_v2=0;MCHP.modsrc.D"
+      "OS_01114_eth_bvci_v1=0;MCHP.modsrc.DOS_02831_usb_clk_rst_v2=0;MCHP.modsrc.DOS_01643_pfm_cache_ahb_v2=0;MCHP.mods"
+      "rc.DOS_EIP_00206r5_sqi_v2=0;MCHP.modsrc.DOS_EIP_00124_usb_hs_otgcore_v1=0;MCHP.modsrc.DOS_EIP_00218_math_rng_ahb"
+      "s_v2=0;MCHP.modsrc.DOS_EIP_00109_ebi_v1=0;MCHP.modsrc.DOS_EIP_00158_crypto_v1=0;MCHP.clock.PBxDIV=-1;"
+      MCHP_CRC		      "5751430"
       BTMODE		      "Not used"
       RES1		      "Not used"
       PLLSS		      "Not used"
@@ -3230,12 +3855,24 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion>\nLost modified on: %<LastModificationDate>\n%<Creator>\n\n"
       "%<Description>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.44\\nLost modified on: Fri Nov 23"
-      " 19:17:14 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.56\\nLost modified on: Tue Dec 11"
+      " 00:58:19 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
       "C506 with internal Op-Amp (populated with resistances)\\n\\nPotentiometer set PWM duty cycle and rotates motor i"
       "n one side or the other.\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
+    }
+    Block {
+      BlockType		      Logic
+      Name		      "NOT"
+      SID		      "424"
+      Ports		      [1, 1]
+      Position		      [595, 219, 625, 251]
+      ZOrder		      3585
+      Operator		      "NOT"
+      IconShape		      "distinctive"
+      AllPortsSameDT	      off
+      OutDataTypeStr	      "boolean"
     }
     Block {
       BlockType		      Reference
@@ -3244,11 +3881,12 @@ Model {
       Ports		      []
       Position		      [832, -4, 981, 256]
       ZOrder		      3508
+      ForegroundColor	      "red"
       DropShadow	      on
-      LibraryVersion	      "3.4x"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/System Info/Port Info"
       SourceType	      ""
-      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
       MultiThreadCoSim	      "auto"
       MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
@@ -3287,15 +3925,58 @@ Model {
       ZOrder		      3559
       Deterministic	      off
       OutPortSampleTime	      ".01"
+      Port {
+	PortNumber		1
+	Name			"Current"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Reset"
+      SID		      "423"
+      Ports		      [1]
+      Position		      [645, 217, 730, 253]
+      ZOrder		      3584
+      LibraryVersion	      "3.43"
+      SourceBlock	      "MCHP_Blockset/System Functions/Reset"
+      SourceType	      "UART Reset"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
+      SampleTime	      "-1"
+      MCHP_MASTERLINK	      "UTestBoard_33FJ256GP710A_2/Microchip Master"
     }
     Block {
       BlockType		      Reference
       Name		      "S2"
       SID		      "333"
       Ports		      [0, 1]
-      Position		      [495, 211, 560, 249]
+      Position		      [510, 216, 575, 254]
       ZOrder		      3563
-      LibraryVersion	      "3.4x"
+      ForegroundColor	      "red"
+      LibraryVersion	      "3.43"
+      SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
+      SourceType	      "Input driver for Digital Input Pins"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
+      MultiThreadCoSim	      "auto"
+      PORT		      "Dynamic Options"
+      PORT_TXT		      "G   [ 6 : 9 ]"
+      PIN		      "6"
+      PACK		      off
+      SIMULTANEOUS	      off
+      ORDERING		      "None"
+      SampleTime	      ".1"
+      MCHP_PORT		      "{Digital In}{DIN}2:0:G6;"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "S3"
+      SID		      "336"
+      Ports		      [0, 1]
+      Position		      [510, 281, 580, 319]
+      ZOrder		      3566
+      ForegroundColor	      "red"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
       SourceType	      "Input driver for Digital Input Pins"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3311,46 +3992,134 @@ Model {
       MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
     }
     Block {
-      BlockType		      Reference
-      Name		      "S3"
-      SID		      "336"
-      Ports		      [0, 1]
-      Position		      [400, 211, 470, 249]
-      ZOrder		      3566
-      LibraryVersion	      "3.4x"
-      SourceBlock	      "MCHP_Blockset/Digital IO/Digital Input"
-      SourceType	      "Input driver for Digital Input Pins"
-      SourceProductName	      "MPLAB Device Blocks for Simulink"
-      MultiThreadCoSim	      "auto"
-      PORT		      "Dynamic Options"
-      PORT_TXT		      "G   [ 6 : 9 ]"
-      PIN		      "6"
-      PACK		      off
-      SIMULTANEOUS	      off
-      ORDERING		      "None"
-      SampleTime	      "-1"
-      MCHP_PORT		      "{Digital In}{DIN}2:0:G6;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
+      BlockType		      Terminator
+      Name		      "Terminator1"
+      SID		      "384"
+      Position		      [625, 290, 645, 310]
+      ZOrder		      3581
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Timing Analysis"
+      SID		      "382"
+      Ports		      []
+      Position		      [399, 215, 469, 295]
+      ZOrder		      3579
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"Timing Analysis"
+	Location		[67, -4, 1742, 981]
+	Open			off
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	Block {
+	  BlockType		  Reference
+	  Name			  "MCU Load"
+	  SID			  "381"
+	  Ports			  []
+	  Position		  [8, 67, 98, 103]
+	  ZOrder		  3578
+	  ForegroundColor	  "magenta"
+	  LibraryVersion	  "3.43"
+	  SourceBlock		  "MCHP_Blockset/Profiling/MCU Load"
+	  SourceType		  "MCU Load (Profile execution time)"
+	  SourceProductName	  "MPLAB Device Blocks for Simulink"
+	  MultiThreadCoSim	  "auto"
+	  MCULoadPin		  "Dynamic Options"
+	  MCULoadPin_TXT	  "C10 / Pin[45]"
+	  MCULoadMeasure	  off
+	  TIMER_Resolution	  "Dynamic Options"
+	  TIMER_Resolution_TXT	  "Resol: 0.1143(us)  -  Max: 7.49(ms)"
+	  MCHP_PORT		  "{MCU Load Pin}{MCU_Load}0:1:C10;"
+	  MCHP_TIMER_REQUEST	  "{MCU_Load}{MCU_Load}21:5:0:0:[]:65536;"
+	  MCHP_TIMER_RESULT	  "[1 65535 ]"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
+	  MCHP_COMPILED_INFO	  "CompiledSampleTime= [Inf Inf ];CompiledInportDataTypes=[ ];CompiledInportDataWidth=[];"
+	  Info			  "Timer 1:  Resol: 50(ns)  -  Max: 3.2768(ms)"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "MCU Overload"
+	  SID			  "379"
+	  Ports			  []
+	  Position		  [10, 127, 100, 163]
+	  ZOrder		  3576
+	  ForegroundColor	  "magenta"
+	  LibraryVersion	  "3.43"
+	  SourceBlock		  "MCHP_Blockset/Profiling/MCU Overload"
+	  SourceType		  "MCU Over-Load (Profile execution time)"
+	  SourceProductName	  "MPLAB Device Blocks for Simulink"
+	  MultiThreadCoSim	  "auto"
+	  MCUOverloadBlockOutput  off
+	  MCUOverLoadPin	  "Dynamic Options"
+	  MCUOverLoadPin_TXT	  "D5 / Pin[53]"
+	  MCHP_PORT		  "{OverLoad Pin}{OverLoad}0:1:D5;"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
+	  SampleTime		  ".1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Tasks State"
+	  SID			  "380"
+	  Ports			  []
+	  Position		  [10, 12, 100, 48]
+	  ZOrder		  3577
+	  ForegroundColor	  "red"
+	  LibraryVersion	  "3.43"
+	  SourceBlock		  "MCHP_Blockset/Profiling/Tasks State"
+	  SourceType		  "MCU Over-Load (Profile execution time)"
+	  SourceProductName	  "MPLAB Device Blocks for Simulink"
+	  MultiThreadCoSim	  "auto"
+	  TasksPin		  "[B5 B6 F0]"
+	  MCHP_PORT		  "{Task D1 Running}{Task D1}15:1:B5;{Task D2 Running}{Task D2}15:1:B6;{Task D3 Running}{Task D3}15:1:F0;"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
+	}
+	Annotation {
+	  SID			  "385"
+	  Name			  "Task 1 -> RB5 (PGD2)\nTask 2 -> RB6 (PGC2)\nTask 3 -> RF0 (HALL C)\nLoad: -> RC10  (HOME)\nOverload -> LED 1"
+	  Position		  [6, -85, 131, -15]
+	  InternalMargins	  [0, 0, 0, 0]
+	  FixedHeight		  on
+	  FixedWidth		  on
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	  ZOrder		  -2
+	}
+      }
     }
     Block {
       BlockType		      Reference
       Name		      "UART Configuration1"
       SID		      "207"
       Ports		      []
-      Position		      [645, 142, 745, 198]
+      Position		      [640, 142, 740, 198]
       ZOrder		      3512
-      LibraryVersion	      "3.4x"
+      ForegroundColor	      "red"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Configuration"
       SourceType	      "Configuration for UART peripheral"
-      SourceProductName	      "MPLAB® Device Blocks for Simulink®"
+      SourceProductName	      "MPLAB Device Blocks for Simulink"
       MultiThreadCoSim	      "auto"
       UART_REF		      "1"
       BAUD_Choice	      "Dynamic Options"
-      BAUD_Choice_TXT	      "  115200         [-0.06%]"
+      BAUD_Choice_TXT	      "  115200         [+0.94%]"
       BAUD_Choice_IR	      "Dynamic Options"
       BAUD_Choice_IR_TXT      "[]"
       BAUD_Custom	      "115200"
-      INT_PRIORITY	      "0"
       ALT_IO		      on
       PIN_RX		      "Dynamic Options"
       PIN_RX_TXT	      "C5 / P53 / Pin[37]"
@@ -3375,12 +4144,9 @@ Model {
       RX_INT_PRIORITY	      "1"
       RX_INT_WHEN	      "receive 1 character"
       RX_CIRCULAR_SIZE	      "2048"
-      RX_DMA_CHANNEL	      "0"
-      RX_DMA_SIZE	      "0"
       DuplexMode	      "Full duplex (default)"
       PIN_RX_Inv	      off
       PIN_TX_Inv	      off
-      PIN_RXTX_Inv	      off
       ParityBit		      "No parity (default)"
       StopBit		      "1 stop bit (default)"
       IRDA		      off
@@ -3391,7 +4157,7 @@ Model {
       PIN_RTS_TXT	      "A4 / P20 / Pin[33]"
       InitSequence_chkbox     off
       BAUD_Choice_InitSeq     "Dynamic Options"
-      BAUD_Choice_InitSeq_TXT "  115200         [-0.06%]"
+      BAUD_Choice_InitSeq_TXT "  115200         [+0.94%]"
       BAUD_Choice_IR_InitSeq  "Dynamic Options"
       BAUD_Choice_IR_InitSeq_TXT "0"
       BAUD_Custom_InitSeq     "0"
@@ -3404,7 +4170,8 @@ Model {
       Ports		      [4]
       Position		      [1100, 414, 1225, 681]
       ZOrder		      3514
-      LibraryVersion	      "3.4x"
+      ForegroundColor	      "blue"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
       SourceType	      "Higl Level UART protocol"
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3424,8 +4191,9 @@ Model {
       Ports		      []
       Position		      [1016, 332, 1146, 376]
       ZOrder		      3567
+      ForegroundColor	      "red"
       DropShadow	      on
-      LibraryVersion	      "3.4x"
+      LibraryVersion	      "3.43"
       SourceBlock	      "MCHP_Blockset/BUS UART/picgui\nGraphical interface"
       SourceType	      ""
       SourceProductName	      "MPLAB Device Blocks for Simulink"
@@ -3435,18 +4203,20 @@ Model {
     Line {
       Name		      "Position"
       ZOrder		      132
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      2
+      Points		      [53, 0; 0, -5]
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
     Line {
       Name		      "Speed"
       ZOrder		      134
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      3
+      Points		      [53, 0; 0, -5]
       DstBlock		      "Rate Transition2"
       DstPort		      1
     }
@@ -3485,18 +4255,20 @@ Model {
     Line {
       Name		      "PWM\nDuty-cycle"
       ZOrder		      131
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "Gain"
       SrcPort		      1
+      Points		      [30, 0; 0, 5]
       DstBlock		      "MCLV2\nwith DC motor"
       DstPort		      1
     }
     Line {
       Name		      "Current"
       ZOrder		      135
-      Labels		      [1, 1]
+      Labels		      [2, 1]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      4
+      Points		      [53, 0; 0, -5]
       DstBlock		      "Rate Transition5"
       DstPort		      1
     }
@@ -3511,12 +4283,12 @@ Model {
     }
     Line {
       Name		      "Current"
-      ZOrder		      159
-      Labels		      [0, 0]
-      SrcBlock		      "Gain\nFollow Pot sign"
+      ZOrder		      174
+      Labels		      [1, 1]
+      SrcBlock		      "Rate Transition5"
       SrcPort		      1
-      DstBlock		      "UART Tx-Matlab"
-      DstPort		      4
+      DstBlock		      "Cast3"
+      DstPort		      1
     }
     Line {
       ZOrder		      113
@@ -3537,12 +4309,12 @@ Model {
     Line {
       Name		      "Potentiometer"
       ZOrder		      133
+      Labels		      [-1, 0]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      1
-      Points		      [40, 0]
+      Points		      [87, 0; 0, -5]
       Branch {
 	ZOrder			142
-	Labels			[1, 1]
 	DstBlock		"Rate Transition3"
 	DstPort			1
       }
@@ -3568,10 +4340,33 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      158
-      SrcBlock		      "Rate Transition5"
+      ZOrder		      169
+      SrcBlock		      "S3"
       SrcPort		      1
-      DstBlock		      "Gain\nFollow Pot sign"
+      DstBlock		      "Terminator1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      173
+      SrcBlock		      "NOT"
+      SrcPort		      1
+      DstBlock		      "Reset"
+      DstPort		      1
+    }
+    Line {
+      Name		      "I"
+      ZOrder		      175
+      Labels		      [0, 0]
+      SrcBlock		      "Cast3"
+      SrcPort		      1
+      DstBlock		      "UART Tx-Matlab"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      176
+      SrcBlock		      "S2"
+      SrcPort		      1
+      DstBlock		      "NOT"
       DstPort		      1
     }
     Annotation {
@@ -3581,7 +4376,7 @@ Model {
       "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
       "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-b"
       "lock-indent:0; text-indent:0px;\"><br /></p></body></html>"
-      Position		      [585, 308, 587, 322]
+      Position		      [530, 368, 532, 382]
       InternalMargins	      [0, 0, 0, 0]
       HorizontalAlignment     "left"
       VerticalAlignment	      "top"
@@ -3669,9 +4464,243 @@ Model {
   }
 }
 MatData {
-  NumRecords		  4
+  NumRecords		  5
   DataRecord {
     Tag			    DataTag0
+    Data		    "  %)30     .    X$L   8    (     @         %    \"     $    !     0         %  0 $0    $    B    9FEL=&"
+    "5R              !M87!C;V5F9G-T;W!O<G1S          X   ! 2P  !@    @    \"          4    (     0    H    !          4"
+    " !  )     0   \"0   !I;F1E>     !B;&]C:P    !P;W-I=&EO;@!Q<&%R86T         #@   #@    &    \"     8         !0    @"
+    "    !     0    $         \"0    @           #P/PX    P!   !@    @    \"          4    (     0    $    !          4"
+    " !  ,     0   &P   !N;V1E26YD97@   !B;&]C:W1Y<&4   !I;G!O<G0       !O=71P;W)T      !L86)E;         !M86EN4&%R86T  "
+    " !P87)A;4QI<W0   !O<FEE;G1A=&EO;@!#;V5F9DYA;65S        #@   #@    &    \"     8         !0    @    !     0    $   "
+    "      \"0    @           #P/PX    X    !@    @    $          4    (     0    4    !         !     %    :6YP=70    "
+    ".    ,     8    (    !@         %    \"          !     0         )          X   \"H 0  !@    @    \"          4   "
+    " (     0    $    !          4 !  *     0   !X   !N;V1E26YD97@ <V5L9DEN9&5X '1O              X    X    !@    @    &"
+    "          4    (     0    $    !          D    (            \\#\\.    .     8    (    !@         %    \"     $    "
+    "!     0         )    \"            / _#@   ,@    &    \"     (         !0    @    !     0    $         !0 $  4    "
+    "!    \"@   &YO9&4 <&]R=          .    .     8    (    !@         %    \"     $    !     0         )    \"         "
+    "   \"1 #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    X    !@    @  "
+    "  $          4    (     0    4    !         !     %    26YP=70    .    ,     8    (    !          %    \"         "
+    "       0         0          X    H    !@    @    !          4    (          $    !          X    X    !@    @    $"
+    "          4    (     0    4    !         !     %    <FEG:'0    .    ,     8    (    !@         %    \"            "
+    "    0         )          X   !0    !@    @    &          4    (     0    0    !          D    @          # 8D     "
+    "   !I0       P&)         :4 .    D     8    (     @         %    \"     $    !     0         %  0 \"@    $    *   "
+    " 4F]U;F1-;V1E          X   !     !@    @    $          4    (     0    H    !         !     *    0V]N=F5R9V5N=    "
+    "     X    X    !@    @    &          4    (     0    $    !          D    (             $ .    L 4   8    (     @ "
+    "        %    \"     $    !     0         %  0 #     $   !L    ;F]D94EN9&5X    8FQO8VMT>7!E    :6YP;W)T        ;W5T"
+    "<&]R=       ;&%B96P         ;6%I;E!A<F%M    <&%R86U,:7-T    ;W)I96YT871I;VX 0V]E9F9.86UE<P        X    X    !@    "
+    "@    &          4    (     0    $    !          D    (             $ .    ,     8    (    !          %    \"     $"
+    "    $     0         0  0 9V%I;@X   \"H 0  !@    @    \"          4    (     0    $    !          4 !  *     0   !X"
+    "   !N;V1E26YD97@ <V5L9DEN9&5X &9R;VT           X    X    !@    @    &          4    (     0    $    !          D  "
+    "  (             $ .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   ,@  "
+    "  &    \"     (         !0    @    !     0    $         !0 $  4    !    \"@   &YO9&4 <&]R=          .    .     8  "
+    "  (    !@         %    \"     $    !     0         )    \"            \"1 #@   #@    &    \"     8         !0    @"
+    "    !     0    $         \"0    @           #P/PX   \"H 0  !@    @    \"          4    (     0    $    !          "
+    "4 !  *     0   !X   !N;V1E26YD97@ <V5L9DEN9&5X '1O              X    X    !@    @    &          4    (     0    $ "
+    "   !          D    (             $ .    .     8    (    !@         %    \"     $    !     0         )    \"       "
+    "     / _#@   ,@    &    \"     (         !0    @    !     0    $         !0 $  4    !    \"@   &YO9&4 <&]R=       "
+    "   .    .     8    (    !@         %    \"     $    !     0         )    \"             A #@   #@    &    \"     8"
+    "         !0    @    !     0    $         \"0    @           #P/PX    P    !@    @    $          4    (     0    0 "
+    "   !         !  ! !S*#$I#@   $@    &    \"     0         !0    @    !    %0    $         $    !4    P+C Q.#4P,CDW-"
+    "#4R-#@Y,C,P.#8    .    *     8    (     0         %    \"          !     0         .    .     8    (    !         "
+    " %    \"     $    %     0         0    !0   ')I9VAT    #@   #     &    \"     8         !0    @               $   "
+    "      \"0         .    4     8    (    !@         %    \"     $    $     0         )    (           P')         :4"
+    "       ,!R0        &E #@   ,@!   &    \"     (         !0    @    !     0    $         !0 $  T    !    00   '%C;V5"
+    "F9@        !Q<')O9'5C=       4VEG;F5D         %)O=6YD36]D90    !/=F5R9FQO=TUO9&4           X   !     !@    @    & "
+    "         4    (     0    (    !          D    0            ,$         T0 X   !     !@    @    &          4    (   "
+    "  0    (    !          D    0            ,$         N0 X    P    !@    @    ) @        4    (     0    $    !     "
+    "     (  0 !    #@   $     &    \"     0         !0    @    !    \"@    $         $     H   !C;VYV97)G96YT        #"
+    "@   #     &    \"     0         !0    @    !    !     $         $  $ '=R87 .    .     8    (    !@         %    \""
+    "     $    !     0         )    \"             A #@   / &   &    \"     (         !0    @    !     0    $         !"
+    "0 $  P    !    ;    &YO9&5);F1E>    &)L;V-K='EP90   &EN<&]R=        &]U='!O<G0      &QA8F5L         &UA:6Y087)A;0 "
+    "  '!A<F%M3&ES=    &]R:65N=&%T:6]N $-O969F3F%M97,        .    .     8    (    !@         %    \"     $    !     0  "
+    "       )    \"             A #@   #     &    \"     0         !0    @    !     P    $         $  # '-U;0 .    ^ ( "
+    "  8    (     @         %    \"     $    \"     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;&9);F1E> !F<F]M   "
+    "        .    .     8    (    !@         %    \"     $    !     0         )    \"             A #@   #@    &    \" "
+    "    8         !0    @    !     0    $         \"0    @           #P/PX   #(    !@    @    \"          4    (     0"
+    "    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0 "
+    "   $         \"0    @             0 X    X    !@    @    &          4    (     0    $    !          D    (        "
+    "    \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"             A #@   #@    &    \""
+    "     8         !0    @    !     0    $         \"0    @             0 X   #(    !@    @    \"          4    (     "
+    "0    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0"
+    "    $         \"0    @            <0 X    X    !@    @    &          4    (     0    $    !          D    (       "
+    "     \\#\\.    J $   8    (     @         %    \"     $    !     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;"
+    "&9);F1E> !T;P             .    .     8    (    !@         %    \"     $    !     0         )    \"             A #"
+    "@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX   #(    !@    @    \"    "
+    "      4    (     0    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !"
+    "0    @    !     0    $         \"0    @            00 X    X    !@    @    &          4    (     0    $    !      "
+    "    D    (            \\#\\.    .     8    (    !          %    \"     $    &     0         0    !@   %-U;4$R,0  #"
+    "@   #     &    \"     0         !0    @    !     P    $         $  # 'PK+0 .    *     8    (     0         %    \""
+    "          !     0         .    .     8    (    !          %    \"     $    %     0         0    !0   ')I9VAT    #@"
+    "   #     &    \"     8         !0    @               $         \"0         .    4     8    (    !@         %    \""
+    "     $    $     0         )    (           ('Q         :4       \"!\\0        &E #@   ( !   &    \"     (         "
+    "!0    @    !     0    $         !0 $  T    !    -    $%C8U$           !S=6U1            4F]U;F1-;V1E     $]V97)F;&"
+    "]W36]D90      #@   $     &    \"     8         !0    @    !     @    $         \"0   !            !!0        #Y #@"
+    "   $     &    \"     8         !0    @    !     @    $         \"0   !             P0        \"9 #@   $     &    \""
+    "     0         !0    @    !    \"@    $         $     H   !C;VYV97)G96YT        #@   #     &    \"     0         !"
+    "0    @    !    !     $         $  $ '=R87 .    .     8    (    !@         %    \"     $    !     0         )    \""
+    "            !! #@   \"@&   &    \"     (         !0    @    !     0    $         !0 $  P    !    ;    &YO9&5);F1E>"
+    "    &)L;V-K='EP90   &EN<&]R=        &]U='!O<G0      &QA8F5L         &UA:6Y087)A;0   '!A<F%M3&ES=    &]R:65N=&%T:6]"
+    "N $-O969F3F%M97,        .    .     8    (    !@         %    \"     $    !     0         )    \"            !! #@ "
+    "  #     &    \"     0         !0    @    !    !     $         $  $ &-A<W0.    J $   8    (     @         %    \"  "
+    "   $    !     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;&9);F1E> !F<F]M           .    .     8    (    !@  "
+    "       %    \"     $    !     0         )    \"            !! #@   #@    &    \"     8         !0    @    !     0 "
+    "   $         \"0    @           #P/PX   #(    !@    @    \"          4    (     0    $    !          4 !  %     0 "
+    "   H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            "
+    "(0 X    X    !@    @    &          4    (     0    $    !          D    (            \\#\\.    * (   8    (     @ "
+    "        %    \"     $    !     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;&9);F1E> !T;P             .    .  "
+    "   8    (    !@         %    \"     $    !     0         )    \"            !! #@   #@    &    \"     8         !0"
+    "    @    !     0    $         \"0    @           #P/PX   !( 0  !@    @    \"          4    (     @    $    !      "
+    "    4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0    $         \"0"
+    "    @            40 X    X    !@    @    &          4    (     0    $    !          D    (            \\#\\.    . "
+    "    8    (    !@         %    \"     $    !     0         )    \"            \"! #@   #@    &    \"     8         "
+    "!0    @    !     0    $         \"0    @           #P/PX   !     !@    @    $          4    (     0    H    !     "
+    "    !     *    0V%S=%-T871E,0        X    P    !@    @    $          4    (     0    $    !         !   0 P    #@ "
+    "  \"@    &    \"     $         !0    @          0    $         #@   #@    &    \"     0         !0    @    !    !0"
+    "    $         $     4   !R:6=H=     X    P    !@    @    &          4    (               !          D         #@  "
+    " %     &    \"     8         !0    @    !    !     $         \"0   \"           '\"'0        &E       !PAT        "
+    "!I0 X    H 0  !@    @    \"          4    (     0    $    !          4 !  -     0   \"<   !O=711            4F]U;F"
+    "1-;V1E     $]V97)F;&]W36]D90  #@   $     &    \"     8         !0    @    !     @    $         \"0   !            "
+    " P0        \"Y #@   $     &    \"     0         !0    @    !    \"@    $         $     H   !C;VYV97)G96YT        #"
+    "@   #     &    \"     0         !0    @    !    !     $         $  $ '=R87 .    .     8    (    !@         %    \""
+    "     $    !     0         )    \"            !1 #@   / &   &    \"     (         !0    @    !     0    $         !"
+    "0 $  P    !    ;    &YO9&5);F1E>    &)L;V-K='EP90   &EN<&]R=        &]U='!O<G0      &QA8F5L         &UA:6Y087)A;0 "
+    "  '!A<F%M3&ES=    &]R:65N=&%T:6]N $-O969F3F%M97,        .    .     8    (    !@         %    \"     $    !     0  "
+    "       )    \"            !1 #@   #     &    \"     0         !0    @    !     P    $         $  # '-U;0 .    ^ ( "
+    "  8    (     @         %    \"     $    \"     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;&9);F1E> !F<F]M   "
+    "        .    .     8    (    !@         %    \"     $    !     0         )    \"            !1 #@   #@    &    \" "
+    "    8         !0    @    !     0    $         \"0    @           #P/PX   #(    !@    @    \"          4    (     0"
+    "    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0 "
+    "   $         \"0    @            00 X    X    !@    @    &          4    (     0    $    !          D    (        "
+    "    \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"            !1 #@   #@    &    \""
+    "     8         !0    @    !     0    $         \"0    @             0 X   #(    !@    @    \"          4    (     "
+    "0    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !0    @    !     0"
+    "    $         \"0    @            @0 X    X    !@    @    &          4    (     0    $    !          D    (       "
+    "     \\#\\.    J $   8    (     @         %    \"     $    !     0         %  0 \"@    $    >    ;F]D94EN9&5X '-E;"
+    "&9);F1E> !T;P             .    .     8    (    !@         %    \"     $    !     0         )    \"            !1 #"
+    "@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX   #(    !@    @    \"    "
+    "      4    (     0    $    !          4 !  %     0    H   !N;V1E '!O<G0         #@   #@    &    \"     8         !"
+    "0    @    !     0    $         \"0    @            B0 X    X    !@    @    &          4    (     0    $    !      "
+    "    D    (            \\#\\.    .     8    (    !          %    \"     $    &     0         0    !@   %-U;4(R,0  #"
+    "@   #     &    \"     0         !0    @    !     P    $         $  # 'PK*P .    *     8    (     0         %    \""
+    "          !     0         .    .     8    (    !          %    \"     $    %     0         0    !0   ')I9VAT    #@"
+    "   #     &    \"     8         !0    @               $         \"0         .    4     8    (    !@         %    \""
+    "     $    $     0         )    (           :)!         :4       &B00        &E #@   ( !   &    \"     (         !0"
+    "    @    !     0    $         !0 $  T    !    -    $%C8U$           !S=6U1            4F]U;F1-;V1E     $]V97)F;&]W"
+    "36]D90      #@   $     &    \"     8         !0    @    !     @    $         \"0   !            !!0        #Y #@  "
+    " $     &    \"     8         !0    @    !     @    $         \"0   !             P0        \"9 #@   $     &    \" "
+    "    0         !0    @    !    \"@    $         $     H   !C;VYV97)G96YT        #@   #     &    \"     0         !0"
+    "    @    !    !     $         $  $ '=R87 .    .     8    (    !@         %    \"     $    !     0         )    \" "
+    "           !A #@   # $   &    \"     (         !0    @    !     0    $         !0 $  P    !    ;    &YO9&5);F1E>  "
+    "  &)L;V-K='EP90   &EN<&]R=        &]U='!O<G0      &QA8F5L         &UA:6Y087)A;0   '!A<F%M3&ES=    &]R:65N=&%T:6]N "
+    "$-O969F3F%M97,        .    .     8    (    !@         %    \"     $    !     0         )    \"            !A #@   "
+    "#@    &    \"     0         !0    @    !    !@    $         $     8   !O=71P=70   X   \"H 0  !@    @    \"        "
+    "  4    (     0    $    !          4 !  *     0   !X   !N;V1E26YD97@ <V5L9DEN9&5X &9R;VT           X    X    !@    "
+    "@    &          4    (     0    $    !          D    (            &$ .    .     8    (    !@         %    \"     $"
+    "    !     0         )    \"            / _#@   ,@    &    \"     (         !0    @    !     0    $         !0 $  4"
+    "    !    \"@   &YO9&4 <&]R=          .    .     8    (    !@         %    \"     $    !     0         )    \"     "
+    "       \") #@   #@    &    \"     8         !0    @    !     0    $         \"0    @           #P/PX    P    !@   "
+    " @    &          4    (          $    !          D         #@   #@    &    \"     0         !0    @    !    !@    "
+    "$         $     8   !/=71P=70   X    P    !@    @    $          4    (               !         !          #@   \"@"
+    "    &    \"     $         !0    @          0    $         #@   #@    &    \"     0         !0    @    !    !0    $"
+    "         $     4   !R:6=H=     X    P    !@    @    &          4    (               !          D         #@   %   "
+    "  &    \"     8         !0    @    !    !     $         \"0   \"           '\"70        &E       !PET        !I0 X"
+    "    P    !@    @    &          4    (               !          D         #@   #@    &    \"     8         !0    @ "
+    "   !     0    $         \"0    @            <0 X   \"P!0  !@    @    \"          4    (     0    $    !          4"
+    " !  ,     0   &P   !N;V1E26YD97@   !B;&]C:W1Y<&4   !I;G!O<G0       !O=71P;W)T      !L86)E;         !M86EN4&%R86T  "
+    " !P87)A;4QI<W0   !O<FEE;G1A=&EO;@!#;V5F9DYA;65S        #@   #@    &    \"     8         !0    @    !     0    $   "
+    "      \"0    @            <0 X    P    !@    @    $          4    (     0    0    !         !  ! !G86EN#@   *@!   "
+    "&    \"     (         !0    @    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97@ 9G)O;0      "
+    "    #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            <0 X    X    !@    @    &"
+    "          4    (     0    $    !          D    (            \\#\\.    R     8    (     @         %    \"     $    "
+    "!     0         %  0 !0    $    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (     0    $    ! "
+    "         D    (            ($ .    .     8    (    !@         %    \"     $    !     0         )    \"            "
+    "/ _#@   *@!   &    \"     (         !0    @    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97"
+    "@ =&\\             #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            <0 X    X "
+    "   !@    @    &          4    (     0    $    !          D    (            \\#\\.    R     8    (     @         % "
+    "   \"     $    !     0         %  0 !0    $    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (  "
+    "   0    $    !          D    (            \"$ .    .     8    (    !@         %    \"     $    !     0         )  "
+    "  \"             ! #@   #@    &    \"     0         !0    @    !    !P    $         $     <   !A*#(I*#$I  X   !(  "
+    "  !@    @    $          4    (     0   !4    !         !     5    +3 N.38R.3DT,#4P.34P,C$U,C@V    #@   \"@    &   "
+    " \"     $         !0    @          0    $         #@   #     &    \"     0         !0    @    !    !     $        "
+    " $  $ &QE9G0.    ,     8    (    !@         %    \"                0         )          X   !0    !@    @    &    "
+    "      4    (     0    0    !          D    @          \" AD       (!Q0       @(9       \" <4 .    R $   8    (    "
+    " @         %    \"     $    !     0         %  0 #0    $   !!    <6-O969F         '%P<F]D=6-T      !3:6=N960      "
+    "   4F]U;F1-;V1E     $]V97)F;&]W36]D90          #@   $     &    \"     8         !0    @    !     @    $         \""
+    "0   !             P0        \"Q #@   $     &    \"     8         !0    @    !     @    $         \"0   !          "
+    "  ! 0        #U #@   #     &    \"     D\"        !0    @    !     0    $          @ !  $    .    0     8    (    "
+    "!          %    \"     $    *     0         0    \"@   &-O;G9E<F=E;G0        .    ,     8    (    !          %    "
+    "\"     $    $     0         0  0 =W)A< X    X    !@    @    &          4    (     0    $    !          D    (     "
+    "       ($ .    ( 8   8    (     @         %    \"     $    !     0         %  0 #     $   !L    ;F]D94EN9&5X    8F"
+    "QO8VMT>7!E    :6YP;W)T        ;W5T<&]R=       ;&%B96P         ;6%I;E!A<F%M    <&%R86U,:7-T    ;W)I96YT871I;VX 0V]E"
+    "9F9.86UE<P        X    X    !@    @    &          4    (     0    $    !          D    (            ($ .    .     "
+    "8    (    !          %    \"     $    %     0         0    !0   &1E;&%Y    #@   *@!   &    \"     (         !0    "
+    "@    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97@ 9G)O;0          #@   #@    &    \"     8"
+    "         !0    @    !     0    $         \"0    @            @0 X    X    !@    @    &          4    (     0    $ "
+    "   !          D    (            \\#\\.    R     8    (     @         %    \"     $    !     0         %  0 !0    $"
+    "    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (     0    $    !          D    (            $"
+    "$ .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   \"@\"   &    \"     "
+    "(         !0    @    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97@ =&\\             #@   #@"
+    "    &    \"     8         !0    @    !     0    $         \"0    @            @0 X    X    !@    @    &          4"
+    "    (     0    $    !          D    (            \\#\\.    2 $   8    (     @         %    \"     (    !     0    "
+    "     %  0 !0    $    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (     0    $    !          D "
+    "   (            '$ .    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@   #@ "
+    "   &    \"     8         !0    @    !     0    $         \"0    @            40 X    X    !@    @    &          4 "
+    "   (     0    $    !          D    (             $ .    .     8    (    !          %    \"     $    '     0       "
+    "  0    !P   $1E;&%Y,3$ #@   #     &    \"     0         !0    @    !     P    $         $  # #$L,  .    *     8   "
+    " (     0         %    \"          !     0         .    ,     8    (    !          %    \"     $    $     0        "
+    " 0  0 9&]W;@X    P    !@    @    &          4    (               !          D         #@   %     &    \"     8    "
+    "     !0    @    !    !     $         \"0   \"           ,B)0        &Y       #(B4        !N0 X    P    !@    @    "
+    "&          4    (               !          D         #@   #@    &    \"     8         !0    @    !     0    $     "
+    "    \"0    @            B0 X   \"X!0  !@    @    \"          4    (     0    $    !          4 !  ,     0   &P   !"
+    "N;V1E26YD97@   !B;&]C:W1Y<&4   !I;G!O<G0       !O=71P;W)T      !L86)E;         !M86EN4&%R86T   !P87)A;4QI<W0   !O<"
+    "FEE;G1A=&EO;@!#;V5F9DYA;65S        #@   #@    &    \"     8         !0    @    !     0    $         \"0    @      "
+    "      B0 X   !     !@    @    $          4    (     0    D    !         !     )    8V]N=F5R=&EO          X   \"H 0"
+    "  !@    @    \"          4    (     0    $    !          4 !  *     0   !X   !N;V1E26YD97@ <V5L9DEN9&5X &9R;VT    "
+    "       X    X    !@    @    &          4    (     0    $    !          D    (            (D .    .     8    (    !"
+    "@         %    \"     $    !     0         )    \"            / _#@   ,@    &    \"     (         !0    @    !    "
+    " 0    $         !0 $  4    !    \"@   &YO9&4 <&]R=          .    .     8    (    !@         %    \"     $    !    "
+    " 0         )    \"            !1 #@   #@    &    \"     8         !0    @    !     0    $         \"0    @        "
+    "   #P/PX   \"H 0  !@    @    \"          4    (     0    $    !          4 !  *     0   !X   !N;V1E26YD97@ <V5L9DE"
+    "N9&5X '1O              X    X    !@    @    &          4    (     0    $    !          D    (            (D .    ."
+    "     8    (    !@         %    \"     $    !     0         )    \"            / _#@   ,@    &    \"     (         "
+    "!0    @    !     0    $         !0 $  4    !    \"@   &YO9&4 <&]R=          .    .     8    (    !@         %    \""
+    "     $    !     0         )    \"            !A #@   #@    &    \"     8         !0    @    !     0    $         \""
+    "0    @           #P/PX   !     !@    @    $          4    (     0    H    !         !     *    0V]N=F5R=$]U=      "
+    "   X    P    !@    @    $          4    (     0    $    !         !   0 P    #@   \"@    &    \"     $         !0 "
+    "   @          0    $         #@   #@    &    \"     0         !0    @    !    !0    $         $     4   !R:6=H=   "
+    "  X    P    !@    @    &          4    (               !          D         #@   %     &    \"     8         !0   "
+    " @    !    !     $         \"0   \"           !B50        &E        8E4        !I0 X    H 0  !@    @    \"        "
+    "  4    (     0    $    !          4 !  -     0   \"<   !O=711            4F]U;F1-;V1E     $]V97)F;&]W36]D90  #@   "
+    "$     &    \"     8         !0    @    !     @    $         \"0   !             P0        \"9 #@   $     &    \"  "
+    "   0         !0    @    !    \"@    $         $     H   !C;VYV97)G96YT        #@   #     &    \"     0         !0 "
+    "   @    !    !     $         $  $ '=R87 .    .     8    (    !@         %    \"     $    !     0         )    \"  "
+    "          \"1 #@   +@%   &    \"     (         !0    @    !     0    $         !0 $  P    !    ;    &YO9&5);F1E>  "
+    "  &)L;V-K='EP90   &EN<&]R=        &]U='!O<G0      &QA8F5L         &UA:6Y087)A;0   '!A<F%M3&ES=    &]R:65N=&%T:6]N "
+    "$-O969F3F%M97,        .    .     8    (    !@         %    \"     $    !     0         )    \"            \"1 #@  "
+    " $     &    \"     0         !0    @    !    \"0    $         $     D   !C;VYV97)T:6\\         #@   *@!   &    \" "
+    "    (         !0    @    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97@ 9G)O;0          #@  "
+    " #@    &    \"     8         !0    @    !     0    $         \"0    @            D0 X    X    !@    @    &        "
+    "  4    (     0    $    !          D    (            \\#\\.    R     8    (     @         %    \"     $    !     0 "
+    "        %  0 !0    $    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (     0    $    !         "
+    " D    (            \\#\\.    .     8    (    !@         %    \"     $    !     0         )    \"            / _#@ "
+    "  *@!   &    \"     (         !0    @    !     0    $         !0 $  H    !    '@   &YO9&5);F1E> !S96QF26YD97@ =&\\"
+    "             #@   #@    &    \"     8         !0    @    !     0    $         \"0    @            D0 X    X    !@ "
+    "   @    &          4    (     0    $    !          D    (            \\#\\.    R     8    (     @         %    \" "
+    "    $    !     0         %  0 !0    $    *    ;F]D90!P;W)T          X    X    !@    @    &          4    (     0  "
+    "  $    !          D    (             $ .    .     8    (    !@         %    \"     $    !     0         )    \"   "
+    "         / _#@   $     &    \"     0         !0    @    !    \"0    $         $     D   !#;VYV97)T26X         #@  "
+    " #     &    \"     0         !0    @               $         $          .    *     8    (     0         %    \"   "
+    "       !     0         .    .     8    (    !          %    \"     $    %     0         0    !0   ')I9VAT    #@   "
+    "#     &    \"     8         !0    @               $         \"0         .    4     8    (    !@         %    \"   "
+    "  $    $     0         )    (           (&Q         :4       \"!L0        &E #@   \"@!   &    \"     (         !0 "
+    "   @    !     0    $         !0 $  T    !    )P   &]U=%$           !2;W5N9$UO9&4     3W9E<F9L;W=-;V1E   .    0    "
+    " 8    (    !@         %    \"     $    \"     0         )    $            #!         +D .    .     8    (    !    "
+    "      %    \"     $    '     0         0    !P   &YE87)E<W0 #@   #@    &    \"     0         !0    @    !    \"   "
+    "  $         $     @   !S871U<F%T90X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
+  }
+  DataRecord {
+    Tag			    DataTag1
     Data		    "  %)30     .    X $   8    (     @         %    \"     $    !     0         %  0 !0    $    %    36%S:P"
     "     .    F $   8    (     @         %    \"     $    !     0         %  0 !P    $    '    5F%L=65S   .    4 $   8"
     "    (     @         %    \"     $    !     0         %  0 #@    $    X    4U])3E!55         !37TE.4%547U-I>F4  %-?"
@@ -3680,7 +4709,7 @@ MatData {
     "            $         \"0         .    ,     8    (    !@         %    \"                0         )          "
   }
   DataRecord {
-    Tag			    DataTag1
+    Tag			    DataTag2
     Data		    "  %)30     .    \"'4   8    (     @         %    \"     $    !     0         %  0 $0    $    B    9FEL="
     "&5R              !M87!C;V5F9G-T;W!O<G1S          X   !H=   !@    @    \"          4    (     0    \\    !         "
     " 4 !  )     0   \"0   !I;F1E>     !B;&]C:P    !P;W-I=&EO;@!Q<&%R86T         #@   #@    &    \"     8         !0   "
@@ -4039,7 +5068,7 @@ MatData {
     "U<F%T90X    P    !@    @    $          4    (     0    ,    !         !   P!O9F8 "
   }
   DataRecord {
-    Tag			    DataTag2
+    Tag			    DataTag3
     Data		    "  %)30     .      (   8    (     @         %    \"     $    !     0         %  0 !0    $    %    36%S:P"
     "     .    N $   8    (     @         %    \"     $    !     0         %  0 !P    $    '    5F%L=65S   .    < $   8"
     "    (     @         %    \"     $    !     0         %  0 #@    $    X    4U])3E!55         !37TE.4%547U-I>F4  %-?"
@@ -4049,7 +5078,7 @@ MatData {
     "    (     0         !          D         "
   }
   DataRecord {
-    Tag			    DataTag3
+    Tag			    DataTag4
     Data		    "  %)30     .    8 $   8    (     @         %    \"     $    !     0         %  0 !0    $    %    36%S:P"
     "     .    & $   8    (     @         %    \"     $    !     0         %  0 !P    $    '    5F%L=65S   .    T     8"
     "    (     @         %    \"     $    !     0         %  0 \"0    $    2    4U])3E!55   4U]/5510550         #@   # "
