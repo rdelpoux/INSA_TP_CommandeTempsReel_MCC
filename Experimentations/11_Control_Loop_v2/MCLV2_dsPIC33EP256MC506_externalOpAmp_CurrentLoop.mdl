@@ -1,12 +1,12 @@
 Model {
-  Name			  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog"
+  Name			  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop"
   Version		  9.2
   SavedCharacterEncoding  "windows-1252"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.62"
+    ComputedModelVersion    "1.63"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -17,220 +17,203 @@ Model {
     PreCompExecutionDomainType "Unset"
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 36
+    NumExternalFileReferences 33
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Bitwise\nOperator"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Bitwise Operator1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Bitwise Operator1"
       SID		      "445"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Compare To Constant"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Compare To Constant"
       SID		      "446"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Compare To Constant1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Compare To Constant1"
       SID		      "447"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Compare To Constant2"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Compare To Constant2"
       SID		      "448"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Compare To Constant3"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Compare To Constant3"
       SID		      "449"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Configuration/Compiler Options"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Compiler Options"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Compiler Options"
       SID		      "779"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Counter\nFree-Running"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Counter Free-Running"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Counter Free-Running"
       SID		      "338"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Info/Data Sheet"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Data Sheet"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Data Sheet"
       SID		      "781"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
+      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Electrical Control1/Clamping circuit/Compare To Z"
+      "ero1"
+      SID		      "860"
+      Type		      "LIBRARY_BLOCK"
+    }
+    ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Output"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/LED_D1 5Hz Blinking"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/LED_D1 5Hz Blinking"
       SID		      "334"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/ADC"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/ADC"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/ADC"
       SID		      "785"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Analog IO/Comparator - OpAmps - Volt Ref"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/Comparator - OpAmps - Volt Ref"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/Comparator - OpAmps - Volt Ref"
       SID		      "800"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/Compare To Constant"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/Compare To Constant"
       SID		      "801"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/PWM IO/PWM High Speed"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/PWM/PWM High Speed"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/PWM/PWM High Speed"
       SID		      "829"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/QEI/QEI"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/QEI1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/QEI1"
       SID		      "833"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/MCLV2 with DC motor/Wait  1s with zero speed/1s "
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/MCLV2 with DC motor/Wait  1s with zero speed/1s "
       SID		      "841"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Configuration/Microchip Master"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
       SID		      "780"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Model-Wide\nUtilities/Model Info"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Model Info"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Model Info"
       SID		      "341"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Info/Port Info"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Port Info"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Port Info"
       SID		      "203"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/System Functions/Reset"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Reset"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Reset"
       SID		      "777"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/S1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/S1"
       SID		      "778"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Digital IO/Digital Input"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/S2"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/S2"
       SID		      "333"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Shirp Small/Chirp2/Compare To Constant1"
-      SID		      "577"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Shirp Small/Chirp2/Delay1/Compare To Constant1"
-      SID		      "580"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink_need_slupdate/Unit Delay\nResettable"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Shirp Small/Chirp2/Delay1/Unit Delay Resettable2"
-      SID		      "582"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
-      Reference		      "simulink/Lookup\nTables/Sine"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Shirp Small/Chirp2/Sine Lookup"
-      SID		      "595"
-      Type		      "LIBRARY_BLOCK"
-    }
-    ExternalFileReference {
       Reference		      "simulink/Sources/Counter\nLimited"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Steps Large/Counter Limited 0-1 @ 1.25Hz"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Steps Large/Counter Limited 0-1 @ 1.25Hz"
       SID		      "503"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Sources/Counter\nLimited"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Steps Large1/Counter Limited 0-1 @ 1.25Hz"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Steps Large1/Counter Limited 0-1 @ 1.25Hz"
       SID		      "530"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Profiling/MCU Load"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Timing Analysis/MCU Load"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Timing Analysis/MCU Load"
       SID		      "772"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Profiling/MCU Overload"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Timing Analysis/MCU Overload"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Timing Analysis/MCU Overload"
       SID		      "773"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/Profiling/Tasks State"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Timing Analysis/Tasks State"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Timing Analysis/Tasks State"
       SID		      "774"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Bitwise\nOperator"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Toggle (4 states)/Bitwise Operator"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Toggle (4 states)/Bitwise Operator"
       SID		      "440"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "simulink/Logic and Bit\nOperations/Detect\nIncrease"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Toggle (4 states)/Detect Increase"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Toggle (4 states)/Detect Increase"
       SID		      "442"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/UART Configuration"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/UART Configuration1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/UART Configuration1"
       SID		      "207"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/UART Tx-Matlab"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/UART Tx-Matlab"
       SID		      "267"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/UART Tx-Matlab"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/UART Tx-Matlab1"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/UART Tx-Matlab1"
       SID		      "534"
       Type		      "LIBRARY_BLOCK"
     }
     ExternalFileReference {
       Reference		      "MCHP_Blockset/BUS UART/picgui\nGraphical interface"
-      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/dbl-click to open Graphical interface"
+      Path		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/dbl-click to open Graphical interface"
       SID		      "337"
       Type		      "LIBRARY_BLOCK"
     }
@@ -243,64 +226,65 @@ Model {
   "ucket_count>8</bucket_count>\n		<item_version>0</item_version>\n		<item class_id=\"2\" tracking_level=\"0\" version="
   "\"0\">\n			<first class_id=\"3\" tracking_level=\"0\" version=\"6\">\n				<Source class_id=\"4\" tracking_level=\"0\""
   " version=\"0\">\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_exte"
-  "rnalOpAmp_DataLog/Counter Free-Running</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_level="
-  "\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</count>\n"
-  "					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_level=\""
-  "0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixedPoint:u"
-  "til:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</it"
-  "em_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level=\"0\" v"
-  "ersion=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" tracking_level"
-  "=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<date>20160"
-  "523</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version=\"0\">\n"
-  "									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time_duration"
-  "_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<time_dura"
-  "tion_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>"
-  "\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID"
-  ">Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n						"
-  "			<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comme"
-  "nt></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160523</date>\n		"
-  "						</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hou"
-  "rs>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n									<time_duration_sec"
-  "onds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n		"
-  "						</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n"
-  "					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Source>\n					<count>1</cou"
-  "nt>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Steps Large/Count"
-  "er Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<second>\n				<SuppressedData>\n					<count>2</count>"
-  "\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item>\n						<first>\n							<ID>S"
-  "imulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									"
-  "<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment>"
-  "</Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n					"
-  "			</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>"
-  "15</time_duration_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_second"
-  "s>17</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n					"
-  "			</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n			"
-  "		</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n		"
-  "						<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Caus"
-  "e>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n							"
-  "	<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_sp"
-  "ecial>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</ti"
-  "me_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fractional"
-  "_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<Suppr"
-  "essionType>1</SuppressionType>\n						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<it"
-  "em>\n			<first>\n				<Source>\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33E"
-  "P256MC506_externalOpAmp_DataLog/Steps Large1/Counter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<se"
-  "cond>\n				<SuppressedData>\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_"
-  "version>\n					<item>\n						<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n				"
-  "				<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n							</Cause>"
-  "\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<"
-  "ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_spec"
-  "ial>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minutes>23</time"
-  "_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_fractional_s"
-  "econds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n							<Suppres"
-  "sionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataTyp"
-  "e:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>"
-  "0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n		"
-  "					<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_dat"
-  "e>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>15</time_durat"
-  "ion_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_dur"
-  "ation_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_tim"
-  "e_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n			"
-  "	</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_serialization>\n\n"
+  "rnalOpAmp_CurrentLoop/Counter Free-Running</item>\n				</Source>\n			</first>\n			<second class_id=\"5\" tracking_le"
+  "vel=\"0\" version=\"6\">\n				<SuppressedData class_id=\"6\" tracking_level=\"0\" version=\"0\">\n					<count>2</cou"
+  "nt>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item class_id=\"7\" tracking_le"
+  "vel=\"0\" version=\"0\">\n						<first class_id=\"8\" tracking_level=\"0\" version=\"6\">\n							<ID>SimulinkFixedP"
+  "oint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<item_version"
+  ">0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second class_id=\"9\" tracking_level=\""
+  "0\" version=\"6\">\n							<Comment></Comment>\n							<User></User>\n							<LastModified class_id=\"10\" tracking_"
+  "level=\"0\" version=\"0\">\n								<ptime_date class_id=\"11\" tracking_level=\"0\" version=\"0\">\n									<date>"
+  "20160523</date>\n								</ptime_date>\n								<ptime_time_duration class_id=\"12\" tracking_level=\"0\" version=\""
+  "0\">\n									<is_special>0</is_special>\n									<time_duration_hours>10</time_duration_hours>\n									<time_du"
+  "ration_minutes>57</time_duration_minutes>\n									<time_duration_seconds>55</time_duration_seconds>\n									<tim"
+  "e_duration_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastMod"
+  "ified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n				"
+  "			<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n"
+  "									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							"
+  "<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160523</dat"
+  "e>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_durati"
+  "on_hours>10</time_duration_hours>\n									<time_duration_minutes>57</time_duration_minutes>\n									<time_durati"
+  "on_seconds>55</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_second"
+  "s>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</sec"
+  "ond>\n					</item>\n				</SuppressedData>\n			</second>\n		</item>\n		<item>\n			<first>\n				<Source>\n					<count>"
+  "1</count>\n					<item_version>0</item_version>\n					<item>MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Steps L"
+  "arge/Counter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</first>\n			<second>\n				<SuppressedData>\n					<count"
+  ">2</count>\n					<bucket_count>8</bucket_count>\n					<item_version>0</item_version>\n					<item>\n						<first>\n		"
+  "					<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n"
+  "									<item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							"
+  "<Comment></Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</dat"
+  "e>\n								</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_durati"
+  "on_hours>15</time_duration_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_durati"
+  "on_seconds>17</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_second"
+  "s>\n								</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</sec"
+  "ond>\n					</item>\n					<item>\n						<first>\n							<ID>Simulink:DataType:WarningOverFlowDetected</ID>\n							<C"
+  "ause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n				"
+  "			</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModified>"
+  "\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n						"
+  "			<is_special>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_minut"
+  "es>23</time_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration_f"
+  "ractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n				"
+  "			<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n				</SuppressedData>\n			</second>\n		</ite"
+  "m>\n		<item>\n			<first>\n				<Source>\n					<count>1</count>\n					<item_version>0</item_version>\n					<item>MCLV2"
+  "_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Steps Large1/Counter Limited 0-1 @ 1.25Hz</item>\n				</Source>\n			</f"
+  "irst>\n			<second>\n				<SuppressedData>\n					<count>2</count>\n					<bucket_count>8</bucket_count>\n					<item_ver"
+  "sion>0</item_version>\n					<item>\n						<first>\n							<ID>SimulinkFixedPoint:util:Overflowoccurred</ID>\n							"
+  "<Cause>\n								<Source>\n									<count>0</count>\n									<item_version>0</item_version>\n								</Source>\n		"
+  "					</Cause>\n						</first>\n						<second>\n							<Comment></Comment>\n							<User></User>\n							<LastModifie"
+  "d>\n								<ptime_date>\n									<date>20160608</date>\n								</ptime_date>\n								<ptime_time_duration>\n				"
+  "					<is_special>0</is_special>\n									<time_duration_hours>15</time_duration_hours>\n									<time_duration_min"
+  "utes>23</time_duration_minutes>\n									<time_duration_seconds>17</time_duration_seconds>\n									<time_duration"
+  "_fractional_seconds>0</time_duration_fractional_seconds>\n								</ptime_time_duration>\n							</LastModified>\n		"
+  "					<SuppressionType>1</SuppressionType>\n						</second>\n					</item>\n					<item>\n						<first>\n							<ID>Sim"
+  "ulink:DataType:WarningOverFlowDetected</ID>\n							<Cause>\n								<Source>\n									<count>0</count>\n									<"
+  "item_version>0</item_version>\n								</Source>\n							</Cause>\n						</first>\n						<second>\n							<Comment><"
+  "/Comment>\n							<User></User>\n							<LastModified>\n								<ptime_date>\n									<date>20160608</date>\n						"
+  "		</ptime_date>\n								<ptime_time_duration>\n									<is_special>0</is_special>\n									<time_duration_hours>1"
+  "5</time_duration_hours>\n									<time_duration_minutes>23</time_duration_minutes>\n									<time_duration_seconds"
+  ">17</time_duration_seconds>\n									<time_duration_fractional_seconds>0</time_duration_fractional_seconds>\n						"
+  "		</ptime_time_duration>\n							</LastModified>\n							<SuppressionType>1</SuppressionType>\n						</second>\n				"
+  "	</item>\n				</SuppressedData>\n			</second>\n		</item>\n	</Table>\n</DiagnosticSuppressor>\n</boost_serialization>"
+  "\n\n"
   WebScopes_FoundationPlugin "on"
   NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
@@ -348,11 +332,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"854"
 	Extents			[1798.0, 948.0]
-	ZoomFactor		[1.1163522012578615]
-	Offset			[-49.329577464788827, -5.8656348119319617]
+	ZoomFactor		[1.26]
+	Offset			[-46.181491464510259, 5.79919137466311]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -386,9 +370,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Dec 12 14:49:36 2018"
-  RTWModifiedTimeStamp	  466526717
-  ModelVersionFormat	  "1.%<AutoIncrement:62>"
+  LastModifiedDate	  "Wed Dec 12 15:50:13 2018"
+  RTWModifiedTimeStamp	  466530603
+  ModelVersionFormat	  "1.%<AutoIncrement:63>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -445,12 +429,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog"
+    model_		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog"
+      Cell		      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1378,69 +1362,67 @@ Model {
 		DataType		"string"
 		Name			"MCHP_CompiledTime_ModelSampleTimes_Txt"
 		Value			"s(1).Value=reshape([5e-05 0],1,2);s(1).Description='Discrete 1';s(1).ColorRGBValue=reshape([0.9 0 0],1,3);s"
-		"(1).Annotation='D1';s(1).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(2).Value=reshape([0.001 0],1,2);s(2).Descr"
+		"(1).Annotation='D1';s(1).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(2).Value=reshape([0.002 0],1,2);s(2).Descr"
 		"iption='Discrete 2';s(2).ColorRGBValue=reshape([0 0.82 0],1,3);s(2).Annotation='D2';s(2).OwnerBlock=reshape(MCHP_Fun"
-		".Hex2num('[]'),0,0);s(3).Value=reshape([0.002 0],1,2);s(3).Description='Discrete 3';s(3).ColorRGBValue=reshape([0 0 "
-		"0.8],1,3);s(3).Annotation='D3';s(3).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(4).Value=reshape([0.1 0],1,2);s"
-		"(4).Description='Discrete 4';s(4).ColorRGBValue=reshape([0.38 0.74 0.99],1,3);s(4).Annotation='D4';s(4).OwnerBlock=r"
-		"eshape(MCHP_Fun.Hex2num('[]'),0,0);s(5).Value=reshape([2.5 0],1,2);s(5).Description='Discrete 5';s(5).ColorRGBValue="
-		"reshape([0.42 0.59 0.24],1,3);s(5).Annotation='D5';s(5).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(6).Value=re"
-		"shape([Inf 0],1,2);s(6).Description='Constant';s(6).ColorRGBValue=reshape([1 0.26 0.82],1,3);s(6).Annotation='Inf';s"
-		"(6).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(7).Value=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(7).Description='"
-		"Hybrid';s(7).ColorRGBValue=reshape([0.91 0.82 0.32],1,3);s(7).Annotation='H';s(7).OwnerBlock=reshape(MCHP_Fun.Hex2nu"
-		"m('[]'),0,0);"
+		".Hex2num('[]'),0,0);s(3).Value=reshape([0.1 0],1,2);s(3).Description='Discrete 3';s(3).ColorRGBValue=reshape([0 0 0."
+		"8],1,3);s(3).Annotation='D3';s(3).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(4).Value=reshape([2.5 0],1,2);s(4"
+		").Description='Discrete 4';s(4).ColorRGBValue=reshape([0.38 0.74 0.99],1,3);s(4).Annotation='D4';s(4).OwnerBlock=res"
+		"hape(MCHP_Fun.Hex2num('[]'),0,0);s(5).Value=reshape([Inf 0],1,2);s(5).Description='Constant';s(5).ColorRGBValue=resh"
+		"ape([1 0.26 0.82],1,3);s(5).Annotation='Inf';s(5).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(6).Value=reshape("
+		"MCHP_Fun.Hex2num('[]'),0,0);s(6).Description='Hybrid';s(6).ColorRGBValue=reshape([0.91 0.82 0.32],1,3);s(6).Annotati"
+		"on='H';s(6).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);"
 	      }
 	      CustomProperty {
 		DataType		"string"
 		Name			"RTWGenSettings_txt"
-		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master';s.ChipIdN='[33  256  506]';"
-		"s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRAM='32"
-		"768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF\\\\n"
-		"#pragma config POSCMD = XT, OSCIOFNC = ON, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config ICS = P"
-		"GD2, JTAGEN = OFF\\\\n';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-1 -1 "
-		"-1 -1 -1 -1 -1 -1 -1 -1 -1]';s.TRIS='[65535  65439  64511  65439  65535  65532  65535     -1     -1     -1     -1   "
-		"  -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1"
+		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master';s.ChipIdN='[33  256  50"
+		"6]';s.ChipIdL1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRAM"
+		"='32768';s.ChipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF\\"
+		"\\n#pragma config POSCMD = XT, OSCIOFNC = ON, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config ICS "
+		"= PGD2, JTAGEN = OFF\\\\n';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='0';s.ANSEL_Exist='1';s.ANSEL='[-1 "
+		"-1 -1 -1 -1 -1 -1 -1 -1 -1 -1]';s.TRIS='[65535  65439  64511  65439  65535  65532  65535     -1     -1     -1     -1"
 		"     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1    "
-		" -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='[-1   -1   -1   -1"
-		"   -1   -1   -1  256   -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1 "
-		"    -1     -1     -1  13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1     -1     -1     "
-		"-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1  "
-		"   -1     -1]';s.PortConfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s.MASTER_BusyFlag='"
-		"-1';s.POWERSAVE='0';s.MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg='-1';s.DOS_00794="
-		"'1';s.DOS_00931='1';s.DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1';s.DOS_00998='1';"
-		"s.DOS_00209='0';s.DOS_01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPORx='1';s.DOS_0101"
-		"7_RPINRx='1';s.DOS_01555_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_PMDx='0';s.DOS_015"
-		"55_TLAK_INT_='0';s.DOS_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1';s.DOS_01117_POR"
-		"Tx='1';s.DOS_00999='0';s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s.DOS_01287_TLAC_IN"
-		"T_='1';s.DOS_01424='1';s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_02508c11='0';s.DO"
-		"S_01468_PMBA_current_source='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0';s.DOS_02316_nvm_"
-		"ctrl_v1_16bit='0';s.DOS_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='0';s.DOS_00958_pw"
-		"m_TLAY='0';s.TLAY_IOPorts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DOS_01497_TLAH_PMDx"
-		"='0';s.DOS_02550_TLAL_INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s.DOS_01017_PMDx='0"
-		"';s.DOS_00927='0';s.DOS_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s.DOS_01520_wdt_dm"
-		"t_upb_v1_16bit='0';s.DOS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00958_pwm_TLCD='0';"
-		"s.DOS_02192_PORTx_TLCD='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02481_WACJ_Config='"
-		"0';s.DOS_02569_pfm_cache_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32bit='0';s.DOS_015"
-		"20_wdt_dmt_upb_v1='0';s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DOS_01423_RPINRx='0"
-		"';s.DOS_02481_RPORx='0';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS_01500_dma_bvci_v"
-		"2='0';s.DOS_02141_tmr_classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0';s.DOS_00749_ocmp"
-		"_pb_v1='0';s.DOS_01441_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_32bit='0';s.DOS_0"
-		"2514_dfm_strl_sst_upb_v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control_upb_v1_32bit='0'"
-		";s.DOS_01461_afe_ctmu_con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1='0';s.DOS_02508_"
-		"adc_sar_ctrl_upb_v1_PIC32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s.DOS_01475_lpwr_d"
-		"eep_sleep_ctrl_v2='0';s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Config='0';s.DOS_02823"
-		"_WACN_clk_cru_upb_v2='0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';s.DOS_01577_cla_c"
-		"lc_upb_v1_32bit='0';s.DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd_upb_v2_pic32mk='"
-		"0';s.DOS_02481_WACJ_MC_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0';s.DOS_01459_ptg_"
-		"pc_upb_v1_SIC='0';s.DOS_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC_int_evic_v3='0';"
-		"s.DOS_02787_WACD_Config='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DOS_02823_clk_cru_u"
-		"pb_v2='0';s.DOS_01423_RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s.DOS_00687_tmr_cla"
-		"ssa_pb_v1='0';s.DOS_00745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_control_pb_v2='0'"
-		";s.DOS_01114_eth_bvci_v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_EIP_00206r5_sqi_v"
-		"2='0';s.DOS_EIP_00124_usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.DOS_EI"
-		"P_00158_crypto_v1='0';s.UART_TX_IMPLEMENTATION='[3]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACHANNEL='[0]';s.UAR"
-		"T_TX_THREAD_PROTECTION='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s.DOS_02907_WACK_MC"
-		"_int_evic_v3='0';s.ADC_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
+		" -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1 "
+		"    -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.RPOR='[-1   -1   -1  "
+		" -1   -1   -1   -1  256   -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     "
+		"-1     -1     -1     -1  13848     -1     -1     -1     53     -1     -1     -1     -1     -1     -1     -1     -1  "
+		"   -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -"
+		"1     -1     -1]';s.PortConfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='-1';s.MASTER_BusyFla"
+		"g='-1';s.POWERSAVE='0';s.MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCON_reg='-1';s.DOS_007"
+		"94='1';s.DOS_00931='1';s.DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_00997='1';s.DOS_00998='"
+		"1';s.DOS_00209='0';s.DOS_01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_01017_RPORx='1';s.DOS_0"
+		"1017_RPINRx='1';s.DOS_01555_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_TLAK_PMDx='0';s.DOS_"
+		"01555_TLAK_INT_='0';s.DOS_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00958='1';s.DOS_01117_"
+		"PORTx='1';s.DOS_00999='0';s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx='1';s.DOS_01287_TLAC"
+		"_INT_='1';s.DOS_01424='1';s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';s.DOS_02508c11='0';s"
+		".DOS_01468_PMBA_current_source='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TLAY='0';s.DOS_02316_n"
+		"vm_ctrl_v1_16bit='0';s.DOS_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_pc_v1='0';s.DOS_00958"
+		"_pwm_TLAY='0';s.TLAY_IOPorts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0';s.DOS_01497_TLAH_P"
+		"MDx='0';s.DOS_02550_TLAL_INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113='0';s.DOS_01017_PMDx"
+		"='0';s.DOS_00927='0';s.DOS_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1='0';s.DOS_01520_wdt"
+		"_dmt_upb_v1_16bit='0';s.DOS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s.DOS_00958_pwm_TLCD='"
+		"0';s.DOS_02192_PORTx_TLCD='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s.DOS_02481_WACJ_Confi"
+		"g='0';s.DOS_02569_pfm_cache_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb_v1_32bit='0';s.DOS_"
+		"01520_wdt_dmt_upb_v1='0';s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0';s.DOS_01423_RPINRx"
+		"='0';s.DOS_02481_RPORx='0';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0';s.DOS_01500_dma_bvc"
+		"i_v2='0';s.DOS_02141_tmr_classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_v1='0';s.DOS_00749_o"
+		"cmp_pb_v1='0';s.DOS_01441_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_upb_v1_32bit='0';s.DO"
+		"S_02514_dfm_strl_sst_upb_v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__control_upb_v1_32bit="
+		"'0';s.DOS_01461_afe_ctmu_con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_upb_v1='0';s.DOS_025"
+		"08_adc_sar_ctrl_upb_v1_PIC32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2='0';s.DOS_01475_lpw"
+		"r_deep_sleep_ctrl_v2='0';s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN_Config='0';s.DOS_02"
+		"823_WACN_clk_cru_upb_v2='0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bit='0';s.DOS_01577_cl"
+		"a_clc_upb_v1_32bit='0';s.DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_can_fd_upb_v2_pic32m"
+		"k='0';s.DOS_02481_WACJ_MC_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_v1='0';s.DOS_01459_p"
+		"tg_pc_upb_v1_SIC='0';s.DOS_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_WACN_MC_int_evic_v3='"
+		"0';s.DOS_02787_WACD_Config='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0';s.DOS_02823_clk_cr"
+		"u_upb_v2='0';s.DOS_01423_RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1='0';s.DOS_00687_tmr_"
+		"classa_pb_v1='0';s.DOS_00745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_00866_cmp_control_pb_v2="
+		"'0';s.DOS_01114_eth_bvci_v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';s.DOS_EIP_00206r5_sq"
+		"i_v2='0';s.DOS_EIP_00124_usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00109_ebi_v1='0';s.DOS"
+		"_EIP_00158_crypto_v1='0';s.UART_TX_IMPLEMENTATION='[3]';s.UART_RX_IMPLEMENTATION='[1]';s.UART_TX_DMACHANNEL='[0]';s."
+		"UART_TX_THREAD_PROTECTION='[9]';s.UART_HALF_DUPLEX_MODE='[0]';s.DOS_03088_pfm_cache_ocp_v2_WACK='0';s.DOS_02907_WACK"
+		"_MC_int_evic_v3='0';s.ADC_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1742,12 +1724,6 @@ Model {
       LockScale		      off
     }
     Block {
-      BlockType		      ManualSwitch
-      CurrentSetting	      "1"
-      varsize		      off
-      SampleTime	      "-1"
-    }
-    Block {
       BlockType		      Merge
       Inputs		      "2"
       InitialOutput	      "[]"
@@ -1778,6 +1754,21 @@ Model {
       VectorParamsAs1DForOutWhenUnconnected off
     }
     Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
       BlockType		      RateTransition
       Integrity		      on
       Deterministic	      on
@@ -1800,10 +1791,6 @@ Model {
       OutDataTypeStr	      "Inherit: Same as input"
       LockScale		      off
       RndMeth		      "Floor"
-    }
-    Block {
-      BlockType		      Scope
-      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
     }
     Block {
       BlockType		      SubSystem
@@ -1863,19 +1850,11 @@ Model {
     Block {
       BlockType		      Terminator
     }
-    Block {
-      BlockType		      Trigonometry
-      Operator		      "sin"
-      ApproximationMethod     "None"
-      NumberOfIterations      "11"
-      OutputSignalType	      "auto"
-      SampleTime	      "-1"
-    }
   }
   System {
-    Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog"
+    Name		    "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop"
     Location		    [67, -4, 1742, 981]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
@@ -1891,7 +1870,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "112"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "852"
+    SIDHighWatermark	    "878"
     Block {
       BlockType		      Reference
       Name		      "Bitwise Operator1"
@@ -2066,7 +2045,7 @@ Model {
       USE_64BIT_DOUBLE	      off
       MCHP_MULTITHREAD_COMPILATION on
       UseCustom_LinkerScript  off
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
       OPTIMIZATION_LEVEL      "1"
       MPLAB_LINKLIB	      "default"
       MPLAB_LINKLIB1	      "default"
@@ -2117,7 +2096,529 @@ Model {
       DOC_MCHP_Id	      "33FJ64MC802"
       DOC_FileLastCheckTime   "[0 0 0 0 0 0]"
       cpy_MCHP_Id	      "33EP256MC506"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Electrical Control1"
+      SID		      "854"
+      Ports		      [2, 1, 1]
+      Position		      [450, 412, 525, 443]
+      ZOrder		      3718
+      ForegroundColor	      "[0.000000, 0.564706, 0.000000]"
+      RequestExecContextInheritance off
+      System {
+	Name			"Electrical Control1"
+	Location		[67, -4, 1742, 981]
+	Open			on
+	PortBlocksUseCompactNotation off
+	SetExecutionDomain	off
+	ExecutionDomainType	"Deduce"
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"126"
+	Block {
+	  BlockType		  Inport
+	  Name			  "iref"
+	  SID			  "855"
+	  Position		  [175, 428, 205, 442]
+	  ZOrder		  3386
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i"
+	  SID			  "856"
+	  Position		  [-30, 488, 0, 502]
+	  ZOrder		  3387
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  EnablePort
+	  Name			  "Enable"
+	  SID			  "571"
+	  Ports			  []
+	  Position		  [537, 175, 557, 195]
+	  ZOrder		  3523
+	  StatesWhenEnabling	  "reset"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Clamping circuit"
+	  SID			  "857"
+	  Ports			  [2, 1]
+	  Position		  [340, 323, 435, 372]
+	  ZOrder		  3518
+	  RequestExecContextInheritance	off
+	  System {
+	    Name		    "Clamping circuit"
+	    Location		    [67, -4, 1742, 981]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "150"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Saturation"
+	      SID		      "858"
+	      Position		      [460, 88, 490, 102]
+	      ZOrder		      1
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "preIntegrator"
+	      SID		      "859"
+	      Position		      [460, 138, 490, 152]
+	      ZOrder		      2
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      VarSizeSig	      "No"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Compare\nTo Zero1"
+	      SID		      "860"
+	      Ports		      [1, 1]
+	      Position		      [155, 90, 185, 120]
+	      ZOrder		      180
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      LibraryVersion	      "1.444"
+	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+	      SourceType	      "Compare To Zero"
+	      SourceProductName	      "Simulink"
+	      SourceProductBaseCode   "SL"
+	      ContentPreviewEnabled   on
+	      relop		      "<="
+	      OutDataTypeStr	      "boolean"
+	      ZeroCross		      on
+	    }
+	    Block {
+	      BlockType		      Delay
+	      Name		      "Delay"
+	      SID		      "861"
+	      Ports		      [1, 1]
+	      Position		      [370, 78, 405, 112]
+	      ZOrder		      181
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      InputPortMap	      "u0"
+	      DelayLength	      "1"
+	      InitialCondition	      "0"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Multiply"
+	      SID		      "862"
+	      Ports		      [2, 1]
+	      Position		      [235, 87, 265, 118]
+	      ZOrder		      179
+	      BlockMirror	      on
+	      NamePlacement	      "alternate"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Clamp"
+	      SID		      "863"
+	      Position		      [25, 98, 55, 112]
+	      ZOrder		      3
+	      BlockMirror	      on
+	      DisableCoverage	      on
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Compare\nTo Zero1"
+	      SrcPort		      1
+	      DstBlock		      "Clamp"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "preIntegrator"
+	      SrcPort		      1
+	      Points		      [-115, 0; 0, -35]
+	      DstBlock		      "Multiply"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Multiply"
+	      SrcPort		      1
+	      DstBlock		      "Compare\nTo Zero1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "Saturation"
+	      SrcPort		      1
+	      DstBlock		      "Delay"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Delay"
+	      SrcPort		      1
+	      DstBlock		      "Multiply"
+	      DstPort		      1
+	    }
+	    Annotation {
+	      SID		      "864"
+	      Name		      "The clamping enable or disable the integral action. \n"
+	      Position		      [177, -6, 404, 20]
+	      InternalMargins	      [0, 0, 0, 0]
+	      HorizontalAlignment     "left"
+	      VerticalAlignment	      "top"
+	      ZOrder		      -1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  DataTypeConversion
+	  Name			  "Data Type Conversion2"
+	  SID			  "853"
+	  Position		  [130, 478, 205, 512]
+	  ZOrder		  3720
+	  NamePlacement		  "alternate"
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  SID			  "865"
+	  Position		  [560, 417, 645, 453]
+	  ZOrder		  3391
+	  Gain			  "Ke(2)"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutMin		  "[2*Vmin]"
+	  OutMax		  "[2*Vmax]"
+	  OutDataTypeStr	  "fixdt(1,16)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain2"
+	  SID			  "866"
+	  Position		  [560, 480, 640, 510]
+	  ZOrder		  3393
+	  Gain			  "Ke(1)"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutMin		  "[2*Vmin]"
+	  OutMax		  "[2*Vmax]"
+	  OutDataTypeStr	  "fixdt(1,16)"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain3"
+	  SID			  "878"
+	  Position		  [1005, 420, 1085, 450]
+	  ZOrder		  3721
+	  Gain			  "1/Vmax"
+	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
+	  OutDataTypeStr	  "fixdt(1,16,15)"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Integrator"
+	  SID			  "867"
+	  Ports			  [1, 1, 1]
+	  Position		  [450, 405, 530, 465]
+	  ZOrder		  3521
+	  RequestExecContextInheritance	off
+	  ContentPreviewEnabled	  on
+	  System {
+	    Name		    "Integrator"
+	    Location		    [53, 27, 1920, 1080]
+	    Open		    off
+	    PortBlocksUseCompactNotation off
+	    SetExecutionDomain	    off
+	    ExecutionDomainType	    "Deduce"
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "743"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      "868"
+	      Position		      [80, 28, 110, 42]
+	      ZOrder		      3393
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      EnablePort
+	      Name		      "Enable"
+	      SID		      "869"
+	      Ports		      []
+	      Position		      [155, -30, 175, -10]
+	      ZOrder		      3520
+	    }
+	    Block {
+	      BlockType		      DiscreteIntegrator
+	      Name		      "Discrete-Time\nIntegrator"
+	      SID		      "870"
+	      Ports		      [1, 1]
+	      Position		      [150, 17, 185, 53]
+	      ZOrder		      3521
+	      InitialConditionSetting "Auto"
+	      SampleTime	      "Ts"
+	      OutMin		      "[2*Imin]"
+	      OutMax		      "[2*Imax]"
+	      OutDataTypeStr	      "fixdt(1,32)"
+	      ICPrevOutput	      "DiscIntNeverNeededParam"
+	      ICPrevScaledInput	      "DiscIntNeverNeededParam"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      "871"
+	      Position		      [225, 28, 255, 42]
+	      ZOrder		      3394
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Discrete-Time\nIntegrator"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Discrete-Time\nIntegrator"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Saturation"
+	  SID			  "872"
+	  Ports			  [1, 1]
+	  Position		  [905, 420, 935, 450]
+	  ZOrder		  3394
+	  InputPortMap		  "u0"
+	  UpperLimit		  "Vmax"
+	  LowerLimit		  "Vmin"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  "873"
+	  Ports			  [2, 1]
+	  Position		  [830, 425, 850, 445]
+	  ZOrder		  3389
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|--"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  "874"
+	  Ports			  [2, 1]
+	  Position		  [280, 425, 300, 445]
+	  ZOrder		  3390
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  InputSameDT		  off
+	  OutMin		  "[2*Imin]"
+	  OutMax		  "[2*Imax]"
+	  OutDataTypeStr	  "fixdt(1,16)"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  "875"
+	  Ports			  [2, 1]
+	  Position		  [855, 265, 875, 285]
+	  ZOrder		  3522
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|-+"
+	  InputSameDT		  off
+	  AccumDataTypeStr	  "Inherit: Same as first input"
+	  OutDataTypeStr	  "Inherit: Same as accumulator"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "v"
+	  SID			  "876"
+	  Position		  [1140, 428, 1170, 442]
+	  ZOrder		  3388
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "iref"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "i"
+	  SrcPort		  1
+	  DstBlock		  "Data Type Conversion2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Gain2"
+	  SrcPort		  1
+	  Points		  [195, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Saturation"
+	  SrcPort		  1
+	  Points		  [23, 0]
+	  Branch {
+	    ZOrder		    8
+	    Points		    [0, -160]
+	    DstBlock		    "Sum2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    9
+	    DstBlock		    "Gain3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [13, 0]
+	  Branch {
+	    ZOrder		    11
+	    DstBlock		    "Integrator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    12
+	    Points		    [0, -75]
+	    DstBlock		    "Clamping circuit"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  13
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  14
+	  SrcBlock		  "Clamping circuit"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  DstBlock		  "Integrator"
+	  DstPort		  enable
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    ZOrder		    16
+	    DstBlock		    "Saturation"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    17
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  18
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [-525, 0]
+	  DstBlock		  "Clamping circuit"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  19
+	  SrcBlock		  "Data Type Conversion2"
+	  SrcPort		  1
+	  Points		  [80, 0]
+	  Branch {
+	    ZOrder		    3
+	    DstBlock		    "Gain2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    4
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  ZOrder		  20
+	  SrcBlock		  "Gain3"
+	  SrcPort		  1
+	  DstBlock		  "v"
+	  DstPort		  1
+	}
+      }
     }
     Block {
       BlockType		      SubSystem
@@ -2205,7 +2706,7 @@ Model {
       BlockType		      From
       Name		      "From1"
       SID		      "455"
-      Position		      [260, 641, 300, 669]
+      Position		      [320, 641, 360, 669]
       ZOrder		      3627
       GotoTag		      "Pot"
       Port {
@@ -2253,7 +2754,7 @@ Model {
       READPREVIOUS	      off
       ORDERING		      "None"
       SampleTime	      "-1 "
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
     }
     Block {
       BlockType		      SubSystem
@@ -2341,7 +2842,7 @@ Model {
 	  SampleTime		  "5e-05"
 	  Info			  "Total Time for Sample & Conversion : 2.4e-06s including 3.4286e-07s (x 1) sample time."
 	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 13}{AN13}15:2:E13;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	  ADC_TIMING		  "[2.4000000000000003149e-06]"
 	  Port {
 	    PortNumber		    2
@@ -2650,7 +3151,7 @@ Model {
 	  S_INPUT_Size		  "[2  2]"
 	  S_OUTPUT_Size		  "[4]"
 	  SampleTime		  "-1"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	  MCHP_PORT		  "{Op-Amp Output 2}{OA2(out)}14:2:A0;{Op-Amp2 V+}{OA2 V+}14:2:A1;{Op-Amp2 V-}{OA2 V-}14:2:B0;"
 	  ORDERING		  "0"
 	}
@@ -3216,7 +3717,7 @@ Model {
 	      ORDERING		      "None"
 	      MCHP_PORT		      "{PWM1 Fault}{FLT32}4:0:B4;{PWM2 Fault}{FLT32}4:0:B4;{PWM1H}{PWM1H}4:4:B14;{PWM1L}{PWM1L}4:4:B"
 	      "15;{PWM2H}{PWM2H}4:4:B12;{PWM2L}{PWM2L}4:4:B13;"
-	      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	      MCHP_VERSION	      "v3.39"
 	    }
 	    Block {
@@ -3376,7 +3877,7 @@ Model {
 	  PIN_CCMP		  "Dynamic Options"
 	  PIN_CCMP_TXT		  "A4 / P20 / Pin[33]"
 	  MCHP_PORT		  "{QEI1 A}{QEA1}5:0:P24;{QEI1 B}{QEB1}5:0:P54;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	  QEI_IntPri		  "5"
 	  Port {
 	    PortNumber		    1
@@ -4159,9 +4660,9 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
       "tModificationDate>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog v1.61 - R.Delpoux & L.Kerhuel\\n\\nMCLV V"
-      "2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with resistan"
-      "ces)\\n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Wed Dec 12 14:38:47 2018"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop v1.62 - R.Delpoux & L.Kerhuel\\n\\nMC"
+      "LV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256MC506 with internal Op-Amp (populated with resi"
+      "stances)\\n\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag\\n\\nLost modified on: Wed Dec 12 14:49:36 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
@@ -4190,7 +4691,7 @@ Model {
       SourceType	      ""
       SourceProductName	      "MPLAB® Device Blocks for Simulink®"
       MultiThreadCoSim	      "auto"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
     }
     Block {
       BlockType		      Reference
@@ -4228,7 +4729,7 @@ Model {
       ORDERING		      "None"
       SampleTime	      ".1"
       MCHP_PORT		      "{Digital In}{DIN}2:0:G6;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
     }
     Block {
       BlockType		      Reference
@@ -4250,844 +4751,7 @@ Model {
       ORDERING		      "None"
       SampleTime	      "-1"
       MCHP_PORT		      "{Digital In}{DIN}2:0:G7;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
-    }
-    Block {
-      BlockType		      SubSystem
-      Name		      "Shirp Small"
-      SID		      "543"
-      Ports		      [0, 1, 1]
-      Position		      [450, 415, 525, 445]
-      ZOrder		      3633
-      RequestExecContextInheritance off
-      System {
-	Name			"Shirp Small"
-	Location		[67, -4, 1742, 981]
-	Open			off
-	PortBlocksUseCompactNotation off
-	SetExecutionDomain	off
-	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
-	ModelBrowserWidth	200
-	ScreenColor		"white"
-	PaperOrientation	"landscape"
-	PaperPositionMode	"auto"
-	PaperType		"usletter"
-	PaperUnits		"inches"
-	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-	TiledPageScale		1
-	ShowPageBoundaries	off
-	ZoomFactor		"125"
-	Block {
-	  BlockType		  EnablePort
-	  Name			  "Enable"
-	  SID			  "571"
-	  Ports			  []
-	  Position		  [302, -30, 322, -10]
-	  ZOrder		  114
-	  StatesWhenEnabling	  "reset"
-	}
-	Block {
-	  BlockType		  Gain
-	  Name			  "Buffer"
-	  SID			  "544"
-	  Position		  [460, 150, 490, 180]
-	  ZOrder		  112
-	  OutDataTypeStr	  "Inherit: Inherit via back propagation"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  SubSystem
-	  Name			  "Chirp2"
-	  SID			  "573"
-	  Ports			  [1, 1]
-	  Position		  [280, 136, 405, 194]
-	  ZOrder		  115
-	  RequestExecContextInheritance	off
-	  Object {
-	    $PropName		    "MaskObject"
-	    $ObjectID		    22
-	    $ClassName		    "Simulink.Mask"
-	    Array {
-	      Type		      "Simulink.MaskParameter"
-	      Dimension		      6
-	      Object {
-		$ObjectID		23
-		Type			"edit"
-		Name			"Fmax"
-		Prompt			"Fmax"
-		Value			"30"
-		Tunable			"off"
-	      }
-	      Object {
-		$ObjectID		24
-		Type			"edit"
-		Name			"Tend"
-		Prompt			"Tend"
-		Value			"50"
-		Tunable			"off"
-	      }
-	      Object {
-		$ObjectID		25
-		Type			"edit"
-		Name			"Fs"
-		Prompt			"Fs"
-		Value			"1000"
-		Tunable			"off"
-	      }
-	      Object {
-		$ObjectID		26
-		Type			"edit"
-		Name			"MaxVal"
-		Prompt			"Max value"
-		Value			"0.5"
-		Tunable			"off"
-	      }
-	      Object {
-		$ObjectID		27
-		Type			"edit"
-		Name			"MinVal"
-		Prompt			"Min value"
-		Value			"0.2"
-		Tunable			"off"
-	      }
-	      Object {
-		$ObjectID		28
-		Type			"edit"
-		Name			"StartDelay"
-		Prompt			"StartDelay"
-		Value			"2"
-		Tunable			"off"
-	      }
-	      PropName		      "Parameters"
-	    }
-	    Array {
-	      Type		      "Simulink.dialog.Group"
-	      Dimension		      2
-	      Object {
-		$ObjectID		29
-		Prompt			"%<MaskType>"
-		Object {
-		  $PropName		  "DialogControls"
-		  $ObjectID		  30
-		  $ClassName		  "Simulink.dialog.Text"
-		  Prompt		  "%<MaskDescription>"
-		  Name			  "DescTextVar"
-		}
-		Name			"DescGroupVar"
-	      }
-	      Object {
-		$ObjectID		31
-		Prompt			"Simulink:studio:ToolBarParametersMenu"
-		Array {
-		  Type			  "Simulink.dialog.parameter.Edit"
-		  Dimension		  6
-		  Object {
-		    $ObjectID		    32
-		    Name		    "Fmax"
-		  }
-		  Object {
-		    $ObjectID		    33
-		    Name		    "Tend"
-		  }
-		  Object {
-		    $ObjectID		    34
-		    Name		    "Fs"
-		  }
-		  Object {
-		    $ObjectID		    35
-		    Name		    "MaxVal"
-		  }
-		  Object {
-		    $ObjectID		    36
-		    Name		    "MinVal"
-		  }
-		  Object {
-		    $ObjectID		    37
-		    Name		    "StartDelay"
-		  }
-		  PropName		  "DialogControls"
-		}
-		Name			"ParameterGroupVar"
-	      }
-	      PropName		      "DialogControls"
-	    }
-	  }
-	  System {
-	    Name		    "Chirp2"
-	    Location		    [67, -4, 1742, 981]
-	    Open		    off
-	    PortBlocksUseCompactNotation off
-	    SetExecutionDomain	    off
-	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
-	    ModelBrowserWidth	    200
-	    ScreenColor		    "white"
-	    PaperOrientation	    "landscape"
-	    PaperPositionMode	    "auto"
-	    PaperType		    "usletter"
-	    PaperUnits		    "inches"
-	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
-	    TiledPageScale	    1
-	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "Enable =1\nStop = 0"
-	      SID		      "574"
-	      Position		      [-180, 653, -150, 667]
-	      ZOrder		      -1
-	      ForegroundColor	      "magenta"
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Constant
-	      Name		      "5Hz3"
-	      SID		      "575"
-	      Position		      [-145, 533, 90, 587]
-	      ZOrder		      263
-	      Value		      "(Fmax/Fs) / ((Tend-StartDelay) * Fs)"
-	      VectorParams1D	      off
-	      OutMin		      "0"
-	      OutMax		      "Fmax/Fs"
-	      OutDataTypeStr	      "fixdt(0,32)"
-	      SampleTime	      "1/Fs"
-	    }
-	    Block {
-	      BlockType		      Bias
-	      Name		      "Bias2"
-	      SID		      "576"
-	      Position		      [1095, 545, 1130, 575]
-	      ZOrder		      281
-	      Bias		      "(MaxVal+MinVal)/2"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "Compare To Constant1"
-	      SID		      "577"
-	      Ports		      [1, 1]
-	      Position		      [-100, 645, -70, 675]
-	      ZOrder		      276
-	      LibraryVersion	      "1.444"
-	      SourceBlock	      "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-	      SourceType	      "Compare To Constant"
-	      SourceProductName	      "Simulink"
-	      SourceProductBaseCode   "SL"
-	      ContentPreviewEnabled   off
-	      relop		      "=="
-	      const		      "0"
-	      OutDataTypeStr	      "boolean"
-	      ZeroCross		      on
-	    }
-	    Block {
-	      BlockType		      SubSystem
-	      Name		      "Delay1"
-	      SID		      "578"
-	      Ports		      [1, 1]
-	      Position		      [90, 643, 170, 677]
-	      ZOrder		      273
-	      RequestExecContextInheritance off
-	      System {
-		Name			"Delay1"
-		Location		[74, -4, 1742, 981]
-		Open			off
-		PortBlocksUseCompactNotation off
-		SetExecutionDomain	off
-		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
-		ModelBrowserWidth	200
-		ScreenColor		"white"
-		PaperOrientation	"landscape"
-		PaperPositionMode	"auto"
-		PaperType		"usletter"
-		PaperUnits		"inches"
-		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
-		TiledPageScale		1
-		ShowPageBoundaries	off
-		ZoomFactor		"100"
-		Block {
-		  BlockType		  Inport
-		  Name			  "In1"
-		  SID			  "579"
-		  Position		  [-180, 397, -145, 413]
-		  ZOrder		  65
-		  NamePlacement		  "alternate"
-		  IconDisplay		  "Port number"
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Compare\nTo Constant1"
-		  SID			  "580"
-		  Ports			  [1, 1]
-		  Position		  [65, 464, 165, 486]
-		  ZOrder		  64
-		  LibraryVersion	  "1.444"
-		  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Constant"
-		  SourceType		  "Compare To Constant"
-		  SourceProductName	  "Simulink"
-		  SourceProductBaseCode	  "SL"
-		  ContentPreviewEnabled	  off
-		  relop			  "<="
-		  const			  "StartDelay*Fs"
-		  OutDataTypeStr	  "boolean"
-		  ZeroCross		  on
-		}
-		Block {
-		  BlockType		  Sum
-		  Name			  "Sum3"
-		  SID			  "581"
-		  Ports			  [2, 1]
-		  Position		  [200, 512, 235, 563]
-		  ZOrder		  63
-		  ShowName		  off
-		  InputSameDT		  off
-		  AccumDataTypeStr	  "uint16"
-		  OutDataTypeStr	  "Inherit: Same as accumulator"
-		  SaturateOnIntegerOverflow off
-		}
-		Block {
-		  BlockType		  Reference
-		  Name			  "Unit Delay\nResettable2"
-		  SID			  "582"
-		  Ports			  [2, 1]
-		  Position		  [-60, 377, -25, 413]
-		  ZOrder		  61
-		  LibraryVersion	  "1.22"
-		  SourceBlock		  "simulink_need_slupdate/Unit Delay\nResettable"
-		  SourceType		  "Unit Delay Resettable"
-		  SourceProductName	  "Simulink"
-		  SourceProductBaseCode	  "SL"
-		  ContentPreviewEnabled	  off
-		  vinit			  "1"
-		  tsamp			  "inv(Fs)"
-		}
-		Block {
-		  BlockType		  Outport
-		  Name			  "Out1"
-		  SID			  "583"
-		  Position		  [395, 468, 425, 482]
-		  ZOrder		  66
-		  NamePlacement		  "alternate"
-		  IconDisplay		  "Port number"
-		}
-		Line {
-		  ZOrder		  1
-		  SrcBlock		  "Unit Delay\nResettable2"
-		  SrcPort		  1
-		  Points		  [46, 0; 0, 80]
-		  Branch {
-		    ZOrder		    2
-		    Points		    [0, 75]
-		    DstBlock		    "Sum3"
-		    DstPort		    2
-		  }
-		  Branch {
-		    ZOrder		    3
-		    DstBlock		    "Compare\nTo Constant1"
-		    DstPort		    1
-		  }
-		}
-		Line {
-		  ZOrder		  4
-		  SrcBlock		  "In1"
-		  SrcPort		  1
-		  DstBlock		  "Unit Delay\nResettable2"
-		  DstPort		  2
-		}
-		Line {
-		  ZOrder		  5
-		  SrcBlock		  "Sum3"
-		  SrcPort		  1
-		  Points		  [9, 0; 0, 47; -473, 0; 0, -202]
-		  DstBlock		  "Unit Delay\nResettable2"
-		  DstPort		  1
-		}
-		Line {
-		  ZOrder		  6
-		  SrcBlock		  "Compare\nTo Constant1"
-		  SrcPort		  1
-		  Points		  [12, 0]
-		  Branch {
-		    ZOrder		    7
-		    DstBlock		    "Out1"
-		    DstPort		    1
-		  }
-		  Branch {
-		    ZOrder		    8
-		    Points		    [0, 50]
-		    DstBlock		    "Sum3"
-		    DstPort		    1
-		  }
-		}
-	      }
-	    }
-	    Block {
-	      BlockType		      DiscreteIntegrator
-	      Name		      "Discrete-Time\nIntegrator2"
-	      SID		      "584"
-	      Ports		      [2, 1]
-	      Position		      [220, 552, 255, 588]
-	      ZOrder		      78
-	      IntegratorMethod	      "Accumulation: Forward Euler"
-	      gainval		      "1"
-	      ExternalReset	      "level"
-	      InitialConditionSetting "Auto"
-	      SampleTime	      "1/Fs"
-	      OutMax		      "Fmax/Fs "
-	      OutDataTypeStr	      "fixdt(0,32)"
-	      LockScale		      on
-	      ICPrevOutput	      "DiscIntNeverNeededParam"
-	      ICPrevScaledInput	      "DiscIntNeverNeededParam"
-	    }
-	    Block {
-	      BlockType		      DiscreteIntegrator
-	      Name		      "Discrete-Time\nIntegrator5"
-	      SID		      "585"
-	      Ports		      [2, 1]
-	      Position		      [360, 562, 395, 598]
-	      ZOrder		      270
-	      IntegratorMethod	      "Accumulation: Forward Euler"
-	      gainval		      "1"
-	      ExternalReset	      "level"
-	      InitialConditionSetting "Auto"
-	      SampleTime	      "1/Fs"
-	      OutDataTypeStr	      "fixdt(0,16,16)"
-	      LockScale		      on
-	      ICPrevOutput	      "DiscIntNeverNeededParam"
-	      ICPrevScaledInput	      "DiscIntNeverNeededParam"
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain2"
-	      SID		      "586"
-	      Position		      [475, 542, 520, 598]
-	      ZOrder		      278
-	      Gain		      "2*pi"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutDataTypeStr	      "fixdt(0,16,13)"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Gain
-	      Name		      "Gain3"
-	      SID		      "587"
-	      Position		      [840, 529, 1015, 591]
-	      ZOrder		      280
-	      ShowName		      off
-	      Gain		      "(MaxVal-MinVal)/2"
-	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-	      OutMin		      "[MinVal]"
-	      OutMax		      "[MaxVal]"
-	      OutDataTypeStr	      "fixdt(1,16)"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      ManualSwitch
-	      Name		      "Manual Switch"
-	      SID		      "588"
-	      Position		      [750, 542, 780, 578]
-	      ZOrder		      294
-	      CurrentSetting	      "0"
-	    }
-	    Block {
-	      BlockType		      RateTransition
-	      Name		      "Rate Transition3"
-	      SID		      "589"
-	      Position		      [-10, 639, 30, 681]
-	      ZOrder		      277
-	      Deterministic	      off
-	    }
-	    Block {
-	      BlockType		      RateTransition
-	      Name		      "Rate Transition4"
-	      SID		      "590"
-	      Position		      [1190, 539, 1230, 581]
-	      ZOrder		      282
-	      Deterministic	      off
-	    }
-	    Block {
-	      BlockType		      Scope
-	      Name		      "Scope"
-	      SID		      "591"
-	      Ports		      [1]
-	      Position		      [1355, 474, 1385, 506]
-	      ZOrder		      73
-	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
-	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
-	      "'Sources','WiredSimulink',true),extmgr.Configuration('Visuals','Time Domain',true,'SerializedDisplays',{struct("
-	      "'MinYLimReal','0.03751','MaxYLimReal','0.66247','YLabelReal','','MinYLimMag','0.03751','MaxYLimMag','0.66247','"
-	      "LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6"
-	      "86274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6"
-	      "23529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0."
-	      "717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<S"
-	      "ignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Rate Transit"
-	      "ion4'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','0.03751','MaxYLimRea"
-	      "l','0.66247','YLabelReal','','MinYLimMag','0.03751','MaxYLimMag','0.66247','LegendVisibility','off','XGrid',tru"
-	      "e,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0."
-	      "686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 "
-	      "0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686"
-	      ";0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation"
-	      "',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version',"
-	      "'2018b')),'Version','2018b','Position',[78.8867924528302 1 1660.98113207547 911.094339622641])"
-	      NumInputPorts	      "1"
-	      Floating		      off
-	    }
-	    Block {
-	      BlockType		      Scope
-	      Name		      "Scope1"
-	      SID		      "592"
-	      Ports		      [1]
-	      Position		      [1145, 449, 1175, 481]
-	      ZOrder		      295
-	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
-	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
-	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-1.2437','MaxYLimReal','1.24367','YLabelReal','','MinYLim"
-	      "Mag','0.00000','MaxYLimMag','1.2437','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
-	      "xesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
-	      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-	      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
-	      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
-	      "umLines',1,'LineNames',{{'Gain3'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLim"
-	      "Real','-1.2437','MaxYLimReal','1.24367','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.2437','LegendVis"
-	      "ibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745098"
-	      "03922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41176470588"
-	      "2353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83137254"
-	      "9019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuratio"
-	      "n('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Mea"
-	      "surements',true,'Version','2018b')),'Version','2018b','Position',[78.8867924528302 1 1660.98113207547 911.09433"
-	      "9622641])"
-	      NumInputPorts	      "1"
-	      Floating		      off
-	    }
-	    Block {
-	      BlockType		      Scope
-	      Name		      "Scope2"
-	      SID		      "593"
-	      Ports		      [1]
-	      Position		      [500, 354, 530, 386]
-	      ZOrder		      296
-	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
-	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
-	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.125','MaxYLimReal','1.12498','YLabelReal','','MinYLimM"
-	      "ag','0.00000','MaxYLimMag','1.12498','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'A"
-	      "xesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
-	      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0"
-	      ".831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
-	      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'N"
-	      "umLines',1,'LineNames',{{'Discrete-Time Integrator5'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefau"
-	      "lts',struct('MinYLimReal','-0.125','MaxYLimReal','1.12498','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag',"
-	      "'1.12498','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTick"
-	      "Color',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.6235294117647"
-	      "06 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156"
-	      "862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]))"
-	      ",extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Config"
-	      "uration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[78.8867924528302 1 1660.9"
-	      "8113207547 911.094339622641])"
-	      NumInputPorts	      "1"
-	      Floating		      off
-	    }
-	    Block {
-	      BlockType		      Scope
-	      Name		      "Scope3"
-	      SID		      "594"
-	      Ports		      [1]
-	      Position		      [340, 474, 370, 506]
-	      ZOrder		      290
-	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
-	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
-	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData7'),extmgr.Configuration('Visuals','Time Dom"
-	      "ain',true,'SerializedDisplays',{struct('MinYLimReal','-0.00125','MaxYLimReal','0.01125','YLabelReal','','MinYLi"
-	      "mMag','0.00000','MaxYLimMag','0.01125','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,"
-	      "'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
-	      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
-	      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450980"
-	      "39215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},"
-	      "'NumLines',1,'LineNames',{{'Discrete-Time Integrator2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDef"
-	      "aults',struct('MinYLimReal','-0.00125','MaxYLimReal','0.01125','YLabelReal','','MinYLimMag','0.00000','MaxYLimM"
-	      "ag','0.01125','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'Axes"
-	      "TickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411"
-	      "764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.39"
-	      "2156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215686"
-	      "3])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Co"
-	      "nfiguration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[78.8867924528302 1 16"
-	      "60.98113207547 911.094339622641])"
-	      NumInputPorts	      "1"
-	      Floating		      off
-	    }
-	    Block {
-	      BlockType		      Reference
-	      Name		      "Sine Lookup"
-	      SID		      "595"
-	      Ports		      [1, 1]
-	      Position		      [530, 437, 595, 493]
-	      ZOrder		      289
-	      ForegroundColor	      "green"
-	      LibraryVersion	      "1.444"
-	      SourceBlock	      "simulink/Lookup\nTables/Sine"
-	      SourceType	      "Sine and Cosine"
-	      SourceProductName	      "Simulink"
-	      SourceProductBaseCode   "SL"
-	      ContentPreviewEnabled   on
-	      Formula		      "sin(2*pi*u)"
-	      NumDataPoints	      "(2^10)+1"
-	      OutputWordLength	      "16"
-	      InternalRulePriority    "Speed"
-	    }
-	    Block {
-	      BlockType		      Trigonometry
-	      Name		      "Trigonometric\nFunction1"
-	      SID		      "596"
-	      Ports		      [1, 1]
-	      Position		      [585, 537, 655, 603]
-	      ZOrder		      279
-	      ApproximationMethod     "CORDIC"
-	    }
-	    Block {
-	      BlockType		      Outport
-	      Name		      "Chirp"
-	      SID		      "597"
-	      Position		      [1325, 553, 1355, 567]
-	      ZOrder		      -12
-	      IconDisplay	      "Port number"
-	    }
-	    Line {
-	      ZOrder		      1
-	      SrcBlock		      "Enable =1\nStop = 0"
-	      SrcPort		      1
-	      DstBlock		      "Compare To Constant1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      2
-	      SrcBlock		      "Discrete-Time\nIntegrator2"
-	      SrcPort		      1
-	      Points		      [46, 0]
-	      Branch {
-		ZOrder			3
-		Points			[0, -80]
-		DstBlock		"Scope3"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			4
-		DstBlock		"Discrete-Time\nIntegrator5"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "5Hz3"
-	      SrcPort		      1
-	      DstBlock		      "Discrete-Time\nIntegrator2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      6
-	      SrcBlock		      "Discrete-Time\nIntegrator5"
-	      SrcPort		      1
-	      Points		      [43, 0; 0, -10]
-	      Branch {
-		ZOrder			7
-		Points			[0, -105; 8, 0]
-		Branch {
-		  ZOrder		  8
-		  Points		  [0, -95]
-		  DstBlock		  "Scope2"
-		  DstPort		  1
-		}
-		Branch {
-		  ZOrder		  9
-		  DstBlock		  "Sine Lookup"
-		  DstPort		  1
-		}
-	      }
-	      Branch {
-		ZOrder			10
-		DstBlock		"Gain2"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      11
-	      SrcBlock		      "Compare To Constant1"
-	      SrcPort		      1
-	      DstBlock		      "Rate Transition3"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      12
-	      SrcBlock		      "Rate Transition3"
-	      SrcPort		      1
-	      DstBlock		      "Delay1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      13
-	      SrcBlock		      "Delay1"
-	      SrcPort		      1
-	      Points		      [20, 0]
-	      Branch {
-		ZOrder			14
-		Points			[113, 0; 0, -70]
-		DstBlock		"Discrete-Time\nIntegrator5"
-		DstPort			2
-	      }
-	      Branch {
-		ZOrder			15
-		Points			[0, -80]
-		DstBlock		"Discrete-Time\nIntegrator2"
-		DstPort			2
-	      }
-	    }
-	    Line {
-	      ZOrder		      16
-	      SrcBlock		      "Gain2"
-	      SrcPort		      1
-	      DstBlock		      "Trigonometric\nFunction1"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      17
-	      SrcBlock		      "Gain3"
-	      SrcPort		      1
-	      Points		      [47, 0]
-	      Branch {
-		ZOrder			18
-		Points			[0, -95]
-		DstBlock		"Scope1"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			19
-		DstBlock		"Bias2"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      20
-	      SrcBlock		      "Bias2"
-	      SrcPort		      1
-	      DstBlock		      "Rate Transition4"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      21
-	      SrcBlock		      "Rate Transition4"
-	      SrcPort		      1
-	      Points		      [61, 0]
-	      Branch {
-		ZOrder			22
-		Points			[0, -70]
-		DstBlock		"Scope"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			23
-		DstBlock		"Chirp"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      24
-	      SrcBlock		      "Trigonometric\nFunction1"
-	      SrcPort		      1
-	      DstBlock		      "Manual Switch"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      25
-	      SrcBlock		      "Manual Switch"
-	      SrcPort		      1
-	      DstBlock		      "Gain3"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      26
-	      SrcBlock		      "Sine Lookup"
-	      SrcPort		      1
-	      Points		      [89, 0; 0, 85]
-	      DstBlock		      "Manual Switch"
-	      DstPort		      1
-	    }
-	  }
-	}
-	Block {
-	  BlockType		  Constant
-	  Name			  "Constant2"
-	  SID			  "568"
-	  Position		  [190, 150, 220, 180]
-	  ZOrder		  110
-	}
-	Block {
-	  BlockType		  Scope
-	  Name			  "Scope"
-	  SID			  "569"
-	  Ports			  [1]
-	  Position		  [555, 104, 585, 136]
-	  ZOrder		  113
-	  ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extmgr."
-	  "Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('Sources"
-	  "','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain',true,'S"
-	  "erializedDisplays',{struct('MinYLimReal','-1.16411','MaxYLimReal','1.11119','YLabelReal','','MinYLimMag','0.00000',"
-	  "'MaxYLimMag','1.16411','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
-	  "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745"
-	  "098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098"
-	  "039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Tit"
-	  "le','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Buffer'}"
-	  "},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-1.16411','MaxYLimReal','1.111"
-	  "19','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.16411','LegendVisibility','off','XGrid',true,'YGrid',tru"
-	  "e,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],"
-	  "'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0."
-	  "717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1"
-	  " 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),ex"
-	  "tmgr.Configuration('Tools','Measurements',true,'Version','2018b')),'Version','2018b','Position',[78.8867924528302 1"
-	  " 1660.98113207547 911.094339622641])"
-	  NumInputPorts		  "1"
-	  Floating		  off
-	}
-	Block {
-	  BlockType		  Outport
-	  Name			  "Out1"
-	  SID			  "570"
-	  Position		  [550, 158, 580, 172]
-	  ZOrder		  65
-	  IconDisplay		  "Port number"
-	}
-	Line {
-	  ZOrder		  1
-	  SrcBlock		  "Buffer"
-	  SrcPort		  1
-	  Points		  [20, 0]
-	  Branch {
-	    ZOrder		    2
-	    Points		    [0, -45]
-	    DstBlock		    "Scope"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    3
-	    DstBlock		    "Out1"
-	    DstPort		    1
-	  }
-	}
-	Line {
-	  ZOrder		  6
-	  SrcBlock		  "Chirp2"
-	  SrcPort		  1
-	  DstBlock		  "Buffer"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  7
-	  SrcBlock		  "Constant2"
-	  SrcPort		  1
-	  DstBlock		  "Chirp2"
-	  DstPort		  1
-	}
-      }
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
     }
     Block {
       BlockType		      SubSystem
@@ -5371,7 +5035,7 @@ Model {
 	  MCHP_PORT		  "{MCU Load Pin}{MCU_Load}0:1:C10;"
 	  MCHP_TIMER_REQUEST	  "{MCU_Load}{MCU_Load}21:5:0:0:[]:524288;"
 	  MCHP_TIMER_RESULT	  "[1 65535 ]"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	  MCHP_COMPILED_INFO	  "CompiledSampleTime= [Inf Inf ];CompiledInportDataTypes=[ ];CompiledInportDataWidth=[];"
 	  Info			  "Timer 1:  Resol: 114.2857143(ns)  -  Max: 7.48983(ms)"
 	  SampleTime		  "-1"
@@ -5393,7 +5057,7 @@ Model {
 	  MCUOverLoadPin	  "Dynamic Options"
 	  MCUOverLoadPin_TXT	  "D5 / Pin[53]"
 	  MCHP_PORT		  "{OverLoad Pin}{OverLoad}0:1:D5;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	  SampleTime		  ".1"
 	}
 	Block {
@@ -5411,7 +5075,7 @@ Model {
 	  MultiThreadCoSim	  "auto"
 	  TasksPin		  "[B5 B6 F0]"
 	  MCHP_PORT		  "{Task D1 Running}{Task D1}15:1:B5;{Task D2 Running}{Task D2}15:1:B6;{Task D3 Running}{Task D3}15:1:F0;"
-	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
 	}
 	Annotation {
 	  SID			  "775"
@@ -5601,7 +5265,7 @@ Model {
       PIN_TX		      "Dynamic Options"
       PIN_TX_TXT	      "F1 / P97 / Pin[59]"
       MCHP_PORT		      "{UART1  Rx}{U1RX}3:0:P53;{UART1  Tx}{U1TX}3:1:P97;"
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
       MCHP_COM_ExtPil	      off
       TX_IMPLEMENTATION	      "DMA Ping-Pong Mode"
       TX_IMPLEMENTATION_default	"Circular Buffer"
@@ -5654,7 +5318,7 @@ Model {
       CHANNELS		      "[1 2 ]"
       AllOrNothing	      on
       SampleTime	      "-1 "
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
       MCHP_COMPILED_INFO      "CompiledSampleTime= [5.0000000000000002396e-05   0 ];CompiledInportDataTypes=[  4   4 ]"
       ";CompiledInportDataWidth=[1  1];"
     }
@@ -5674,7 +5338,7 @@ Model {
       CHANNELS		      "[3]"
       AllOrNothing	      on
       SampleTime	      "-1 "
-      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_DataLog/Microchip Master"
+      MCHP_MASTERLINK	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_CurrentLoop/Microchip Master"
       MCHP_COMPILED_INFO      "CompiledSampleTime= [0.0020000000000000000416   0 ];CompiledInportDataTypes=[  4 ];Comp"
       "iledInportDataWidth=[1];"
     }
@@ -5699,15 +5363,15 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "Gain"
       SrcPort		      1
-      Points		      [27, 0]
+      Points		      [21, 0]
       Branch {
-	ZOrder			322
+	ZOrder			360
+	Labels			[-1, 1]
 	DstBlock		"MCLV2\nwith DC motor"
 	DstPort			1
       }
       Branch {
 	ZOrder			209
-	Labels			[0, 0]
 	Points			[0, 175]
 	DstBlock		"Cast"
 	DstPort			1
@@ -5749,8 +5413,18 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      4
-      DstBlock		      "Cast1"
-      DstPort		      1
+      Points		      [35, 0]
+      Branch {
+	ZOrder			359
+	Points			[0, 119; -639, 0; 0, -324]
+	DstBlock		"Electrical Control1"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			358
+	DstBlock		"Cast1"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      206
@@ -5795,11 +5469,11 @@ Model {
       }
     }
     Line {
-      ZOrder		      238
+      ZOrder		      354
       SrcBlock		      "Compare\nTo Constant"
       SrcPort		      1
       Points		      [45, 0]
-      DstBlock		      "Shirp Small"
+      DstBlock		      "Electrical Control1"
       DstPort		      enable
     }
     Line {
@@ -5819,11 +5493,21 @@ Model {
     Line {
       Name		      "Pot"
       ZOrder		      196
-      Labels		      [1, 1]
       SrcBlock		      "From1"
       SrcPort		      1
-      DstBlock		      "From Pot"
-      DstPort		      1
+      Points		      [14, 0]
+      Branch {
+	ZOrder			357
+	Points			[0, -235]
+	DstBlock		"Electrical Control1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			356
+	Labels			[1, 1]
+	DstBlock		"From Pot"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      197
@@ -5834,8 +5518,8 @@ Model {
       DstPort		      enable
     }
     Line {
-      ZOrder		      237
-      SrcBlock		      "Shirp Small"
+      ZOrder		      355
+      SrcBlock		      "Electrical Control1"
       SrcPort		      1
       DstBlock		      "Merge"
       DstPort		      1

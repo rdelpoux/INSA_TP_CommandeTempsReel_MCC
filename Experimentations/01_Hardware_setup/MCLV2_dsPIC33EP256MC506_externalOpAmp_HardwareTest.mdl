@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.57"
+    ComputedModelVersion    "1.60"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -233,18 +233,18 @@ Model {
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
-	  Extents		  [1798.0, 945.0]
+	  Extents		  [1797.0, 945.0]
 	  ZoomFactor		  [1.1731158725082613]
-	  Offset		  [101.17767646014624, -17.934029986369808]
+	  Offset		  [101.17767646014624, -10.985915492957727]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "351"
-	  Extents		  [1798.0, 945.0]
+	  Extents		  [1797.0, 945.0]
 	  ZoomFactor		  [1.07]
-	  Offset		  [23.33944768338916, -18.296684888026789]
+	  Offset		  [23.339447683389153, -18.296684888026789]
 	}
 	PropName		"EditorsInfo"
       }
@@ -266,7 +266,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAcyAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAcxAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
@@ -280,9 +280,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Lubin Kerhuel"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 11 10:49:29 2018"
-  RTWModifiedTimeStamp	  466426167
-  ModelVersionFormat	  "1.%<AutoIncrement:57>"
+  LastModifiedDate	  "Wed Dec 12 12:46:55 2018"
+  RTWModifiedTimeStamp	  466519287
+  ModelVersionFormat	  "1.%<AutoIncrement:60>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "disabled"
@@ -1256,7 +1256,7 @@ Model {
 	      CustomProperty {
 		DataType		"string"
 		Name			"TIMER_PRESCALER"
-		Value			"[0 -1 -1 -1 -1]"
+		Value			"[1 -1 -1 -1 -1]"
 	      }
 	      CustomProperty {
 		DataType		"string"
@@ -1765,7 +1765,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "117"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "450"
+    SIDHighWatermark	    "452"
     Block {
       BlockType		      DataTypeConversion
       Name		      "Cast"
@@ -1784,7 +1784,7 @@ Model {
       BlockType		      DataTypeConversion
       Name		      "Cast1"
       SID		      "269"
-      Position		      [945, 498, 1020, 532]
+      Position		      [945, 503, 1020, 537]
       ZOrder		      3516
       OutDataTypeStr	      "single"
       RndMeth		      "Floor"
@@ -1913,7 +1913,7 @@ Model {
       BlockType		      From
       Name		      "From"
       SID		      "349"
-      Position		      [350, 536, 390, 564]
+      Position		      [350, 541, 390, 569]
       ZOrder		      3571
       GotoTag		      "Pot"
     }
@@ -1921,7 +1921,7 @@ Model {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "312"
-      Position		      [435, 535, 465, 565]
+      Position		      [435, 540, 465, 570]
       ZOrder		      3550
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       Port {
@@ -2048,10 +2048,10 @@ Model {
 	  Trig_TimeStep		  "with each update of the ADC block output"
 	  ADC_DMA_CHANNEL	  "Use Interrupt instead of DMA"
 	  SampleTime		  "5e-05"
-	  Info			  "Total Time for Sample & Conversion : 2.7e-06s including 3e-07s (x 1) sample time."
+	  Info			  "Total Time for Sample & Conversion : 2.4e-06s including 3.4286e-07s (x 1) sample time."
 	  MCHP_PORT		  "{Analog Input 0}{AN0}15:2:A0;{Analog Input 13}{AN13}15:2:E13;"
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
-	  ADC_TIMING		  "[2.6999999999999999837e-06]"
+	  ADC_TIMING		  "[2.4000000000000003149e-06]"
 	  Port {
 	    PortNumber		    2
 	    Name		    "Ia"
@@ -2410,7 +2410,7 @@ Model {
 	  SID			  "118"
 	  Position		  [525, 199, 650, 251]
 	  ZOrder		  3489
-	  Gain			  "2*pi/1000"
+	  Gain			  "2*pi/2000"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "fixdt(1,16,5)"
 	  SaturateOnIntegerOverflow off
@@ -2422,7 +2422,7 @@ Model {
 	  Position		  [525, 261, 685, 309]
 	  ZOrder		  3549
 	  ForegroundColor	  "red"
-	  Gain			  "(1/2)*(2*pi) / 1000 / 0.002"
+	  Gain			  "(2*pi) / 2000 / 0.002"
 	  ParamDataTypeStr	  "Inherit: Inherit via internal rule"
 	  OutDataTypeStr	  "fixdt(1,16,5)"
 	  LockScale		  on
@@ -2802,12 +2802,12 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "141"
+	    ZoomFactor		    "150"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Vdc\n[-1 1]"
 	      SID		      "346"
-	      Position		      [20, 48, 50, 62]
+	      Position		      [-25, 118, 5, 132]
 	      ZOrder		      3500
 	      IconDisplay	      "Port number"
 	    }
@@ -2823,7 +2823,7 @@ Model {
 	      BlockType		      Bias
 	      Name		      "Bias"
 	      SID		      "255"
-	      Position		      [270, 40, 360, 70]
+	      Position		      [225, 110, 315, 140]
 	      ZOrder		      3498
 	      Bias		      "PWMmax/2"
 	      SaturateOnIntegerOverflow	off
@@ -2832,7 +2832,7 @@ Model {
 	      BlockType		      DataTypeConversion
 	      Name		      "Cast"
 	      SID		      "314"
-	      Position		      [445, 38, 520, 72]
+	      Position		      [400, 108, 475, 142]
 	      ZOrder		      3499
 	      OutDataTypeStr	      "uint16"
 	      RndMeth		      "Floor"
@@ -2842,7 +2842,7 @@ Model {
 	      BlockType		      Constant
 	      Name		      "Constant"
 	      SID		      "260"
-	      Position		      [460, 107, 520, 143]
+	      Position		      [455, 27, 515, 63]
 	      ZOrder		      3494
 	      Value		      "PWMmax"
 	      OutDataTypeStr	      "uint16"
@@ -2851,7 +2851,7 @@ Model {
 	      BlockType		      Gain
 	      Name		      "Gain"
 	      SID		      "90"
-	      Position		      [95, 25, 190, 85]
+	      Position		      [50, 95, 145, 155]
 	      ZOrder		      3497
 	      Gain		      "PWMmax/2"
 	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
@@ -2932,7 +2932,7 @@ Model {
 	      Name		      "Saturation"
 	      SID		      "104"
 	      Ports		      [1, 1]
-	      Position		      [680, 40, 705, 70]
+	      Position		      [700, 40, 725, 70]
 	      ZOrder		      3489
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax - (1e-6/50e-6)*PWMmax"
@@ -2943,7 +2943,7 @@ Model {
 	      Name		      "Saturation1"
 	      SID		      "370"
 	      Ports		      [1, 1]
-	      Position		      [680, 105, 705, 135]
+	      Position		      [700, 105, 725, 135]
 	      ZOrder		      3501
 	      InputPortMap	      "u0"
 	      UpperLimit	      "PWMmax"
@@ -2954,10 +2954,10 @@ Model {
 	      Name		      "Sum"
 	      SID		      "261"
 	      Ports		      [2, 1]
-	      Position		      [580, 100, 605, 135]
+	      Position		      [585, 35, 610, 70]
 	      ZOrder		      3495
 	      ShowName		      off
-	      Inputs		      "-+"
+	      Inputs		      "+-"
 	      InputSameDT	      off
 	      AccumDataTypeStr	      "Inherit: Same as first input"
 	      SaturateOnIntegerOverflow	off
@@ -2973,31 +2973,31 @@ Model {
 	      ZOrder		      2
 	      SrcBlock		      "Cast"
 	      SrcPort		      1
-	      Points		      [36, 0]
+	      Points		      [81, 0; 0, -5]
 	      Branch {
-		ZOrder			3
-		Points			[0, 55]
+		ZOrder			28
+		Points			[0, -60]
 		DstBlock		"Sum"
-		DstPort			1
+		DstPort			2
 	      }
 	      Branch {
-		ZOrder			4
-		DstBlock		"Saturation"
+		ZOrder			25
+		DstBlock		"Saturation1"
 		DstPort			1
 	      }
 	    }
 	    Line {
-	      ZOrder		      5
-	      SrcBlock		      "Saturation"
+	      ZOrder		      26
+	      SrcBlock		      "Saturation1"
 	      SrcPort		      1
 	      DstBlock		      "PWM High Speed"
-	      DstPort		      1
+	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      11
+	      ZOrder		      23
 	      SrcBlock		      "Sum"
 	      SrcPort		      1
-	      DstBlock		      "Saturation1"
+	      DstBlock		      "Saturation"
 	      DstPort		      1
 	    }
 	    Line {
@@ -3008,11 +3008,11 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      12
-	      SrcBlock		      "Saturation1"
+	      ZOrder		      24
+	      SrcBlock		      "Saturation"
 	      SrcPort		      1
 	      DstBlock		      "PWM High Speed"
-	      DstPort		      2
+	      DstPort		      1
 	    }
 	    Line {
 	      ZOrder		      9
@@ -3022,11 +3022,11 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      10
+	      ZOrder		      29
 	      SrcBlock		      "Constant"
 	      SrcPort		      1
 	      DstBlock		      "Sum"
-	      DstPort		      2
+	      DstPort		      1
 	    }
 	  }
 	}
@@ -3069,7 +3069,7 @@ Model {
 	  IMV_x2		  "QEA = 1"
 	  PIN_HOME		  "Dynamic Options"
 	  PIN_HOME_TXT		  "A4 / P20 / Pin[33]"
-	  QEIxLEC_GEC		  "[0 999]   "
+	  QEIxLEC_GEC		  "[0 1999]   "
 	  QEIxIC		  "0"
 	  PCIIRQ		  off
 	  IDXPOL		  off
@@ -3079,7 +3079,7 @@ Model {
 	  MaxPeriod		  "1e-3"
 	  FILTREN		  on
 	  QFDIV_popup		  "Dynamic Options"
-	  QFDIV_popup_TXT	  "833.33 kHz"
+	  QFDIV_popup_TXT	  "729.17 kHz"
 	  FILTER_CutOffFreq	  "100e3 "
 	  PIN_CCMP		  "Dynamic Options"
 	  PIN_CCMP_TXT		  "A4 / P20 / Pin[33]"
@@ -3855,8 +3855,8 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion>\nLost modified on: %<LastModificationDate>\n%<Creator>\n\n"
       "%<Description>"
-      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.56\\nLost modified on: Tue Dec 11"
-      " 00:58:19 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
+      MaskDisplayString	      "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest v1.59\\nLost modified on: Wed Dec 12"
+      " 12:41:14 2018\\nR.Delpoux & L.Kerhuel\\n\\nMCLV V2 board connected to DC motor through PWM [1 2]\\nPIM 33EP256M"
       "C506 with internal Op-Amp (populated with resistances)\\n\\nPotentiometer set PWM duty cycle and rotates motor i"
       "n one side or the other.\\nLED D2 blink at 5Hz. LED D1 is the CPU busy flag"
       HorizontalTextAlignment "Center"
@@ -3894,7 +3894,7 @@ Model {
       BlockType		      RateTransition
       Name		      "Rate Transition1"
       SID		      "271"
-      Position		      [800, 494, 840, 536]
+      Position		      [815, 499, 855, 541]
       ZOrder		      3518
       Deterministic	      off
       OutPortSampleTime	      ".01"
@@ -4044,11 +4044,11 @@ Model {
 	  TIMER_Resolution	  "Dynamic Options"
 	  TIMER_Resolution_TXT	  "Resol: 0.1143(us)  -  Max: 7.49(ms)"
 	  MCHP_PORT		  "{MCU Load Pin}{MCU_Load}0:1:C10;"
-	  MCHP_TIMER_REQUEST	  "{MCU_Load}{MCU_Load}21:5:0:0:[]:65536;"
+	  MCHP_TIMER_REQUEST	  "{MCU_Load}{MCU_Load}21:5:0:0:[]:524288;"
 	  MCHP_TIMER_RESULT	  "[1 65535 ]"
 	  MCHP_MASTERLINK	  "MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest/Microchip Master"
 	  MCHP_COMPILED_INFO	  "CompiledSampleTime= [Inf Inf ];CompiledInportDataTypes=[ ];CompiledInportDataWidth=[];"
-	  Info			  "Timer 1:  Resol: 50(ns)  -  Max: 3.2768(ms)"
+	  Info			  "Timer 1:  Resol: 114.2857143(ns)  -  Max: 7.48983(ms)"
 	  SampleTime		  "-1"
 	}
 	Block {
@@ -4116,7 +4116,7 @@ Model {
       MultiThreadCoSim	      "auto"
       UART_REF		      "1"
       BAUD_Choice	      "Dynamic Options"
-      BAUD_Choice_TXT	      "  115200         [+0.94%]"
+      BAUD_Choice_TXT	      "  115200         [-0.06%]"
       BAUD_Choice_IR	      "Dynamic Options"
       BAUD_Choice_IR_TXT      "[]"
       BAUD_Custom	      "115200"
@@ -4157,7 +4157,7 @@ Model {
       PIN_RTS_TXT	      "A4 / P20 / Pin[33]"
       InitSequence_chkbox     off
       BAUD_Choice_InitSeq     "Dynamic Options"
-      BAUD_Choice_InitSeq_TXT "  115200         [+0.94%]"
+      BAUD_Choice_InitSeq_TXT "  115200         [-0.06%]"
       BAUD_Choice_IR_InitSeq  "Dynamic Options"
       BAUD_Choice_IR_InitSeq_TXT "0"
       BAUD_Custom_InitSeq     "0"
@@ -4168,7 +4168,7 @@ Model {
       Name		      "UART Tx-Matlab"
       SID		      "267"
       Ports		      [4]
-      Position		      [1100, 414, 1225, 681]
+      Position		      [1100, 416, 1225, 679]
       ZOrder		      3514
       ForegroundColor	      "blue"
       LibraryVersion	      "3.43"
@@ -4202,11 +4202,10 @@ Model {
     }
     Line {
       Name		      "Position"
-      ZOrder		      132
-      Labels		      [2, 1]
+      ZOrder		      187
+      Labels		      [0, 0]
       SrcBlock		      "MCLV2\nwith DC motor"
       SrcPort		      2
-      Points		      [53, 0; 0, -5]
       DstBlock		      "Rate Transition1"
       DstPort		      1
     }
@@ -4235,6 +4234,7 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "Cast1"
       SrcPort		      1
+      Points		      [35, 0; 0, -5]
       DstBlock		      "UART Tx-Matlab"
       DstPort		      2
     }
@@ -4255,10 +4255,9 @@ Model {
     Line {
       Name		      "PWM\nDuty-cycle"
       ZOrder		      131
-      Labels		      [2, 1]
+      Labels		      [1, 1]
       SrcBlock		      "Gain"
       SrcPort		      1
-      Points		      [30, 0; 0, 5]
       DstBlock		      "MCLV2\nwith DC motor"
       DstPort		      1
     }
