@@ -127,6 +127,9 @@ Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab promp
 
 1. Push the  **start** button to visualize runtime curves showing potentiometer, motor position, motor speed and current measured on shunt resistors
 
+
+![Motor Pravalux](.gitbook/assets/motorpravalux.png)
+
 [![picgui interface][fig:DataVisu]][fig:DataVisu]
 
 *fig: The picgui interface decode the incoming UART data stream and plot in real-time received values, here potentiometer, motor speed and current measured. Plots in figure are realized with a matlab script which is continuously refreshing the graphs using incoming data. This script can be modified providing all the matlab capabilities to customize visualization or perform further analysis on received data in real-time.*
