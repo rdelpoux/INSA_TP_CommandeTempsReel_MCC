@@ -1,29 +1,15 @@
 # Experimentation
 
-## Getting Super Powers
+## Apply the control 
 
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
+1. Apply the electrical controller, verify the results
+2. Apply the mechanical controller, verify the results.
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ Low pass filter to download [here](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/raw/master/LABMatlabFiles/07_Final_Ctrl/LPF_R2017a.zip)
 {% endhint %}
 
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-* [ ] ererer
-* [ ] ererer
-* [ ] ererer
 
 
-
-
+## Good Luck!
 
