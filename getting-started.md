@@ -2,7 +2,9 @@
 
 ## Getting Started
 
-### Hardware requirements:
+### Getting Started
+
+#### Hardware requirements:
 
 * [MCLV-V2](https://www.microchip.com/dsPICDEMMCLV-2DevelopmentBoard866) Motor Control Board
 * [PIM dsPIC33EP256MC506](https://www.microchip.com/DevelopmentTools/ProductDetails/ma330031) with internal Op-Amp
@@ -10,7 +12,7 @@
 * DC motor \([Pravalux Brushed DC Motor, 90 W, 24 V dc, 3000 rpm](https://uk.rs-online.com/web/p/dc-motors/0716200/)\)
 * Cable to send data from the MCLV board \(Tx\) to the PC \(Rx\) \(like a [FTDI cable](https://www.ftdichip.com/Products/Cables/USBTTLSerial.htm)\)
 
-### Software requirements:
+#### Software requirements:
 
 * Matlab/Simulink
   * Embedded coder \(Matlab Coder & Simulink Coder\)
@@ -19,9 +21,9 @@
 * [MPLAB X IDE](https://www.microchip.com/MPLABX) development \(required to flash the binary from matlab\)
 * [XC16](https://www.microchip.com/XC16) compiler
 
-### Hardware Configuration
+#### Hardware Configuration
 
-#### Pinout of the MCLV-V2 with the PIM dsPIC33EP256MC506 with External Op-Amp
+**Pinout of the MCLV-V2 with the PIM dsPIC33EP256MC506 with External Op-Amp**
 
 The pinout for the MCLV V2 board with the dsPIC33EP256MC506 PIM for Interlnal Op Amp configuration is described in its [Information Sheet](http://ww1.microchip.com/downloads/en/DeviceDoc/dsPIC33EP256MC506%20Internal%20Op%20Amp%20PIM%20Infosheet%20Rev%20B.pdf).
 
@@ -57,7 +59,7 @@ The table below provide important pinout information.
 | PGC \(debug\) | RB6 \(PGC2\) |
 | PGD \(debug\) | RB5 \(PGD2\) |
 
-#### Analog inputs scaling
+**Analog inputs scaling**
 
 **Currents measurements:**
 
@@ -83,7 +85,7 @@ $$V_{BUS} = \frac{1}{15} * DC+$$
 
 The DC input range not saturating the ADC input is +- 24.75V.
 
-### Peripheral block for Simulink
+#### Peripheral block for Simulink
 
 Two Push Button **S1** and **S2** states are read using one or two Digital Input blocks. Input voltage is inverted:bBoolean output is 0 when button is pushed ; 1 otherwise.
 
@@ -102,13 +104,13 @@ The ADC is set for 10 bits conversion which allows parallele sampling on up to 4
 
 QEI block decode signal from the quadrature encoder sensor which contains 1000 lines. The position output must roll-over at value 999. Position and speed changes are likely not to change in 50us. The QEI block is likely to execute at a lower rate \(40 time slower here at 2ms\) than the base time step.
 
-### Generate code and compile:
+#### Generate code and compile:
 
 The build icon on top right of Simulink model, \(see [fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png) above\) do: 1. generates c source code, 2. compiles c code and 3. flash the resulting binary to the MCLV targeted board.
 
 > If programming the board fails \(not powered, not connected,...\), use the **Microchip -&gt; Flash** within the Simulink model menu.
 
-### Data Visualization with picgui:
+#### Data Visualization with picgui:
 
 Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/DataVisu.png)\) \(type **picgui** at matlab prompt or double click on the **Interface Tx-Matlab block** in the model\)
 
@@ -118,27 +120,26 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
 
 ![fig: The picgui interface decode the incoming UART data stream and plot in real-time received values, here potentiometer, motor speed and current measured. Plots in figure are realized with a matlab script which is continuously refreshing the graphs using incoming data. This script can be modified providing all the matlab capabilities to customize visualization or perform further analysis on received data in real-time.](.gitbook/assets/datavisu.png)
 
-
-# To do 
+## To do
 
 1. Starting from the empty file to download [here](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/raw/f4be492167956b5449ef4fb184332b885cf5780f/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.zip)
-, add the configuration blocks	
+
+   , add the configuration blocks    
+
    * MCHP Master
    * Compiler Version 
    * UART config
    * Pin Info
+
 2. Blink LED D1 at 5hz to verify the configuration
 3. Configure the peripherals :
    * Two PWM signals to control the motor DC voltage through an H bridge structure using MOSFET.
    * Two ADC channels providing the respectively the board potentiometer position to impose a reference and the current measurement from a shunt resistor. 
    * QEI peripheral to provide shaft position and speed
-   * UART connection to the computer for the data analysis. 	
+   * UART connection to the computer for the data analysis.     
 4. With the MCLV2 board powered and programmed, rotate the potentiometer to accelerate motor / reverse direction. **Setting the potentiometer at middle position \(off\) at power on to avoid current surge.**
-
 
 The model should look like \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png)\)
 
 ![](.gitbook/assets/model_hardware_test_withsampletime%20%281%29.png)
-
-
 
