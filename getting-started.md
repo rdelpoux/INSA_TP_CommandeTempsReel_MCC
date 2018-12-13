@@ -70,11 +70,11 @@ Two shunts measures Ia and Ib on PWM1 and PWM2 (low side). The third shunt measu
 
 Op-Amps (Internal or External) with a **gain of 15** boost low voltage measured to higher voltage converted by the dsPIC ADC for signals Ia, Ib and Ibus. (see [fig4 from DS52062B](./Figures/GettingStarted/Internal_OpAmp_DS52062B_Fig4.png))
 
-$$V_{ADC} = 0.025x15xI_{shunt}$$
+$$V_{ADC} = 0.025*15*I_{shunt}$$
 
 For the ADC configured for 10 bits right aligned conversion, the raw output represents:
 
-$$ADC_{out} = 0.025x15 x \frac{1024}{3.3} x I_{shunt} = 116.36 x I_{shunt}$$
+$$ADC_{out} = 0.025*15 * \frac{1024}{3.3}* I_{shunt} = 116.36 * I_{shunt}$$
 
 The maximum measurable current is +-4.4 A which provides values within [-512 512] range. 
 
@@ -82,7 +82,7 @@ The maximum measurable current is +-4.4 A which provides values within [-512 512
 
 A divider with a **gain of 1/15** reduce board DC+ input voltage to a lower voltage (Vbus) to fit within the [0 3.3V] range. 
 
-$$V_{BUS} = \frac{1}{15} x DC+$$
+$$V_{BUS} = \frac{1}{15} * DC+$$
 
 The DC input range not saturating the ADC input is +- 24.75V.
 
