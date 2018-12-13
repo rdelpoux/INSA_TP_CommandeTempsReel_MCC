@@ -106,52 +106,18 @@ The ADC is triggered by the PWM trigger signal. End of the ADC conversion will t
 
 QEI block decode signal from the quadrature encoder sensor which contains 1000 lines. The position output must roll-over at value 999. Position and speed changes are likely not to change in 50us. The QEI block is likely to execute at a lower rate (40 time slower here at 2ms) than the base time step. 
 
+## Generate code and compile:
 
-
-
-
-
-
-
-Simulink model to target a dsPIC MCLV board running a DC motor
-=================================================
-
-The model contains blocks to configure **dsPIC peripheral** (PWM, ADC and QEI) to run a **DC motor** with the **MCLV-V2 board** equipped with the **dsPIC-33EP256MC506 PIM** using internal Op-Amps.
-Sensors measurements are visualized on the computer while the motor is running.
-
-
-Getting Started
-------------------------------
-
-The model [MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl] ([fig][fig:Model_Hardware_Test_withSampleTime]) is for code generation (peripheral blocks have no effects during a simulation). 
-Open the Simulink model and push the build button on the top right, below the Simulink windows menu bar.
-
-[![Simulink Model][fig:Model_Hardware_Test_withSampleTime]][fig:Model_Hardware_Test_withSampleTime]
-*fig: Model [MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl] set-up the dsPIC 33EP256MC506 peripherals with internal op-amps for the MCLV-v2 board. Two PWM signals updated **at 20kHz** drives a DC motor through a H mosfet structure. One QEI peripheral sampled **at 500Hz** provides shaft position and speed from an optical encoder. Two ADC channels provides respectively the board potentiometer position and the current measurement from a shunt resistor. These four measurements are under-sampled **at 100Hz** and sent through the 115200 UART connection to the computer and decoded with the picgui graphical interface.*
-
-
-
-
-Experiment
-------------------------------
-
-### Generate code and compile:
-
-The build icon on top right of Simulink model, (see [fig][fig:Model_Hardware_Test_withSampleTime] above) do:
+The build icon on top right of Simulink model do:
 1. generates c source code,
 2. compiles c code and
 3. flash the resulting binary to the MCLV targeted board.
 
-
 > If programming the board fails (not powered, not connected,...),
 > use the **Microchip -> Flash** within the Simulink model menu.
 
-### Run the DC motor:
 
-With the MCLV2 board powered and programmed, rotate the potentiometer to accelerate motor / reverse direction. **Setting the potentiometer at middle position (off) at power on to avoid current surge.**
-
-
-### Data Visualization with picgui:
+## Data Visualization with picgui:
 
 Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab prompt or double click on the **Interface Tx-Matlab block** in the model)
 1. Select host UART port and connect at 115200 bauds 
@@ -161,11 +127,7 @@ Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab promp
 [![picgui interface][fig:DataVisu]][fig:DataVisu]
 *fig: The picgui interface decode the incoming UART data stream and plot in real-time received values, here potentiometer, motor speed and current measured. Plots in figure are realized with a matlab script which is continuously refreshing the graphs using incoming data. This script can be modified providing all the matlab capabilities to customize visualization or perform further analysis on received data in real-time.*
 
-[Back to project presentation][MainProjectPage]
 
-
-<!---  math test not working on GitHub: $\sqrt(2) + \frac{1}{2^5}$
-comment  -->
 
 [fig:Model_Hardware_Test_withSampleTime]: ./Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png "Simulink model to generate code for the MCLV-V2 board with a dsPIC PIM to run and log data from a DC motor."
 [fig:DataVisu]: ./Figures/GettingStarted/DataVisu.png "picgui, custom script and figure that present in real-time potentiometer, motor speed and current measured"
