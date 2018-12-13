@@ -1,0 +1,1334 @@
+Model {
+  Name			  "MCLV2_dsPIC33EP256MC506_baset_R2017a"
+  Version		  8.9
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.65"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    OrderedModelArguments   1
+  }
+  DiagnosticSuppressor	  "on"
+  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
+  Description		  "MCLV V2 board connected to DC motor through PWM [1 2]\nPIM 33EP256MC506 with internal Op-Amp (popula"
+  "ted with resistances)\n\nPotentiometer set PWM duty cycle and rotates motor in one side or the other.\nLED D2 blink "
+  "at 5Hz. LED D1 is the CPU busy flag"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [67.0, -4.0, 1675.0, 985.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[0]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1798.0, 948.0]
+	ZoomFactor		[1.1731158725082613]
+	Offset			[101.17767646014624, -14.906830601345405]
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[579]
+	Height			[434]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADSfwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAPQAAA0kAAABhAP///wAAAAEAAAFPAAADSfwCA"
+      "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
+      "QBjAHQAbwByAAAAAD0AAANJAAAAPgD///8AAAcyAAAD0gAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
+      "////wEAAACE/////wAAAAAAAAAA/////wEAAADu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFy/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAN+/////wAAAAAAAAAA/"
+      "////wEAAAOx/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+    }
+  }
+  HideAutomaticNames	  on
+  Created		  "Wed Aug 22 16:12:05 2018"
+  Creator		  "R.Delpoux & L.Kerhuel"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Lubin Kerhuel"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Dec 13 14:18:56 2018"
+  RTWModifiedTimeStamp	  466611536
+  ModelVersionFormat	  "1.%<AutoIncrement:65>"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  on
+  PortDataTypeDisplayFormat "BaseTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "MCLV2_dsPIC33EP256MC506_baset_R2017a"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "MCLV2_dsPIC33EP256MC506_baset_R2017a"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      8
+      Version		      "1.17.0"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  9
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "1e-3"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  on
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  on
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  10
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Dataset"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  11
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Inlined"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"single"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  on
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  on
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Individual arguments"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  128
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "auto"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "speed"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  12
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Simplified"
+	  MergeDetectMultiDrivingBlocksExec "error"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "warning"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "error"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "error"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "error"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "error"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "warning"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  UnitDatabase		  ""
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  13
+	  Version		  "1.17.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "ProdHWDeviceType"
+	    Cell		    "ProdEqTarget"
+	    Cell		    "ProdBitPerChar"
+	    Cell		    "ProdBitPerShort"
+	    Cell		    "ProdBitPerInt"
+	    Cell		    "ProdBitPerLong"
+	    Cell		    "ProdBitPerLongLong"
+	    Cell		    "ProdWordSize"
+	    Cell		    "ProdLongLongMode"
+	    Cell		    "ProdShiftRightIntArith"
+	    Cell		    "ProdEndianess"
+	    Cell		    "ProdIntDivRoundTo"
+	    Cell		    "ProdLargestAtomicInteger"
+	    Cell		    "ProdLargestAtomicFloat"
+	    Cell		    "ProdBitPerPtrDiffT"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  16
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  16
+	  ProdBitPerSizeT	  16
+	  ProdBitPerPtrDiffT	  16
+	  ProdLargestAtomicInteger "Integer"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "LittleEndian"
+	  ProdWordSize		  16
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  14
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Single"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel on
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  15
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  off
+	  MATLABDynamicMemAllocThreshold 65536
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  16
+	  Version		  "1.17.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "TargetLang"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "MCHP_dsPIC_stf.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "MCHP_dsPIC.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "Microchip Embedded Target PIC24 dsPIC30 dsPIC33 (real-time)"
+	  GenerateReport	  on
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  "\n"
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomLAPACKCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport on
+	  LaunchReport		  on
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  on
+	  GenerateTraceReport	  on
+	  GenerateTraceReportSl	  on
+	  GenerateTraceReportSf	  on
+	  GenerateTraceReportEml  on
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	on
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      17
+	      Version		      "1.17.0"
+	      DisabledProps	      []
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments on
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses off
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      255
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement on
+	      OperatorAnnotations     on
+	      SimulinkDataObjDesc     on
+	      SFDataObjDesc	      on
+	      MATLABFcnDesc	      on
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      on
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    on
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      18
+	      Version		      "1.17.0"
+	      Array {
+		Type			"Cell"
+		Dimension		10
+		Cell			"LINKER_SCRIPT"
+		Cell			"PIC_LIB"
+		Cell			"PIC_INCLUDES"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MatFileLogging"
+		Cell			"GRTInterface"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"UtilityFuncGeneration"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"ModelReferenceCompliant"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      "_lib.a"
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "Microchip Code Replacement Library for dsPIC"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant off
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  off
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	on
+	      SuppressErrorStatus     on
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   off
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	off
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      SystemTargetFile	      "MCHP_dsPIC_stf.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.ERTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  19
+		  Version		  "1.18.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    12
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "ERTCustomFileTemplate"
+		    Cell		    "MatFileLogging"
+		    Cell		    "GRTInterface"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "UtilityFuncGeneration"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "ERTDataHdrFileTemplate"
+		    Cell		    "ERTDataSrcFileTemplate"
+		    Cell		    "ERTHdrFileBannerTemplate"
+		    Cell		    "ERTSrcFileBannerTemplate"
+		    Cell		    "ModelReferenceCompliant"
+		    PropName		    "DisabledProps"
+		  }
+		  Description		  ""
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  "_lib.a"
+		  TargetPreCompLibLocation ""
+		  GenFloatMathFcnCalls	  "NOT IN USE"
+		  TargetLangStandard	  "C89/C90 (ANSI)"
+		  CodeReplacementLibrary  "Microchip Code Replacement Library for dsPIC"
+		  UtilityFuncGeneration	  "Auto"
+		  MultiwordTypeDef	  "System defined"
+		  MultiwordLength	  256
+		  GenerateFullHeader	  on
+		  InferredTypesCompatibility off
+		  ExistingSharedCode	  ""
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant off
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  off
+		  GeneratePreprocessorConditionals "Use local settings"
+		  CombineOutputUpdateFcns on
+		  CombineSignalStateStructs on
+		  SuppressErrorStatus	  on
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  on
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  off
+		  MultiInstanceERTCode	  off
+		  CodeInterfacePackaging  "Nonreusable function"
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  off
+		  SupportNonInlinedSFcns  on
+		  RemoveDisableFunc	  off
+		  RemoveResetFunc	  on
+		  SupportVariableSizeSignals off
+		  ParenthesesLevel	  "Nominal"
+		  CastingMode		  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.ERTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  MDXCompliant		  off
+		  GRTInterface		  off
+		  GenerateAllocFcn	  off
+		  UseToolchainInfoCompliant off
+		  GenerateSharedConstants on
+		  CoderGroups		  []
+		  AccessMethods		  []
+		  LookupTableObjectStructAxisOrder "1,2,3,4,..."
+		  GenerateASAP2		  off
+		  ExtMode		  off
+		  ExtModeTransport	  0
+		  ExtModeStaticAlloc	  off
+		  ExtModeStaticAllocSize  500
+		  ExtModeTesting	  off
+		  ExtModeMexFile	  "ext_comm"
+		  ExtModeMexArgs	  ""
+		  ExtModeIntrfLevel	  "Level1"
+		  InlinedParameterPlacement "NonHierarchical"
+		  TargetOS		  "BareBoardExample"
+		  MultiInstanceErrorCode  "Error"
+		  RootIOFormat		  "Individual arguments"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  ERTSrcFileBannerTemplate "MCHP_dsPIC_code_template.cgt"
+		  ERTHdrFileBannerTemplate "MCHP_dsPIC_code_template.cgt"
+		  ERTDataSrcFileTemplate  "MCHP_dsPIC_code_template.cgt"
+		  ERTDataHdrFileTemplate  "MCHP_dsPIC_code_template.cgt"
+		  ERTCustomFileTemplate	  "MCHP_main.tlc"
+		  EnableDataOwnership	  off
+		  SignalDisplayLevel	  10
+		  ParamTuneLevel	  10
+		  GlobalDataDefinition	  "Auto"
+		  DataDefinitionFile	  "global.c"
+		  GlobalDataReference	  "Auto"
+		  ERTFilePackagingFormat  "Modular"
+		  DataReferenceFile	  "global.h"
+		  PreserveExpressionOrder off
+		  PreserveIfCondition	  off
+		  ConvertIfToSwitch	  on
+		  PreserveExternInFcnDecls on
+		  SuppressUnreachableDefaultCases on
+		  EnableSignedLeftShifts  on
+		  EnableSignedRightShifts on
+		  IndentStyle		  "K&R"
+		  IndentSize		  "2"
+		  EnableUserReplacementTypes off
+		  Array {
+		    Type		    "Struct"
+		    Dimension		    1
+		    MATStruct {
+		    double		    ""
+		    single		    ""
+		    int32		    ""
+		    int16		    ""
+		    int8		    ""
+		    uint32		    ""
+		    uint16		    ""
+		    uint8		    ""
+		    boolean		    ""
+		    int			    ""
+		    uint		    ""
+		    char		    ""
+		    }
+		    PropName		    "ReplacementTypes"
+		  }
+		  MaxIdInt32		  "MAX_int32_T"
+		  MinIdInt32		  "MIN_int32_T"
+		  MaxIdUint32		  "MAX_uint32_T"
+		  MaxIdInt16		  "MAX_int16_T"
+		  MinIdInt16		  "MIN_int16_T"
+		  MaxIdUint16		  "MAX_uint16_T"
+		  MaxIdInt8		  "MAX_int8_T"
+		  MinIdInt8		  "MIN_int8_T"
+		  MaxIdUint8		  "MAX_uint8_T"
+		  BooleanTrueId		  "true"
+		  BooleanFalseId	  "false"
+		  TypeLimitIdReplacementHeaderFile ""
+		  MemSecPackage		  "--- None ---"
+		  MemSecDataConstants	  "Default"
+		  MemSecDataIO		  "Default"
+		  MemSecDataInternal	  "Default"
+		  MemSecDataParameters	  "Default"
+		  MemSecFuncInitTerm	  "Default"
+		  MemSecFuncExecute	  "Default"
+		  MemSecFuncSharedUtil	  "Default"
+		  GroupConstants	  "Default"
+		  GroupRootInputs	  "Default"
+		  GroupRootOutputs	  "Default"
+		  GroupInternal		  "Default"
+		  GroupParameters	  "Default"
+		  GroupDataTransfer	  "Default"
+		  GroupInstanceSpecificParameters "Default"
+		  GroupModelData	  "Default"
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"PIC_REF"
+		Value			"33EP256MC506"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"HOST_PLATFORM"
+		Value			"PC"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"OPTIM_GCC"
+		Value			" -g -O1 -funroll-loops"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LDFLAGS"
+		Value			"'-t,--report-mem,-Map=info.map,-cref,-lq-dsp,--memorysummary,memoryfile.xml'"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__M91449_MCHP_Blockset_blocks_MCHP_dsPIC_stf_1OMF"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "elf"
+		  Value			  1
+		  String		  "coff"
+		}
+		Name			"OMF"
+		Value			"elf"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"ProduceHexOutput"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AssemblyListing"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"GCCPATH"
+		Value			"C:/PROGRA~2/MICROC~1/xc16/v1.35/bin"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LINKER_SCRIPT"
+		Value			"p33EP256MC506.gld"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"PIC_LIB"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"PIC_INCLUDES"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"GCC1"
+		Value			"xc16-gcc.exe"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"AR1"
+		Value			"xc16-ar"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BIN2HEX"
+		Value			"xc16-bin2hex"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"OBJDUMP"
+		Value			"xc16-objdump"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"MCHP_PROGRAMMER"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"MCHP_AUTO_FLASH"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"MCHP_MULTITHREAD_COMPILATION"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TIMER_PRESCALER"
+		Value			"[1 -1 -1 -1 -1]"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TIMER_PERIOD"
+		Value			"[65535]"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TIMER_START"
+		Value			"[0]"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"MCHP_CompiledTime_ModelSampleTimes_Txt"
+		Value			"s(1).Value=reshape([5e-05 0],1,2);s(1).Description='Discrete 1';s(1).ColorRGBValue=reshape([0.9 0 0],1,3);s"
+		"(1).Annotation='D1';s(1).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(2).Value=reshape([0.002 0],1,2);s(2).Descr"
+		"iption='Discrete 2';s(2).ColorRGBValue=reshape([0 0.82 0],1,3);s(2).Annotation='D2';s(2).OwnerBlock=reshape(MCHP_Fun"
+		".Hex2num('[]'),0,0);s(3).Value=reshape([0.01 0],1,2);s(3).Description='Discrete 3';s(3).ColorRGBValue=reshape([0 0 0"
+		".8],1,3);s(3).Annotation='D3';s(3).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(4).Value=reshape([0.1 0],1,2);s("
+		"4).Description='Discrete 4';s(4).ColorRGBValue=reshape([0.38 0.74 0.99],1,3);s(4).Annotation='D4';s(4).OwnerBlock=re"
+		"shape(MCHP_Fun.Hex2num('[]'),0,0);s(5).Value=reshape([Inf 0],1,2);s(5).Description='Constant';s(5).ColorRGBValue=res"
+		"hape([1 0.26 0.82],1,3);s(5).Annotation='Inf';s(5).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);s(6).Value=reshape"
+		"(MCHP_Fun.Hex2num('[]'),0,0);s(6).Description='Hybrid';s(6).ColorRGBValue=reshape([0.91 0.82 0.32],1,3);s(6).Annotat"
+		"ion='H';s(6).OwnerBlock=reshape(MCHP_Fun.Hex2num('[]'),0,0);"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"RTWGenSettings_txt"
+		Value			"s.RefMasterBlk='MCLV2_dsPIC33EP256MC506_baset_R2017a/Microchip Master';s.ChipIdN='[33  256  506]';s.ChipIdL"
+		"1='EP';s.ChipIdL2='MC';s.ChipIdL3='';s.arch3='33E';s.ChipId='33EP256MC506';s.bitFieldsSFR='4';s.ChipRAM='32768';s.Ch"
+		"ipRAM_XBegin='4096';s.ChipRAM_dma='[-1 -1]';s.FuseConfigTxt='#pragma config FNOSC = PRI, PWMLOCK = OFF\\\\n#pragma c"
+		"onfig POSCMD = XT, OSCIOFNC = ON, FCKSM = CSECMD\\\\n#pragma config FWDTEN = OFF\\\\n#pragma config ICS = PGD2, JTAG"
+		"EN = OFF\\\\n';s.TimeStep_Timer='-1';s.TimeStep_SyncADC='1';s.ADPCFG='1';s.ANSEL_Exist='1';s.ANSEL='[6162    -1    -"
+		"1    -1    -1    -1    -1    -1    -1    -1    -1]';s.TRIS='[65535  65439  64511  65503  65535  65532  65535     -1 "
+		"    -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     "
+		"-1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1  "
+		"   -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1]';s.R"
+		"POR='[-1   -1   -1   -1   -1   -1   -1  256   -1   -1]';s.RPINR='[-1     -1     -1     -1     -1     -1     -1     -"
+		"1     -1     -1     -1     -1     -1     -1  13848     -1     -1     -1     53     -1     -1     -1     -1     -1   "
+		"  -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1     -1"
+		"     -1     -1     -1     -1     -1]';s.PortConfigTxt='';s.CLKDIV='5';s.PLLFBD='243';s.SWITCH_OSC='16385';s.PLLRNG='"
+		"-1';s.MASTER_BusyFlag='-1';s.POWERSAVE='0';s.MIPS='70000000';s.FLASH_ECC='0';s.PBxDIV='[-1]';s.AN_type2='0';s.ACLKCO"
+		"N_reg='-1';s.DOS_00794='1';s.DOS_00931='1';s.DOS_00932='1';s.DOS_00942='1';s.DOS_00938='1';s.DOS_00996='1';s.DOS_009"
+		"97='1';s.DOS_00998='1';s.DOS_00209='0';s.DOS_01555_adc='0';s.DOS_01293='1';s.DOS_00828='0';s.DOS_01116='1';s.DOS_010"
+		"17_RPORx='1';s.DOS_01017_RPINRx='1';s.DOS_01555_nvm_tsmc18_v2_16bit='0';s.DOS_00804='1';s.DOS_00826='1';s.DOS_01555_"
+		"TLAK_PMDx='0';s.DOS_01555_TLAK_INT_='0';s.DOS_00933='1';s.DOS_01555='0';s.DOS_01555_ptg='0';s.DOS_00929='1';s.DOS_00"
+		"958='1';s.DOS_01117_PORTx='1';s.DOS_00999='0';s.DOS_01198='1';s.DOS_01041='1';s.DOS_00892='1';s.DOS_01287_TLAC_PMDx="
+		"'1';s.DOS_01287_TLAC_INT_='1';s.DOS_01424='1';s.DOS_01332='1';s.DOS_01441_i2c_upb_v1_16bit_TLAH='0';s.DOS_01482='0';"
+		"s.DOS_02508c11='0';s.DOS_01468_PMBA_current_source='0';s.DOS_02291_PGA='0';s.DOS_01467_Comparator='0';s.DOS_01498_TL"
+		"AY='0';s.DOS_02316_nvm_ctrl_v1_16bit='0';s.DOS_00993_PLL_120MHz='0';s.DOS_01577_cla_clc_upb_v1='0';s.DOS_01332_ptg_p"
+		"c_v1='0';s.DOS_00958_pwm_TLAY='0';s.TLAY_IOPorts='0';s.DOS_00929q='0';s.DOS_02415_spi_v5='0';s.DOS_RPINRx_16bit_2='0"
+		"';s.DOS_01497_TLAH_PMDx='0';s.DOS_02550_TLAL_INT='0';s.DOS_00958_pwm_TLAH='0';s.DOS_01287_TLAH_INT_='0';s.DOS_01113="
+		"'0';s.DOS_01017_PMDx='0';s.DOS_00927='0';s.DOS_01080='0';s.DOS_00794_cpu_16bit_v3='0';s.DOS_02359a_sent_j2716_upb_v1"
+		"='0';s.DOS_01520_wdt_dmt_upb_v1_16bit='0';s.DOS_02192_TLCD_PMDx='0';s.DOS_02192_TLCD_INT_='0';s.DOS_02192_cmp='0';s."
+		"DOS_00958_pwm_TLCD='0';s.DOS_02192_PORTx_TLCD='0';s.DOS_00936='0';s.DOS_00995='0';s.DOS_00546='0';s.DOS_00474='0';s."
+		"DOS_02481_WACJ_Config='0';s.DOS_02569_pfm_cache_ocp_v1='0';s.DOS_02819_pfm_ctrl_32bit_upb_v2='0';s.DOS_02674_wdt_upb"
+		"_v1_32bit='0';s.DOS_01520_wdt_dmt_upb_v1='0';s.DOS_02869_icd_jtag_bvci_upb_v2='0';s.DOS_02823_WACJ_clk_cru_upb_v2='0"
+		"';s.DOS_01423_RPINRx='0';s.DOS_02481_RPORx='0';s.DOS_02511_pwr_sib_upb_v1_32bit='0';s.DOS_02481_WACJ_int_evic_v3='0'"
+		";s.DOS_01500_dma_bvci_v2='0';s.DOS_02141_tmr_classa_pb_v2='0';s.DOS_02815_tmr_classb_upb_v1='0';s.DOS_00740_icap_pb_"
+		"v1='0';s.DOS_00749_ocmp_pb_v1='0';s.DOS_01441_i2c_upb_v1_32bit='0';s.DOS_01329_spi_pb_v2='0';s.DOS_02478_uart_irda_u"
+		"pb_v1_32bit='0';s.DOS_02514_dfm_strl_sst_upb_v1='0';s.DOS_01427_cmp_control_upb_v1_32bit='0';s.DOS_01445_dac_nbit__c"
+		"ontrol_upb_v1_32bit='0';s.DOS_01461_afe_ctmu_con_upb_v1='0';s.DOS_02472_ppi_pmp16_upb_v1='0';s.DOS_02467_gpio_ports_"
+		"upb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1_PIC32MK='0';s.DOS_02813a_usb_otgcore_pb_v3='0';s.DOS_01261_tmr_rtcc_pb_v2"
+		"='0';s.DOS_01475_lpwr_deep_sleep_ctrl_v2='0';s.DOS_EIP_00136_ssx_v1='0';s.DOS_01152_can_bvci_v1='0';s.DOS_02481_WACN"
+		"_Config='0';s.DOS_02823_WACN_clk_cru_upb_v2='0';s.DOS_02481_WACN_int_evic_v3='0';s.DOS_03554_cmp_control_upb_v2_32bi"
+		"t='0';s.DOS_01577_cla_clc_upb_v1_32bit='0';s.DOS_03247_can_fd_upb_v2='0';s.DOS_02481_WACK_MC_Config='0';s.DOS_03247_"
+		"can_fd_upb_v2_pic32mk='0';s.DOS_02481_WACJ_MC_Config='0';s.DOS_02481_WACJ_MC_int_evic_v3='0';s.DOS_01477_pwm_mc_upb_"
+		"v1='0';s.DOS_01459_ptg_pc_upb_v1_SIC='0';s.DOS_01494_qei_32b_upb_v1='0';s.DOS_02481_WACN_MC_Config='0';s.DOS_02481_W"
+		"ACN_MC_int_evic_v3='0';s.DOS_02787_WACD_Config='0';s.DOS_00800_dac_4bit_ctrl_pb_v1='0';s.DOS_01539_icd_jtag_pb_v2='0"
+		"';s.DOS_02823_clk_cru_upb_v2='0';s.DOS_01423_RPORx='0';s.DOS_02907_WACD_int_evic_v3='0';s.DOS_00734_uart_irda_pb_v1="
+		"'0';s.DOS_00687_tmr_classa_pb_v1='0';s.DOS_00745_tmr_classb_pb_v1='0';s.DOS_02508_adc_sar_ctrl_upb_v1='0';s.DOS_0086"
+		"6_cmp_control_pb_v2='0';s.DOS_01114_eth_bvci_v1='0';s.DOS_02831_usb_clk_rst_v2='0';s.DOS_01643_pfm_cache_ahb_v2='0';"
+		"s.DOS_EIP_00206r5_sqi_v2='0';s.DOS_EIP_00124_usb_hs_otgcore_v1='0';s.DOS_EIP_00218_math_rng_ahbs_v2='0';s.DOS_EIP_00"
+		"109_ebi_v1='0';s.DOS_EIP_00158_crypto_v1='0';s.UART_TX_IMPLEMENTATION='[2  2]';s.UART_RX_IMPLEMENTATION='[1  2]';s.U"
+		"ART_TX_DMACHANNEL='[0  0]';s.UART_TX_THREAD_PROTECTION='[9  9]';s.UART_HALF_DUPLEX_MODE='[0  1]';s.DOS_03088_pfm_cac"
+		"he_ocp_v2_WACK='0';s.DOS_02907_WACK_MC_int_evic_v3='0';s.ADC_PingPong='1';s.NConversionTotal='1';s.NSampleTotal='1';"
+		"s.DOS_02551_cpu_16bit_v7='0';s.DOS_02672_math_progcrc_upb_v1_16bit='0';s.DOS_02915_ecc_v2='0';s.DOS_02673_tmr_classa"
+		"_upb_v1_16bit='0';s.DOS_01494_qei_32b_upb_v1_16bit='0';s.DOS_02472_ppi_pmp16_upb_v1_16bit='0';s.DOS_03076_uart_proto"
+		"col_upb_v1_16bit='0';s.DOS_01483_pwm_16bit='0';s.DOS_03247_CAN_FD_UPB_V2_16_bit='0';s.DOS_02949_WACG='0';s.DOS_03349"
+		"_amp_pad_opamp_ctrl_upb_v1='0';s.DOS_02653_afe_current_bias_ctrl_upb_v1_16bit='0';s.DOS_01459_ptg_pc_upb_v1_16bit='0"
+		"';s.DOS_01512_ccp_mccp_upb_v1_16bit='0';s.DOS_02519_dma_sfr_16bit_v2='0';s.DOS_02475_dac_pdm_nbit_upb_v1_16bit='0';s"
+		".DOS_02467_gpio_upb_v1_16bit='0';s.DOS_00805_rst_integration_v4='0';s.DOS_02659_clk_sib_v12='0';s.DOS_02237_osc_dco_"
+		"ctrl_upb_v1_16bit='0';s.DOS_02674_wdt_upb_v1_16bit='0';s.DOS_01407='0';s.DOS_03662_WACU='0';"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TargetExtensionPlatform"
+		Value			""
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EXTMODE_DATA_UPLOAD"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  20
+	  Version		  "1.17.0"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dwe"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  off
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar off
+	  CovSaveSingleToWorkspaceVar off
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  on
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aBlockCommentType=\"BlockPathComment\" -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 475, 127, 1465, 797 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    21
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+  }
+  System {
+    Name		    "MCLV2_dsPIC33EP256MC506_baset_R2017a"
+    Location		    [67, -4, 1742, 981]
+    Open		    off
+    PortBlocksUseCompactNotation off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "117"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "463"
+    Annotation {
+      SID		      "374"
+      Name		      "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+      "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }"
+      "\n</style></head><body style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n"
+      "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
+      "t:0px;\"><span style=\" font-family:'Courier New'; font-size:8px; font-weight:600;\">MCLV2-dsPIC33EPxMC506 PIM ("
+      "ext OA)</span></p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; mar"
+      "gin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Courier New'; font-size:8px;\"><br /></p>\n<p s"
+      "tyle=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0p"
+      "x;\"><span style=\" font-family:'Courier New'; font-size:8px;\">MCLV Board  |   PIN </span></p>\n<p style=\" mar"
+      "gin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span "
+      "style=\" font-family:'Courier New'; font-size:8px;\">================================</span></p>\n<p style=\" ma"
+      "rgin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span"
+      " style=\" font-family:'Courier New'; font-size:8px;\">LED1        |   RD6 </span></p>\n<p style=\" margin-top:0p"
+      "x; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" f"
+      "ont-family:'Courier New'; font-size:8px;\">LED2        |   RD5 </span></p>\n<p style=\" margin-top:0px; margin-b"
+      "ottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:"
+      "'Courier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-"
+      "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family"
+      ":'Courier New'; font-size:8px;\">SW1         |   RG6</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; "
+      "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier Ne"
+      "w'; font-size:8px;\">SW2         |   RC7</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:"
+      "0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-siz"
+      "e:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left"
+      ":0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-si"
+      "ze:8px;\">UART_Rx     |   RC5</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin"
+      "-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">UA"
+      "RT_Tx     |   RF1</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; "
+      "-qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|-"
+      "------------------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;"
+      " -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM1 (L/H)  |"
+      "   RB15 - RB14</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt"
+      "-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM2 (L/H)  |   R"
+      "B13 - RB12</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-blo"
+      "ck-indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">PWM3 (L/H)  |   RB11 "
+      "- RB10</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-i"
+      "ndent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|------------"
+      "-------</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-"
+      "indent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">MC_FAULT    |   RB4  (FL"
+      "T32)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-ind"
+      "ent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">------------|--------------"
+      "-----</span></p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-in"
+      "dent:0; text-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLA / QEA |   RA8</span>"
+      "</p>\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text"
+      "-indent:0px;\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLB / QEB |   RC6</span></p>\n<p sty"
+      "le=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"
+      "\"><span style=\" font-family:'Courier New'; font-size:8px;\">HALLC/INDX  |   RF0</span></p>\n<p style=\" margin"
+      "-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span sty"
+      "le=\" font-family:'Courier New'; font-size:8px;\">HOME        |   RC10</span></p>\n<p style=\" margin-top:0px; m"
+      "argin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+      "family:'Courier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; "
+      "margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font"
+      "-family:'Courier New'; font-size:8px;\">Pot         |   RE13  (AN13)</span></p>\n<p style=\" margin-top:0px; mar"
+      "gin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-fa"
+      "mily:'Courier New'; font-size:8px;\">VBUS        |   RA12  (AN10)</span></p>\n<p style=\" margin-top:0px; margin"
+      "-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-famil"
+      "y:'Courier New'; font-size:8px;\">Ia          |   RB2   (C2IN1+)</span></p>\n<p style=\" margin-top:0px; margin-"
+      "bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family"
+      ":'Courier New'; font-size:8px;\">Ib          |   RC2   (C3IN1+)</span></p>\n<p style=\" margin-top:0px; margin-b"
+      "ottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:"
+      "'Courier New'; font-size:8px;\">Ibus/Vbus   |   RB7   (AN14)</span></p>\n<p style=\" margin-top:0px; margin-bott"
+      "om:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Co"
+      "urier New'; font-size:8px;\">------------|-------------------</span></p>\n<p style=\" margin-top:0px; margin-bot"
+      "tom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'C"
+      "ourier New'; font-size:8px;\">PGC         |   RB6 (PGC2)</span></p>\n<p style=\" margin-top:0px; margin-bottom:0"
+      "px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Courie"
+      "r New'; font-size:8px;\">PGD         |   RB5 (PGD2)</span></p></body></html>"
+      Position		      [998, -4, 1164, 324]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      on
+      FixedWidth	      on
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      BackgroundColor	      "[0.784314, 0.874510, 0.988235]"
+      Interpreter	      "rich"
+      ZOrder		      -2
+    }
+  }
+}
