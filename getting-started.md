@@ -118,31 +118,31 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
 
 ![fig: The picgui interface decode the incoming UART data stream and plot in real-time received values, here potentiometer, motor speed and current measured. Plots in figure are realized with a matlab script which is continuously refreshing the graphs using incoming data. This script can be modified providing all the matlab capabilities to customize visualization or perform further analysis on received data in real-time.](.gitbook/assets/datavisu.png)
 
-__
+
+# To do 
+
+1. Starting from the empty file to download [here](https://raw.githubusercontent.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/master/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.mdl)
+, add the configuration blocks	
+   * MCHP Master
+   * Compiler Version 
+   * UART config
+   * Pin Info
+2. Blink LED D1 at 5hz to verify the configuration
+3. Configure the peripherals :
+   * Two PWM signals to control the motor DC voltage through an H bridge structure using MOSFET.
+   * Two ADC channels providing the respectively the board potentiometer position to impose a reference and the current measurement from a shunt resistor. 
+   * QEI peripheral to provide shaft position and speed
+   * UART connection to the computer for the data analysis. 	
+4. With the MCLV2 board powered and programmed, rotate the potentiometer to accelerate motor / reverse direction. **Setting the potentiometer at middle position \(off\) at power on to avoid current surge.**
+
+	
+__
 
 ## Simulink model to target a dsPIC MCLV board running a DC motor
-
-The model contains blocks to configure **dsPIC peripheral** \(PWM, ADC and QEI\) to run a **DC motor** with the **MCLV-V2 board** equipped with the **dsPIC-33EP256MC506 PIM** using internal Op-Amps. Sensors measurements are visualized on the computer while the motor is running.
-
-### Getting Started
 
 The model [MCLV2\_dsPIC33EP256MC506\_externalOpAmp\_HardwareTest.mdl](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl) \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png)\) is for code generation \(peripheral blocks have no effects during a simulation\). Open the Simulink model and push the build button on the top right, below the Simulink windows menu bar.
 
 ![](.gitbook/assets/model_hardware_test_withsampletime%20%281%29.png)
 
-### Experiment
 
-#### Generate code and compile:
-
-The build icon on top right of Simulink model, \(see [fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png) above\) do: 1. generates c source code, 2. compiles c code and 3. flash the resulting binary to the MCLV targeted board.
-
-[Back to project presentation](./)
-
-#### Run the DC motor:
-
-With the MCLV2 board powered and programmed, rotate the potentiometer to accelerate motor / reverse direction. **Setting the potentiometer at middle position \(off\) at power on to avoid current surge.**
-
-Télécharger le fichier
-
-[Lien](https://raw.githubusercontent.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/master/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.mdl)
 
