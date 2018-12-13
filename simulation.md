@@ -4,6 +4,8 @@
 
 1. Download the simulation files [here](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/raw/master/LABMatlabFiles/01_Simulation/Simulation.zip) ([fig][fig:SimualtionDouble]). These files propose the simulation of the control law proposed section [DC motor modeling and control loop design](https://rtdc.ctrl-elec.fr/control-loop-design)
 
+[![Simulink Model][fig:SimualtionDouble]][fig:SimualtionDouble]
+
 
 2.
 3.
