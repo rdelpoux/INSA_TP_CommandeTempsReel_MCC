@@ -15,4 +15,7 @@ Here the objective is to compare the difference between the modeling and motor r
 ![Model vs Logs](.gitbook/assets/modelvslog.png)
 
 1. Download the model [here](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/raw/master/LABMatlabFiles/05_Log_Validation/LogVsSimu.zip)
-2. 
+2. Using the simulink file MCLV2_dsPIC33EP256MC506_internalOpAmp_DataLog_R2017a.mdl recaord real data from the motor.
+3. Compare the simulation with the real measurment using the simulink file Simu_Model_vs_Logs_R2017a.mdl
+
+
