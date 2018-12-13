@@ -121,7 +121,7 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
 
 # To do 
 
-1. Starting from the empty file to download [here](https://raw.githubusercontent.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/master/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.mdl)
+1. Starting from the empty file to download [here](https://raw.githubusercontent.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/master/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.zip)
 , add the configuration blocks	
    * MCHP Master
    * Compiler Version 
