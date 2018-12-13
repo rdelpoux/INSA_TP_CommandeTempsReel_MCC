@@ -120,8 +120,11 @@ The build icon on top right of Simulink model, (see [fig][fig:Model_Hardware_Tes
 ## Data Visualization with picgui:
 
 Open the picgui interface ([fig][fig:DataVisu]) (type **picgui** at matlab prompt or double click on the **Interface Tx-Matlab block** in the model)
+
 1. Select host UART port and connect at 115200 bauds 
+
 1. Replace the default script within the picgui interface to a call the customized matlab script [DataVisu.m] (see figure below)
+
 1. Push the  **start** button to visualize runtime curves showing potentiometer, motor position, motor speed and current measured on shunt resistors
 
 [![picgui interface][fig:DataVisu]][fig:DataVisu]
