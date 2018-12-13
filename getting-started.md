@@ -124,12 +124,12 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
 
 1. Starting from the empty file to download [here](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/raw/f4be492167956b5449ef4fb184332b885cf5780f/LABMatlabFiles/02_GettingStarted/MCLV2_dsPIC33EP256MC506_base_R2017a.zip)
 
-   , add the configuration blocks    
+   , add the configuration blocks
 
    * Microchip Master
    * Compiler Options 
    * UART Configuration
-   * Graphical Interface	
+   * Graphical Interface    
    * Port Info
 
 2. Blink LED D1 at 5hz to verify the configuration
