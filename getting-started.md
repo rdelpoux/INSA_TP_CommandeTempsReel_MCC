@@ -20,9 +20,7 @@
 - [XC16][XC16] compiler
 
 
-# Hardware Configuration
-
-## Board
+## Hardware Configuration
 
 ### Pinout of the MCLV-V2 with the PIM dsPIC33EP256MC506 with External Op-Amp
 
@@ -70,9 +68,9 @@ All Shunt resistances are **0.025 Ohms**.
 
 Two shunts measures Ia and Ib on PWM1 and PWM2 (low side). The third shunt measure Ibus which is the current sum of the three PWM (low side) currents.
 
-Op-Amps (Internal or External) with a **gain of 15** boost low voltage measured to higher voltage converted by the dsPIC ADC for signals Ia, Ib and Ibus. (see [fig4 from DS52062B](./Fig/Internal_OpAmp_DS52062B_Fig4.png))
+Op-Amps (Internal or External) with a **gain of 15** boost low voltage measured to higher voltage converted by the dsPIC ADC for signals Ia, Ib and Ibus. (see [fig4 from DS52062B](./Figures/GettingStarted/Internal_OpAmp_DS52062B_Fig4.png))
 
-$V_{ADC} = 0.025*15*I_{shunt}$
+$$V_{ADC} = 0.025*15*I_{shunt}$$
 
 For the ADC configured for 10 bits right aligned conversion, the raw output represents:
 
