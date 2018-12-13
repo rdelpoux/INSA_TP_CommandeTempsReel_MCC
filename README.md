@@ -20,7 +20,7 @@ The project details the following points
    * UART connection to the computer for the data analysis. 
 2. Modeling and control loop design of the DC motor.
 
-   * A recall on the motor modeling will be exposed.
+   * Reminder on motor modeling will be exposed.
    * A basic control strategy based on state space representation will be proposed.
 
    Note that the modeling and the control of the DC motor are supposed as prerequisites for this project and this section is a reminder only. That's why the speed control algorithm will be given and not developed here.
