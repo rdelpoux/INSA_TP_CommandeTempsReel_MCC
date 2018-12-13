@@ -126,10 +126,11 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
 
    , add the configuration blocks    
 
-   * MCHP Master
-   * Compiler Version 
-   * UART config
-   * Pin Info
+   * Microchip Master
+   * Compiler Options 
+   * UART Configuration
+   * Graphical Interface	
+   * Port Info
 
 2. Blink LED D1 at 5hz to verify the configuration
 3. Configure the peripherals :

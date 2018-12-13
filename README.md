@@ -14,7 +14,7 @@ This project is offered to the 5th year students in the [electrical engineering 
 The project details the following points
 
 1. Getting started with the programming environment and hardware setup until the open-loop control of the DC motor which means :
-   * A led blinking at 5 Hz.
+   * Blink a LED at 5 Hz.
    * Two PWM signals to control the motor DC voltage through an H bridge structure using MOSFET.
    * Two ADC channels providing the respectively the board potentiometer position to impose a reference and the current measurement from a shunt resistor. 
    * QEI peripheral to provide shaft position and speed
