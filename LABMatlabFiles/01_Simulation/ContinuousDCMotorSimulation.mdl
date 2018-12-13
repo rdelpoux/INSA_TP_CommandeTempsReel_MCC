@@ -1,5 +1,5 @@
 Model {
-  Name			  "ContinuousDCMotorSimulation2017a"
+  Name			  "ContinuousDCMotorSimulation"
   Version		  8.9
   SavedCharacterEncoding  "UTF-8"
   GraphicalInterface {
@@ -87,8 +87,8 @@ Model {
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [1012.0, 649.0]
-	  ZoomFactor		  [0.93181818181818177]
-	  Offset		  [-140.02439024390242, -232.81774993575164]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-137.29881443701174, -236.64769499345448]
 	}
 	PropName		"EditorsInfo"
       }
@@ -124,8 +124,8 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "rdelpoux"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Dec 13 23:54:53 2018"
-  RTWModifiedTimeStamp	  466646093
+  LastModifiedDate	  "Thu Dec 13 23:53:44 2018"
+  RTWModifiedTimeStamp	  466646024
   ModelVersionFormat	  "1.%<AutoIncrement:33>"
   SampleTimeColors	  on
   SampleTimeAnnotations	  off
@@ -177,12 +177,12 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    9
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "ContinuousDCMotorSimulation2017a"
+    model_		    "ContinuousDCMotorSimulation"
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "ContinuousDCMotorSimulation2017a"
+      Cell		      "ContinuousDCMotorSimulation"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1190,7 +1190,7 @@ Model {
     }
   }
   System {
-    Name		    "ContinuousDCMotorSimulation2017a"
+    Name		    "ContinuousDCMotorSimulation"
     Location		    [454, 34, 1504, 870]
     Open		    off
     PortBlocksUseCompactNotation off
@@ -1204,7 +1204,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "93"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "363"
     Block {
@@ -2737,10 +2737,10 @@ Model {
       Frame		      "on"
       DisplayStringWithTags   "%<ModelName> v%<ModelVersion> - %<Creator>\n\n%<Description>\n\nLost modified on: %<Las"
       "tModificationDate>"
-      MaskDisplayString	      "ContinuousDCMotorSimulation2017a v1.32 - R.Delpoux & L.Kerhuel\\n\\nContinuous time mod"
-      "el of the DC motor\\n\\nCascaded speed control :\\n- Inner loop : electrical control (state feedback with integr"
-      "al action)\\n- Outer loop :  mechanical control (state feedback with integral action)\\n- Clamping : Enable or d"
-      "isable integral actions\\n\\nLost modified on: Thu Dec 13 23:54:52 2018"
+      MaskDisplayString	      "ContinuousDCMotorSimulation v1.32 - R.Delpoux & L.Kerhuel\\n\\nContinuous time model of"
+      " the DC motor\\n\\nCascaded speed control :\\n- Inner loop : electrical control (state feedback with integral ac"
+      "tion)\\n- Outer loop :  mechanical control (state feedback with integral action)\\n- Clamping : Enable or disabl"
+      "e integral actions\\n\\nLost modified on: Thu Dec 13 23:53:41 2018"
       HorizontalTextAlignment "Center"
       LeftAlignmentValue      "0.5"
     }
