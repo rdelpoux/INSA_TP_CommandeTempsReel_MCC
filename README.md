@@ -34,17 +34,11 @@ The project details the following points
    * Back to modeling with the analysis of experimental results.
    * Updating models, commands and experimentation.
 
-## Getting started
-
-[MCLV V2 board setup with Simulink for DC motor](https://rtdc.ctrl-elec.fr/getting-started)
+## [Getting started](https://rtdc.ctrl-elec.fr/~/edit/drafts/-LTd50Bc7VhbVJXp00u_/getting-started)
 
 ## Modeling and control loop design of the DC motor
 
-[Modeling and control loop design](https://rtdc.ctrl-elec.fr/control-loop-design)
-
 ## Simulation of the DC motor
-
-[Data recording, Simulation and Validation](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/e5152949a3f60ba1e0c75a98ebc9fb2c29007742/Experimentations/05_Log_Model_And_Simulation/README.md)
 
 ## Experimental validation
 
