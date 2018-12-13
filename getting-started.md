@@ -135,12 +135,8 @@ Open the picgui interface \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTe
    * UART connection to the computer for the data analysis. 	
 4. With the MCLV2 board powered and programmed, rotate the potentiometer to accelerate motor / reverse direction. **Setting the potentiometer at middle position \(off\) at power on to avoid current surge.**
 
-	
-__
 
-## Simulink model to target a dsPIC MCLV board running a DC motor
-
-The model [MCLV2\_dsPIC33EP256MC506\_externalOpAmp\_HardwareTest.mdl](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/MCLV2_dsPIC33EP256MC506_externalOpAmp_HardwareTest.mdl) \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png)\) is for code generation \(peripheral blocks have no effects during a simulation\). Open the Simulink model and push the build button on the top right, below the Simulink windows menu bar.
+The model should look like \([fig](https://github.com/rdelpoux/INSA_TP_CommandeTempsReel_MCC/tree/f4be492167956b5449ef4fb184332b885cf5780f/Figures/GettingStarted/Model_Hardware_Test_withSampleTime.png)\)
 
 ![](.gitbook/assets/model_hardware_test_withsampletime%20%281%29.png)
 
