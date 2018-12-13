@@ -2,7 +2,7 @@
 
 ## Authors
 
-* Romain DELPOUX \(Romain.Delpoux at insa-lyon.fr\), Assistant Professor, INSA de Lyon, Laboratoire Ampere UMR CNRS 5005.
+* Romain DELPOUX \(Romain.Delpoux at insa-lyon.fr\), Assistant Professor, INSA de Lyon, Laboratoire Ampère UMR CNRS 5005.
 * Lubin KERHUEL \(Lubin.Kerhuel at microchip.com\), Software Engineer, Microchip Technology Inc.
 
 ## Introduction
