@@ -35,3 +35,4 @@ The project details the following points
    * Back to modeling with the analysis of experimental results.
    * Updating models, commands and experimentation.
 
+[Lubin's Slides](https://hugo.kerhuel.eu/slides-dcmotor)
