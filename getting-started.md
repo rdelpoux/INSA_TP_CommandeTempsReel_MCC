@@ -35,7 +35,7 @@ The table below provide important pinout information.
 | LED2 | RD5 |
 |  |  |
 | SW1 | RG6 |
-| SW2 | RC7 |
+| SW2 | RG7 |
 |  |  |
 | UART\_Rx | RC5 |
 | UART\_Tx | RF1 |
